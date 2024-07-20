@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8d2dbc4-7b6f-4969-a1ec-2b2a5bbe20ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/java_framework/dubbo/use/.assets/001.png" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/dubbo/use/assets/001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/dubbo/use/.assets/002.png" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/dubbo/use/assets/002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/dubbo/use/Dubbo使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/dubbo/use/Dubbo使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/mybatis/.assets/001.png" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/mybatis/assets/001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/mybatis/.assets/002.png" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/mybatis/assets/002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/mybatis/.assets/003.png" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/mybatis/assets/003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/mybatis/.assets/004.png" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/mybatis/assets/004.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/mybatis/MyBatis使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/mybatis/MyBatis使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/mybatis/MyBatis源码分析.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/mybatis/MyBatis源码分析.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/01NioEventLoopGroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/01NioEventLoopGroup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/02ServerBootsrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/02ServerBootsrap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/04ServerBootstrapAcceptor分发.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/04ServerBootstrapAcceptor分发.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/05Worker组注册NioSocketChannel.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/05Worker组注册NioSocketChannel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/06ChannelPipeline核心接口.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/06ChannelPipeline核心接口.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/07管道DefaultChannelPipeline详细介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/07管道DefaultChannelPipeline详细介绍.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/08NioSocketChannelUnsafe详细介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/08NioSocketChannelUnsafe详细介绍.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/09ChannelOutboundBuffer详细介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/09ChannelOutboundBuffer详细介绍.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/10DirectByteBuffer分配释放原理.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/10DirectByteBuffer分配释放原理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/11ByteBuf引用和计数.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/11ByteBuf引用和计数.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/12HeapByteBuf与DirectByteBuf.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/12HeapByteBuf与DirectByteBuf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/13PooledByteBuf预备知识jemalloc简介.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/13PooledByteBuf预备知识jemalloc简介.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/14池化内存分配.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/14池化内存分配.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/15FastThreadLocal.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/15FastThreadLocal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/16PoolThreadCache.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/16PoolThreadCache.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/17池化内存总结.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/17池化内存总结.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/18回收器Recycler.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/18回收器Recycler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/19PooledByteBuf.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/19PooledByteBuf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/20Select函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/20Select函数.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/21编解码器.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/21编解码器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/22Http处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/22Http处理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/23Websockcet处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/23Websockcet处理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_framework/netty/source/24ChannelFuture异步回调.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/netty/source/24ChannelFuture异步回调.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2jVIrVlIjcOMjj112LnYD17HidD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8d2dbc4-7b6f-4969-a1ec-2b2a5bbe20ff" name="Changes" comment="" />
+      <created>1721466017924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721466017924</updated>
+      <workItem from="1721466019664" duration="270000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
