@@ -1,0 +1,1673 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/*快速自定义配置*/
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * MIT License
+ *
+ * Copyright (c) 2023 劉強東 https://github.com/liangjingkanji
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #202124;
+    --blur-text-color: #c8c8c8;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(32, 33, 36, 0.5);
+    --drake-accent: #5784ec;
+    --drake-highlight: #3a474e;
+    --a-color: #1769e0;
+    --variable-color: #d01884;
+    --outline-active-color: var(#414040);
+    --code-block-bg-color: #f8f9fa;
+    --code-block-color: #3a474e;
+    --title-color: #202124;
+    --blockquote-border-color: #275796;
+    --blockquote-color: #275796;
+    --blockquote-bg-color: #e5f4fd;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--text-color);
+    --height-light-border-color: var(--text-color);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dadce0;
+    --table-header-bg-color: #f1f3f4;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 12px !important;
+    border-radius: 8px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: .1em solid #e8eaed;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 4px;
+    color: var(--drake-highlight);
+    border: .1rem solid #e8eaed;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote {
+    color: var(--blockquote-color) !important;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+.on-focus-mode #write a .md-plain:hover, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain:hover, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain:hover, .on-focus-mode .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+#write a code, a:any-link {
+    color: var(--a-color);
+}
+#write a code:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-library-node.file-tree-node.file-node-root {
+    font-size: 1.1rem;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 14px;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 400;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-atom {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-def {
+    color: #00f;
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #b80672;
+}
+.cm-s-inner span.cm-string {
+    color: #008000;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #008000;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-tag.cm-bracket {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-meta {
+    color: #c5221f;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+/* 正文标题区: #write */
+/* [TOC]目录树区: .md-toc-content */
+/* 侧边栏的目录大纲区: .sidebar-content */
+ 
+/** 
+ * 说明：
+ *     Typora的标题共有6级，从h1到h6。
+ *     我个人觉得h1级的标题太大，所以我的标题都是从h2级开始。
+ *     个人习惯每篇文章都有一个总标题，有一个目录，所以h2级的标题前两个都不会计数。
+ *     一般情况下，我虽然不使用h1级的标题，但是为了以防万一，h1级的标题前两个也都不会计数。
+ *     若想启用h1级标题，就取消包含“content: counter(h1) "."”项的注释，然后将包含“content: counter(h2) "."”的项注释掉即可。
+ */ 
+/** initialize css counter */
+#write, .sidebar-content,.md-toc-content{
+	/* 设置全局计数器的基准 */
+	/* 因为我喜欢从h2级标题用起，所以这里设置为h2 */
+    counter-reset: h2
+}
+ 
+#write h1, .outline-h1, .md-toc-item.md-toc-h1 {
+    counter-reset: h2
+}
+ 
+#write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+    counter-reset: h3
+}
+ 
+#write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+    counter-reset: h4
+}
+ 
+#write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+    counter-reset: h5
+}
+ 
+#write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+    counter-reset: h6
+}
+ 
+/** put counter result into headings */
+#write h1:before,
+.outline-h1>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1>.md-toc-inner:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+ 
+/* 使用h1标题时，去掉前两个h1标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h1元素，请根据情况自行修改。 */
+#write h1:nth-of-type(1):before,
+.outline-h1:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(1)>.md-toc-inner:before,
+#write h1:nth-of-type(2):before,
+.outline-h1:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h1;
+	content: ""
+}
+ 
+/*#write h2:before,
+.outline-h2>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2>.md-toc-inner:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}*/
+ 
+/* 使用h2标题时，去掉前两个h2标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h2元素，请根据情况自行修改。 */
+#write h2:nth-of-type(1):before,
+.outline-h2:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(1)>.md-toc-inner:before,
+#write h2:nth-of-type(2):before,
+.outline-h2:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h2;
+	content: ""
+}
+ 
+#write h3:before,
+h3.md-focus.md-heading:before, /** override the default style for focused headings */
+.outline-h3>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h3>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h3;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+     content:  counter(h3) ". "
+}
+ 
+#write h4:before,
+h4.md-focus.md-heading:before,
+.outline-h4>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h4>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h4;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+    content: counter(h3) "." counter(h4) ". "
+}
+ 
+#write h5:before,
+h5.md-focus.md-heading:before,
+.outline-h5>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h5>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h5;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+ 
+#write h6:before,
+h6.md-focus.md-heading:before,
+.outline-h6>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h6>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h6;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+ 
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						} @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>1.4数据链路层</title>
+</head>
+<body class='typora-export typora-export-show-outline typora-export-no-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数据链路层">数据链路层</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#一概述">一、概述</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二组装成帧和透明传输">二、组装成帧和透明传输</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#封装成帧">封装成帧</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#透明传输">透明传输</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#帧的组成方法">帧的组成方法</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#字符计数法">字符计数法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#字符填充法">字符填充法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#零比特传输法">零比特传输法</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#违规编码方法">违规编码方法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#结论">结论</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三差错控制即检错编码">三、差错控制即检错编码</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#差错形成的原因">差错形成的原因</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数据链路层的差错控制">数据链路层的差错控制</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#位错差错控制方式">位错差错控制方式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#位错差错控制的编码方式">位错差错控制的编码方式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#物理层的编码和数据链路层的编码的不同点">物理层的编码和数据链路层的编码的不同点</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#冗余编码">冗余编码</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#检错编码-奇偶校验码">检错编码-奇偶校验码</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#检错编码-crc循环冗余码">检错编码-CRC循环冗余码</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#海明码">海明码</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#确定校验码位数">确定校验码位数</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#确定校验码和数据的位置">确定校验码和数据的位置</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#求出校验码的值">求出校验码的值</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#检错并纠错">检错并纠错</a></div><ul class="outline-children"></ul></li></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#四流量控制与可靠性传输机制">四、流量控制与可靠性传输机制</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数据链路层流量控制">数据链路层流量控制</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#流量控制方法">流量控制方法</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止-等待协议">停止-等待协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#滑动窗口协议">滑动窗口协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三种协议的区别">三种协议的区别</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#可靠传输滑动窗口流量控制">可靠传输、滑动窗口、流量控制</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#五等待协议">五、等待协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止等待协议">停止等待协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止-等待协议归属">停止-等待协议归属</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止等待协议的内核">停止等待协议的内核</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止等待协议无差错情况">停止等待协议无差错情况</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止等待协议有差错情况">停止等待协议有差错情况</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#丢包情况">丢包情况</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#确认帧ack丢失">确认帧ACK丢失</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ack迟到">ACK迟到</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#停止等待协议的性能分析">停止等待协议的性能分析</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#后退n协议gbn">后退N协议GBN</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#流水线技术">流水线技术</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#后退n帧协议滑动窗口">后退N帧协议滑动窗口</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#gbn发送方必须响应的三件事">GBN发送方必须响应的三件事</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#上层的调用">上层的调用</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#收到一个ack">收到一个ACK</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#超时事件">超时事件</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#gbn接收方要做的事">GBN接收方要做的事</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#返回确认帧">返回确认帧</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#丢弃错误帧">丢弃错误帧</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#gbn过程图解">GBN过程图解</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#滑动窗口长度">滑动窗口长度</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#gbn协议总结">GBN协议总结</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#gbn性能分析">GBN性能分析</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#选择重传协议sr">选择重传协议SR</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#gbn协议的弊端">GBN协议的弊端</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#选择重传协议中的滑动窗口">选择重传协议中的滑动窗口</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#sr发送方必须响应的三件事">SR发送方必须响应的三件事</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#sr接收方要做的事情">SR接收方要做的事情</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#运行中的sr">运行中的SR</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#滑动窗口">滑动窗口</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#sr协议重点">SR协议重点</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#信道划分介质访问控制">信道划分介质访问控制</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数据传输使用的链路">数据传输使用的链路</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#介质访问控制">介质访问控制</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#信道划分介质访问控制-2">信道划分介质访问控制</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#频分多路复用fdm">频分多路复用FDM</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#时分多路复用tdm">时分多路复用TDM</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#改进的时分复用-统计时分复用stdm">改进的时分复用-统计时分复用STDM</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#波分多路复用wdm">波分多路复用WDM</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#码分多路复用cdm">码分多路复用CDM</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#aloha协议">ALOHA协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#介绍">介绍</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#时隙aloha协议">时隙ALOHA协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#aloha协议特性">ALOHA协议特性</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csma协议">CSMA协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csma协议介绍">CSMA协议介绍</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#cs">CS</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ma">MA</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csma协议思想">CSMA协议思想</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csmacd协议">CSMA/CD协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csmacd协议介绍">CSMA/CD协议介绍</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#传播时延对载波监听的影响">传播时延对载波监听的影响</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#如何确定碰撞后的重传时机">如何确定碰撞后的重传时机</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#最小帧长问题">最小帧长问题</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csma-ca协议">CSMA-CA协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#介绍-2">介绍</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#工作原理">工作原理</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csmaca实现碰撞规避的手段">CSMA/CA实现碰撞规避的手段</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#csmacd与csmaca对比">CSMA/CD与CSMA/CA对比</a></div><ul class="outline-children"></ul></li></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三轮询访问介质访问控制">三、轮询访问介质访问控制</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#介质访问控制-2">介质访问控制</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#轮询协议">轮询协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#令牌传递协议">令牌传递协议</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#四局域网">四、局域网</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#局域网介绍">局域网介绍</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#局域网拓扑结构">局域网拓扑结构</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#星型拓扑">星型拓扑</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#总线型拓扑">总线型拓扑</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#星型拓扑-2">星型拓扑</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#树型拓扑">树型拓扑</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#局域网传输介质">局域网传输介质<span>	</span></a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#局域网传输访问控制的方法">局域网传输访问控制的方法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#局域网类型">局域网类型</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#以太网">以太网</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#令牌环网">令牌环网</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#fddi网">FDDI网</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#atm网-asynchronous-trasfer-mode">ATM网 Asynchronous Trasfer Mode</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#无限局域网wwireless-local-area-network-wlan）">无限局域网（Wwireless Local Area Network WLAN）</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ieee802标准">IEEE802标准</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#mac子网和llc子层">MAC子网和LLC子层</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#五以太网">五、以太网</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#概述">概述</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#以太网提供的无连接不可靠服务">以太网提供的无连接、不可靠服务</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#以太网传输介质与拓扑结构发展">以太网传输介质与拓扑结构发展</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#传输介质">传输介质</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#拓扑结构发展">拓扑结构发展</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#10base-t以太网">10BASE-T以太网</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#适配器和mac地址">适配器和MAC地址</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#以太网mac帧">以太网MAC帧</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#高速以太网">高速以太网</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#六iee80211无线局域网">六、IEE802.11无线局域网</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#介绍-3">介绍</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#80211的mac帧头格式">802.11的MAC帧头格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#无线局域网的类型">无线局域网的类型</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#七ppp协议和hdlc协议">七、PPP协议和HDLC协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#广域网">广域网</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ppp协议">PPP协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#hdlc协议">HDLC协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ppp与hdlc协议对比">PPP与HDLC协议对比</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#八链路层设备">八、链路层设备</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#物理层拓展以太网">物理层拓展以太网</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#光纤">光纤</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#主干集线器">主干集线器</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#链路层扩展以太网">链路层扩展以太网</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网桥">网桥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网段">网段</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网桥优点">网桥优点</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网桥分类">网桥分类</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#多接口网桥-以太网交换机">多接口网桥-以太网交换机</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#冲突域与广播域">冲突域与广播域</a></div><ul class="outline-children"></ul></li></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='数据链路层'><span>数据链路层</span></h1><h2 id='一概述'><span>一、概述</span></h2><p><span>	</span><span>节点：计算机网络中的主机、路由器都可以叫做节点。</span></p><p><span>	</span><span>链路：指的就是网络中的两个节点之间的物理通道，链路用的传输介质主要有双绞线光纤和微波。分为有线链路和无线链路。</span></p><p><span>	</span><span>数据链路：指的是网络中两个节点之间的</span><strong><span>逻辑通道</span></strong><span>，把实现控制数据传输协议的硬件和软件加到链路上构成了数据链路。</span></p><p><span>	</span><span>帧：链路层的协议数据电源，封装了网络层数据报。</span></p><p><span>	</span><span>链路与数据链路之间的区别：链路是物理通道、数据链路是逻辑通道；数据链路层主要负责通过一条链路从一个节点向另一个由物理链路直接相连的相邻的节点，传送数据报。</span></p><p><span>	</span><span>数据链路层功能：在物理层提供服务的基础上项网络层提供服务，最基本的服务就是将网络层的数据可靠的传输到相邻节点的目标网络层。</span></p><p><span>	</span><span>数据链路层作用：是加强物理层传输原始比特流的功能，将物理层提供的可能出错的物理链接改造成逻辑上无差错得数据链路，使之对网络层表现为一条无差错得链路。</span></p><p><span>	</span><span>举例子说明，网络层是大老板、数据链路层就是秘书、物理层是跑腿的，现在老板A要送文件给老板B，老板A让秘书发文件，秘书把文件分成五段并标号，然后让跑腿的送文件，老板B的秘书一看文件不对，只有三段，就得改正文件，保证让老板B拿到的使正确的文件。</span></p><p><span>	</span><span>数据链路层为网络层提供的服务：</span><span>	</span></p><p><span>		</span><span>-&gt; 无确认无连接的服务：适用于误码率低的通信，接收端的信息不用发出响应。如果物理层并没有成功传送数据，数据链路层不回做出任何的响应fa&#39;song。</span></p><p><span>		</span><span>-&gt; 有确认无连接的服务：收发双方无需建立链接，但数据成功发送到的话，接收端要发送响应。</span></p><p><span>		</span><span>-&gt; 有确认面向连接服务：收发双方建立连接，有连接必须有确认，所以不存在无确认有连接的服务。</span></p><p><span>	</span><span>链路管理：即连接的建立、维持、释放（用于面向连接的服务）。</span></p><p><span>	</span><span>流量控制：接收端收不过来的话，就需要让发送方慢点儿，就叫流量控制。</span></p><p><span>	</span><span>差错控制：帧错/位错。</span></p><h2 id='二组装成帧和透明传输'><span>二、组装成帧和透明传输</span></h2><h3 id='封装成帧'><span>封装成帧</span></h3><p><span>	</span><span>封装成帧就是在一段数据的前后部分添加首部和尾部来构成一个帧，接收端收到比特流之后，根据首部和尾部的标记来判断帧的开始和结束，标记的主要作用就是界定帧。</span></p><p><span>	</span><span>帧同步：接收方应当能从接收的二进制比特流中区分出帧的开始和终止。</span></p><p><span>	</span><span>帧长：如下图所示。</span></p><p><img src="assets/032.png" alt="032" style="zoom:40%;" /></p><p><span>	</span><span>MTU：最大传输单元，帧的数据部分必须小于等于MTU。</span></p><p><span>	</span><span>帧的组成方法：</span></p><p><span>		</span><span>-&gt; 字符计数法。</span></p><p><span>		</span><span>-&gt; 字符（节）填充法。</span></p><p><span>		</span><span>-&gt; 零比特填充法。</span></p><p><span>		</span><span>-&gt; 违规编码法。</span></p><h3 id='透明传输'><span>透明传输</span></h3><p><span>	</span><span>透明传输是指不管所传的数据是什么样的比特流，都应当能够在链路上传送，因此数据链路层不需要关系传输的数据比特流的内容。</span></p><p><span>	</span><span>当传送的数据中的比特流的组合敲墙与某一个控制信息完全一样时，就必须采取适当的措施，使接收方不回将这样的数据误认为是控制信息，这样才能保证书数据链路层传输是透明的。</span></p><h3 id='帧的组成方法'><span>帧的组成方法</span></h3><h4 id='字符计数法'><span>字符计数法</span></h4><p><span>	</span><span>帧首部用一个计数字段（第一个字节，8位），来表明帧内的元素。</span></p><p><span>	</span><span>缺点是如果第一个字符发生了失真变成了4，那么后面所有的数据就全部乱套，这种方法不常用。</span></p><p><img src="assets/033.png" alt="033" style="zoom:30%;" /></p><h4 id='字符填充法'><span>字符填充法</span></h4><p><img src="assets/034.png" alt="034" style="zoom:40%;" /></p><p><span>	</span><span>当传送的帧是由文本组成的时候（文本文件的字符都是从键盘上输入的， 都是ASCII码）。不管输入什么字符都可以放到帧中进行传输。</span></p><p><span>	</span><span>当传送的帧是由非ASCII码的文本文件组成的时，就美版进行透明传输，比如二进制代码的程序或图像。</span></p><p><span>	</span><span>字符填充具体实现方法是这样的，有三种字节，开始字节、结束字节、转义字节。如果传送的数据正好是这三种字节，就需要再他们前面插入一个转义字节，如下图所示：</span></p><p><img src="assets/035.png" alt="035" style="zoom:40%;" /></p><h4 id='零比特传输法'><span>零比特传输法</span></h4><p><img src="assets/036.png" alt="036" style="zoom:50%;" /></p><p><span>	</span><span>比如上边的例子中，将标志字段01111110同事代表开始结束，并且严格遵守5110，即每出现5个连续的1，就在后面插入1个0，那就就会变成011111010，就不回跟标志字段混淆，并进行透明传输。</span></p><h3 id='违规编码方法'><span>违规编码方法</span></h3><p><span>	</span><span>用违法的编码方式来表示起始和技术，比如曼彻斯特编码中只能有低-高、高-低两种编码方式，那么可以用是高-高和低-低表示开始和结束。</span></p><h3 id='结论'><span>结论</span></h3><p><span>	</span><span>由于字节技术法中count字段的脆弱性及字符填充实现上的复杂性和不兼容性，目前较为普标使用的帧同步法是零比特填充和违规编码方法。</span></p><h2 id='三差错控制即检错编码'><span>三、差错控制即检错编码</span></h2><h3 id='差错形成的原因'><span>差错形成的原因</span></h3><p><span>	</span><span>主要是由噪声产生的，差错在分类上可以根据成因分为两种、根据形式分为两种。</span></p><p><span>	</span><span>成因分：</span></p><p><span>		</span><span>-&gt; 全局性分：由于线路本身电气特性所产生的随机噪声（热噪声），信道是固定的，随机是存在的。解决方法是提高信噪比，减少干扰。</span></p><p><span>		</span><span>-&gt; 局部性：由于外界特定的短暂远近所造成的冲击噪声，就会产生差错，解决方法是利用编码计数来解决。</span></p><p><span>	</span><span>按形式分：</span></p><p><span>		</span><span>-&gt; 位错：1变成0、0变成1。</span></p><p><span>		</span><span>-&gt; 帧错：比如[#1]-[#2]-[#3]发生帧错。</span></p><p><span>			</span><span>丢失：收到的是[#1]-[#2]</span></p><p><span>			</span><span>重复：收到的是[#1]-[#1]-[#2]-[#3]</span></p><p><span>			</span><span>失序：收到的使[#3]-[#1]-[#2]</span></p><h3 id='数据链路层的差错控制'><span>数据链路层的差错控制</span></h3><h4 id='位错差错控制方式'><span>位错差错控制方式</span></h4><p><span>	</span><span>假设主机A和主机B进行通信，信道上有20个路由器等链路层设备。在数据的第5个路由器上发生了位错，第5个路由器就不回发位错的数据，然后往回发，54321往回收到主机A上高速主机A数据包错了让它重新发。</span></p><p><span>	</span><span>这比直接让错位发到主机B上然后发现错误之后等一轮要节省不少资源。</span></p><h4 id='位错差错控制的编码方式'><span>位错差错控制的编码方式</span></h4><ul><li><p><span>纠错编码：海明码。</span></p></li><li><p><span>检错编码：奇偶校验、循环冗余码。</span></p></li></ul><h4 id='物理层的编码和数据链路层的编码的不同点'><span>物理层的编码和数据链路层的编码的不同点</span></h4><p><span>	</span><span>数据链路层编码和物理层的数据编码与调制不同，物理层编码针对的使单个比特，解决传输过程中比特同步等问题，如曼彻斯特编码。而数据链路层的编码针对的使一组比特，通过同于码的技术实现一组二进制比特串在传输过程中是否出现了差错。</span></p><h4 id='冗余编码'><span>冗余编码</span></h4><p><span>	</span><span>在数据发送之前，会先按照某种关系加上一段冗余位，构成一个符合某一规则的码字后再发送，当要发送的数据有变化时，对应的冗余码也会发生变化，使码字遵从不变的规则，接收端根据收到的码字是否扔符合原规则从而判断是否出错。</span></p><h3 id='检错编码-奇偶校验码'><span>检错编码-奇偶校验码</span></h3><p><span>	</span><span>奇偶校验是分为一位校验码和n-1位信息元。其编码方式分为奇校验和偶校验，奇校验就是在数据前面加1或0使1的个数为奇数，偶校验是在数据前面加1或0使1的个数是偶数。</span></p><p><span>	</span><span>对于奇偶校验智能检测奇数个数</span><mark><span>（1位错、3位错）</span></mark><span>的比特错误，因而检测能力只有50%。</span></p><blockquote><p><span>例子：如果一个字符S的ASCII码从低到高时11000101，采用奇校验，在下边收到传输后字符中，哪种错误不能校验？</span></p><p><span>A、11000011</span><span>	</span><span>B、11001010</span><span>	</span><span>C、11001100 </span><span>	</span><span>D、11010011</span></p><p><span>	</span><span>答案是D，显而易见，S的正确奇校验码是11100101，四个答案中都是错误的编码，但是错误的编码也有可能不会被找到，ABC三项中，1的个数均为4个偶数，奇校验必须满足1的个数为奇校验，那么ABC错误必然能被检测出来，但是D中的1的个数是5个，是奇数，不能检测出来。</span></p></blockquote><h3 id='检错编码-crc循环冗余码'><span>检错编码-CRC循环冗余码</span></h3><p><span>	</span><span>编程思想是，比如发送发送数据是5，生成多项式是2，然后5%2=1，那么1就是冗余码/FCS帧检测序列，5+1=6，所以发送端发送的使6，接收端一看是6，是2的倍数，就没问题了。</span></p><blockquote><p><span>例子：假如我们要发的数据是1101011011，采用CRC检验，生成多项式是10011。</span></p><p><span>	</span><span>10011表达多项式应该是x</span><sup><span>4</span></sup><span>+ x + 1阶数时4，那么就先用原始数据1101011011 * 2</span><sup><span>4</span></sup><span>得到11010110110000，然后用这个11010110110000除以10011得到余数是1110，也就是FCS就是1110，然后用11010110110000得到11010110111110就是要发送的数据。具体二进制除法用到异或运算，如下图所示：</span></p><p><img src="assets/037.png" alt="037" style="zoom:40%;" /></p><p><span>	</span><span>然后对于接收端来说，如果对11010110111110进行检错呢？</span></p><p><span>	</span><span>直接判断11010110111110是不是生成多项式10011的倍数。</span></p><p><span>	</span><span>另外FCS的生成以及接收端CRC检验都是由硬件实现的，处理迅速，不会延误数据的传输。</span></p></blockquote><p><span>	</span><span>结论：在数据链路层仅仅使用循环冗余检验CRC差错检测奇数，只能做到对帧的无差错接收，即“凡是接收端数据链路层接受的帧，我们都能以非常接近于1的概率认为这些帧在传输过程中没有产生差错”。接收端丢弃的帧虽然曾收到了，但是最终还是因为有差错被丢弃。“凡是接收端数据链路层接收的帧均无差错”。</span></p><p><span>	</span><span>这种传输方式仍然不能称为“可靠传输”，可靠传输是发送端数据链路层发什么，接收端数据链路层就收到什么。CRC检验虽然能实现务必特差错得传输，但还是不能可靠传输。</span></p><h3 id='海明码'><span>海明码</span></h3><p><span>	</span><span>海明码特点，可以返现双比特错，纠正单比特错。动一发而牵全身。</span></p><p><span>	</span><span>海明码的工作原理：</span></p><p><img src="assets/037-1884147.png" alt="037" style="zoom:40%;" /></p><h4 id='确定校验码位数'><span>确定校验码位数</span></h4><ol start='' ><li><p><span>海明码不等式：</span></p></li></ol><p><span>	</span><span>2</span><sup><span>r</span></sup><span>&gt;= k + r + 1</span></p><p><span>	</span><span>r代表的使冗余信息位，k位信息位。</span></p><ol start='2' ><li><p><span>海明不等式的应用：</span></p><p><span>假如要发送的数据的D = 101101，数据的位数k=6，满足不等式最小r位4，也就是说D=101101的海明码应该有6+4=10位，其中原数据6位，校验码4位。</span></p></li></ol><h4 id='确定校验码和数据的位置'><span>确定校验码和数据的位置</span></h4><p><span>	</span><span>对于原始数据D=101101，已知有四位校验码，设他们分别为P</span><sub><span>1</span></sub><span>，P</span><sub><span>2</span></sub><span>，P</span><sub><span>3</span></sub><span>，P</span><sub><span>4</span></sub><span>；数据从左到右为D</span><sub><span>1</span></sub><span>，D</span><sub><span>2</span></sub><span>，D</span><sub><span>3</span></sub><span>，D</span><sub><span>4</span></sub><span>，D</span><sub><span>5</span></sub><span>，D</span><sub><span>6</span></sub><span>。</span></p><p><span>	</span><span>校验码P</span><sub><span>n</span></sub><span>只能放在第2</span><sup><span>n</span></sup><span>, n∈N位上，将校验码填充好后，再按顺序把原始数据填好，填满这十位。</span></p><figure class='table-figure'><table><thead><tr><th><span>数据位</span></th><th><span>1</span></th><th><span>2</span></th><th><span>3</span></th><th><span>4</span></th><th><span>5</span></th><th><span>6</span></th><th><span>7</span></th><th><span>8</span></th><th><span>9</span></th><th><span>10</span></th></tr></thead><tbody><tr><td><span>代码</span></td><td><span>P</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>4</span></sub></td><td><span>P</span><sub><span>4</span></sub></td><td><span>D</span><sub><span>5</span></sub></td><td><span>D</span><sub><span>6</span></sub></td></tr><tr><td><span>实际值</span></td><td><span>?</span></td><td><span>?</span></td><td><span>1</span></td><td><span>?</span></td><td><span>0</span></td><td><span>1</span></td><td><span>1</span></td><td><span>?</span></td><td><span>0</span></td><td><span>1</span></td></tr></tbody></table></figure><h4 id='求出校验码的值'><span>求出校验码的值</span></h4><p><span>	</span><span>我们上一步已经得到了数据D=101101中相关的数据位置，如下图所示：</span></p><figure class='table-figure'><table><thead><tr><th><span>数据位</span></th><th><span>1</span></th><th><span>2</span></th><th><span>3</span></th><th><span>4</span></th><th><span>5</span></th><th><span>6</span></th><th><span>7</span></th><th><span>8</span></th><th><span>9</span></th><th><span>10</span></th></tr></thead><tbody><tr><td><span>二进制</span></td><td><span>0001</span></td><td><span>0010</span></td><td><span>0011</span></td><td><span>0100</span></td><td><span>0101</span></td><td><span>0110</span></td><td><span>0111</span></td><td><span>1000</span></td><td><span>1001</span></td><td><span>1010</span></td></tr><tr><td><span>代码</span></td><td><span>P</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>4</span></sub></td><td><span>P</span><sub><span>4</span></sub></td><td><span>D</span><sub><span>5</span></sub></td><td><span>D</span><sub><span>6</span></sub></td></tr><tr><td><span>实际值</span></td><td><span>?</span></td><td><span>?</span></td><td><span>1</span></td><td><span>?</span></td><td><span>0</span></td><td><span>1</span></td><td><span>1</span></td><td><span>?</span></td><td><span>0</span></td><td><span>1</span></td></tr></tbody></table></figure><p><span>	</span><span>如何计算P</span><sub><span>1</span></sub><span> - P</span><sub><span>1</span></sub><span>所在的位数的二进制而是0001，从右往左第一位为1，而除P</span><sub><span>1</span></sub><span>外，D</span><sub><span>1</span></sub><span>，D</span><sub><span>2</span></sub><span>，D</span><sub><span>3</span></sub><span>，D</span><sub><span>4</span></sub><span>，D</span><sub><span>5</span></sub><span>的所在位数的二进制位从右往左的第二为1，那就另P</span><sub><span>1</span></sub><span> ⊕ D</span><sub><span>1</span></sub><span> ⊕ D</span><sub><span>2</span></sub><span> ⊕ D</span><sub><span>4</span></sub><span> ⊕ D</span><sub><span>5</span></sub><span>=0，即可算出P</span><sub><span>1</span></sub><span>的值为0。</span></p><p><span>	</span><span>如何计算P</span><sub><span>2</span></sub><span>：P</span><sub><span>2</span></sub><span>所在的数的二进制位是0010，从左往右的第二位是1，那就是找他们后面从左往右第二位也是1的，即D</span><sub><span>1</span></sub><span>，D</span><sub><span>3</span></sub><span>，D</span><sub><span>4</span></sub><span>，D</span><sub><span>6</span></sub><span>，同样的令P</span><sub><span>2</span></sub><span> ⊕ D</span><sub><span>1</span></sub><span> ⊕ D</span><sub><span>3</span></sub><span> ⊕ D</span><sub><span>4</span></sub><span> ⊕ D</span><sub><span>6</span></sub><span>=0 即可得到P</span><sub><span>2</span></sub><span>=0。</span></p><p><span>	</span><span>同样的方法可得到：P</span><sub><span>3</span></sub><span> ⊕ D</span><sub><span>2</span></sub><span> ⊕ D</span><sub><span>3</span></sub><span> ⊕ D</span><sub><span>4</span></sub><span>=0 =&gt; P</span><sub><span>3</span></sub><span> = 0，P</span><sub><span>4</span></sub><span> ⊕ D</span><sub><span>5</span></sub><span> ⊕ D</span><sub><span>6</span></sub><span>=0 =&gt; P</span><sub><span>4</span></sub><span> = 1。</span></p><p><span>	</span><span>那么101101的海明码就是0010011101</span></p><p><span>	</span><span>上面的表完整的就是：</span></p><figure class='table-figure'><table><thead><tr><th><span>数据位</span></th><th><span>1</span></th><th><span>2</span></th><th><span>3</span></th><th><span>4</span></th><th><span>5</span></th><th><span>6</span></th><th><span>7</span></th><th><span>8</span></th><th><span>9</span></th><th><span>10</span></th></tr></thead><tbody><tr><td><span>二进制</span></td><td><span>0001</span></td><td><span>0010</span></td><td><span>0011</span></td><td><span>0100</span></td><td><span>0101</span></td><td><span>0110</span></td><td><span>0111</span></td><td><span>1000</span></td><td><span>1001</span></td><td><span>1010</span></td></tr><tr><td><span>代码</span></td><td><span>P</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>4</span></sub></td><td><span>P</span><sub><span>4</span></sub></td><td><span>D</span><sub><span>5</span></sub></td><td><span>D</span><sub><span>6</span></sub></td></tr><tr><td><span>实际值</span></td><td><span>0</span></td><td><span>0</span></td><td><span>1</span></td><td><span>0</span></td><td><span>0</span></td><td><span>1</span></td><td><span>1</span></td><td><span>1</span></td><td><span>0</span></td><td><span>1</span></td></tr></tbody></table></figure><h4 id='检错并纠错'><span>检错并纠错</span></h4><p><span>	</span><span>我们从上面几步得到原始数据D=101101对应的十位海明码是0010011101，加入第五位发生错误，导致接收端收到消息是0010111101，我们来讨论下接收端到底是如何纠错的。</span></p><figure class='table-figure'><table><thead><tr><th><span>数据位</span></th><th><span>1</span></th><th><span>2</span></th><th><span>3</span></th><th><span>4</span></th><th><span>5</span></th><th><span>6</span></th><th><span>7</span></th><th><span>8</span></th><th><span>9</span></th><th><span>10</span></th></tr></thead><tbody><tr><td><span>二进制</span></td><td><span>0001</span></td><td><span>0010</span></td><td><span>0011</span></td><td><span>0100</span></td><td><span>0101</span></td><td><span>0110</span></td><td><span>0111</span></td><td><span>1000</span></td><td><span>1001</span></td><td><span>1010</span></td></tr><tr><td><span>代码</span></td><td><span>P</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>1</span></sub></td><td><span>P</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>2</span></sub></td><td><span>D</span><sub><span>3</span></sub></td><td><span>D</span><sub><span>4</span></sub></td><td><span>P</span><sub><span>4</span></sub></td><td><span>D</span><sub><span>5</span></sub></td><td><span>D</span><sub><span>6</span></sub></td></tr><tr><td><span>实际值</span></td><td><span>0</span></td><td><span>0</span></td><td><span>1</span></td><td><span>0</span></td><td><span>0</span></td><td><span>1</span></td><td><span>1</span></td><td><span>1</span></td><td><span>0</span></td><td><span>1</span></td></tr><tr><td><span>错误值</span></td><td><span>0</span></td><td><span>0</span></td><td><span>1</span></td><td><span>0</span></td><td><span>1</span></td><td><span>1</span></td><td><span>1</span></td><td><span>1</span></td><td><span>0</span></td><td><span>1</span></td></tr></tbody></table></figure><p><span>	</span><span>首先我们根据海明公式可以判断出来第1，2，4，8四位是校验码，然后我们开始计算。</span></p><p><span>	</span><span>  P1 ⊕ D1 ⊕ D2 ⊕ D4 ⊕ D5 = 1 ······ ①</span></p><p><span>  </span><span>	</span><span>P2 ⊕ D1 ⊕ D3 ⊕ D4 ⊕ D6 = 0 ······ ②</span></p><p><span>  </span><span>	</span><span>P3 ⊕ D2 ⊕ D3 ⊕ D4 = 1·············· ③</span></p><p><span>	</span><span>  P4 ⊕ D5 ⊕ D6 = 0 ····················· ④</span></p><p><span>	</span><span>我们把四个式子中格式为D</span><sub><span>n</span></sub><span>的二进制位的集合分贝设置为A</span><sub><span>1</span></sub><span>，A</span><sub><span>2</span></sub><span>，A</span><sub><span>3</span></sub><span>，A</span><sub><span>4</span></sub><span>，四个集合。发生错误的二进制位设为X。</span></p><p><span>	</span><span>由②④得知，对于∀二进制位位N ∈ A</span><sub><span>2</span></sub><span> ∪ A</span><sub><span>4</span></sub><span>，N没有发生错误。</span></p><p><span>	</span><span>由①③得知，发生错误的二进制位X ∈ A</span><sub><span>1</span></sub><span> ∩ A</span><sub><span>3</span></sub><span> ，A</span><sub><span>1</span></sub><span> ∩ A</span><sub><span>2</span></sub><span> = { D</span><sub><span>2</span></sub><span>, D</span><sub><span>4</span></sub><span>}，而D</span><sub><span>4</span></sub><span> ∈ A</span><sub><span>2</span></sub><span> ∪ A</span><sub><span>4</span></sub><span>，D</span><sub><span>4</span></sub><span>不可能发生错误，所以发生错误的就是D</span><sub><span>2</span></sub><span>，也就是第五位二进制位。</span></p><p><span>	</span><span>那么纠正错误的海明码就应该是0010011101。</span></p><h2 id='四流量控制与可靠性传输机制'><span>四、流量控制与可靠性传输机制</span></h2><h3 id='数据链路层流量控制'><span>数据链路层流量控制</span></h3><p><span>	</span><span>概念针对较高的发送速度和较低的接收速度会不匹配，会造成传输出错，流量控制就是控制发送方发送速度。</span></p><p><span>	</span><span>数据链路层流量控制和传输层的流量控制的区别：</span></p><p><span>		</span><span>-&gt; 数据链路层的流量控制是点对点的，针对传输层来说流量控制是端到端的。</span></p><p><span>		</span><span>-&gt; 数据链路层流量控制手段：接收方接收补下就不回复确认；传输层流量控制的手段：接收端给发送端一个窗口公告。</span></p><h3 id='流量控制方法'><span>流量控制方法</span></h3><h4 id='停止-等待协议'><span>停止-等待协议</span></h4><p><span>	</span><span>没发送完一个帧就停止发送，等待对方确认，在收到确认后再发送下一个帧。</span><span>	</span></p><p><span>	</span><span>因为存在等待过程，所以这个协议是比较低效的，一般不使用。</span></p><h4 id='滑动窗口协议'><span>滑动窗口协议</span></h4><p><img src="assets/038.png" alt="038" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示，上面是发送端，下面是接收端，发送端发送窗口有N帧长，接收端接收窗口N帧长，接收端每接受一帧，接收窗口就往前一位，然后向发送端发送确认信息，接收端收到后，接收窗口也会往前一位。</span></p><p><span>	</span><span>停止-等待协议收到一个确认就想相当于是两个滑动窗口都只有一帧的滑动窗口协议。</span></p><h4 id='三种协议的区别'><span>三种协议的区别</span></h4><ul><li><p><span>停止-等待协议：发送窗口为1，接收窗口为1。</span></p></li><li><p><span>后退N帧协议（GBN）：发送窗口大于1，接收窗口为1。</span></p></li><li><p><span>选择重传协议（SR）：发送窗口大于1，接受窗口大于1。</span></p></li></ul><h3 id='可靠传输滑动窗口流量控制'><span>可靠传输、滑动窗口、流量控制</span></h3><p><span>	</span><span>可靠传输：发送端发的是啥，接收端接收的就是啥。</span></p><p><span>	</span><span>流量控制：控制发送速率，使接收方有足够的缓冲空间来接收每一帧。</span></p><p><span>滑动窗口解决的问题：</span></p><p><span>	</span><span>流量控制：加入发送端发送太快，接收端首部下酒不确认，发送端想法也发不了。</span></p><p><span>	</span><span>可靠传输：发送之后长时间没有收到确认，就会重复发送数据。</span></p><h2 id='五等待协议'><span>五、等待协议</span></h2><h3 id='停止等待协议'><span>停止等待协议</span></h3><h4 id='停止-等待协议归属'><span>停止-等待协议归属</span></h4><p><span>	</span><span>过去技术不成熟，传输可能会出现各种问题，传输层和数据链路层都要进行流量控制，现在技术成熟了，出错的概率比较小，只需要在传输层保留流量控制就行，数据链路层只需要进行差错控制。</span></p><h4 id='停止等待协议的内核'><span>停止等待协议的内核</span></h4><p><strong><span>为什么要停止等待协议？</span></strong></p><p><span>	</span><span>除了比特出差错，底层通信还会出现丢包（设备故障、病毒攻击、路由错误等）问题，为了实现流量控制。</span></p><p><strong><span>停止等待协议的前提是什么？</span></strong></p><p><span>		</span><span>虽然最常用的是全双工通信方式，方便理解简化一下模型采用单工的模式介绍，一方只负责发送一方只负责接收数据。因为是在讨论可靠性的传输原理，所以不用考虑数据在哪一层次上传输的。</span></p><p><span>		</span><span>“停止-等待”就是每发送完一个分组就停止发送，等待方确认，在收到确认后再发送一个分组。</span></p><p><strong><span>停止等待协议应用情况：</span></strong></p><ul><li><p><span>有差错情况。</span></p></li><li><p><span>无差错情况。</span></p></li></ul><h4 id='停止等待协议无差错情况'><span>停止等待协议无差错情况</span></h4><ol start='' ><li><p><span>发送方的0帧成功发给了接收方。</span></p></li><li><p><span>然后发送方发送了一个确认帧ACK0（acknowledge）。</span></p></li><li><p><span>发送方接收到了确认帧ACK0，继续发送1帧。</span></p></li><li><p><span>然后1帧顺利到达接收方，接收方又给发送方发送确认帧ACK1，如果往返数次，最后数据就能传送完毕。</span></p><p><span>如下图所示：</span></p></li></ol><p><img src="assets/039.png" alt="039" style="zoom:30%;" /></p><p>&nbsp;</p><h4 id='停止等待协议有差错情况'><span>停止等待协议有差错情况</span></h4><h5 id='丢包情况'><span>丢包情况</span></h5><p><span>	</span><span>在发送过程中出现了数据错误，丢包情况：</span></p><p><img src="assets/040.png" alt="040" style="zoom:30%;" /></p><p><span>	</span><span>接收端没有接收到数据，所以发送端就无法收到确认帧。那么该如何处理？在发送端发送某个帧的时候就会启动一个计时器，要在一定时间内接受到接收端来发送的确认帧，如果超时之后会重新将帧重复发送。</span></p><p><span>	</span><span>超时计时器的时间设置应当比帧传输的平均RT更长，否则就会正常发送也会超时。</span></p><p><img src="assets/041.png" alt="041" style="zoom:30%;" /></p><p><span>注意：</span></p><ul><li><p><span>发送完一个帧，一定要保存副本，不然东西发出去之后，半路没有了，丢包了，需要重发的时候无法找到副本进行重发。</span></p></li><li><p><span>数据帧和确认帧都必须要编号。</span></p></li><li><p><span>对于帧出错的问题，接收方就会把出错的帧给解决掉。不会回复确认帧就会重新发新的帧。</span></p></li></ul><h5 id='确认帧ack丢失'><span>确认帧ACK丢失</span></h5><p><img src="assets/042.png" alt="041" style="zoom:30%;" /></p><p><span>	</span><span>这种情况下超时计时器时间到了之后，确认帧还是没有传回来发送方会重新发送数据，接收方已经给确认过这个帧，所以就 把之前的接收的丢弃重新接收。</span></p><h5 id='ack迟到'><span>ACK迟到</span></h5><p><span>	</span><span>确认帧吃吃不到，发送方超时重试，接收方收到重试帧之后再次发送确认帧，发送方还是未收到确认帧，过一段时间之后发送才收到确认帧这个时候回直接将它丢弃。</span></p><p><img src="assets/043.png" alt="043" style="zoom:30%;" /></p><p>&nbsp;</p><h4 id='停止等待协议的性能分析'><span>停止等待协议的性能分析</span></h4><ul><li><p><span>优点：操作简单。</span></p></li><li><p><span>缺点：信道利用率比较低。</span></p></li></ul><p><img src="assets/044.png" alt="044" style="zoom:40%;" /></p><p><span>						</span></p><p><span>	</span><span>T</span><sub><span>D</span></sub><span>为发送帧的时候发送延迟，RTT为往返时延，T</span><sub><span>A</span></sub><span>为确认帧发送时延。</span></p><p><span>	</span><strong><span>信道利用率：</span></strong><span>U = </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="10.871ex" height="3.117ex" role="img" focusable="false" viewBox="0 -924.8 4804.8 1377.7" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.025ex;"><defs><path id="MJX-13-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-13-TEX-I-1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path id="MJX-13-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-13-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path><path id="MJX-13-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="msub" transform="translate(1959.6,446.1) scale(0.707)"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-13-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(617,-150) scale(0.707)"><use data-c="1D437" xlink:href="#MJX-13-TEX-I-1D437"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-13-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(617,-150) scale(0.707)"><use data-c="1D437" xlink:href="#MJX-13-TEX-I-1D437"></use></g></g><g data-mml-node="mo" transform="translate(1252.5,0)"><use data-c="2B" xlink:href="#MJX-13-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(2030.5,0)"><use data-c="1D445" xlink:href="#MJX-13-TEX-I-1D445"></use></g><g data-mml-node="mi" transform="translate(2789.5,0)"><use data-c="1D447" xlink:href="#MJX-13-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(3493.5,0)"><use data-c="1D447" xlink:href="#MJX-13-TEX-I-1D447"></use></g><g data-mml-node="mo" transform="translate(4197.5,0)"><use data-c="2B" xlink:href="#MJX-13-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(4975.5,0)"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-13-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(617,-152.7) scale(0.707)"><use data-c="1D434" xlink:href="#MJX-13-TEX-I-1D434"></use></g></g></g><rect width="4564.8" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msub><mi>T</mi><mi>D</mi></msub><mrow><msub><mi>T</mi><mi>D</mi></msub><mo>+</mo><mi>R</mi><mi>T</mi><mi>T</mi><mo>+</mo><msub><mi>T</mi><mi>A</mi></msub></mrow></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{T_D}{T_D + RTT + T_A}</script></p><p><span>	</span><span>信道利用率其实就是发送方在一个发送周期内，有效的发送数据所需要的时间占整个发送周期的比率。</span></p><p><span>	</span><span>信道利用率 = </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="3.53ex" role="img" focusable="false" viewBox="0 -1215.1 1131.1 1560.1" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.781ex;"><defs><path id="MJX-15-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-15-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-15-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mfrac" transform="translate(220,595) scale(0.707)"><g data-mml-node="mi" transform="translate(247.9,394) scale(0.707)"><use data-c="1D43F" xlink:href="#MJX-15-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(220,-345) scale(0.707)"><use data-c="1D436" xlink:href="#MJX-15-TEX-I-1D436"></use></g><rect width="737.4" height="60" x="120" y="220"></rect></g><g data-mml-node="mi" transform="translate(316.7,-345) scale(0.707)"><use data-c="1D447" xlink:href="#MJX-15-TEX-I-1D447"></use></g><rect width="891.1" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mfrac><mi>L</mi><mi>C</mi></mfrac><mi>T</mi></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{\frac{L}{C}}{T}</script><span>，T是发送周期，L是发送周期内T内发送的比特数据，C是发送方数据的传输率。</span></p><p><span>	</span><span>信道吞吐率 = 信道利用率 * 发送方发送速率</span></p><blockquote><p><span>问题：一个信道的数据传输率是4kb/s，单向传播时延是30ms，如果使用停止-等待协议的信道最大利用率达到80%，要求数据帧的长度最少位多少？</span></p><p><span>回答：没有说明确认帧的发送时延，可以忽略不计，单向传播要30ms，那么双向传播的时延是60ms，也就是说RTT = 60ms。信道利用率为80% 我们假设信道的长度为L，那么：</span></p><p><span>	</span><span>U = </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="3.53ex" role="img" focusable="false" viewBox="0 -1215.1 1131.1 1560.1" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.781ex;"><defs><path id="MJX-15-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-15-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-15-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mfrac" transform="translate(220,595) scale(0.707)"><g data-mml-node="mi" transform="translate(247.9,394) scale(0.707)"><use data-c="1D43F" xlink:href="#MJX-15-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(220,-345) scale(0.707)"><use data-c="1D436" xlink:href="#MJX-15-TEX-I-1D436"></use></g><rect width="737.4" height="60" x="120" y="220"></rect></g><g data-mml-node="mi" transform="translate(316.7,-345) scale(0.707)"><use data-c="1D447" xlink:href="#MJX-15-TEX-I-1D447"></use></g><rect width="891.1" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mfrac><mi>L</mi><mi>C</mi></mfrac><mi>T</mi></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{\frac{L}{C}}{T}</script><span> = </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="7.711ex" height="3.113ex" role="img" focusable="false" viewBox="0 -924.8 3408.1 1375.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.021ex;"><defs><path id="MJX-16-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-16-TEX-I-1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path id="MJX-16-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-16-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="msub" transform="translate(1261.2,446.1) scale(0.707)"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-16-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(617,-150) scale(0.707)"><use data-c="1D437" xlink:href="#MJX-16-TEX-I-1D437"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-16-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(617,-150) scale(0.707)"><use data-c="1D437" xlink:href="#MJX-16-TEX-I-1D437"></use></g></g><g data-mml-node="mo" transform="translate(1252.5,0)"><use data-c="2B" xlink:href="#MJX-16-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(2030.5,0)"><use data-c="1D445" xlink:href="#MJX-16-TEX-I-1D445"></use></g><g data-mml-node="mi" transform="translate(2789.5,0)"><use data-c="1D447" xlink:href="#MJX-16-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(3493.5,0)"><use data-c="1D447" xlink:href="#MJX-16-TEX-I-1D447"></use></g></g><rect width="3168.1" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msub><mi>T</mi><mi>D</mi></msub><mrow><msub><mi>T</mi><mi>D</mi></msub><mo>+</mo><mi>R</mi><mi>T</mi><mi>T</mi></mrow></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{T_D}{ T_D + RTT}</script><span> = </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="7.469ex" height="4.317ex" role="img" focusable="false" viewBox="0 -1204.1 3301.3 1908.1" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.593ex;"><defs><path id="MJX-17-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-17-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-17-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-17-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-17-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-17-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-17-TEX-I-1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mfrac" transform="translate(1324.9,584) scale(0.707)"><g data-mml-node="mi" transform="translate(220,394) scale(0.707)"><use data-c="1D43F" xlink:href="#MJX-17-TEX-I-1D43F"></use></g><g data-mml-node="mn" transform="translate(284,-345) scale(0.707)"><use data-c="34" xlink:href="#MJX-17-TEX-N-34"></use></g><rect width="681.5" height="60" x="120" y="220"></rect></g><g data-mml-node="mrow" transform="translate(220,-460.1) scale(0.707)"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(220,394) scale(0.707)"><use data-c="1D43F" xlink:href="#MJX-17-TEX-I-1D43F"></use></g><g data-mml-node="mn" transform="translate(284,-345) scale(0.707)"><use data-c="34" xlink:href="#MJX-17-TEX-N-34"></use></g><rect width="681.5" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(921.5,0)"><use data-c="2B" xlink:href="#MJX-17-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(1699.5,0)"><use data-c="36" xlink:href="#MJX-17-TEX-N-36"></use><use data-c="30" xlink:href="#MJX-17-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mi" transform="translate(2699.5,0)"><use data-c="1D45A" xlink:href="#MJX-17-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(3577.5,0)"><use data-c="1D460" xlink:href="#MJX-17-TEX-I-1D460"></use></g></g><rect width="3061.3" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mfrac><mi>L</mi><mn>4</mn></mfrac><mrow><mfrac><mi>L</mi><mn>4</mn></mfrac><mo>+</mo><mn>60</mn><mi>m</mi><mi>s</mi></mrow></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{\frac{L}{4}}{\frac{L}{4} + 60ms}</script><span> = 80%</span></p><p><span>	</span><span>L = 960 bite</span><span>	</span></p></blockquote><h3 id='后退n协议gbn'><span>后退N协议GBN</span></h3><h4 id='流水线技术'><span>流水线技术</span></h4><p><span>	</span><span>停止等待协议的弊端是信道利用率太低，要想克服这种弊端，可以尝试多个帧同时发送，同时等待确认帧ACK，这种技术叫做流水线技术。有点类似于多线程。</span></p><p><img src="assets/045.png" alt="045" style="zoom:40%;" /></p><p><span>	</span><span>流水线技术对停止等待协议的弊端的改进方式：</span></p><p><span>	</span><span>1、必须增加序号范围：这一组同时发送的帧里面，哪个要几号要搞清楚，不然接收方给的确认帧也不好确认到底给哪个。</span></p><p><span>	</span><span>2、发送方需要缓存多个分组：容易出现丢帧的情况，所以要多弄几个缓存，停止等待协议一次一帧只需要一个帧的缓存，这种方式一次传几帧，就要多大的缓存空间。</span></p><h4 id='后退n帧协议滑动窗口'><span>后退N帧协议滑动窗口</span></h4><p><span>	</span><span>滑动窗口分为发送窗口和接收窗口。</span></p><p><span>	</span><span>发送窗口：发送方维持一组连续的允许发送方的帧的序号。</span></p><p><img src="assets/046.png" alt="046" style="zoom:40%;" /></p><p><span>	</span><span>接收窗口：接收方维持一组连续的允许接收帧的序号。</span></p><p><img src="assets/047.png" alt="047" style="zoom:40%;" /></p><p><span>	</span><span>GBN协议接收窗口为1，SR协议接收窗口大于1，停止等待协议为1。</span></p><p><span>具体执行步骤：</span></p><ol start='' ><li><p><span>模拟下GBN的发送过程，首先发送窗口中0号帧和1号帧先先后发送出去。橙色代表副本，如果帧丢失，需要进行超时重试，就传橙色副本。</span></p></li></ol><p><img src="assets/048.png" alt="048" style="zoom:40%;" /></p><ol start='2' ><li><p><span>然后0号帧被接受到了，并且接收方发送了确认帧ACK0，但1号帧还在路上。</span></p></li></ol><p><img src="assets/049.png" alt="049" style="zoom:40%;" /></p><ol start='3' ><li><p><span>接收方发完确认帧后，接收窗口就完后滑一格。</span></p></li></ol><p><img src="assets/050.png" alt="050" style="zoom:40%;" /></p><ol start='4' ><li><p><span>然后1号帧到了后，接收窗口又往后滑一格，发送单收到确认帧后又往后滑，这样子一直滑，一直到所有帧都被传完为止。</span></p></li></ol><p><span>	</span><span>模块说明：</span></p><p><img src="assets/051.png" alt="051" style="zoom:40%;" /></p><h4 id='gbn发送方必须响应的三件事'><span>GBN发送方必须响应的三件事</span></h4><h5 id='上层的调用'><span>上层的调用</span></h5><p><span>	</span><span>上层要发送数据时，发送方先检查发送窗口是否已满，如果未满，则产生一个帧并将其发送，如果窗口已满，发送方只需要将数据返回给上层，暗示上层窗口已满，上层等一会在发送。</span></p><h5 id='收到一个ack'><span>收到一个ACK</span></h5><p><span>	</span><span>GBN协议中，对n号帧的确认采用累计确认的方式，标明接收方已经收到n号帧和他之前的全部帧。</span></p><h5 id='超时事件'><span>超时事件</span></h5><p><span>	</span><span>协议的名字位后退N帧/回退N帧，来源于出现丢失和时延过长帧时发送方的行为。就项在停止等待协议中一样，定时器将再次用于回复数据帧或确认帧的丢失。如果出现超时，发送方重传所有已发送但未被确认的帧。</span></p><p><span>	</span><span>比如发送方发送0号帧，接收方确认了，且返回了确认帧ACK0，但是发送方1号帧的时候丢包了，然后又发2号帧，接收方想要得到1号帧，所有二号帧到手里直接丢弃，并不会返回ACK2，然后发送方继续发3 4 5号帧，接收方全部丢弃，这个时候长时间没有收到确认帧，超时计时器时间到了，就会启动重传机制。从1号帧开始全部重新传一遍。</span></p><h4 id='gbn接收方要做的事'><span>GBN接收方要做的事</span></h4><h5 id='返回确认帧'><span>返回确认帧</span></h5><p><span>	</span><span>如果正确收到n号帧，并且按顺序那么接收方位n帧发送一个ack，并将该帧中的数据部分交付给上层。</span></p><h5 id='丢弃错误帧'><span>丢弃错误帧</span></h5><p><span>	</span><span>如果不满足返回确认帧的条件，那么就丢弃掉针，并为最近按序接收的帧重新发送ACK，接收方无需缓存任何时序帧，只需要维护一个信息：expectedsqnum。</span></p><p><span>	</span><span>先收到0再1，然后4 5接收方说，收不到4那么4和5就要丢弃了，然后发送方返回ACK2，让发送方变更。</span></p><h4 id='gbn过程图解'><span>GBN过程图解</span></h4><p><img src="assets/052.png" alt="052" style="zoom:40%;" /></p><h4 id='滑动窗口长度'><span>滑动窗口长度</span></h4><p><span>	</span><span>窗口长度可以无限长吗 ？ 肯定不能，如果用n个比特对帧进行编号，那么发送窗口的尺寸是W</span><sub><span>T</span></sub><span>应满足1&lt;=W</span><sub><span>T</span></sub><span>&lt;=2</span><sup><span>n</span></sup><span> - 1。因为发送尺寸过大，会是的接收方无法区分新帧旧帧。</span></p><p><span>	</span><span>比如帧编号0 1 2 3算是两个比特，那就应该满足1&lt;=W</span><sub><span>T</span></sub><span>&lt;=3，我们实时反例，让W</span><sub><span>T</span></sub><span> = 4，然后0，1，2，3同时发送，确认帧全部丢失，就会触发超时计时器，发送方重传0，1，2，3号帧，接收方不知道是第一轮还是第二轮。</span></p><h4 id='gbn协议总结'><span>GBN协议总结</span></h4><ol start='' ><li><p><span>积累确认（偶尔捎带确认）。</span></p></li><li><p><span>接收方只按顺序接收帧，不按顺序丢帧。</span></p></li><li><p><span>确认序号最大的，按序到达帧。</span></p></li><li><p><span>发送窗口最大为2</span><sup><span>n</span></sup><span> - 1，接收窗口为1。</span></p></li></ol><h4 id='gbn性能分析'><span>GBN性能分析</span></h4><ul><li><p><span>优点：因为连续发送提高了信道利用率。</span></p></li><li><p><span>缺点：在重传时，必须把原来已经正确发送的数据帧重传，使传送效率降低。</span></p></li><li><p><span>选择重传协议（SR）继承了后退N帧协议（GBN）的优点，并优化了缺点。</span></p></li></ul><h3 id='选择重传协议sr'><span>选择重传协议SR</span></h3><h4 id='gbn协议的弊端'><span>GBN协议的弊端</span></h4><p><span>	</span><span>累积确认导致的批量重传，例如0，1帧正常传送并确认，然后3帧丢失，4 5 6正确拆书，结果接收方浪费资源，把这几个扔掉，当超时计数器到时候，超时重试3 4 5 6全部重传，就造成el资源浪费。</span></p><p><span>	</span><span>解决方法是设置单个确认，同时加大接收窗口，设置接收缓存，缓存乱序到达的帧。</span></p><h4 id='选择重传协议中的滑动窗口'><span>选择重传协议中的滑动窗口</span></h4><p><img src="assets/053.png" alt="053" style="zoom:40%;" /></p><h4 id='sr发送方必须响应的三件事'><span>SR发送方必须响应的三件事</span></h4><ol start='' ><li><p><span>上层大的调用：从上层收到数据后，SR发送方检查下一个可用于该帧的序号，如果序号位于发送窗口内，则发送数据帧，否则就像GBN一样，将数据缓存或者将数据返回上层之后再传输。</span></p></li><li><p><span>接收到一个ACK：如果收到ACK，加入该帧序号在窗口内，则SR发送方将那个被确认的帧标记位已接收，如果该帧序号是窗口的下界，（最左边第一个窗口对应的序号），则窗口向前移动到具有最小序号的未确认帧出，如果窗口移动了并且有序号在窗口内的未发送帧，则发送这些帧。</span></p></li></ol><p><img src="assets/054.png" alt="054" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示，0 1已发送确认，且不在窗口内，2 4发送但未确认，3 发送确认，5在窗口内但为发送。大于5的不在窗口内就不能发送，那么当发送方收到确认帧后，发送窗口就会滑动2为，下界就变成了4号帧。</span></p><p><img src="assets/055.png" alt="055" style="zoom:40%;" /></p><ol start='3' ><li><p><span>超时事件：每个帧都有自己的计时器，一个超时时间发生后只重传一个帧。</span></p></li></ol><h4 id='sr接收方要做的事情'><span>SR接收方要做的事情</span></h4><ol start='' ><li><p><span>来着不拒（窗口内的帧）：SR接收方将确认一个正确接收的帧二不管是否按照顺序，失序的帧将被缓存，并返回给发送方一个该帧的确认帧【收谁确认谁】，直到所有帧都被确认为止，这时才可以将一批帧按序交付给上层，然后向前移动滑动窗口。</span></p><p><span>如果收到一个窗口外的，小于窗口下界的帧，就返回一个ACK。</span></p></li></ol><h4 id='运行中的sr'><span>运行中的SR</span></h4><p><img src="assets/056.png" alt="056" style="zoom:40%;" /></p><h4 id='滑动窗口'><span>滑动窗口</span></h4><p><span>	</span><span>SR协议窗口可以无限长？ 肯定不能，如下图所示，接收方无法确认传来的是新帧还是重传的旧帧。</span></p><p><img src="assets/057.png" alt="057" style="zoom:40%;" /></p><p><span>	</span><span>发送窗口最好等于接收窗口，太大会溢出，太小没啥意义。</span></p><p><span>	</span><span>设W</span><sub><span>T</span></sub><sub><span>max</span></sub><span>是发送窗口大小，W</span><sub><span>R</span></sub><sub><span>max</span></sub><span>是接收窗口大小，n表示用几个比特来对帧编号，则对滑动窗口长度的限制是W</span><sub><span>T</span></sub><sub><span>max</span></sub><span> = W</span><sub><span>R</span></sub><sub><span>max</span></sub><span> = 2</span><sup><span>(n-1)</span></sup><span>。</span></p><h4 id='sr协议重点'><span>SR协议重点</span></h4><ol start='' ><li><p><span>对数据帧逐一确认，收一个确认一个。</span></p></li><li><p><span>只重传出错的帧。</span></p></li><li><p><span>接收方出错的帧。</span></p></li><li><p><span>W</span><sub><span>T</span></sub><sub><span>max</span></sub><span> = W</span><sub><span>R</span></sub><sub><span>max</span></sub><span> = 2</span><sup><span>(n-1)</span></sup><span>。</span></p></li></ol><h3 id='信道划分介质访问控制'><span>信道划分介质访问控制</span></h3><h4 id='数据传输使用的链路'><span>数据传输使用的链路</span></h4><ul><li><p><span>点对点链路：</span></p><ul><li><p><span>概念：两个相邻节点通过一个链路相连，没有第三者。</span></p></li><li><p><span>应用：PPP协议，常用于广域网。</span></p></li></ul></li><li><p><span>广播式链路：</span></p><ul><li><p><span>概念：所有主机共享通信介质。</span></p></li><li><p><span>应用：早期的总线以太网、无限局域网，常用于局域网。</span></p></li><li><p><span>拓扑结构：总线型、星型。</span></p></li></ul></li></ul><h4 id='介质访问控制'><span>介质访问控制</span></h4><p><span>概念：介质访问控制就是采用一定的措施，使得两对节点之间的通信不会发生互相干扰的情况。</span></p><p><span>分类：</span></p><ul><li><p><span>静态划分信道：</span></p><ul><li><p><span>信道划分介质访问控制</span></p><ul><li><p><span>频分多路复用FDM（Frequence）。</span></p></li><li><p><span>时分多路复用TDM（Time）。</span></p></li><li><p><span>波分多路复用WDM（Vave）。</span></p></li><li><p><span>码分多路复用CDM（Code）。</span></p></li></ul></li><li><p><span>动态划分信道：</span></p><ul><li><p><span>令牌传递协议。</span></p></li></ul></li><li><p><span>随机访问介质控制：</span></p><ul><li><p><span>ALOHA协议。</span></p></li><li><p><span>CSMA协议。</span></p></li><li><p><span>CSMA/CD协议。</span></p></li><li><p><span>CSMA/CA协议。</span></p></li></ul></li></ul></li></ul><h4 id='信道划分介质访问控制-2'><span>信道划分介质访问控制</span></h4><p><span>概念：信道划分介质访问控制，将使用介质的每个设备与来自同一信道上的其他设备的通信隔离开，把时域和频域资源合理的分配给网络上的设备。</span></p><p><img src="assets/058.png" alt="058" style="zoom:40%;" /></p><p><span>	</span><span>多路复用技术：把多个信号组合在一条物理信道上进行传输，使得多个计算机或中断设备共享信道资源，提高信道利用率。</span></p><p><span>	</span><span>把一条广播信达，逻辑上分成几条用于两个节点之间的通信互不干扰的子信道，实际上就是把广播信道转换为点对点信道。</span></p><p><img src="assets/059.png" alt="059" style="zoom:40%;" /></p><h4 id='频分多路复用fdm'><span>频分多路复用FDM</span></h4><p><img src="assets/060.png" alt="060" style="zoom:40%;" /></p><p><span>	</span><span>用户在分配到一定的频带之后，在通信过程中自始至终都占用这个频带，频分复用的所有用户在同样的时间占用不同的带宽（频率带宽）资源。</span></p><p><span>	</span><span>也就是说每个主机发出的信号频率不一样。</span></p><p><span>	</span><span>FDM充分利用传输介质贷款，系统效率较高；用于技术比较成熟，实现也比较容易。</span></p><h4 id='时分多路复用tdm'><span>时分多路复用TDM</span></h4><p><img src="assets/061.png" alt="061" style="zoom:40%;" /></p><p><span>	</span><span>将时间划分为一段段等长的时分复用帧（TDM帧）。每一个时分复用的用户在每一个TDM帧中占用固定序号的时隙，所有用户轮流占用信道。</span></p><p><span>	</span><span>TDM帧就类似于操作系统中的时间片。</span></p><p><span>	</span><span>注意TDM帧不是链路层的帧，是在物理层传送的比特轮流所划分的帧，标志一个周期。</span></p><p><span>	</span><span>频分复用类似于操作系统中的并行，时分复用类似于操作系统中的并发。</span></p><h4 id='改进的时分复用-统计时分复用stdm'><span>改进的时分复用-统计时分复用STDM</span></h4><p><span>	</span><span>改进的原因：比如一个TDM帧里面为四个主机ABCD划分时间，但ABC都没有任务，空闲状态，而D处于工作，说明ABC不用于工作，却占用了时间，造成了资源浪费，因此需要进行改进。</span></p><p><span>	</span><span>改进的内容：</span></p><p><img src="assets/062.png" alt="062" style="zoom:40%;" /></p><p><span>	</span><span>每一个STDM中的时隙数小于链接在集中器上的用户数。各用户有了数据就随机发往集中器的输入缓存，然后几种器按顺序依次扫描输入缓存，把缓存中的输入数据放入到STDM帧中，一个STDM帧满了就发出。STDM帧不是固定分配时隙，而是按需分配动态分配时隙。</span></p><p><span>	</span><span>假如说四个主机一同工作，信道最高速率是8000b/s，对于TDM而言，主机最高时速为2000b/s，因为四个主机分享一条信道，信道平均分配，对STDM来说一台主机最高就可以达到8000b/s，其于的不工作。</span></p><h4 id='波分多路复用wdm'><span>波分多路复用WDM</span></h4><p><img src="assets/063.png" alt="063" style="zoom:40%;" /></p><p><span>	</span><span>波分多路复用就是光的频分多路复用，在一根光纤中传输多种不同波长（频率）的光信号，由于波长（频率）不同，所以各路光信号不干扰，最后再用波长分局复用器将各路波长分解出来。</span></p><h4 id='码分多路复用cdm'><span>码分多路复用CDM</span></h4><ol start='' ><li><p><span>码分多址（CDMA）：码分多址是码分复用的一种方式。</span></p></li><li><p><span>CDM常用技术：</span></p><p><span>1个比特分为多个码元/芯片（chip），每一个站点被指定一个唯一的m位的芯片序号。</span></p><p><span>发送1时发送芯片序列，发送0时发送芯片序列反码（通常把0写成-1）。</span></p><blockquote><p><span>比如，A和B都要发送信息，A发送10，B发送01，令m=8，假设A的芯片序列是 +1 -1 -1 +1 +1 +1 -1 那么A发送10就是发送（+1 -1 -1 +1 +1 +1 -1）（-1 +1 +1 -1 -1 -1 -1 +1）。假设B的芯片序号是-1 +1 +1 -1 +1 -1 +1  +1 +1 +1 ，那么B发送的01就是（+1 -1 +1 -1 +1 -1 -1 ）（-1 +1 -1 +1 -1 +1 +1 +1）</span></p></blockquote></li><li><p><span>如何保证区分两台主机：当多个站点同时发送数据的时候，要求各个站点的芯片序列相互正交，就能实现正确区分没太主机。</span></p><p><span>举例子，设A的芯片序列位A = ( +1 -1 -1 +1 +1 +1 +1 -1)；B的芯片序列位 B = （-1 +1 -1 +1 -1 +1 +1 +1）</span></p><p><span>  因为</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="14.099ex" height="3.054ex" role="img" focusable="false" viewBox="0 -989.2 6231.9 1349.7" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.816ex;"><defs><path id="MJX-18-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-18-TEX-N-2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"></path><path id="MJX-18-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-18-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-18-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-18-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-18-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-18-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-18-TEX-I-1D434"></use></g><g data-mml-node="mo" transform="translate(750,0)"><use data-c="2217" xlink:href="#MJX-18-TEX-N-2217"></use></g><g data-mml-node="msup" transform="translate(1250,0)"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-18-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(792,363) scale(0.707)"><use data-c="1D447" xlink:href="#MJX-18-TEX-I-1D447"></use></g></g></g><g data-mml-node="mi" transform="translate(825.2,-345) scale(0.707)"><use data-c="1D45A" xlink:href="#MJX-18-TEX-I-1D45A"></use></g><rect width="2031.3" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(2549,0)"><use data-c="3D" xlink:href="#MJX-18-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(3604.8,0)"><g data-mml-node="mn" transform="translate(220,394) scale(0.707)"><use data-c="30" xlink:href="#MJX-18-TEX-N-30"></use></g><g data-mml-node="mn" transform="translate(220,-345) scale(0.707)"><use data-c="38" xlink:href="#MJX-18-TEX-N-38"></use></g><rect width="553.6" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(4676.2,0)"><use data-c="3D" xlink:href="#MJX-18-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(5731.9,0)"><use data-c="30" xlink:href="#MJX-18-TEX-N-30"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>A</mi><mo>∗</mo><msup><mi>B</mi><mi>T</mi></msup></mrow><mi>m</mi></mfrac><mo>=</mo><mfrac><mn>0</mn><mn>8</mn></mfrac><mo>=</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{A * B^T}{m} = \frac{0}{8} = 0</script><span> 即两个芯片序列相互正交。</span></p><p><span>  所以能实现正确区分每台主机。</span></p></li><li><p><span>如何合并：各路数据在信道中被线性相加。</span></p><p><span>A 发送(+1 -1 -1 +1 +1 +1 +1 -1)(-1 +1 +1 -1 -1 -1 -1 +1)</span></p><p><span>B 发送(+1 -1 +1 -1 +1 -1 -1 -1)(-1 +1 -1 +1 -1 +1 +1 +1)</span></p><p><span>那把他们拧成一股，就发送(+2 -2 0 0 +2 0 0 -2)(-2 +2 0 0 -2 0 0 +2)</span></p></li><li><p><span>如何分离：合并的数据和源站规格化内积。</span></p><p><span>比如我们收到了一个比特-2 +2 0 0 -2 0 0 +2 ，让他咸鱼A芯片序列+1 -1 -1 +1 +1 +1 +1 -1进行规格化内积，</span></p><p><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="39.304ex" height="3.331ex" role="img" focusable="false" viewBox="0 -1112 17372.5 1472.5" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.816ex;"><defs><path id="MJX-19-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-19-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-19-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-19-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-19-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-19-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-19-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-19-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-19-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-19-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-19-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-19-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,516.8) scale(0.707)"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-19-TEX-N-28"></use></g><g data-mml-node="mo" transform="translate(389,0)"><use data-c="2212" xlink:href="#MJX-19-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(1167,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(1667,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(1945,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(2723,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(3223,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(3501,0)"><use data-c="2212" xlink:href="#MJX-19-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(4279,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(4779,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(5057,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(5835,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(6335,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(6613,0)"><use data-c="2212" xlink:href="#MJX-19-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(7391,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use><use data-c="2E" xlink:href="#MJX-19-TEX-N-2E" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(8169,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(8947,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(9447,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(9725,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(10503,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(11003,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(11281,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(12059,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(12559,0)"><use data-c="29" xlink:href="#MJX-19-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(12948,0)"><use data-c="28" xlink:href="#MJX-19-TEX-N-28"></use></g><g data-mml-node="mo" transform="translate(13337,0)"><use data-c="2212" xlink:href="#MJX-19-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(14115,0)"><use data-c="32" xlink:href="#MJX-19-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(14615,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(14893,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(15671,0)"><use data-c="32" xlink:href="#MJX-19-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(16171,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(16449,0)"><use data-c="30" xlink:href="#MJX-19-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(16949,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(17227,0)"><use data-c="30" xlink:href="#MJX-19-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(17727,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(18005,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(18783,0)"><use data-c="32" xlink:href="#MJX-19-TEX-N-32"></use></g><g data-mml-node="msup" transform="translate(19283,0)"><g data-mml-node="mo"><use data-c="29" xlink:href="#MJX-19-TEX-N-29"></use></g><g data-mml-node="mi" transform="translate(422,363) scale(0.707)"><use data-c="1D447" xlink:href="#MJX-19-TEX-I-1D447"></use></g></g></g><g data-mml-node="mn" transform="translate(7203.7,-345) scale(0.707)"><use data-c="38" xlink:href="#MJX-19-TEX-N-38"></use></g><rect width="14520.9" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(15038.7,0)"><use data-c="3D" xlink:href="#MJX-19-TEX-N-3D"></use></g><g data-mml-node="mo" transform="translate(16094.5,0)"><use data-c="2212" xlink:href="#MJX-19-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(16872.5,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo>,</mo><mo>+</mo><mn>1</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mo>+</mo><mn>1</mn><mo>,</mo><mo>−</mo><mn>1.</mn><mo>+</mo><mn>1</mn><mo>,</mo><mo>+</mo><mn>1</mn><mo>,</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo>,</mo><mo>+</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mo>+</mo><mn>2</mn><msup><mo stretchy="false">)</mo><mi>T</mi></msup></mrow><mn>8</mn></mfrac><mo>=</mo><mo>−</mo><mn>1</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{(-1,+1,-1,+1,-1.+1,+1,+1)(-2,+2,0,0,+2)^T}{8} = -1</script></p><p><span>而-1对应的就是0，说明A发送的比特是0。</span></p></li></ol><h3 id='aloha协议'><span>ALOHA协议</span></h3><h4 id='介绍'><span>介绍</span></h4><p><span>	</span><span>概念：广义的ALOHA协议包含纯ALOHA协议和时隙ALOHA协议，狭义的ALOHA协议指的就是纯ALOHA协议。</span></p><p><span>	</span><span>来历：计算机科学家norm abramson去夏威夷完，解决通信不变的问题采用了ALOHA，就是夏威夷语中的你好再见。</span></p><p><span>	</span><span>纯ALOHA协议：</span></p><p><img src="assets/064.png" alt="064" style="zoom:40%;" /></p><p><span>	</span><span>不监听信道，不按时间槽发送，随机重发。</span></p><p><span>	</span><span>如果两个站点发生冲突，接收方在就回检测出差错，然后不予确认，发送方在一定时间内收不到就判断发生冲突。</span></p><p><span>	</span><span>然后ALOHA协议也有类似滑动窗口协议的一个叫做确认帧，如果没有冲突，接收方收到正确信息，返回确认帧，否则接收方不返回确认帧，等超市计时器到时间后超时重传，不过和滑动窗口协议不同的是，这个超时计时器的时间是随机的。</span></p><h4 id='时隙aloha协议'><span>时隙ALOHA协议</span></h4><p><span>	</span><span>时隙ALOHA协议的思想是把时间分成若干个相同的时间片，所有用户在时间片开始时刻同步接入网络信道，如果发生冲突，则必须等到下一个时间片/时隙开始时刻再发送。</span></p><p><span>	</span><span>比较纯ALOHA协议，时隙ALOHA协议控制了纯ALOHA的随机特性。</span></p><p><img src="assets/065.png" alt="065" style="zoom:40%;" /></p><p><span>	</span><span>必须要等到指定的时间才能进行发送。如果再发生冲突，照样重传，必须在下一个时隙开始时超时重传。</span></p><h4 id='aloha协议特性'><span>ALOHA协议特性</span></h4><ol start='' ><li><p><span>纯ALOHA比时隙ALOHA吞吐量更低，效率更低。</span></p></li><li><p><span>纯ALOHA想发就发，时隙ALOHA只有时间片段开始时才能发。</span></p></li></ol><h3 id='csma协议'><span>CSMA协议</span></h3><h4 id='csma协议介绍'><span>CSMA协议介绍</span></h4><p><span>	</span><span>CSMA协议，全称载波监听多路访问协议（Carrier Sense Multiple Access）。</span></p><h4 id='cs'><span>CS</span></h4><p><span>	</span><span>CS载波侦听/监听Carrier Sense，指的是每一个站在发送数据之前要检测一下总线上是否要有其他计算机在发送数据。</span></p><p><span>	</span><span>监听的方式：当几个站同时在总线上发送数据时，总线上的信号电压摆动值将会增大（互相叠加）当一个站检测到信号电压摆动超过一定门限值时，就认为总线上至少有两个站同时在发送数据，标明产生了碰撞，即发生了冲突。</span></p><h4 id='ma'><span>MA</span></h4><p><span>	</span><span>多点接入Multiple Access，表示多计算机多点接入方式链接在一根总线上。</span></p><h4 id='csma协议思想'><span>CSMA协议思想</span></h4><p><span>	</span><span>在发送帧之前，先监听信道，如果信道空闲，就发送完整的帧；如果信道忙碌，就推迟发送。</span></p><p><span>	</span><span>有三种不同的协议，分别是：1-坚持CSMA、非检查CSMA、p-坚持CSMA。</span></p><p><strong><span>1-坚持CSMA</span></strong></p><ul><li><p><span>概念：坚持指的是对于监听信道忙之后的坚持。</span></p></li><li><p><span>思想：</span></p><ul><li><p><span>如果一个主机要发送信息，要么先监听信道。</span></p></li><li><p><span>空闲则直接传输，不必等待。</span></p></li><li><p><span>忙碌则一直监听，等到空闲时在传输。</span></p></li><li><p><span>如果有冲突，则等待一个随机长的时间再监听，重复上述过程。</span></p></li></ul></li><li><p><span>优缺点：</span></p><ul><li><p><span>优点：只要媒体空闲，站点就马上发送，避免了媒体利用率的损失。</span></p></li><li><p><span>缺点：加入有两个或两个以上的站点有数据要发送，冲突就不可避免。</span></p></li></ul></li></ul><p><strong><span>非检查CSMA</span></strong></p><ul><li><p><span>概念：非检查指的是对于监听信道忙碌之后就不回继续监听。</span></p></li><li><p><span>思想：</span></p><ul><li><p><span>如果一个主机要发送信息，先监听信道。</span></p></li><li><p><span>如果信道空闲就直接发送。</span></p></li><li><p><span>如果信道忙碌就等待一个随机的时间之后再进行监听。</span></p></li></ul></li><li><p><span>优缺点：</span></p><ul><li><p><span>优点：采用随机的重发延迟时间可以见啥冲突发生的可能性。</span></p></li><li><p><span>缺点：可能存在大家都在延迟等待过程中，使得媒体仍可能处于空闲状态，媒体使用率降低。</span></p></li></ul></li></ul><p><strong><span>p-坚持CSMA</span></strong></p><ul><li><p><span>概念：p-坚持指的是对于监听信道空闲的处理。</span></p></li><li><p><span>思想：</span></p><ul><li><p><span>如果一个主机要发送信息，先监听信道。</span></p></li><li><p><span>信道空闲的话就以p概率 直接传输，不必等待；概率1-p等待到下一个时间槽在传输。</span></p></li><li><p><span>信道忙碌则等待一个随机的时间之后再进行监听。</span></p></li></ul></li><li><p><span>优缺点：</span></p><ul><li><p><span>优点：既能非坚持算法那样减少冲突，有可以像1-坚持算法那样空闲时间的防范。</span></p></li><li><p><span>缺点：发生冲突后还要坚持把数据帧发送完，造成了浪费。</span></p></li></ul></li></ul><p><strong><span>三种协议对比</span></strong></p><figure class='table-figure'><table><thead><tr><th>&nbsp;</th><th><span>1-检查CSMA</span></th><th><span>非坚持CSMA</span></th><th><span>p-坚持CSMA</span></th></tr></thead><tbody><tr><td><span>信道空闲</span></td><td><span>马上发</span></td><td><span>马上发</span></td><td><span>p概率发</span><br /><span>1-p概率等到下一个时隙发</span></td></tr><tr><td><span>信道忙碌</span></td><td><span>继续坚持监听</span></td><td><span>放弃监听，等待一个随机时间再监听</span></td><td><span>放弃监听，等一个随机时间再监听</span></td></tr></tbody></table></figure><h3 id='csmacd协议'><span>CSMA/CD协议</span></h3><h4 id='csmacd协议介绍'><span>CSMA/CD协议介绍</span></h4><p><span>	</span><span>全称载波监听多点接入/彭正检测协议（carrier sense multiple access with collision detecion）。</span></p><p><span>	</span><span>举例说明，比如在和别人交谈时，ALOHA协议是还没有听人家说话就开始说话，CSMA协议是先听别人说话在说话；CSMA/CD就是先听再说，边听边说。</span></p><p><span>	</span><span>CS：载波监听/侦听，每一个栈在发送数据之前以及发送数据时都要检测一下总线上是否有其他计算机在发送数据。</span></p><p><span>	</span><span>MA：多点接入表示许多计算机以多点接入的方式链接在一根总线上。总线型网络。</span></p><p><span>	</span><span>CD：碰撞检测（冲突检测），边发送边监听，适配器边发送数据边检测信道上信号电压的笔画情况，来判断自己在发送数据时其他站是否页在发送数据。半双工网络。</span></p><p><span>	</span><span>即便是先听后发，也会发生冲突，因为在传播时延对载波监听是有一定影响的。</span></p><h4 id='传播时延对载波监听的影响'><span>传播时延对载波监听的影响</span></h4><p><span>	</span><span>假设现在有AB两台主机在发送信息，数据在信道上的单程端到端传播时延为t，也就是说一串数据从这头到那头需要t时间。那么假设A已经发送了数据，然后在A发送数据一段时间后B也要发送数据，但是因为A距离发送数据的时间不足t，所以B发送数据前的监听会产生错误，误以为信道空闲。</span></p><p><img src="assets/066.png" alt="066" style="zoom:40%;" /></p><p><span>	</span><span>那么发生碰撞之后怎么办？两个信号相互干扰，就好像傻子变成了泥水然后两房发现自己这边收到了泥水就知道出现问题，就不回发东西。</span></p><p><span>	</span><span>假设A在t=0时刻发送数据，那么B发送数据必然是在一个小于t的时刻，设B在t = t - δ时刻发送数据，那么Adele数据到达B是在t=t时刻，B的数据到达是在t = 2t - δ时刻，两者发生碰撞的时刻就是 t = t - </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.795ex" height="2.819ex" role="img" focusable="false" viewBox="0 -901 793.6 1246" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.781ex;"><defs><path id="MJX-20-TEX-I-1D6FF" d="M195 609Q195 656 227 686T302 717Q319 716 351 709T407 697T433 690Q451 682 451 662Q451 644 438 628T403 612Q382 612 348 641T288 671T249 657T235 628Q235 584 334 463Q401 379 401 292Q401 169 340 80T205 -10H198Q127 -10 83 36T36 153Q36 286 151 382Q191 413 252 434Q252 435 245 449T230 481T214 521T201 566T195 609ZM112 130Q112 83 136 55T204 27Q233 27 256 51T291 111T309 178T316 232Q316 267 309 298T295 344T269 400L259 396Q215 381 183 342T137 256T118 179T112 130Z"></path><path id="MJX-20-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(239.8,394) scale(0.707)"><use data-c="1D6FF" xlink:href="#MJX-20-TEX-I-1D6FF"></use></g><g data-mml-node="mn" transform="translate(220,-345) scale(0.707)"><use data-c="32" xlink:href="#MJX-20-TEX-N-32"></use></g><rect width="553.6" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>δ</mi><mn>2</mn></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{δ}{2}</script><span>时刻。</span></p><p><span>	</span><span>最迟多久才能知道自己和别人发生了碰撞呢 ？ 当δ=0时，t</span><sub><span>max</span></sub><span> = 2t - δ = 2t，也就是两倍的总线短刀端时延，也称宗鑫的端到端往返时延。也叫争用期、重提窗口、碰撞窗口。</span></p><p><span>	</span><span>我们还可以得到一个结论，就是经过2t时间还没有收到碰撞那么这次发送就不会发生碰撞信息。</span></p><h4 id='如何确定碰撞后的重传时机'><span>如何确定碰撞后的重传时机</span></h4><p><span>	</span><span>为什么不能是一次发现碰撞就重传？</span></p><p><span>	</span><span>如果两者都是在t=0时刻发送数据，那么就会在t=</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.795ex" height="2.673ex" role="img" focusable="false" viewBox="0 -836.6 793.6 1181.6" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.781ex;"><defs><path id="MJX-21-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-21-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(269.1,394) scale(0.707)"><use data-c="1D461" xlink:href="#MJX-21-TEX-I-1D461"></use></g><g data-mml-node="mn" transform="translate(220,-345) scale(0.707)"><use data-c="32" xlink:href="#MJX-21-TEX-N-32"></use></g><rect width="553.6" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>t</mi><mn>2</mn></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{t}{2}</script><span>时刻发生碰撞，然后双方均在t=t时刻检测到冲突，如果这个时刻双福都立即重传，那就优惠在t=</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.612ex" height="2.736ex" role="img" focusable="false" viewBox="0 -864.2 1154.6 1209.2" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.781ex;"><defs><path id="MJX-22-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-22-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-22-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mn" transform="translate(220,394) scale(0.707)"><use data-c="33" xlink:href="#MJX-22-TEX-N-33"></use></g><g data-mml-node="mn" transform="translate(220,-345) scale(0.707)"><use data-c="32" xlink:href="#MJX-22-TEX-N-32"></use></g><rect width="553.6" height="60" x="120" y="220"></rect></g><g data-mml-node="mi" transform="translate(793.6,0)"><use data-c="1D461" xlink:href="#MJX-22-TEX-I-1D461"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>t</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{3}{2}t</script><span>时刻碰撞，然后又重传，就会进入死循环。</span></p><p><span>	</span><span>实际上，确定重传时间用到了截断二进制规避算法。</span></p><p><strong><span>截断二进制规避算法</span></strong></p><ol start='' ><li><p><span>确定一个基本退避（推迟）时间为征用期2t。</span></p></li><li><p><span>定义参数k，就等于重传刺水，但k不超过10次，即</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="20.804ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 9195.4 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-23-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-23-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-23-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-23-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-23-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-23-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-23-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-23-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-23-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-23-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-23-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(798.8,0)"><use data-c="3D" xlink:href="#MJX-23-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(1854.6,0)"><use data-c="1D45A" xlink:href="#MJX-23-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(2732.6,0)"><use data-c="1D456" xlink:href="#MJX-23-TEX-I-1D456"></use></g><g data-mml-node="mi" transform="translate(3077.6,0)"><use data-c="1D45B" xlink:href="#MJX-23-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(3677.6,0)"><use data-c="5B" xlink:href="#MJX-23-TEX-N-5B"></use></g><g data-mml-node="mtext" transform="translate(3955.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">重</text></g><g data-mml-node="mtext" transform="translate(4834.9,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">传</text></g><g data-mml-node="mtext" transform="translate(5714.1,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">次</text></g><g data-mml-node="mtext" transform="translate(6593.4,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">数</text></g><g data-mml-node="mo" transform="translate(7472.7,0)"><use data-c="2C" xlink:href="#MJX-23-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(7917.4,0)"><use data-c="31" xlink:href="#MJX-23-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-23-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(8917.4,0)"><use data-c="5D" xlink:href="#MJX-23-TEX-N-5D"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">[</mo><mtext>重</mtext><mtext>传</mtext><mtext>次</mtext><mtext>数</mtext><mo>,</mo><mn>10</mn><mo stretchy="false">]</mo></math></mjx-assistive-mml></mjx-container><script type="math/tex">k = min[重传次数, 10]</script><span>。当重传次数不超过10，k等于重传次数；当重传次数超过10，k等于10。</span></p></li><li><p><span>从离散的整数集合{0,1,2,....,2</span><sup><span>k</span></sup><span>-1}中随机选取一个数r，重传所需要退避的时间就是r倍的基本退避时间，即2rt。</span></p></li><li><p><span>当重传次数达到16次扔不成功，说明网络太拥挤，认为此帧永远无法正确发出，抛弃此帧并向高层报告处处。</span></p></li></ol><p><span>	</span><span>比如说站点A需要重传数据，第一次重传，k=1，r从{0,1,2,3}选；重传推迟时间为0或2t或4t或6任选一个。</span></p><p><span>	</span><span>如果再碰撞，r∈{0,1,2,3,4,5,6,7}。</span></p><p><span>	</span><span>如果第十六次碰撞，就说明网络实在太拥挤，放弃了。</span></p><p><span>	</span><span>如果连续多次发生冲突，就表明可能有较多的站参与征用信道，使用此算法可使重传需要推迟的平均时间虽重传次数的增大而增大，因为减小发生碰撞的概率，有利于整个系统的稳定。</span></p><blockquote><p><span>举例子：以太网的二进制回退算法中，在11次碰撞之后，站点会在什么范围内选择一个随机数。</span></p><p><span>回答：这个题有点个坑点就是r∈[1,2</span><sup><span>11</span></sup><span>−1] ∩ Z，但需要注意的是k=min[重传次数, 10]那么这里的k应该是10，答案应该是r∈[1,2</span><sup><span>10</span></sup><span>−1]∩Z。</span></p></blockquote><h4 id='最小帧长问题'><span>最小帧长问题</span></h4><p><span>	</span><span>如果站点A要发送的帧实在太短，那么发送碰撞后也可能无法停止发送，因为发完了，而CSMA-CD协议的作用就是想让碰撞发出时立马叫停帧的发送，因为需要对帧的长度作出规定。</span></p><p><span>	</span><span>我们只需要保证帧的传输时延至少有两倍于信号在总线中的传播时延。</span></p><p><span>	</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="26.995ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 11932 950" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.452ex;"><defs><path id="MJX-24-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-24-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-24-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-24-TEX-N-2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">最</text></g><g data-mml-node="mtext" transform="translate(879.3,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">小</text></g><g data-mml-node="mtext" transform="translate(1758.6,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">帧</text></g><g data-mml-node="mtext" transform="translate(2637.9,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">长</text></g><g data-mml-node="mo" transform="translate(3795,0)"><use data-c="3D" xlink:href="#MJX-24-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(4850.7,0)"><use data-c="32" xlink:href="#MJX-24-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(5350.7,0)"><use data-c="1D461" xlink:href="#MJX-24-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(5934,0)"><use data-c="2217" xlink:href="#MJX-24-TEX-N-2217"></use></g><g data-mml-node="mtext" transform="translate(6656.2,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">数</text></g><g data-mml-node="mtext" transform="translate(7535.5,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">据</text></g><g data-mml-node="mtext" transform="translate(8414.8,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">传</text></g><g data-mml-node="mtext" transform="translate(9294.1,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">输</text></g><g data-mml-node="mtext" transform="translate(10173.4,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">速</text></g><g data-mml-node="mtext" transform="translate(11052.7,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">率</text></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>最</mtext><mtext>小</mtext><mtext>帧</mtext><mtext>长</mtext><mo>=</mo><mn>2</mn><mi>t</mi><mo>∗</mo><mtext>数</mtext><mtext>据</mtext><mtext>传</mtext><mtext>输</mtext><mtext>速</mtext><mtext>率</mtext></math></mjx-assistive-mml></mjx-container><script type="math/tex">最小帧长 = 2t * 数据传输速率</script><span>。</span></p><p><span>	</span><span>以太网规定的最短真长位64B，凡是长度小于64B的都是由于冲突而异常中止的无效帧。</span></p><h3 id='csma-ca协议'><span>CSMA-CA协议</span></h3><h4 id='介绍-2'><span>介绍</span></h4><p><span>	</span><span>CMSA-CA协议全称是载波监听多点接入/碰撞避免协议（carrier sense multiple access with collision avoidance）。CD智能检测出碰撞，不能避免碰撞发生，而CA可以避免碰撞发生。</span></p><p><span>	</span><span>既然CSMA/CD已经很棒了为啥要有CSMA/CA协议呢 ？ </span></p><p><span>	</span><span>两者应用场景不一样，CA往往应用于无限局域网，而CD往往运用于总线式以太网。</span></p><p><span>	</span><span>无限通信不同于有线通信，它的范围是360</span><sup><span>。</span></sup><span>的，难以进行检测冲突，在硬件上难以实现，同样是CSMA/CD检测碰撞，有线通信只要碰准一端，无限通信需要动心南北前后左右上下检测，而且由于无限通信会出现隐蔽站的问题，难以监听碰撞。</span></p><p><span>	</span><span>如果说让CSMA/CA协议和别人开会，没说一句话就要等一等，没人抢话再说，然后下一句话时停止不说，没人说话再说。</span></p><h4 id='工作原理'><span>工作原理</span></h4><p><span>	</span><span>发送数据之前，先检测信道是否空闲。</span></p><p><span>	</span><span>空闲则发送端发出RTS（request to send）RTS包括发射端的地址、接收端的地址、下一份数据将持续发送的时间等信息，信道忙则等待。</span></p><p><span>	</span><span>接收端收到RTS后，将响应CTS（clear to send）。</span></p><p><span>	</span><span>然后如果还有别的站点发送RTS则接收端不响应，这样就解决了隐蔽站的问题。</span></p><p><span>	</span><span>啥是隐蔽站？ 就是A检测信道是空闲的 ，于是给B发送信息，C页检测信道是空闲的，给B发送信息，然后AC的信息就会发生碰撞。</span></p><p><span>	</span><span>发送方收到CTS后开始发送数据帧，同时预约信道（发送方告知其他站点自己要传多久数据）接收端收到数据帧后，将用CTC循环冗余码检错，正确则返回ACK。</span></p><p><span>	</span><span>发送方收到ACK之后就可以进行下一个数据帧的发送，如果没有则已知重传找到规定的最大次数采用阶段二进制规避算法来确定随机的推迟时间。</span></p><h4 id='csmaca实现碰撞规避的手段'><span>CSMA/CA实现碰撞规避的手段</span></h4><ol start='' ><li><p><span>预约信道：告诉其他站点自己这次传输的数据大概需要多久。</span></p></li><li><p><span>ACK帧：接收方返回确认帧。</span></p></li><li><p><span>RTS/CTS帧：可用可不用。</span></p></li></ol><h4 id='csmacd与csmaca对比'><span>CSMA/CD与CSMA/CA对比</span></h4><ul><li><p><span>相同点：CSMA/CA与CSMA/CD机制都是从属于CSMA的思路，核心都是先听再说。</span></p></li><li><p><span>不同点：</span></p><ul><li><p><span>传输介质不同：CSMA/CD用于总线式以太网【有线】，而CSMA/CA用于无线局域网【无线】。</span></p></li><li><p><span>载波检测方式不同：因为传输介质不同，CSMA/CD与 CSMA/CA检测方式也不同。CSMA/CD通过电缆中电压的变化来检测，当数据发生碰撞时候，电缆中的点烟就会随着发生变化，而CSMA/CA采用能量检测（ED）、载波检测（CS）和能量载波混合检测三种检测信道空闲的方式。</span></p></li><li><p><span>CSMA/CD检测冲突，CSMA/CA避免冲突，二者出现冲突，二者出现冲突后都会进行有上限的重传。</span></p></li></ul></li></ul><h2 id='三轮询访问介质访问控制'><span>三、轮询访问介质访问控制</span></h2><h3 id='介质访问控制-2'><span>介质访问控制</span></h3><ul><li><p><span>信道划分介质访问控制（MAC Multiple Access Control）协议：</span></p><ul><li><p><span>基于多路复用技术划分资源。</span></p></li><li><p><span>网络负载重：共享信道效率高。</span></p></li><li><p><span>且公平网络负载轻：共享信道效率低。</span></p></li></ul></li><li><p><span>随机访问MAC协议：</span></p><ul><li><p><span>网络负载重：产生冲突开销。</span></p></li><li><p><span>网络负载轻：共享信道效率高，单个结点可利用信道全部带宽。</span></p></li></ul></li><li><p><span>轮询访问MAC协议/轮流协议/轮转访问MAC协议：</span></p><ul><li><p><span>纪要不产生冲突，又要发送时占用全部带宽。</span></p></li><li><p><span>包括了：轮询协议、令牌传递协议。</span></p></li></ul></li></ul><h3 id='轮询协议'><span>轮询协议</span></h3><p><span>	</span><span>主要结点轮流“邀请”从属结点发送数据。轮流询问就就叫轮训，询问的时候泳道就是一个比较短的数据帧。</span></p><p><span>	</span><span>听清来似乎不错但是轮训页存在一定的问题：</span></p><p><span>	</span><span>1、轮询开销：如果说主节点的从属结点过多，就不停的询问，开销太大。</span></p><p><span>	</span><span>2、等待延迟：我主机D要发送数据了，但是主节点还在循环ABC，要等好久。</span></p><p><span>	</span><span>3、单点故障：主节点宕机，从数据节点全部用不了，但实际应用中有备用的主节点。</span></p><h3 id='令牌传递协议'><span>令牌传递协议</span></h3><p><img src="assets/067.png" alt="067" style="zoom:40%;" /></p><p><span>	</span><span>令牌指的是一个特殊格式的MAC控制帧，不包含任何信息。他可以控制信道的使用，确保同一时刻只有一个节点独占信道。</span></p><p><span>	</span><span>如果信道空闲，令牌在姬哥主机中不停的传来传去，比如传到了主机，要发送数据，发给A他就改变令牌里面的关键位，把自己要发送的数据附加到令牌上，继续转圈的传送令牌，传到BC，BC发现跟他们自己没有关系，就重新发送数据，如果发现数据没有错误，把自己附加在令爱上的数据拔掉，把关键位改成原来的样子。每个主机收我令牌的时间都是有限的，如果D的时间到。额数据还没有发到就拔掉数据改关键位，剩下的数据等令牌再次传到他手上继续发。</span></p><p><span>令牌协议问题：</span></p><p><span>	</span><span>-&gt; 令牌开销：传令牌要一定时间。</span></p><p><span>	</span><span>-&gt; 等待延迟：等令牌到自己手里也要时间。</span></p><p><span>	</span><span>-&gt; 单线故障：圈中的某个主机有问题，整个循环就会出现问题，解决防范就是使用备用机。</span></p><p><span>	</span><span>令牌传递协议应用于伶俜环网（物理星型拓扑，逻辑环型拓扑）。</span></p><p><span>	</span><span>采用令牌传送方式网络的网络常用于负载较重、通信量较大的网络中。负载轻的其他协议什么都不用传，令牌协议却要把令牌传来传去。</span></p><h2 id='四局域网'><span>四、局域网</span></h2><h3 id='局域网介绍'><span>局域网介绍</span></h3><p><span>	</span><span>局域网（Local Area Network）简称LAN，指的是在某一区域内有多台计算机互联成计算机组，使用广播信道。</span></p><p><span>	</span><span>特点：</span></p><p><span>		</span><span>-&gt; 覆盖的地理范围较小，只在一个独立的局部范围内联，如已做或几种的建筑群内。</span></p><p><span>		</span><span>-&gt; 使用专门铺设的传输介质（双绞线、同轴电缆）进行联网，数据传输速率高（10Mb/s - 10Gb/s）。</span></p><p><span>		</span><span>-&gt; 通信延迟时间短，共享拆书信道。</span><span>		</span></p><p><span>		</span><span>-&gt; 各站位平等关系，共享传输信道。</span></p><p><span>		</span><span>-&gt; 多采用分布式控制和广播是通信，能进行广播和组播。</span></p><p><span>	</span><span>决定局域网的主要因素：</span></p><p><span>		</span><span>-&gt; 网络拓扑。</span></p><p><span>		</span><span>-&gt; 传输介质。</span></p><p><span>		</span><span>-&gt; 介质访问控制方法。</span></p><h3 id='局域网拓扑结构'><span>局域网拓扑结构</span></h3><h4 id='星型拓扑'><span>星型拓扑</span></h4><p><img src="assets/068.png" alt="068" style="zoom:40%;" /></p><p><span>	</span><span>中心节点是控制中心，任意两个节点间的通信最多只需要两部，传输速度快，并且网络构型简单、建网容易便于控制和管理。但这种网络系统，网络可靠性低，网络共享能力差，有单点故障问题。</span></p><h4 id='总线型拓扑'><span>总线型拓扑</span></h4><p><img src="assets/069.png" alt="069" style="zoom:40%;" /></p><p><span>	</span><span>网络可靠性高、网络节点间响速度快，共享资源能力强，设备投入量少，成本低，安装使用方便，当某个工作节点出现故障时，对整个网络系统影响比较小。</span></p><h4 id='星型拓扑-2'><span>星型拓扑</span></h4><p><img src="assets/070.png" alt="070" style="zoom:40%;" /></p><p><span>	</span><span>对于环型拓扑来说，集群线当家了其他的都会坏掉，对于总线型则不存在这个问题。</span></p><p><span>	</span><span>系统中通信设备和线路比较节省，有单点故障问题；由于环路是封闭的，所以不便扩充，系统响应时长，且信息传输效率比较低。</span></p><h4 id='树型拓扑'><span>树型拓扑</span></h4><p><img src="assets/071.png" alt="071" style="zoom:40%;" /></p><p><span>	</span><span>易于拓展，易于隔离故障，也易于导致单点故障。</span></p><p><span>	</span><span>某个节点出现问题，其他子孙节点都会出现问题。如果出问题的还是根节点，那么这就会造成单点故障将是毁灭性的。</span></p><h3 id='局域网传输介质'><span>局域网传输介质</span><span>	</span></h3><ul><li><p><span>有限局域网传输介质：</span></p><ul><li><p><span>双绞线。</span></p></li><li><p><span>同轴电缆。</span></p></li><li><p><span>光纤。</span></p></li></ul></li><li><p><span>无限局域网：</span></p><ul><li><p><span>电磁波。</span></p></li></ul></li></ul><h3 id='局域网传输访问控制的方法'><span>局域网传输访问控制的方法</span></h3><ol start='' ><li><p><span>CSMA/CD：常用于总线型局域网，也用于树型网络。</span></p></li><li><p><span>令牌总线：常用于总线型局域网，也用于树型网络。物理结构是环型拓扑。</span></p></li></ol><h3 id='局域网类型'><span>局域网类型</span></h3><h4 id='以太网'><span>以太网</span></h4><p><span>	</span><span>以太网是应用最广泛的局域网，包括标准以太网（10Mbps）、快速以太网（100Mbps）、千兆以太网（1000 Mbps）和10G以太网，他们都符号IEEE802.3邪猎标准规范。逻辑拓扑总线型，物理拓扑是星型或拓展星型。使用CSMA/CD。</span></p><h4 id='令牌环网'><span>令牌环网</span></h4><p><span>	</span><span>物理上采用了星型拓扑结果，逻辑上是环型拓扑结构。</span></p><h4 id='fddi网'><span>FDDI网</span></h4><p><span>	</span><span>Fiber Distributed Data Interface，物理上采用了双环拓扑结构，逻辑上是环型拓扑结构。</span></p><h4 id='atm网-asynchronous-trasfer-mode'><span>ATM网 Asynchronous Trasfer Mode</span></h4><p><span>	</span><span>较新的单元交换单元，使用53字节固定长度的单元进行交换。</span></p><h4 id='无限局域网wwireless-local-area-network-wlan）'><span>无限局域网（Wwireless Local Area Network WLAN）</span></h4><p><span>	</span><span>采用IEEE802.11标准，wifi就是无限局域网具体的一个应用。</span></p><h3 id='ieee802标准'><span>IEEE802标准</span></h3><p><span>	</span><span>IEEE802系标准是IEEE802LAN/MAN标准委员会指定的局域网、城域网技术标准（1980年2月成立）其中最广泛使用的就是以太网、令牌环、无限局域网等。这一系列标准中的每一个子标准都由委员会重点额一个专门工作组负责。</span></p><p><span>	</span><span>IEEE802.3：一趟介质方位控制协议，（CSMA/CD）及物理层技术规范。</span></p><p><span>	</span><span>IEEE802.5：令牌环网（Token-Ring）的介质访问控制协议及物理层技术规范。</span></p><p><span>	</span><span>IEEE802.8：光纤技术咨询组，提供有关光纤联网的技术咨询。广泛应用于FDDI。因为光纤广泛应用于FDDI。</span></p><p><span>	</span><span>IEEE802.11：无线局域网（WLAN）的介质访问控制协议及物理层技术规范。</span></p><h3 id='mac子网和llc子层'><span>MAC子网和LLC子层</span></h3><p><span>	</span><span>IEEE802标准所描述的就是局域网参考模型只对应OSI参考模型的数据链路层和物理层，它将数据链路层划分为逻辑链层LLC子层和介质访问控制MAC子层。</span></p><p><img src="assets/072.png" alt="072" style="zoom:40%;" /></p><p><span>	</span><span>LLC子层（逻辑链路控制子层）负责识别网络层协议，然后对他们进行封装。LLOC包头高速数据链路层一旦帧被接收到时，应当对数据包如何处理，为网络提供服务：无确认无连接、面相连接、带确认无连接、高速传输。</span></p><p><span>	</span><span>MAC子网（介质访问控制子层）的主要功能包括数据帧的封装/卸装，帧的寻址和识别，帧的接收与放松，链路的管理，帧的差错控等。MAC子层的存在屏蔽了不同的物理链路这种类的差异性。</span></p><h2 id='五以太网'><span>五、以太网</span></h2><h3 id='概述'><span>概述</span></h3><p><span>	</span><span>以太网（Ethernet）指的是Xerox公司创建并由Xerox、Intel和DEC公司联合开发的基带总线局域网规范，是当今现有局域网采用的最通用的通信协议标准。以太网使用CSMA/CD（载波监听多路访问即冲突检测）技术。</span></p><p><span>	</span><span>以太网在局域网各种技术中占统治性地位。</span></p><p><span>	</span><span>为何以太网在局域网中各种技术中占统治性地位：</span></p><p><span>	</span><span>1、造价低廉（以太网网卡造价不到1000）。</span></p><p><span>	</span><span>2、是应用最广泛的局域网技术。</span></p><p><span>	</span><span>3、比令牌环网、ATM网更便宜，建单。</span></p><p><span>	</span><span>4、可以满足网络速率的要求（10M/s - 10Gb/s）。</span></p><p><span>	</span><span>以太网标准：</span></p><p><span>	</span><span>1、DIX EthernetV2：第一个局域网产品（以太网）规约。</span></p><p><span>	</span><span>2、IEEE802.3IEEE802委员会802.3工作组制定的第一个IEEE的以太网标准。</span></p><h3 id='以太网提供的无连接不可靠服务'><span>以太网提供的无连接、不可靠服务</span></h3><p><span>	</span><span>无连接：发送方和接收方之间无”握手“过程。</span></p><p><span>	</span><span>不可靠：不对发送方的数据帧编号，接收方不向发送方进行确认，差错帧直接丢弃，差错纠正有高层负责。</span></p><h3 id='以太网传输介质与拓扑结构发展'><span>以太网传输介质与拓扑结构发展</span></h3><h4 id='传输介质'><span>传输介质</span></h4><p><img src="assets/073.png" alt="073" style="zoom:40%;" /></p><p><span>	</span><span>粗同轴电缆和细同轴电缆的物理拓扑结构都是总线型，而后面的双绞线+集线器的拓扑结构是星型。</span></p><h4 id='拓扑结构发展'><span>拓扑结构发展</span></h4><p><span>	</span><span>使用集线器的以太网在逻辑上扔是一个总线网，各站共享逻辑上的总线，使用的还是CSMA/CD协议。</span></p><p>&nbsp;</p><p><img src="assets/074.png" alt="074" style="zoom:40%;" /></p><p><span>	</span><span>以太网拓扑：物理上是星型，逻辑上和传统的以太网是一样的总线型。</span></p><h3 id='10base-t以太网'><span>10BASE-T以太网</span></h3><p><span>	</span><span>10BASE-T是传送基带信号的双绞线以太网，T表示采用双绞线，先10BASE-T采用无屏蔽双绞线（UTP）传输速率是10Mb/s。</span></p><p><span>	</span><span>特点即行管规定：</span></p><p><span>		</span><span>1、物理上层采用星型拓扑、逻辑上总线型，每段双绞线最长是100m，也就是说从主机到集线器最长100米。</span></p><p><span>		</span><span>2、采用的编码方式是曼彻斯特编码。</span></p><p><span>		</span><span>3、采用CSMA/CD介质访问控制。</span></p><h3 id='适配器和mac地址'><span>适配器和MAC地址</span></h3><p><strong><span>适配器</span></strong><span>：计算机与瓦解局域网的链接是通过通信适配器的。它是一个网络接口板，有称为网络接口NIC（network interface card）其实就是网卡，先如今不在使用单独网卡，且适配器上装有处理器和存储器（包括RAM和ROM）。</span></p><p><img src="assets/075.png" alt="075" style="zoom:40%;" /></p><p><strong><span>MAC地址</span></strong><span>：</span></p><p><span>	</span><span>在局域网中，硬件地址又称为物理地址，或MAC地址【实际上是标识符】。在适配器上装有的ROM上会有计算机硬件地址MAC地址。</span></p><p><span>	</span><span>MAC地址：每个适配器都有一个全球唯一的48位二进制地址，前24位代表厂家，后24位厂家自己制定。常用6个十六进制的数表示比如：02-60-8c-e4-b1-21。</span></p><h3 id='以太网mac帧'><span>以太网MAC帧</span></h3><p><span>	</span><span>最常见的MAC帧是以太网V2的格式。</span></p><p><img src="assets/076.png" alt="076" style="zoom:40%;" /></p><p><span>	</span><span>前面的八个字节是前导码，用于同步，并不属于MAC帧。</span></p><p><span>	</span><span>目的地址如果为广播式，那发送全1的六哥字节，也就是ffffffffffff，两个字节的类型用来指明上面的网络层使用的什么协议。</span></p><p><span>	</span><span>数据链路层需要加头加尾界定数据帧的开始结束，这里不需要，因为以太网使用的是曼彻斯特编码，用变化的电压表示0和1，如果无电压变化，那必然是数据帧结束传输。</span></p><p><span>	</span><span>v2和IEEE802.3区别在于：</span></p><p><span>		</span><span>1、第三个字段是长度/类型。</span></p><p><span>		</span><span>2、当长度/类型字段值小于0x0600时，数据字段必须转入LLC子层。</span></p><h3 id='高速以太网'><span>高速以太网</span></h3><p><span>	</span><span>速率大于等于100Mb/s的时候称为高速以太网。</span></p><p><span>	</span><span>类别：</span></p><p><span>		</span><span>1、100BASE-T以太网：</span></p><p><span>			</span><span>在双绞线上传送100Mb/s基带信号的星型拓扑以太网，扔使用IEEE802.x的CSMA/CD协议。</span></p><p><span>			</span><span>支持全双工和半双工，可在全双工方式下工作不冲突。</span></p><p><span>		</span><span>2、吉比特以太网：</span></p><p><span>			</span><span>在光纤或双绞线上传送1Gb/s信号。</span></p><p><span>			</span><span>支持全双工和半双工，可在全双工方式下工作而无冲突。</span></p><p><span>		</span><span>3、10吉比特：</span></p><p><span>			</span><span>10吉比特以太网在光纤上传送10Gb/s的信号。</span></p><p><span>			</span><span>只支持全双工，无争用的问题。</span></p><h2 id='六iee80211无线局域网'><span>六、IEE802.11无线局域网</span></h2><h3 id='介绍-3'><span>介绍</span></h3><p><span>	</span><span>IEEE802.11是无线局域网通用的标准，它是由IEEE锁定义的无线网络通信的标准。</span></p><p><span>	</span><span>WiFi是无线局域网的一种，无线局域网不一定是WiFi，无线局域网可以覆盖的范围可以是几千米，WiFi智能覆盖一个房子。</span></p><h3 id='80211的mac帧头格式'><span>802.11的MAC帧头格式</span></h3><p><img src="assets/077.png" alt="077" style="zoom:40%;" /></p><p><span>	</span><span>SA就是西安的mac地址，DA就是曹县的mac地址，西安到曹县可能有一段路是在渭南到济南，这段路就是TA渭南的mac地址，RA就是济南的mac地址。</span></p><h3 id='无线局域网的类型'><span>无线局域网的类型</span></h3><p><strong><span>有固定基础设施的无线局域网：</span></strong></p><p><img src="assets/078.png" alt="078" style="zoom:40%;" /></p><p><span>	</span><span>基站可以让它的范围的主机相互通信，也就是漫游。同一个基站范围内的两台计算机进行通信需要由A发送数据给基站，然后基站发送数据给B。囊括了基站 和基站覆盖范围内的计算机的集合叫做服务集（BSS）只要在同一个BSS内就可以实现直接通信。</span></p><p><strong><span>无固定基础设施无线局域网的自组网络：</span></strong></p><p><img src="assets/079.png" alt="079" style="zoom:40%;" /></p><p><span>	</span><span>这种情况下每一个节点都用既可以当数据发送接收端，也可以当基站，既能收数据也能发数据，各个节点相互平等，节点位置可以随便移动。</span></p><h2 id='七ppp协议和hdlc协议'><span>七、PPP协议和HDLC协议</span></h2><h3 id='广域网'><span>广域网</span></h3><p><span>	</span><span>PPP协议和HDLC协议广泛应用于广域网当中。</span></p><p><span>	</span><span>广域网（WAN Wide Area Network）通常跨接很大的物理范围，所覆盖的范围从及时公里到几千公里，能连多个城市和国家，或横跨几个洲并提供远距离通信，形成国际性的远程网络。互联网Internet就是广域网的例子。</span></p><p><span>	</span><span>广域网的通信子网主要使用分组交换技术。广域网的通信子网可以利用公用分组利用公用分组交换网、微信通信网和无线分组交换网，它将分布在不同地区的局域网或计算机系统互联起来，达到资源共享的目的。如因特网（Internet）是世界范围内最大的广域网。</span></p><p><img src="assets/080.png" alt="080" style="zoom:40%;" /></p><p><span>	</span><span>广域网内的节点交换机，属于链路层设备，它是和路由器的功能很像，都是用来分组的，不同的是节点交换机智能在单个网络中转发分组，但是路由器可以在多个网络中转发分组。</span></p><p><span>	</span><span>除了节点交换机，广域网甚至包含集线器，路由器等，也就是说局域网不仅包含物理层、数据链路层、而广域包含了网络层、数据链路层、物理层。局域网看起来更像是线性表，广域网市长是加权无向图。广域网涵盖范围大，所以延迟就比局域网中的大。</span></p><h3 id='ppp协议'><span>PPP协议</span></h3><p><span>	</span><strong><span>介绍：</span></strong><span>点对点协议PPP（Point-to-Point Protocol）是目前最广泛的数据链路层协议，用户使用拨号电话加入因特网时一般都使用PPP协议。它仅支持全双工链路。</span></p><p><span>	</span><strong><span>满足的要求 ：</span></strong></p><p><span>		</span><span>1、简单：对于链路层的帧，无需纠错，无需序号，无需流量控制。</span></p><p><span>		</span><span>2、封装成帧：帧定界符。</span></p><p><span>		</span><span>3、透明传输：与帧定界符一样比特组合的数据应该如何处理：异步线路用字节填充，同步线路用比特填充。</span></p><p><span>		</span><span>4、多种网络协议：封装的IP数据包可以采用多种协议。</span></p><p><span>		</span><span>5、多种类型链路：串行/并行，同步/异步，电/光。</span></p><p><span>		</span><span>6、差错检测：错就丢弃。</span></p><p><span>		</span><span>7、检测链接状态：链路是否正常工作。</span></p><p><span>		</span><span>8、最大传送单元：数据部分最大长度MTU。</span></p><p><span>		</span><span>9、网络层地址协商：直到通信双方的网络层地址。</span></p><p><span>		</span><span>10、数据压缩协商：发送数据时，把数据进行压缩。</span></p><p><span>	</span><span>不需要满足的要求：</span></p><p><span>		</span><span>1、无需纠错，检错就行。</span></p><p><span>		</span><span>2、无需流量控制，全部交给上层负责。</span></p><p><span>		</span><span>3、无需对帧编号。</span></p><p><span>		</span><span>4、不支持多点线路，只支持电对点。</span><span>		</span></p><p><span>	</span><strong><span>PPP协议三个组成部分：</span></strong></p><p><span>		</span><span>1、一个IP数据报封装到串行链路（同步串行/异步穿行）的方法。</span></p><p><span>		</span><span>2、链路控制协议LCP：建立并维护数据链路连接。LCP协议的一个重要应用就是身份验证，例如拨号上网时账号密码不对，LCP就不回建立数据链路。</span></p><p><span>		</span><span>3、网络控制协议NCP：PPP支持多种网络层协议，每个不同的网络层协议都要一个响应的NCP来配置，为网络层协议建立和配置逻辑连接。</span></p><p><span>	</span><strong><span>PPP协议工作状态如下图所示：</span></strong></p><p><img src="assets/081.png" alt="081" style="zoom:40%;" /></p><p><span>	</span><strong><span>PPP协议的帧格式：</span></strong></p><p><img src="assets/082.png" alt="082" style="zoom:40%;" /></p><ol start='' ><li><p><span>标志字段F：前后两个7E（0111 1110）是标志字段，也就是帧定界符。同样的，如果信息部分也有7E的字节，那前面就要有转义字符7D（0111 1101），当让如果传输的数据是转义字符7D，那么就传7D7D类似”\“。</span></p></li><li><p><span>地址字段A的控制字段C：第二三个字节FF03（111 111 0000 0011）创作的时候希望将来在给它定义意义，但是现在都没有意义，没有任何信息。</span></p></li><li><p><span>协议部分：两个没用字节后面的两个字节，用于表示信息部分是什么，IP数据报，LCP数据报，或者别的。</span></p></li><li><p><span>冗余码FCS：就是CRC循环冗余检验算法在后面插入的帧检验序列。</span></p></li></ol><h3 id='hdlc协议'><span>HDLC协议</span></h3><p><strong><span>介绍</span></strong><span>：这个协议属于广域网领域的比较少使用，高级数据链路控制（High-Level Data Link Control HDLC）是一个在同步网上传输数据、面相比特的数据链路层的协议，是由国际标准化组织ISO根据IBM公司的SDLC协议扩展开发而成的。</span></p><p><span>	</span><span>数据报文可透明传输，用于实现透明传输的0比特插入法易于硬件实现。（零比特插入，遇到五个一就插入一个零）。</span></p><p><span>	</span><span>HDLC和PPP一样都是全双工通信，它所有帧采用CRC检验，对西悉尼帧进行顺序编号，可防止漏收或重份，传输可靠性高。</span></p><p><strong><span>HDLC三种站：</span></strong></p><ol start='' ><li><p><span>主站的主要功能是发送命令（包括数据信息）帧、接收响应帧，并负责对整个链路的控制系统的初启、；流程的控制、差错检测或恢复等。</span></p></li><li><p><span>从站的主要功能是接收由主站发来的命令帧，向主站发送响应帧，并且配合主站参与差错恢复等链路控制。</span></p></li><li><p><span>复合站的主要功能是既能发送，也能接收命令和响应帧，并且负责整个链路的控制。</span></p></li></ol><p><strong><span>相应的三种数据操作方式：</span></strong></p><ol start='' ><li><p><span>正常的响应方式：从站要发送信息，需要经过主站同意。</span></p></li><li><p><span>异步平衡方式：每一个复合站都可以实现对别的站的数据传输。</span></p></li><li><p><span>异步响应方式：从站恶意不经过主站同意就发消息。</span></p></li></ol><p><strong><span>HDLC帧格式</span></strong></p><p><img src="assets/083.png" alt="083" style="zoom:40%;" /></p><ol start='' ><li><p><span>标志字段F：和PPP一样，首尾部都是0111 1110，不同的是，HDLC不需要转义字符，只需要在透明传输区间中使用零比特传输即可。</span></p></li><li><p><span>地址A：如果使用正常响应港式或异步响应港式，地址都是从站地址。如果是异步平衡方式，填入接收方地址。</span></p></li><li><p><span>控制C：决定了HDLC帧的类型，就类似PPP协议部分：</span></p><ol start='' ><li><p><span>信息帧（I）第1位位0，用来传输数据信息，或使用捎带技术对数据进行确认。</span></p></li><li><p><span>监督帧（S）10，用于流量控制和差错控制，执行对信息帧的确认，请求重发和请求暂停发送等功能。</span></p></li><li><p><span>无编号帧（U）11，用于提供对链路的建立、拆除等多种控制功能。</span></p></li></ol></li></ol><h3 id='ppp与hdlc协议对比'><span>PPP与HDLC协议对比</span></h3><p><span>相同点：</span></p><ol start='' ><li><p><span>HDLC和PPP都只支持全双工链路。</span></p></li><li><p><span>都可以实现透明传输。</span></p></li><li><p><span>都可以实现差错检测，但不能纠正错误。</span></p></li></ol><p><span>区别：</span></p><ol start='' ><li><p><span>PPP协议面向字节；HDLC协议面向比特。</span></p></li><li><p><span>PPP协议2B协议字段；HDLC协议没有。</span></p></li><li><p><span>PPP协议无序号和确认机制；HDLC协议有编号和确认机制。</span></p></li><li><p><span>PPP协议不可靠；HDLC协议可靠。</span></p></li><li><p><span>PPP协议一定是整个字节的传输；HDLC协议是一个比特一个比特的传输。</span></p></li></ol><h2 id='八链路层设备'><span>八、链路层设备</span></h2><h3 id='物理层拓展以太网'><span>物理层拓展以太网</span></h3><h4 id='光纤'><span>光纤</span></h4><p><span>	</span><span>集线器与主机之间的距离不能超过100米，否则会失真，因此远距离的通信就要用物理层拓展以太网，比如光纤和集线器连接，在发送端利用光纤调至七八电信号转换为光信号，在接收端利用光纤解调器把光信号转换为电信号。</span></p><h4 id='主干集线器'><span>主干集线器</span></h4><p><span>	</span><span>所谓冲突域，就是这个区域内，只能有一个主机进行通信，如果有一个以上就会冲突，一般是指一个集线器锁连接的主机的集合。为了让不同的充裕与主机进行通信，就要把不同的集线器链接在主干集线器上。这样冲突域A中的计算机就能与冲突域uC中的计算机进行通信，多个小冲突就能连接成一个大冲突，这样做的缺点就是通信效率偏低，以前的小冲突域中主机少，冲突概率低，而冲突域主机多，那冲突概率就大了。</span></p><h3 id='链路层扩展以太网'><span>链路层扩展以太网</span></h3><h4 id='网桥'><span>网桥</span></h4><p><span>	</span><span>网桥是根据MAC帧的目的地址对帧进行转发和过滤。当网桥收到一个帧时，并不像所有接口转发此帧，而是先检查此帧的目的MAC地址，然后再确定将该帧转发到哪一个接口，或者把它丢弃。</span></p><p><img src="assets/084.png" alt="084" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示，网桥链接起来一个个的以太网，每个以太网就是一个冲突域，也称为网段。</span></p><h4 id='网段'><span>网段</span></h4><p><span>	</span><span>网段一般指一个计算机网络中使用同一个物理层设备（传输介质，中继器，集线器等）能够直接通讯的那一部分。</span></p><h4 id='网桥优点'><span>网桥优点</span></h4><ol start='' ><li><p><span>过滤通信量，增大吞吐量。</span></p></li><li><p><span>扩大物理范围。</span></p></li><li><p><span>提高了可靠性。</span></p></li><li><p><span>可互联不同物理层、不同MAC子层和不同速率的以太网。</span></p></li></ol><h4 id='网桥分类'><span>网桥分类</span></h4><p><strong><span>透明网桥</span></strong><span>：透明指的是以太网上的站点不知道锁发送的帧经过哪几个网桥，是一种即插即用设备。网桥不知道网络拓扑结构，所以才修妖通过自学习算法构造转发表。</span></p><p><strong><span>源路由网桥</span></strong><span>：源路由网桥在发送帧时，把相信的最佳路由信息（路由最少/时间最短）放在帧的首部中。</span></p><p><span>	</span><span>采用的方法是：源站以广播方式通信的目的站发送一个发现帧。</span></p><h3 id='多接口网桥-以太网交换机'><span>多接口网桥-以太网交换机</span></h3><p><img src="assets/085.png" alt="085" style="zoom:40%;" /></p><p><span>	</span><span>以太网交换机的接口可以在集线器上，也可以直接连接在主机上、取决于网络复杂程度。</span></p><p><span>	</span><span>以太网交换机的每一个端口都是一个冲突域，以太网交换机独占传输媒体带宽。</span></p><p><span>	</span><strong><span>交换方式</span></strong></p><p><span>		</span><span>1、直通式交换机：</span></p><p><span>			</span><span>检查六个字节的目的地址就立刻转发。</span></p><p><span>			</span><span>延迟小，可靠性低，无法支持具有不同速率的端口的交换。</span></p><p><span>		</span><span>2、存储转发交换机：</span></p><p><span>			</span><span>将帧放入高速缓存，并检查是否正确，正确则转发，错误则丢弃。</span></p><p><span>			</span><span>延迟大，可靠性高，可以支持具有不同速率的端口的交换。</span></p><h3 id='冲突域与广播域'><span>冲突域与广播域</span></h3><p><span>	</span><span>冲突域：在同一个冲突域中的每一个节点都能收到所有被发送的帧。简单的说就是同一时间内智能有一台设备发送信息的范围。</span><span>	</span></p><p><span>	</span><span>广播域：网络中能接收任一设备发出的广播帧的所有设备的集合。简单的说如果站点发出一个广播信息，所有能接收到这个信号的设备范围称为广播域。</span></p><figure class='table-figure'><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>能够隔离冲突域</span></th><th style='text-align:center;' ><span>能否隔离广播域</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>物理层设备（中继器、集线器）</span></td><td style='text-align:center;' ><span>×</span></td><td style='text-align:center;' ><span>×</span></td></tr><tr><td style='text-align:center;' ><span>链路层设备（网桥、交换机）</span></td><td style='text-align:center;' ><span>√</span></td><td style='text-align:center;' ><span>×</span></td></tr><tr><td style='text-align:center;' ><span>网络层设备（路由器）</span></td><td style='text-align:center;' ><span>√</span></td><td style='text-align:center;' ><span>√</span></td></tr></tbody></table></figure><blockquote><p><span>例子：</span></p><p><img src="assets/086.png" alt="086" style="zoom:40%;" /></p><p><span>	</span><span>该拓扑结构中有几个冲突域，几个广播域？</span></p><p><span>	</span><span>答：从上面的表可以知道只有网络层设备 路由才能分割广播域，而上图中没有路由器，所以只有一个广播域，这个以太网连接了三个主机和一个集线器，三个主机各自构成一个冲突域，集线器及其上连接的注解有构成了一个冲突域，所有上图共有一个广播域，四个冲突域。</span></p></blockquote><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+
+<script>(function (){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
+</html>

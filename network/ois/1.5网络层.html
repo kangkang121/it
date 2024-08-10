@@ -1,0 +1,1673 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/*快速自定义配置*/
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * MIT License
+ *
+ * Copyright (c) 2023 劉強東 https://github.com/liangjingkanji
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #202124;
+    --blur-text-color: #c8c8c8;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(32, 33, 36, 0.5);
+    --drake-accent: #5784ec;
+    --drake-highlight: #3a474e;
+    --a-color: #1769e0;
+    --variable-color: #d01884;
+    --outline-active-color: var(#414040);
+    --code-block-bg-color: #f8f9fa;
+    --code-block-color: #3a474e;
+    --title-color: #202124;
+    --blockquote-border-color: #275796;
+    --blockquote-color: #275796;
+    --blockquote-bg-color: #e5f4fd;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--text-color);
+    --height-light-border-color: var(--text-color);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dadce0;
+    --table-header-bg-color: #f1f3f4;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 12px !important;
+    border-radius: 8px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: .1em solid #e8eaed;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 4px;
+    color: var(--drake-highlight);
+    border: .1rem solid #e8eaed;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote {
+    color: var(--blockquote-color) !important;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+.on-focus-mode #write a .md-plain:hover, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain:hover, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain:hover, .on-focus-mode .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+#write a code, a:any-link {
+    color: var(--a-color);
+}
+#write a code:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-library-node.file-tree-node.file-node-root {
+    font-size: 1.1rem;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 14px;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 400;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-atom {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-def {
+    color: #00f;
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #b80672;
+}
+.cm-s-inner span.cm-string {
+    color: #008000;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #008000;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-tag.cm-bracket {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-meta {
+    color: #c5221f;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+/* 正文标题区: #write */
+/* [TOC]目录树区: .md-toc-content */
+/* 侧边栏的目录大纲区: .sidebar-content */
+ 
+/** 
+ * 说明：
+ *     Typora的标题共有6级，从h1到h6。
+ *     我个人觉得h1级的标题太大，所以我的标题都是从h2级开始。
+ *     个人习惯每篇文章都有一个总标题，有一个目录，所以h2级的标题前两个都不会计数。
+ *     一般情况下，我虽然不使用h1级的标题，但是为了以防万一，h1级的标题前两个也都不会计数。
+ *     若想启用h1级标题，就取消包含“content: counter(h1) "."”项的注释，然后将包含“content: counter(h2) "."”的项注释掉即可。
+ */ 
+/** initialize css counter */
+#write, .sidebar-content,.md-toc-content{
+	/* 设置全局计数器的基准 */
+	/* 因为我喜欢从h2级标题用起，所以这里设置为h2 */
+    counter-reset: h2
+}
+ 
+#write h1, .outline-h1, .md-toc-item.md-toc-h1 {
+    counter-reset: h2
+}
+ 
+#write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+    counter-reset: h3
+}
+ 
+#write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+    counter-reset: h4
+}
+ 
+#write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+    counter-reset: h5
+}
+ 
+#write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+    counter-reset: h6
+}
+ 
+/** put counter result into headings */
+#write h1:before,
+.outline-h1>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1>.md-toc-inner:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+ 
+/* 使用h1标题时，去掉前两个h1标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h1元素，请根据情况自行修改。 */
+#write h1:nth-of-type(1):before,
+.outline-h1:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(1)>.md-toc-inner:before,
+#write h1:nth-of-type(2):before,
+.outline-h1:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h1;
+	content: ""
+}
+ 
+/*#write h2:before,
+.outline-h2>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2>.md-toc-inner:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}*/
+ 
+/* 使用h2标题时，去掉前两个h2标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h2元素，请根据情况自行修改。 */
+#write h2:nth-of-type(1):before,
+.outline-h2:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(1)>.md-toc-inner:before,
+#write h2:nth-of-type(2):before,
+.outline-h2:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h2;
+	content: ""
+}
+ 
+#write h3:before,
+h3.md-focus.md-heading:before, /** override the default style for focused headings */
+.outline-h3>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h3>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h3;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+     content:  counter(h3) ". "
+}
+ 
+#write h4:before,
+h4.md-focus.md-heading:before,
+.outline-h4>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h4>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h4;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+    content: counter(h3) "." counter(h4) ". "
+}
+ 
+#write h5:before,
+h5.md-focus.md-heading:before,
+.outline-h5>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h5>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h5;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+ 
+#write h6:before,
+h6.md-focus.md-heading:before,
+.outline-h6>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h6>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h6;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+ 
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						} @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>1.5网络层</title>
+</head>
+<body class='typora-export typora-export-show-outline typora-export-no-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络层">网络层</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#一概述">一、概述</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络层概述">网络层概述</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#电路交换报文交换和分组交换">电路交换、报文交换和分组交换</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数据交换">数据交换</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#电路交换">电路交换</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#报文交换">报文交换</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#分组交换">分组交换</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三种数据交换方式总结">三种数据交换方式总结</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数据报和虚电路交换方式">数据报和虚电路交换方式</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二路由算法与路由协议">二、路由算法与路由协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由算法">路由算法</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#概述">概述</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#分类">分类</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#分层次的路由协议">分层次的路由协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip数据报格式">IP数据报格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip数据报分片">IP数据报分片</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv4地址">Ipv4地址</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络地址转化nat">网络地址转化NAT</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#子网划分和子网掩码">子网划分和子网掩码</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#无分类编址cidr">无分类编址CIDR</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#arp协议">ARP协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#dhcp协议">DHCP协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#icmp协议">ICMP协议</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv6">IPV6</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#rip协议与距离向量算法">RIP协议与距离向量算法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#osf协议与链路状态算法">OSF协议与链路状态算法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#bgp协议">BGP协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三种路由协议对比">三种路由协议对比</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip组播">IP组播</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip数据报的三种传输方式">IP数据报的三种传输方式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip组播地址">IP组播地址</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#硬件组播">硬件组播</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ignp协议">IGNP协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#组播路由选择协议">组播路由选择协议</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#移动ip">移动IP</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三网络层设备">三、网络层设备</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由器">路由器</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#输入输出端口对线路上收到的分组处理">输入输出端口对线路上收到的分组处理</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三层设备区别">三层设备区别</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由表与路由转发">路由表与路由转发</a></div><ul class="outline-children"></ul></li></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='网络层'><span>网络层</span></h1><h2 id='一概述'><span>一、概述</span></h2><h3 id='网络层概述'><span>网络层概述</span></h3><p><strong><span>基础概念：</span></strong></p><ol start='' ><li><p><span>网络层主要任务是把分组从远端传送到目的端，为分组交换网上的不同主机提供通信服务。</span></p></li><li><p><span>网络层传输单位是数据报。</span></p></li><li><p><span>数据报与分组的关系：数据报是比较长的，而分组相当于把数据报进行切分而形成的。</span></p></li></ol><p><strong><span>主要功能：</span></strong></p><ol start='' ><li><p><strong><span>找路与分组转发：</span></strong><span>通过路由算法找到最佳路径，并把分组通过最佳路径转发出去。</span></p></li><li><p><strong><span>异构网互联：</span></strong><span>不同的额网络叫做易购网，网络层可以通过路由器吧这些网络连接起来，构成一个更大的网络。</span></p></li><li><p><strong><span>拥塞控制：</span></strong><span>如果所有节点都来不及接受分组，而丢弃大量分组的话，网络就处于拥塞状态。因此采取一定错误，缓解这种拥塞，拥塞控制有静态的开环控制和动态的闭环控制两种方法。</span></p></li></ol><h3 id='电路交换报文交换和分组交换'><span>电路交换、报文交换和分组交换</span></h3><h4 id='数据交换'><span>数据交换</span></h4><p><span>	</span><span>数据通过网络核心路由器从源主机到目的主机依托的就是数据交换技术。</span></p><p><span>	</span><span>比如网络中有六台主机，总不能像下面这样连通道。造价非常高。</span></p><p><img src="assets/087.png" alt="087" style="zoom:40%;" /></p><p><span>	</span><span>通过交换设备连连接：</span></p><p><img src="assets/088.png" alt="088" style="zoom:40%;" /></p><p><span>	</span><span>交换设备可以是数据链路层的交换机、网桥、也可以是网络层的路由器。这样子连接信道明显就比之前的方法简单，有个缺点就是交换设备上不能连接太多的主机，因为信道不能拉的太长。改进之后的方法：</span></p><p><img src="assets/089.png" alt="089" style="zoom:40%;" /></p><p><span>	</span><span>用一个庞大的交换网络代替单一的一个交换设备。</span></p><p><strong><span>分类：</span></strong></p><ul><li><p><span>电路交换</span></p></li><li><p><span>报文交换</span></p></li><li><p><span>分组交换</span></p><ul><li><p><span>数据报交换方式</span></p></li><li><p><span>虚电路交换方式</span></p></li></ul></li></ul><h4 id='电路交换'><span>电路交换</span></h4><p><strong><span>电话网络</span></strong></p><p><img src="assets/090.png" alt="090" style="zoom:40%;" /></p><p><strong><span>电路交换阶段</span></strong></p><p><img src="assets/091.png" alt="091" style="zoom:40%;" /></p><p><strong><span>电路交换的优点：</span></strong></p><ul><li><p><span>通信时延迟小</span></p></li><li><p><span>有序传输</span></p></li><li><p><span>没有冲突（独占资源）</span></p></li><li><p><span>实时性强</span></p></li></ul><p><strong><span>电路交换的缺点：</span></strong></p><ul><li><p><span>建立连接时间较长</span></p></li><li><p><span>线路独占，使用率低</span></p></li><li><p><span>灵活性差</span></p></li><li><p><span>无差错控制能力</span></p></li></ul><p><strong><span>电路交换特点：</span></strong></p><p><span>	</span><span>收房双方在信道中独占资源，没有冲突。</span></p><h4 id='报文交换'><span>报文交换</span></h4><p><span>	</span><span>报文指的是源应用发送的信息整体。比如一张图片、一段视频、一份word等。报文会被传输层分割成报文段，当然如果报文比较短就不回分割，然后给报文加上ip地址、物理地址，并在物理层上进行数据传输。</span></p><p><span>	</span><span>电路交换的特点是在交换设备中传播时，已经固定好了，必须从A到B到C，报文交换比较灵活，可以从A到B也可以从A到C。</span></p><p><strong><span>报文交换优点：</span></strong></p><ul><li><p><span>无需建立连接。</span></p></li><li><p><span>存储转发、动态分配线路。</span></p></li><li><p><span>线路利用率较高。</span></p></li><li><p><span>多目标服务。</span></p></li></ul><p><strong><span>报文交换缺点：</span></strong></p><ul><li><p><span>有存储转发时延。（因为交换设备要把报文存储起来，待链路空闲后转发）</span></p></li><li><p><span>报文大小不固定，需要网络节点有较大缓存空间。</span></p></li></ul><h4 id='分组交换'><span>分组交换</span></h4><p><strong><span>介绍：</span></strong><span>把分组分成小的数据块，在进行存储转发，就是分组。</span></p><p><strong><span>优点：</span></strong></p><ul><li><p><span>无需建立连接。</span></p></li><li><p><span>存储转发，动态分配线路。</span></p></li><li><p><span>线路可靠性高。（分组短，出错概率低）</span></p></li><li><p><span>线路利用率高。（同报文交换，线路不固定）</span></p></li><li><p><span>相当于报文交换，存储管理更容易。（把报文分成块儿）</span></p></li></ul><p><strong><span>缺点：</span></strong></p><ul><li><p><span>有存储转发时延。</span></p></li><li><p><span>需要额外传输信息量。（分组在报文切片的基础上还要额外添加一些信息，目的地址、源地址、编号等）</span></p></li><li><p><span>乱序到目的主机时，要对分组排序重组。</span></p></li></ul><p><strong><span>报文交换与分组交换对比</span></strong></p><p><span>	</span><span>报文交换中一个文件只能存在于一个交换设备中，而分组交换一个文件可以每个部分都在不同的交换设备中。</span></p><p><span>	</span><span>报文交换就好比一个质点过桥，所有数据都集中在质点上；而分组交换相当于一个大巴过桥，数据被拆分君泰在大巴的每个座位上。报文交换的时延就是质点到达目的地的时延，而分组交换的时延就是大巴头进桥算起，尾巴出桥结束。</span></p><h3 id='三种数据交换方式总结'><span>三种数据交换方式总结</span></h3><p><img src="assets/092.png" alt="092" style="zoom:40%;" /></p><ul><li><p><span>报文交换和分组交换采用存储转发技术。</span></p></li><li><p><span>传送数据量大，且传送时间大于呼叫时间，选择电路贾环、电路交换传输时延最小（不需要存储转发）。</span></p></li><li><p><span>从信道利用率看，报文交换和分组交换由于电路交换，分组交时延更小。</span></p></li></ul><h3 id='数据报和虚电路交换方式'><span>数据报和虚电路交换方式</span></h3><p><strong><span>数据报交换方式：</span></strong><span>为网络层提供无连接服务。无连接服务指的不是实现为分组的传输确定传输路径，而是每个分组独立确定传输路径，不同分组传输路径可能不同。</span></p><p><strong><span>虚电报交换方式：</span></strong><span>为网络层提供连接服务。连接服务是指首先为分组传输确定传输路径（建立连接），然后沿该路径（连接）进行传输系列分组，系列分组传输路径相同，传输结束后拆除连接。切实虚电报交换方式就是把分组交换方式和电路交换方式进行了融合。</span></p><figure class='table-figure'><table><thead><tr><th><span>计算机网络系统层次</span></th><th><span>传输单元名词</span></th><th><span>具体内容</span></th></tr></thead><tbody><tr><td><span>应用层</span></td><td><span>报文</span></td><td><span>比如qq就是应用层，用qq发送的文件就属于报文</span></td></tr><tr><td><span>传输层</span></td><td><span>报文段</span></td><td><span>比如下载链接，就不回分割。传输一个文件就需要分割成报文段，每个报文段单独传输</span></td></tr><tr><td><span>网络层</span></td><td><span>IP数据报、分组</span></td><td><span>IP数据报就是给报文段封装上了网络层的IP地址，包括目的地址、源地址。如果IP数据报太大，就再进行切割，小的数据报就是单独的一个分组</span></td></tr><tr><td><span>数据链路层</span></td><td><span>帧</span></td><td><span>在分组的基础上，头部加上mac物理地址，尾部加上fcs帧检验序列</span></td></tr><tr><td><span>物理层</span></td><td><span>比特流</span></td><td><span>01101010， 01101， 01010101010，010101010100</span></td></tr></tbody></table></figure><p><strong><span>被因特网使用的数据交换方式：</span></strong></p><ul><li><p><span>首先数据报最大的特点是无连接，也就是不需要建立连接，不用事先为分组的传输确定传输路径，每个分组独立确定传输路径，不同分组传输路径可能不同。</span></p></li><li><p><span>每个分组携带源和目的地址。</span></p></li><li><p><span>路由器根据分组的目的地址转发分组：基于路由器协议/算法构建转发表，检索转发表，每个分组独立选路。</span></p></li></ul><p><strong><span>虚电路交换方式：</span></strong></p><ul><li><p><strong><span>介绍：</span></strong><span>虚电路就是将数据报方式和电路方式结合，发挥两者的优点。</span></p><ul><li><p><span>虚电路：一条源主机到目的主机类似于电路的路径（逻辑连接），路径上所有节点都要维持这个虚电路的建立，都维持一张虚电路表，每一项记录一个打开的虚电路的信息。</span></p></li></ul></li><li><p><strong><span>通信过程：</span></strong></p><ul><li><p><span>第一步：建立连接，每个分组携带虚电路号，而非目的地址。源主机发送”呼叫请求“分组并收到”呼叫应答“分组后才算建立连接。</span></p></li><li><p><span>第二步：数据传输，属于全双工通信。</span></p></li><li><p><span>第三步：释放链接，源主机发送”释放请求“分组以拆除虚电路。</span></p></li></ul></li><li><p><strong><span>思考：</span></strong></p><ul><li><p><span>虚电路有什么用呢 ？分组发送到路由器里面，路由器会通过虚电路号判断接下来应该发送给哪个路由器。</span></p><p><span>类似于比图论，虚电路号就是每个号码都对应一条路径，而数据报服务的目的地址是知道其实位置和终止位置，路由器提供路径算法。</span></p></li></ul></li></ul><p><strong><span>数据报与虚电路的区别：</span></strong></p><ul><li><p><span>数据报不需要建立连接；虚电路服务必须要建立连接。</span></p></li><li><p><span>数据报服务每个分组都要有完整的目的地址；虚电路仅在建立连接阶段使用，之后每个分组使用长度较短的虚电路信息。</span></p></li><li><p><span>数据报服务每个分组独立的进行路由选择和转发；虚电路服务属于同一个虚电路的分组按照同一路由转发。</span></p></li><li><p><span>数据报服务不能保证分组的有序到达；虚电路服可以保证分组的有序到达，因为有连接。</span></p></li><li><p><span>数据报服务不保证可靠性通信，可靠型由用户主机来保证；虚电路服务可考星由网络保证。</span></p></li><li><p><span>数据报服务在出现故障节点会丢失分组，其他分组路径发生变化，可以正常传输；虚电路服务所有经过故障节点的虚电路都不能正常服务，因为线路是固定的。</span></p></li><li><p><span>数据报服务有用户主机流量进行流量控制，不保证数据报的可靠性；虚电路服务可由交换网负责，也可由用户主机负责。</span></p></li></ul><h2 id='二路由算法与路由协议'><span>二、路由算法与路由协议</span></h2><h3 id='路由算法'><span>路由算法</span></h3><h4 id='概述'><span>概述</span></h4><p><span>	</span><span>路由器里面有个东西叫做路由表，它里面放着网络IP、子网掩码、下一跳IP地址、接口。这些都是通过路由算法得到的。</span></p><p><span>	</span><span>最佳路径：”最佳“只能是相对某一种特定要求下得出较为合理的选择。</span></p><h4 id='分类'><span>分类</span></h4><ul><li><p><span>路由算法：</span></p><ul><li><p><span>静态路由算法（非自适应路由算法）：</span></p><ul><li><p><span>方式：管理员手工配置路由信息。</span></p></li><li><p><span>优点：简单、可靠，在负载稳定、拓扑变化不大的网络中运行效果很好，广泛用于高度安全性的军事网络和较小的商业网络。</span></p></li><li><p><span>缺点：路由更新慢，不适用于大型网络。</span></p></li></ul></li><li><p><span>动态路由算法（自适应路由算法）：</span></p><ul><li><p><span>方式：路由器之间交换信息，按照路由算法优化路由表项。</span></p></li><li><p><span>优点：路由更快，适用于大型网络，及时响应链路路费用或网络拓扑变化。</span></p></li><li><p><span>缺点：算法复杂，增加网络负担。</span></p></li></ul></li></ul></li><li><p><span>动态路由算法：</span></p><ul><li><p><span>全局性：</span></p><ul><li><p><span>链路状态路由算法。</span></p></li><li><p><span>典型应用：OSPF协议。</span></p></li><li><p><span>特点：所有路由器掌握完整的网络拓扑和链路费用的情况。每个路由器都知道完整的额拓扑情况。</span></p></li></ul></li><li><p><span>分散性：</span></p><ul><li><p><span>距离向量路由算法。</span></p></li><li><p><span>典型应用：RIP协议。</span></p></li><li><p><span>特点：路由器值掌握物理相连的邻居及链路费用。只知道周围的拓扑情况。</span></p></li></ul></li></ul></li></ul><h3 id='分层次的路由协议'><span>分层次的路由协议</span></h3><p><strong><span>路由协议为什么要分层次？</span></strong></p><p><span>	</span><span>因为因特网比较大，许多单位不想让外界知道自己的路由选择协议，但还想接入因特网。</span></p><p><strong><span>分层次路由协议实现：</span></strong></p><p><span>	</span><span>自治系统AS：在单一的技术管理下的一组路由器，而这些路由器使用一种AS内部的路由选择协议和共同的度量以确定分组在改AS内的路由，同时还使用一种AS之间的路由协议来确定AS之间的路由。</span></p><p><span>	</span><span>一个AS内的所有网络都属于一个行政单位来管辖，一个自治系统的所有路由器在本自治系统内都必须联通。</span></p><p><span>	</span><span>自制系统AS实现了透明性，把路由协议分成了AS内使用的内部网关协议IGP（常用于协议RIP OSPF）和AS之间使用的外部网关协议EGP（常用于BGP）。</span></p><p><img src="assets/093.png" alt="093" style="zoom:40%;" /></p><h4 id='ip数据报格式'><span>IP数据报格式</span></h4><p><strong><span>TCP/IP协议栈</span></strong></p><p><img src="assets/094.png" alt="094" style="zoom:40%;" /></p><p><strong><span>IP数据报格式</span></strong></p><p><img src="assets/095.png" alt="095" style="zoom:40%;" /></p><p><span>	</span><span>首部还可以细分为固定部分和可变部分。任何一个数据报，其固定部分大小相同，20字节，且一定要有。而可变部分可有可无，大小不受限，大部分情况下没有。</span></p><p><img src="assets/096.png" alt="096" style="zoom:40%;" /></p><p><span>	</span><span>上图中的数据部分其实就是传输层的报文段。</span></p><ul><li><p><span>版本：IPv4或IPv6。</span></p></li><li><p><span>首部长度：只有4个字节，所以只能表示0~15。单位是4Byte，比如首部长度是8，真正的长度是8*4 Byte - 32Byte，首部长度是5那么 5 </span><span>*</span><span> 4 = 20Byte 首部默认为20Byte，默认长度为5（0101）。</span></p></li><li><p><span>区分服务：指示期望获得那种类型的服务。只有在使用区分服务的时候，这个字段才有用，否则就没用。</span></p></li><li><p><span>总长度：表示首部 + 数据长度，单位是1Byte没因为字段长度为16位，所以他可以表示数据长度是0 - 2</span><sup><span>16</span></sup></p><p><span>0~65525Byte，实际情况下不会达到最大值，因为数据太长会进行切片。</span></p></li><li><p><span>标识、标志、片偏移。</span></p></li><li><p><span>生存时间（TTL）：IP分组的质期。经过一个路由-1变成0则丢失。</span></p></li><li><p><span>协议：数据部分使用的协议。</span></p></li></ul><p><img src="assets/097.png" alt="097" style="zoom:40%;" /></p><ul><li><p><span>首部校验和：只校验首部，如果路由校验出错则丢弃数据。</span></p></li><li><p><span>可选字段：0~40Byte用来支持拍错、测量以及安全措施。</span></p></li><li><p><span>填充：全0，用来把首部补充成4Byte的整数倍。</span></p></li></ul><h4 id='ip数据报分片'><span>IP数据报分片</span></h4><p><strong><span>最大传输单元MTU：</span></strong><span>最大传输单元MTU指的就是数据链路层数据帧可封装数据的上限。以太网的MTU是1500字节。</span></p><p><strong><span>分片：</span></strong><span>当传输的数据长度超过最大传输单元MTU，就要进行分片。如果不分片，分组则无法传递，就会返回一个SMP差错报文。</span></p><p><strong><span>标识：</span></strong><span>同一数据的分片使用同一标识。</span></p><p><strong><span>标志：</span></strong><span>共三位，只有两位有意义。中间位DF（Don&#39;t Fragment）=1的话会禁止分片，DF=0允许分片。第三位MF（More Fragment）=1还有更多的分片，MF=0代表该分片是最后一片或没有分片。只有DF为0，MF才有意义。</span></p><p><strong><span>片偏移：</span></strong><span>指出较长分组分片后，谋篇在原分组中的相对位置。以8B为单位，可以通过这个得到一个结论，除了最后一个分片，每个分片长度一定是8B的整数倍。</span></p><blockquote><p><span>举例子：一个首部为80Byte，数据部分3800Byte，MTU=1400Byte的数据报，就可以分为三个分片，分别是首部20yte数据部分1400Byte、首部20Byte数据部分1400Byte、首部20Byte数据部分1000Byte。三者的片偏移量分别是</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="9.265ex" height="3.298ex" role="img" focusable="false" viewBox="0 -967.9 4095.1 1457.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.108ex;"><defs><path id="MJX-6-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-6-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-6-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-6-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-6-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-6-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-6-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,485) scale(0.707)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D435" xlink:href="#MJX-6-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(1259,0)"><use data-c="1D466" xlink:href="#MJX-6-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(1749,0)"><use data-c="1D461" xlink:href="#MJX-6-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(2110,0)"><use data-c="1D452" xlink:href="#MJX-6-TEX-I-1D452"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="38" xlink:href="#MJX-6-TEX-N-38"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D435" xlink:href="#MJX-6-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(1259,0)"><use data-c="1D466" xlink:href="#MJX-6-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(1749,0)"><use data-c="1D461" xlink:href="#MJX-6-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(2110,0)"><use data-c="1D452" xlink:href="#MJX-6-TEX-I-1D452"></use></g></g><rect width="2021.5" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(2539.3,0)"><use data-c="3D" xlink:href="#MJX-6-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(3595.1,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>0</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow><mrow><mn>8</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{0Byte}{8Byte}=0</script><span> 、</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="13.927ex" height="3.298ex" role="img" focusable="false" viewBox="0 -967.9 6155.7 1457.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.108ex;"><defs><path id="MJX-7-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-7-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-7-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-7-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-7-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-7-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-7-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-7-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-7-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-7-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-7-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,485) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-7-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-7-TEX-N-34" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-7-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-7-TEX-N-30" transform="translate(1500,0)"></use></g><g data-mml-node="mi" transform="translate(2000,0)"><use data-c="1D435" xlink:href="#MJX-7-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(2759,0)"><use data-c="1D466" xlink:href="#MJX-7-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(3249,0)"><use data-c="1D461" xlink:href="#MJX-7-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(3610,0)"><use data-c="1D452" xlink:href="#MJX-7-TEX-I-1D452"></use></g></g><g data-mml-node="mrow" transform="translate(750.3,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="38" xlink:href="#MJX-7-TEX-N-38"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D435" xlink:href="#MJX-7-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(1259,0)"><use data-c="1D466" xlink:href="#MJX-7-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(1749,0)"><use data-c="1D461" xlink:href="#MJX-7-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(2110,0)"><use data-c="1D452" xlink:href="#MJX-7-TEX-I-1D452"></use></g></g><rect width="3082.2" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(3599.9,0)"><use data-c="3D" xlink:href="#MJX-7-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(4655.7,0)"><use data-c="31" xlink:href="#MJX-7-TEX-N-31"></use><use data-c="37" xlink:href="#MJX-7-TEX-N-37" transform="translate(500,0)"></use><use data-c="35" xlink:href="#MJX-7-TEX-N-35" transform="translate(1000,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1400</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow><mrow><mn>8</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mn>175</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{1400Byte}{8Byte}= 175</script><span> </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="13.927ex" height="3.298ex" role="img" focusable="false" viewBox="0 -967.9 6155.7 1457.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.108ex;"><defs><path id="MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-8-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-8-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-8-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-8-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-8-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-8-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-8-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-8-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-8-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-8-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,485) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-8-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-8-TEX-N-34" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-8-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-8-TEX-N-30" transform="translate(1500,0)"></use></g><g data-mml-node="mi" transform="translate(2000,0)"><use data-c="1D435" xlink:href="#MJX-8-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(2759,0)"><use data-c="1D466" xlink:href="#MJX-8-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(3249,0)"><use data-c="1D461" xlink:href="#MJX-8-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(3610,0)"><use data-c="1D452" xlink:href="#MJX-8-TEX-I-1D452"></use></g></g><g data-mml-node="mrow" transform="translate(750.3,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="38" xlink:href="#MJX-8-TEX-N-38"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D435" xlink:href="#MJX-8-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(1259,0)"><use data-c="1D466" xlink:href="#MJX-8-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(1749,0)"><use data-c="1D461" xlink:href="#MJX-8-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(2110,0)"><use data-c="1D452" xlink:href="#MJX-8-TEX-I-1D452"></use></g></g><rect width="3082.2" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(3599.9,0)"><use data-c="3D" xlink:href="#MJX-8-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(4655.7,0)"><use data-c="31" xlink:href="#MJX-8-TEX-N-31"></use><use data-c="37" xlink:href="#MJX-8-TEX-N-37" transform="translate(500,0)"></use><use data-c="35" xlink:href="#MJX-8-TEX-N-35" transform="translate(1000,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1400</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow><mrow><mn>8</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mn>175</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{1400Byte}{8Byte}=175</script><span> 、</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="13.927ex" height="3.298ex" role="img" focusable="false" viewBox="0 -967.9 6155.7 1457.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.108ex;"><defs><path id="MJX-9-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-9-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-9-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-9-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-9-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-9-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-9-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-9-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-9-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-9-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,485) scale(0.707)"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-9-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-9-TEX-N-38" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-9-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-9-TEX-N-30" transform="translate(1500,0)"></use></g><g data-mml-node="mi" transform="translate(2000,0)"><use data-c="1D435" xlink:href="#MJX-9-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(2759,0)"><use data-c="1D466" xlink:href="#MJX-9-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(3249,0)"><use data-c="1D461" xlink:href="#MJX-9-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(3610,0)"><use data-c="1D452" xlink:href="#MJX-9-TEX-I-1D452"></use></g></g><g data-mml-node="mrow" transform="translate(750.3,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="38" xlink:href="#MJX-9-TEX-N-38"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D435" xlink:href="#MJX-9-TEX-I-1D435"></use></g><g data-mml-node="mi" transform="translate(1259,0)"><use data-c="1D466" xlink:href="#MJX-9-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(1749,0)"><use data-c="1D461" xlink:href="#MJX-9-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(2110,0)"><use data-c="1D452" xlink:href="#MJX-9-TEX-I-1D452"></use></g></g><rect width="3082.2" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(3599.9,0)"><use data-c="3D" xlink:href="#MJX-9-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(4655.7,0)"><use data-c="33" xlink:href="#MJX-9-TEX-N-33"></use><use data-c="35" xlink:href="#MJX-9-TEX-N-35" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-9-TEX-N-30" transform="translate(1000,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2800</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow><mrow><mn>8</mn><mi>B</mi><mi>y</mi><mi>t</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mn>350</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{2800Byte}{8Byte} = 350</script><span>如下表所示</span></p><figure class='table-figure'><table><thead><tr><th><span>\</span></th><th><span>总长度</span></th><th><span>标识</span></th><th><span>DF</span></th><th><span>MF</span></th><th><span>片偏移</span></th></tr></thead><tbody><tr><td><span>原始数据报</span></td><td><span>3820</span></td><td><span>12345</span></td><td><span>0</span></td><td><span>0</span></td><td><span>0</span></td></tr><tr><td><span>数据报片1</span></td><td><span>1420</span></td><td><span>12345</span></td><td><span>0</span></td><td><span>1</span></td><td><span>0</span></td></tr><tr><td><span>数据报片2</span></td><td><span>1420</span></td><td><span>12345</span></td><td><span>0</span></td><td><span>1</span></td><td><span>175</span></td></tr><tr><td><span>数据报片3</span></td><td><span>1020</span></td><td><span>12345</span></td><td><span>0</span></td><td><span>0</span></td><td><span>350</span></td></tr></tbody></table></figure></blockquote><h4 id='ipv4地址'><span>Ipv4地址</span></h4><p><strong><span>IP编址的历史阶段：</span></strong><span>最早使用的是分类的IP地址，后来才有子网划分。现在使用的是构成超网（无分类编址的方式）。</span></p><p><strong><span>互连网中的IP地址：</span></strong></p><p><img src="assets/098.png" alt="098" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示，同一局域网内的ip地址除了最后一位主机号外的前三个字节都是相同的，这一片就叫局域网。</span></p><p><strong><span>分类的IP地址</span></strong></p><p><img src="assets/099.png" alt="099" style="zoom:40%;" /></p><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>网络类别</span></th><th style='text-align:center;' ><span>最大可用网络数</span></th><th style='text-align:center;' ><span>第一个可用的网络号</span></th><th style='text-align:center;' ><span>最后一个可用的网络号</span></th><th style='text-align:center;' ><span>每个网络中的最大主机数</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>A</span></td><td style='text-align:center;' ><span>2</span><sup><span>7</span></sup><span> - 2</span></td><td style='text-align:center;' ><span>1</span></td><td style='text-align:center;' ><span>126</span></td><td style='text-align:center;' ><span>2</span><sup><span>24</span></sup><span> - 2</span></td></tr><tr><td style='text-align:center;' ><span>B</span></td><td style='text-align:center;' ><span>2</span><sup><span>14</span></sup><span> - 1</span></td><td style='text-align:center;' ><span>128.1</span></td><td style='text-align:center;' ><span>191.255</span></td><td style='text-align:center;' ><span>2</span><sup><span>16</span></sup><span> - 2</span></td></tr><tr><td style='text-align:center;' ><span>C</span></td><td style='text-align:center;' ><span>2</span><sup><span>21</span></sup><span> - 1</span></td><td style='text-align:center;' ><span>192.0.1</span></td><td style='text-align:center;' ><span>223.255.255</span></td><td style='text-align:center;' ><span>2</span><sup><span>8</span></sup><span> - 2</span></td></tr></tbody></table></figure><p><span>注意：D类仅用于一对多通信。E类几乎不用。</span></p><p><strong><span>特殊的IP地址：</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>NetID网络号</span></th><th><span>HostID 主机号</span></th><th><span>作为IP分组源地址</span></th><th><span>作为IP分组目的地址</span></th><th><span>用途</span></th></tr></thead><tbody><tr><td><span>全0</span></td><td><span>全0</span></td><td><span>可以</span></td><td><span>不可以</span></td><td><span>本网范围内表示主机，路由表中用于表示默认路由（表示整个Internet网络）</span></td></tr><tr><td><span>全0</span></td><td><span>特定值</span></td><td><span>不可以</span></td><td><span>可以</span></td><td><span>表示本网内某个特定主机</span></td></tr><tr><td><span>全1</span></td><td><span>全1</span></td><td><span>不可以</span></td><td><span>可以</span></td><td><span>本网广播地址（路由器不转发）</span></td></tr><tr><td><span>特定值</span></td><td><span>全0</span></td><td><span>不可以</span></td><td><span>不可以</span></td><td><span>网络地址，表示一个网络</span></td></tr><tr><td><span>特定值</span></td><td><span>全1</span></td><td><span>不可以</span></td><td><span>可以</span></td><td><span>直接广播地址，对特定网络上的所有主机进行广播</span></td></tr><tr><td><span>127</span></td><td><span>任意数（非全0/1）</span></td><td><span>可以</span></td><td><span>可以</span></td><td><span>用于本地软件换回测试，称为环回地址</span></td></tr></tbody></table></figure><p><span>	</span><span>注意：对于A类，第一个字节叫做网络号，对于B类，前两个叫做网络号，对于C类，前三个就做网络号。剩下都交主机。</span></p><p><span>	</span><span>情况一：不知道自己的网络号，也不知道你自己得主机号，直接发送数据。</span></p><p><span>	</span><span>情况二：同一个局域网内，网络号相同，所以目的地址网络号为零就是说目的地址网络号和源地址是一样的。</span></p><p><span>	</span><span>情况三：就是255.255.255.255目的地址如果是这样子的话，就是说目的主机就是该局域网内的所有主句。路由器不转发是因为这是一个广播域内，不需要跨网。</span></p><p><span>	</span><span>情况四：网络ID。</span></p><p><span>	</span><span>情况五：类似于情况三，只是可以在其他的网络组中也进行广播。</span></p><p><span>	</span><span>情况六：换回地址、用来测试。比如127.0.0.1这种地址还没发出去就走回来，只是用来测试的。类似于socket编程中做了一个客户端服务器然后自己和自己聊天，这种情况下数据数据还没发出主机外就被本主机接收了。</span></p><p><span>	</span><span>注意：如果主机号是255，则一定是广播地址。</span></p><p><strong><span>私有IP地址：</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>地址类别</span></th><th><span>地址范围</span></th><th><span>网段个数</span></th></tr></thead><tbody><tr><td><span>A类</span></td><td><span>10.0.0.0 ~ 10.255.255.255</span></td><td><span>1</span></td></tr><tr><td><span>B类</span></td><td><span>172.16.0.0 ~ 172.31.255.255</span></td><td><span>16</span></td></tr><tr><td><span>C类</span></td><td><span>192.168.0.0 ~ 192.168.255.255</span></td><td><span>256</span></td></tr></tbody></table></figure><p><span>	</span><span>这些都是在一个学校或医院设备中使用，放在因特网上是不认的。</span></p><h4 id='网络地址转化nat'><span>网络地址转化NAT</span></h4><p><strong><span>私有IP地址：</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>地址类别</span></th><th><span>地址范围</span></th><th><span>网段个数</span></th></tr></thead><tbody><tr><td><span>A类</span></td><td><span>10.0.0.0 ~ 10.255.255.255</span></td><td><span>1</span></td></tr><tr><td><span>B类</span></td><td><span>172.16.0.0 ~ 172.31.255.255</span></td><td><span>16</span></td></tr><tr><td><span>C类</span></td><td><span>192.168.0.0 ~ 192.168.255.255</span></td><td><span>256</span></td></tr></tbody></table></figure><p><span>	</span><span>以上属于私有IP地址，我们知道路由器对目的地址是私有IP地址的数据报一律不进行转发。一般学校内部使用的就是私有IP地址。</span></p><p><strong><span>网络地址转换NAT：</span></strong></p><p><span>	</span><span>网络地址转换NAT（Network Address Translation）：在专用网连接到因特网的路由器上安装NAT软件，安装了NAT软件的路由器叫做NAT路由器，至少有一个有效的外部全球IP地址。</span></p><p><img src="assets/100.png" alt="100" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示192.168.0.3是一个私有地址，但是路由器在转发的时候给别人的是172.38.1.5属于公网地址。</span></p><p><span>	</span><span>那NAT是如何实现呢？</span></p><p><span>	</span><span>NAT路由器里边有个NAT转换表：主要用来做IP映射。</span></p><figure class='table-figure'><table><thead><tr><th><span>WAN端</span></th><th><span>LAN端</span></th></tr></thead><tbody><tr><td><span>172.38.1.5: 40001</span></td><td><span>192.168.0.3: 30000</span></td></tr><tr><td><span>172.38.1.5: 40002</span></td><td><span>192.168.0.4: 30001</span></td></tr></tbody></table></figure><h4 id='子网划分和子网掩码'><span>子网划分和子网掩码</span></h4><p><strong><span>子网划分：</span></strong></p><p><span>	</span><span>IP地址分类的缺点：IP地址空间的利用率有时很低；两级IP地址不够灵活。</span></p><p><span>	</span><span>所谓二级IP地址就是网络号和主机号，所谓三级IP地址为网络号、子网号、主机号。就是把二级IP的主机号分成了子网号和主机号。</span></p><p><span>	</span><span>某单位划分子网后，对外扔表现为一个网络，即本单位外的网络看不见本单位内子网的划分。</span></p><p><span>	</span><span>其中子网号不能全是1或0，主机号绝对不能全是0或1。</span></p><p><img src="assets/101.png" alt="101" style="zoom:40%;" /></p><p><span>	</span><span>假设网络号是145.14.0.0，这家单位把网络划分成三个子网145.13.3.0、145.13.7.0、145。13。21.0</span></p><p><span>	</span><span>如果有别的电脑要发送给145.13.21.10那么肯定会先发给145.14.0.0的路由器，接下来就是传给对应的主机，这就是子网掩码。</span></p><p><strong><span>子网掩码</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>\</span></th><th><span>网络号</span></th><th><span>主机号</span></th></tr></thead><tbody><tr><td><span>二级IP地址</span></td><td><span>145.13</span></td><td><span>3.10</span></td></tr><tr><td><span>二级IP地址的子网掩码</span></td><td><span>11111111 11111111</span></td><td><span>00000000 00000000</span></td></tr></tbody></table></figure><figure class='table-figure'><table><thead><tr><th><span>\</span></th><th><span>网络号</span></th><th><span>子网号</span></th><th><span>主机号</span></th></tr></thead><tbody><tr><td><span>三级IP地址</span></td><td><span>145.13</span></td><td><span>3</span></td><td><span>10</span></td></tr><tr><td><span>三级IP地址的子网掩码</span></td><td><span>11111111 11111111</span></td><td><span>11111111</span></td><td><span>00000000</span></td></tr></tbody></table></figure><p><span>	</span><span>用子网掩码与IP地址诸位相与，就能得到子网网络地址。</span></p><blockquote><p><span>例子：已知IP地址是141.147.72.24子网掩码是255.255.192.0求网络地址。</span></p><p><span>	</span><span>IP地址按二进制展开为 10001101.00001110.01001000.00011000，子网掩码按二进制展开为11111111.11111111.11000000.00000000。二者相与</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="82.983ex" height="2.773ex" role="img" focusable="false" viewBox="0 -864.9 36678.5 1225.5" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.816ex;"><defs><path id="MJX-10-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-10-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-10-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-10-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-10-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-10-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-10-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(3500,0)"></use><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E" transform="translate(4000,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(4278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(4778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(5278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(5778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(6278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(6778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(7278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(7778,0)"></use></g><g data-mml-node="mn" transform="translate(8278,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3778,0)"></use></g><g data-mml-node="mn" transform="translate(12556,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(1778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3778,0)"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-10-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(3500,0)"></use><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E" transform="translate(4000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(4278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(4778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(5278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(5778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(6278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(6778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(7278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(7778,0)"></use></g><g data-mml-node="mn" transform="translate(8278,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3778,0)"></use></g><g data-mml-node="mn" transform="translate(12556,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3778,0)"></use></g></g><rect width="12103.4" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(12621.2,0)"><use data-c="3D" xlink:href="#MJX-10-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(13677,0)"><use data-c="31" xlink:href="#MJX-10-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(3500,0)"></use><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E" transform="translate(4000,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(4278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(4778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(5278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(5778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(6278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(6778,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(7278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(7778,0)"></use></g><g data-mml-node="mn" transform="translate(21955,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(278,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3778,0)"></use></g><g data-mml-node="mn" transform="translate(26233,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(1778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(2778,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3278,0)"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(3778,0)"></use></g><g data-mml-node="mo" transform="translate(30788.8,0)"><use data-c="3D" xlink:href="#MJX-10-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(31844.5,0)"><use data-c="31" xlink:href="#MJX-10-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-10-TEX-N-34" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(1000,0)"></use><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-10-TEX-N-31" transform="translate(1778,0)"></use><use data-c="34" xlink:href="#MJX-10-TEX-N-34" transform="translate(2278,0)"></use></g><g data-mml-node="mn" transform="translate(34622.5,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="36" xlink:href="#MJX-10-TEX-N-36" transform="translate(278,0)"></use><use data-c="34" xlink:href="#MJX-10-TEX-N-34" transform="translate(778,0)"></use></g><g data-mml-node="mn" transform="translate(35900.5,0)"><use data-c="2E" xlink:href="#MJX-10-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-10-TEX-N-30" transform="translate(278,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10001101.00001110</mn><mn>.01001000</mn><mn>.00011000</mn></mrow><mrow><mn>11111111.11111111</mn><mn>.11000000</mn><mn>.00000000</mn></mrow></mfrac><mo>=</mo><mn>10001101.00001110</mn><mn>.01000000</mn><mn>.00000000</mn><mo>=</mo><mn>141.14</mn><mn>.64</mn><mn>.0</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{10001101.00001110.01001000.00011000}{11111111.11111111.11000000.00000000} = 10001101.00001110.01000000.00000000  =141.14.64.0</script></p></blockquote><p><strong><span>使用子网时分组的转发</span></strong></p><ol start='' ><li><p><strong><span>路由表内容：</span></strong></p><ul><li><p><span>目的网络地址。</span></p></li><li><p><span>目的网络子网掩码。</span></p></li><li><p><span>下一个跳转的地址。</span></p></li></ul></li><li><p><strong><span>路由器转发分组的算法步骤：</span></strong></p><ol start='' ><li><p><span>提取目的IP地址。</span></p></li><li><p><span>判断是否直接交付（直接交付就是说直接把数据交付给路由器管辖的网络内的主机，间接交付就是该路由器所管辖网络内并没有目的主机，所以需要让数据继续在路由器中传播到可以直接交付）。</span></p></li><li><p><span>判断是否为特定主机路由（路由表中有一个数据是特定主机及其特定路由的方式，如果发现目的地址与路由表中的某个特定地址相同，就按照路由表中对应的特定的路由方式来进行路由，而非默认的方式）。</span></p></li><li><p><span>检测路由表中是否存在路径。</span></p></li><li><p><span>默认路由（如果前面的方法都灭有路由成功就进行默认路由）。</span></p></li><li><p><span>丢弃，报告转发分组出错。</span></p></li></ol></li></ol><h4 id='无分类编址cidr'><span>无分类编址CIDR</span></h4><p><strong><span>无分类编址CIDR</span></strong></p><p><span>	</span><strong><span>变长子网掩码：</span></strong><span>一般情况下子网掩码都是定长的，但是有的情况下使用的是变长的子网掩码。比如局域网内部使用的人比较多的死后就会使用变长的子网掩码。</span></p><p><span>	</span><strong><span>无分类域间路由选择CIDR：</span></strong></p><p><span>	</span><span>-&gt; 第1点：CIDR消除了传统A类、B类、C类和划分子网的概念。</span></p><p><img src="assets/102.png" alt="102" style="zoom:40%;" /></p><p><span>	</span><span>如上图中二级IP、三级IP、CIDR的对比。</span></p><p><span>	</span><span>CIDR记法：IP地址后加上”/“，然后写上网络前缀（可以任意长度）的位数。比如128.14.32.0/20。</span></p><p><span>	</span><span>-&gt; 第2点：CIDR融合了子网地址与子网掩码，方便子网划分。CIDR把网络前缀相同的IP地址组成了一个”CIDR地址块“。</span></p><p><span>	</span><span>比如，128.14.35.7/20是某CIDT地址块中的一个地址。</span></p><p><span>	</span><span>二进制表示为：</span><span>	</span><strong><span>10000000 00001110 0010</span></strong><span>0011 00000111</span></p><p><span>	</span><span>  最小地址为：    </span><strong><span>10000000 00001110 0010</span></strong><span>0000 00000000</span></p><p><span>	</span><span>  最大地址为：    </span><strong><span>10000000 00001110 0010</span></strong><span>1111 11111111</span></p><p><span>	</span><span>地址块ID即是最小地址表示即128.14.32.0/20对所有网络前缀为20的地址块统称为&quot;/20地址块&quot;。</span></p><p><span>	</span><span>地址掩码（子网掩码）为：</span><strong><span>11111111 11111111 1111</span></strong><span>0000 00000000</span></p><p><strong><span>构成超网</span></strong></p><p><span>	</span><span>将多个子网聚合成一个较大的子网，叫做构成超网或路由聚合。（划分子网时把一个大饼划分成很多小兵，构成超网是把好多个小兵拼成一个大饼）所使用的方法就是将网络前缀缩短。</span></p><p><img src="assets/103.png" alt="103" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示，假如网络1和网络2的下一跳地址一样，那么他们就够成了超网，通过缩短网络前缀构成的超网就是206.1.0.0/16。</span></p><p><strong><span>最长前缀匹配</span></strong></p><p><span>	</span><span>使用CIDR时，查找路由表可能得到几个匹配结果，应该选择具有最长网络前缀的路由。前缀越长，地址块越小，路由越具体。</span></p><p><span>	</span><span>比如路由器RO的路由表如下表所示，如果进入路由表R0的分组的目的地址为132.19.237.5请问该应该被转发到哪一个路由器？</span></p><figure class='table-figure'><table><thead><tr><th><span>目的网络</span></th><th><span>下一跳</span></th></tr></thead><tbody><tr><td><span>132.0.0/8</span></td><td><span>R1</span></td></tr><tr><td><span>132.0.0/11</span></td><td><span>R2</span></td></tr><tr><td><span>132.19.232.0/22</span></td><td><span>R3</span></td></tr><tr><td><span>0.0.0.0/0</span></td><td><span>R4</span></td></tr></tbody></table></figure><p><span>	</span><span>根据最长前缀匹配原则应该选择R2</span></p><h4 id='arp协议'><span>ARP协议</span></h4><p><img src="assets/104.png" alt="104" style="zoom:40%;" /></p><p><strong><span>发送数据的过程</span></strong></p><p><span>	</span><span>同一局域网内，主机1发送数据给主机3：</span></p><p><img src="assets/105.png" alt="105" style="zoom:40%;" /></p><p><span>	</span><span>数据的发送过程就是这样子步步封装，但是封装导致数据链路层的时候可能会出错，只知道主机3的IP地址，不知道MAC地址，ARP高速缓存中没有存储主机3对应的MAC地址，为了进一步封装操作，只能使用ARP协议。</span></p><p><span>	</span><span>ARP高速缓存（ARP cache），由最近的ARP项组成的内在中的一个临时表。是IP地址与mac地址的映射。</span></p><p><span>	</span><span>ARP协议的过程就是首先要广播一个ARP分组请求。也就是IP1对应的一号主机要发送一个数据帧。这个数据帧的内容是主机1的IP地址，主机3的IP地址，主机2的MAC地址和本网广播地址（全1IP即 255.255.255.255）。</span></p><p><img src="assets/106.png" alt="106" style="zoom:40%;" /></p><p><span>	</span><span>当主机3收到主机的广播ARP数据帧之后，主机3就会给主机1发送一个单播ARP响应分组。响应分组只包含两个部分，主机3的IP地址和他的MAC地址。</span></p><p><img src="assets/107.png" alt="107" style="zoom:40%;" /></p><p><span>	</span><span>直到了主机3的MAC地址，就能进一步往下继续封装。</span></p><p><img src="assets/108.png" alt="108" style="zoom:40%;" /></p><p><strong><span>不同局域网内，主机1发送数据给主机5</span></strong></p><p><img src="assets/109.png" alt="109" style="zoom:40%;" /></p><p><span>	</span><span>ARP高速缓存只收录同一局域网内的主机的IP地址和MAC地址映射。很明显主机1和主机5不在同一局域网内，自然主机1的数据在向下封装的过程中不能直到主机5的MAC地址。</span></p><p><span>	</span><span>那怎么解决？主机1先用子网掩码和主机5IP地址相与运算，发现自己与主机5在同一局域网内就利用上面的步骤，否则就查询默认网关IP地址（默认网关说的就是管辖这个局域网的路由器，就是主机与外界沟通的路由器）。</span></p><p><span>	</span><span>通过子网掩码发送就和上面一样，需要利用ARP广播请求组和ARP单播相应组。我们设默认网关，也就是从左往右数第一个路由器的IP地址是IP6。</span></p><p><img src="assets/110.png" alt="110" style="zoom:40%;" /></p><p><span>	</span><span>主机1收到来自于默认网关的响应分组就可以继续往下封装了。</span></p><p><img src="assets/111.png" alt="111" style="zoom:40%;" /></p><p><span>	</span><span>然后数据传到第一个路由器，解封装在分支管黄，数据就变成下面的样子。</span></p><p><img src="assets/112.png" alt="112" style="zoom:40%;" /></p><p><span>	</span><span>MAC6是默认网关输入端MAC地址，MAC7是输出端。</span></p><p><span>	</span><span>进一步转发。</span></p><p><img src="assets/113.png" alt="113" style="zoom:40%;" /></p><p><strong><span>ARP协议总结</span></strong><span>	</span></p><p><span>	</span><span>由于在实际网络的链路上传送数据帧时，最终必须使用MAC地址。</span></p><p><span>	</span><span>而ARP协议是用来完成主机或路由器IP地址到MAC地址的映射。也就解决下一跳走哪的问题。</span></p><p><span>	</span><span>ARP协议使用的过程：检查</span><strong><span>ARP高速缓存</span></strong><span>，有对应表项写入MAC帧，没有则用目的MAC地址FF-FF-FF-FF-FF-FF-FF的帧封装并广播ARP请求分组，</span><strong><span>同一局域网中</span></strong><span>所有主机都能收到该请求。目的i主机手道情秋后就会向源主机单播一个ARP响应分组。源主机收到后将映射写入ARP缓存。（10-20min更新一次）</span></p><p><span>	</span><span>ARP协议的四种典型使用情况：</span></p><p><span>		</span><span>1、主机A发送给本网络上的主机B，用ARP找到主机B的硬件地址。</span></p><p><span>		</span><span>2、主机A发送另一个网络上的主机B，用ARP找到本网络上一个路由器（网关）的硬件地址。</span></p><p><span>		</span><span>3、路由器发给本网络的主句A，用ARP找到主机A的硬件地址。</span></p><p><span>		</span><span>4、路由器发给另一个网络的主机B：用ARP找到本网络上的一个路由器的硬件地址。</span></p><p><span>	</span><span>另外需要注意的是，ARP协议是自动进行的，主机的用户对于地址解析的过程是完全不知道的。</span></p><blockquote><p><span>主机A发送IP书记报给主机B，经过了5个路由器，请问此过程中总共使用了几次ARP协议？</span></p><p><img src="assets/114.png" alt="114" style="zoom:40%;" /></p><p><span>	</span><span>总共是6次。</span></p></blockquote><p><span>	</span><span>ARP协议是出于网络层和数据链路层之间的一个协议，因为他结合了IP地址与MAC地址。但是它更偏于网络层，所以被划分到网路层里面了。为了对这个说法深入理解，用TCP/IP协议栈来理解。</span></p><p><img src="assets/115.png" alt="115" style="zoom:40%;" /></p><h4 id='dhcp协议'><span>DHCP协议</span></h4><p><strong><span>主机如何获取到IP地址</span></strong></p><p><span>	</span><strong><span>静态配置：</span></strong><span>比如在机房里面，每个电脑的IP都是固定的，这种方式需要分类的又IP地址、子网掩码、默认网关。</span></p><p><span>	</span><strong><span>动态分配：</span></strong></p><p><img src="assets/116.png" alt="116" style="zoom:40%;" /></p><p><span>	</span><span>比如在学校会使用很多网段，每个网段内都有一个上图的设备。</span></p><p><span>	</span><span>几台DHCP服务器和链路层设备交换机。</span></p><p><span>	</span><span>使用手机的时候在不同的地方，可能就是不同的网段，就得动态的分配IP地址，而完成地址分配IP地址工作机会DHCP服务器。</span></p><p><strong><span>DHCP协议</span></strong></p><p><span>	</span><span>动态主机配置协议DHCP是应用层协议，使用客户端/服务器方式，客户端和服务器通过广播方式进行交互基于UDP。</span><span>	</span></p><p><span>	</span><span>DHCP提供即插即用联网的机制，主机可以从服务器动态获取IP地址、子网掩码、默认网关、DNS服务器名称与IP地址，允许地址重用，支持移动用户加入网络，支持用地址续租。</span></p><p><span>	</span><span>DHCP协议工作流程：</span></p><p><span>		</span><span>1、主机广播DHCP发现报文，试图找到网络中的服务器，服务器收到一个IP地址。</span></p><p><span>		</span><span>2、DHCP服务器广播DHCP提供报文。服务器拟分配给主机一个IP地址及相关配置，先到先得。</span></p><p><span>		</span><span>3、主机广播DHCP请求报文。主机项服务器提供IP地址。为什么这个也是广播地址呢？这样子就可以告诉其他DHCP服务器，自己找到服务器，你们的IP地址就可以分配给其他人了。</span></p><p><span>		</span><span>4、DHCP服务器广播DHCP确认报文。正式将IP地址分配给主机。</span></p><p><span>		</span><span>就好比：主机发送群聊问：“在？”某服务器在群聊中回复“@主机 在的” 主机本想私发给服务，但是事情已经解决了就回了消息“@服务器 收到”。服务器：“好”。</span></p><h4 id='icmp协议'><span>ICMP协议</span></h4><p><span>	</span><span>先看下TCP/IP协议栈，很明显看到网络层和传输层中间，ICMP协议存在为了更有效的转发IP数据报和提高交付成功的机会。</span></p><p><img src="assets/115.png" alt="115" style="zoom:40%;" /></p><p><span>	</span><span>ICMP协议支持主机或路由器差错或异常报告，网络探寻。</span></p><p><strong><span>差错或异常报告</span></strong></p><p><span>	</span><span>对于差错或异常报告，ICMP协议负责发送一个ICMP报文。</span></p><p><span>	</span><span>以下是ICMP报文各个字段的内容和分析图：</span></p><p><img src="assets/117.png" alt="117" style="zoom:40%;" /></p><p><span>	</span><span>1、类型：就是ICMP报文具体是哪一类型，主要分两种类型ICMP抄错报文和ICMP询问报文。</span></p><p><span>	</span><span>2、代码：为了进一步区分具体的错误情况。</span></p><p><span>	</span><span>3、校验和：校验整个报文。</span></p><p><span>ICMP差错报文类型：</span></p><p><span>	</span><span>1、终点不可达：当路由器或主机不能交付数据报时就向源点发送钟点不可达报文。即无法交付。</span></p><p><span>	</span><span>2、源点抑制：当路由器或主机有关于样色二丢弃数据报时，就向源点发送源点抑制报文，使源点知道应当把报文发送速率放慢，速率太快的话就会导致拥塞丢数据。（这个基本用不到了）</span></p><p><span>	</span><span>3、时间超过：当路由器收到生存时间TTL=0的数据报时，除了丢弃数据报之后，还要向源点发送时间超过报文。当终点在预先规定的时间内不能收到一个数据报的全部数据时，就把已收到的数据报文丢弃，并向源点发送时间超过报文。</span></p><p><span>	</span><span>4、参数问题：当路由器或目的主机收到数据报的首部中有的字段的值不正确时，就丢弃该数据报，并向源点发送参数问题报文。即首部字段有问题。</span></p><p><span>	</span><span>5、改变路由（重定向）：路由器把改变路由报文发送给主机，让主机知道下次应该将数据报文发送给他另外的路由器（可通过更好的路由）值得更好的路由。</span></p><p><strong><span>ICMP差错报文数据字段</span></strong></p><p><img src="assets/118.png" alt="118" style="zoom:40%;" /></p><p><strong><span>不应该发送ICMP差错报文的情况：</span></strong></p><ol start='' ><li><p><span>对</span><strong><span>ICMP差错报告报文</span></strong><span>不再发送ICMP报告报文。</span></p></li><li><p><span>对</span><strong><span>第一个分片</span></strong><span>的数据报文的</span><strong><span>所有后续</span></strong><span>数据报文都不在发送ICMP差错报告报文。</span></p></li><li><p><span>对</span><strong><span>具有组播地址</span></strong><span>的数据报都不发送ICMP差错报告报文。</span></p></li><li><p><span>对具有</span><strong><span>特殊地址（127.0.0.1或0.0.0.0）</span></strong><span>的数据报不发生ICMP差错报告报文。</span></p></li></ol><p><strong><span>ICMP询问报文</span></strong></p><p><span>	</span><span>回答请求和回答报文：主机或路由器向特定目的主机发出询问，收到此报文的主机必须要给源主机或路由器发送ICMP回答报文。测试目的站是否可达，了解相关状态，也就是我们常说的ping。</span></p><p><span>	</span><span>起始不止两个 ，还有掩码地址请求和回答报文和路由器询问和通告报文，不过现在已经取消掉了。</span></p><p><strong><span>ICMP应用</span></strong></p><ol start='' ><li><p><span>PING：测试两个主机之间的联通性，使用ICMP回送请求和回答报文。</span></p></li><li><p><span>Traceroute：根据一个分组从源点到终点的路径，使用了ICMP时间超过差错报告报文。</span></p><p><span>Traceroute原理是主机A给主机B发送一连串的数据报，这一连串的数据报的TTL也就是生存时间都是不一样的，他们的TTL是逐个递增的。这串数据报到第一个路由器的时候就会死上一个，路由器给主机A发送一个ICMP时间超过差错报告报文，到下一个路由器也是如此，每个路由器都是如此，主机A给主机B通信过程中每个路由器都会给主机A发送数据报，那主机A就知道分组发送的路径了。</span></p></li></ol><h3 id='ipv6'><span>IPV6</span></h3><p><span>	</span><span>为什么要使用IPV6？因为32位的IP地址空间已经快要分配殆尽，甚至有CIDR和NAT技术来缓解，但还是远远不够，因此需要使用IPV6技术来从根本上解决地址耗尽的问题。</span></p><p><span>	</span><span>另外IPV6还尝试支持快速处理/转发数据报、支持QoS。</span></p><p><span>	</span><span>QoS（Quality of Service 服务质量）指的是一个网络能够利用各种基础技术，为指定的网络通信提供更好的服务能力，是网络一种安全机制，是用来解决网络延迟和阻塞等问题的一种技术。</span></p><p><span>	</span><strong><span>IPV6数据格式</span></strong></p><p><img src="assets/119.png" alt="119" style="zoom:40%;" /></p><p><span>	</span><span>其中扩展首部可有可无，如果需要特殊服务，就填充一个扩展首部。需要几个扩充几个，不需要则无需扩充首部。</span></p><p><img src="assets/120.png" alt="120" style="zoom:40%;" /></p><ul><li><p><span>版本：指明协议版本，即6（0110）。</span></p></li><li><p><span>优先级：区分数据报的类别和优先级。</span></p></li><li><p><span>流标签：流是互联网上从特定源点到特定终点的一系列数据报，所有属于同一个流的数据报都具有同样的流标签。</span></p></li><li><p><span>有效载荷长度：有效载荷的长度，注意要和IPV4区分，IPV4是个头的长度，给个全身长度，而IPV6是给了头的长度，给了头往下的长度。</span></p></li><li><p><span>下一个首部：标识下一个扩展首部或上层协议首部。如果说数据报时一个链表节点，下一个首部字段相当于是指针域，指向了下一个数据报。</span></p></li><li><p><span>跳数限制：相当于是IPV4的TTL，如果跳数限制达到0则丢弃该数据报并返回ICMP差错报文。</span></p></li><li><p><span>源地址和目的地址：注意，对于IPV4来说这两个字段都是32位，对于IPV6来说都是128位。</span></p></li></ul><p><strong><span>IPV4和IPV6区别：</span></strong></p><ul><li><p><span>IPV6将地址从32位（B）扩大到128位（16B），更大的地址空间。</span></p></li><li><p><span>IPV6将IPV4的校验和字段彻底移除，减少每跳的处理时间。</span></p></li><li><p><span>IPV6将IPV4的可选字段移出首部，编程了扩展首部，称为灵活的首部格式，路由器通常不对扩展首部进行检查，大大提高了路由器的处理效率。</span></p></li><li><p><span>IPV6支持即插即拔（自动配置），不需要DHCP协议。</span></p></li><li><p><span>IPV6首部长度必须要8B的整数倍，IPV4的首部必须是4B的整数倍。</span></p></li><li><p><span>IPV6只能在主机处分片，IPV4可以在路由器和主机处分片。</span></p></li><li><p><span>IPV6的附加报文类型“分组过大”。</span></p></li><li><p><span>IPV6支持资源的预分配，支持实现视像等要求，保证一定的贷款和时延的应用。</span></p></li><li><p><span>IPV6取消了协议字段，改成下一个首部字段。</span></p></li><li><p><span>IPV6取消了总长度字段，改用有效的载荷长度字段。</span></p></li><li><p><span>IPV6取消了服务类型字段。</span></p></li></ul><p><strong><span>IPV6地址表示方式：</span></strong><span>	</span></p><ul><li><p><span>一般形式：4BF5：0000:0000:0000:BA5F:039A:000A:2176</span></p></li><li><p><span>压缩方式：4BF5:0:0:0:BA5F:39A:A:2176</span></p></li><li><p><span>零压缩方式（一连串的零用一对冒号表示）：4BF5:BA5F:39A:A:2176</span></p></li></ul><p><strong><span>IPV6基本地址类型：</span></strong></p><ol start='' ><li><p><span>单播：一对一通信，可做源地址+目的地址。</span></p></li><li><p><span>多播：一对多通信，可做目的地址，多播复制值的是一堆主机，这一堆主机称为一个多播组。</span></p></li><li><p><span>任播：这个是IPV6专有名词，任播组和多播猪一样都是一堆主机，但是多播是这一堆主机都有份，任播是这一堆主机距离我近的发送数据。</span></p></li></ol><p><strong><span>如何实现IPV4和IPV6兼容：</span></strong></p><ol start='' ><li><p><strong><span>双协议栈：</span></strong><span>双协议栈技术就是指在一台设备上同时启用IPV4协议栈和IPV6协议栈。这样的话，这台设备技能和IPV4网络通信，又能叫IPV6地址。如果这台设备是一个路由器，那么这台路由器的不同接口上，分配配置了IPV4和IPV6地址，并很坑分别连接了IPV4网络和IPV6网络。如果这台设备上一个计算机，那么它将同时拥有IPV4地址和IPV6地址，并具有同时处理这两个协议地址的功能。</span></p></li><li><p><strong><span>隧道协议：</span></strong><span>通过使用互联网络的基础设施在网络之间传递数据的方式。使用隧道传递数据（或负载）可以是不同协议的数据帧或包。隧道协议将其他协议的数据帧或包重新封装然后通过隧道发送。</span></p></li></ol><p><img src="assets/121.png" alt="121" style="zoom:40%;" /></p><p><span>	</span><span>如上图所示，第一个路由器向第二个路由器传播数据时就会重新封装，把IPV6数据报转换为IPV4数据报。第三个路由器向第四个路由传播将数据报重新封装成IPV6数据报，第二个和第三个路由器之间就叫隧道。</span></p><h3 id='rip协议与距离向量算法'><span>RIP协议与距离向量算法</span></h3><p><strong><span>路由选择协议分类：</span></strong></p><ul><li><p><span>路由选择协议：</span></p><ul><li><p><span>内部网关协议IGP：一个AS内部使用，如果RIP、OSPF。</span></p></li><li><p><span>外部网关协议BGP：AS之间使用，如BGP。</span></p></li></ul></li></ul><p><img src="assets/122.png" alt="122" style="zoom:40%;" /></p><p><strong><span>RIP协议：</span></strong></p><p><span>	</span><span>RIP协议是一种分布式的基于距离向量的路由选择协议，是因特网的协议标准，最大优点就是简单。</span></p><p><span>	</span><span>RIP协议要求网络中每一个路由器都维护它自己到其他每个目的网络的唯一最佳距离记录。</span></p><p><span>	</span><span>距离：通常为“跳数”，即从源端口到目的端口锁经过路由器个数，经过一个路由器跳数+1。特别的从何一个路由器到直接连接的内网距离位1，RIP协议允许一条路由有最多只包含15个路由器，如果距离超过15就表示网络不可达。</span></p><p><span>	</span><span>注意：RIP协议只适用于小互联网，算法基础是Floyd算法。</span></p><p><strong><span>RIP协议交换：</span></strong></p><ol start='' ><li><p><span>RIP协议仅和相邻路由器交换信息。</span></p></li><li><p><span>路由器交换的信息是自己的路由表。</span></p></li><li><p><span>每30秒交换一次路由信息，然后路由器根据新信息更新路由表。如果超过180s没收到邻居路由器的通告，则判定邻居没了，并更新自己路由表。路由器则刚开始工作时，只知道直接连接的网络的距离（距离为1）接着每个路由器也只和数目非常有限的相邻路由器交换并更新路由信息。经过若干次更新后，所有路由器最终都会知道到达本自治系统任何一个网络的最短距离和下一跳路由器的地址，即</span><strong><span>收敛</span></strong><span>。</span></p></li></ol><p><strong><span>距离向量算法：</span></strong></p><ol start='' ><li><p><span>修改相邻路由器发来的RIP报文中所有表项，对地址为x的相邻路由器发来的RIP报文，修改此报文中的所有项目；把“下一跳”字段中的地址改为x，并把所有的距离字段+1。</span></p></li><li><p><span>对修改后的RIP报文中的每一个项目，进行以下步骤：</span></p><ol start='' ><li><p><span>R1路由表中如果没有Net3，则把该项目填入R1路由表。</span></p></li><li><p><span>R1路由表中如果没有Net3，则查看下一跳路由器地址：如果下一跳是x，则用收到的醒目替换路由表中的项目。如果下一跳不是x，原来距离比从x走的距离远则更新，否则不作处理。</span></p></li></ol></li><li><p><span>如果到了180s还没收到相邻路由器x的更新路由表，则把x纪委不可达的路由器，即把距离设置为16。</span></p></li></ol><blockquote><p><span>例子：已知路由器R6的路由表，先收到相邻的路由器R4发来的路由更新信息，试更新路由器R1的路由表。</span></p><p><strong><span>R6路由表</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>目的网络</span></th><th><span>距离</span></th><th><span>下一跳路由器</span></th></tr></thead><tbody><tr><td><span>Net2</span></td><td><span>3</span></td><td><span>R4</span></td></tr><tr><td><span>Net3</span></td><td><span>4</span></td><td><span>R5</span></td></tr><tr><td><span>...</span></td><td><span>...</span></td><td><span>...</span></td></tr></tbody></table></figure><p><span>R4发来的路由更新信息</span></p><figure class='table-figure'><table><thead><tr><th><span>目的网络</span></th><th><span>距离</span></th><th><span>下一跳路由器</span></th></tr></thead><tbody><tr><td><span>Net1</span></td><td><span>3</span></td><td><span>R1</span></td></tr><tr><td><span>Net2</span></td><td><span>4</span></td><td><span>R2</span></td></tr><tr><td><span>Net3</span></td><td><span>1</span></td><td><span>直接交付</span></td></tr></tbody></table></figure><p><span>回答：R6更新后的路由表</span></p><figure class='table-figure'><table><thead><tr><th><span>目的网络</span></th><th><span>距离</span></th><th><span>下一跳路由器</span></th></tr></thead><tbody><tr><td><span>Net1</span></td><td><span>4</span></td><td><span>R4</span></td></tr><tr><td><span>Net2</span></td><td><span>5</span></td><td><span>R4</span></td></tr><tr><td><span>Net3</span></td><td><span>2</span></td><td><span>R4</span></td></tr><tr><td><span>...</span></td><td><span>...</span></td><td><span>...</span></td></tr></tbody></table></figure></blockquote><p><strong><span>RIP协议格式</span></strong></p><p><span>	</span><span>RIP协议是应用层的协议，使用的是UDP传送数据。一个RIP报文最多可包括25个路由表项，如果超过，必须再用一个RIP报文传送。</span></p><p><img src="assets/123.png" alt="123" style="zoom:40%;" /></p><p><span>	</span><span>注意：RIP协议号消息传的快，坏消息传的慢，当网络出现故障的时候，要经过较长的时间（数分钟）才能将西悉尼传送到所有的路由器，“慢收敛”原理如下所示：</span></p><p><img src="assets/124.png" alt="124" style="zoom:40%;" /></p><h3 id='osf协议与链路状态算法'><span>OSF协议与链路状态算法</span></h3><p><strong><span>路由选择协议：</span></strong></p><ul><li><p><span>内部网关协议IGP：一个AS内部使用，如果RIP、OSPF。</span></p></li><li><p><span>外部网关协议BGP：AS之间使用，如BGP。</span></p></li></ul><p><img src="assets/122.png" alt="122" style="zoom:40%;" /></p><p><strong><span>OSPF协议：</span></strong></p><p><span>	</span><span>开发最短路径有限OSPF协议，”开放“标明OSPF协议不是受某一加长上看哦该指的，而是公开发表的，最短路径有限是因为使用了Dijkstra提出的最短路径算法SPF。</span></p><p><span>	</span><span>OSPF最主要的特征就是使用分布式的链路状态协议。</span></p><p><span>	</span><span>OSPF协议特点，使用洪泛法向自治系统内所有路由器发送信息，即路由器通过输出端口向所有相邻的路由器发送信息，而每一个相邻路由器又再次将信息发往其素有的相邻路由器，最终整个区域内所有路由器都得到这个信息的一个副本。（类似于广播形式）</span></p><p><span>	</span><span>发送的信息就是与本路由器相邻的所有路由器的链路状态（本路由器和那些路由器相邻，以及链路的度量/代价 -- 费用、距离、时延、带宽等）。</span></p><p><span>	</span><span>只要当链路状态发生变化时，路由器才想所有路由器洪泛发送此信息。</span></p><p><span>	</span><span>最后，所有路由器都能建立一个链路状态数据库，即全网拓扑图。</span></p><p><strong><span>链路状态</span></strong></p><ol start='' ><li><p><span>每个路由器发现它的邻居节点【发送hello问候分组】，并了解邻居节点的网络地址。</span></p></li><li><p><span>设置到它的每个邻居的成本度量metric。</span></p></li><li><p><span>构造【DD数据库描述分组】，向邻站给出自己的链路状态数据库中的所有链路状态项目的摘要信息。</span></p></li><li><p><span>如果DD分组中的摘要自己都有，则邻站不做处理，如果没有就做更新处理，发送LSR链路状态请求分组，请求自己没有和比自己更新的信息。</span></p></li><li><p><span>收到邻站的LSR分组后，发送【LSU链路状态更新分组】进行更新。</span></p></li><li><p><span>更新完毕之后，邻站返回一个【LS ACK链路状态确认分组】进行确认。</span></p></li></ol><p><span>	</span><span>只要一个路由器的链路状态发生变化，就会记性第5、6步，泛洪发送【LSU链路状态更新分组】进行更新。更新完毕后，临战返回一个【LS ACK链路状态确认分组】进行确认。</span></p><ol start='7' ><li><p><span>使用Dijkstra根据自己的链路状态数据库构造到其他节点的最短路径。</span></p></li></ol><p><strong><span>OSPF区域</span></strong></p><p><span>	</span><span>为了使用OSPF能够用于规模很大的网络，OSPF将一个自治系统再划分成若干个更小的范围叫做区域。每个区域都有一个32位区域标识符，用点分十进制表示。区域也不能太大，在一个区域内的路由器你最好不能超过200个。</span></p><p><img src="assets/125.png" alt="125" style="zoom:40%;" /></p><p><span>	</span><span>其中的R3 P4 P7都叫区域交接路由器，处于两个区域交界处。</span></p><p><span>	</span><span>R6叫做自治系统编辑路由器，他要连接别的自制系统。</span></p><p><span>	</span><span>区域内部的所有路由器都叫做区域内部路由器。</span></p><p><span>	</span><span>这样虽然让自治系统拓扑结构更加复杂，但是能让每个区域交换路由器的信息量大大减少，所以OSFP协议才应用于规模大的自治系统。</span></p><p><strong><span>OSPF分组</span></strong></p><p><img src="assets/126.png" alt="126" style="zoom:40%;" /></p><p><span>	</span><span>OSPF直接用IP数据报传输。</span></p><p><strong><span>OSPF协议的其他特点</span></strong></p><ol start='' ><li><p><span>每个30mins，要刷新一次数据库中的链路状态。</span></p></li><li><p><span>由于一个路由器状态只设计到与相邻路由器的连同状态，因为与整个互联网的规模并无直接关系，因此当互联网规模很大的时候，OSPF协议要比距离向量协议riPF好的多。</span></p></li><li><p><span>OSPF不存在坏消息传的慢的问题，它的收敛速度很快。</span></p></li></ol><h3 id='bgp协议'><span>BGP协议</span></h3><p><strong><span>路由选择协议：</span></strong></p><ul><li><p><span>内部网关协议IGP：一个AS内部使用，如果RIP、OSPF。</span></p></li><li><p><span>外部网关协议BGP：AS之间使用，如BGP。</span></p></li></ul><p><img src="assets/122.png" alt="122" style="zoom:40%;" /></p><p><strong><span>GBP协议</span></strong></p><p><span>	</span><span>与其他AS的邻站发言人交换信息。</span></p><p><img src="assets/127.png" alt="127" style="zoom:40%;" /></p><p><span>	</span><span>交换什么：交换网络可达性的问题，即到达某个网络所要经过一些列AS。</span></p><p><span>	</span><span>多久交换一次：发生变化时更新有变化的部分。</span></p><p><strong><span>BGP协议交换信息的过程</span></strong></p><p><span>	</span><span>BGP所交换的网络可达性的信息就是要到达某个网络所要经过的一系列AS，当BGP发言人互相交换了网络可达性的信息后， 各BGP发言人所采用的策略从收到路由信息中找出各AS较好的路由。</span></p><p><img src="assets/128.png" alt="128" style="zoom:40%;" /></p><p><span>	</span><span>为了防止一直兜圈子，自治系统是按照属性结构进行连接的。</span></p><p><strong><span>BGP协议交换信息的过程</span></strong></p><p><span>	</span><span>BGP发言人交换路径向量：自治系统AS2的BGP发言人通知主干网AS1的BGP发言人：”要到达网络N1、N2、N3和N4可经过AS2“。</span></p><p><img src="assets/129.png" alt="129" style="zoom:40%;" /></p><p><span>	</span><span>主干网还可以发出通知：”要到达网络N5、N6和N7可沿路径（AS1、AS3）“。</span></p><p><strong><span>BGP协议的报文格式</span></strong></p><p><span>	</span><span>一个BGP发言人与其他自治系统中的BGP发言人要交换路由信息，就要先建立TCP连接，即通过TCP传送，然后在此链接上交换BGP报文以建立BGP会话（session），利用BGP会话交换路由信息。</span></p><p><img src="assets/130.png" alt="130" style="zoom:40%;" /></p><p><span>	</span><span>BGP是应用层协议，借助TCP传送。之所以使用TCP，是为了提供更加可靠的服务，同时简化路由选择协议。</span></p><p><strong><span>BGP协议特点：</span></strong></p><ul><li><p><span>BGP协议支持CIDR，因此BGP的路由表也就应当包括目的的网络前缀、下一跳路由器，以及到达该目的网络所要经过的各个自治系统序列。</span></p></li><li><p><span>在BGP协议刚刚运行的时候，BGP的邻站是交换整个的BGP路由表，但以后只需要再发生变化的时候更新有变化的部分。这样做的好处是节省网络带宽和减少路由器的处理开销。</span></p></li></ul><p><strong><span>BGP-4四种报文格式：</span></strong></p><ol start='' ><li><p><strong><span>OPEN报文：</span></strong><span>用来与相邻的另一个BGP发言人建立关系并认证发送方。</span></p></li><li><p><strong><span>UPDATE报文：</span></strong><span>通告新路径或撤销原路径。</span></p></li><li><p><strong><span>KEEPALIVE报文：</span></strong><span>在无UPDATE的时候，周期性的正式临战的连通性，也作为OPEN的确认。</span></p></li><li><p><strong><span>NOTIFICATION报文：</span></strong><span>报告先前报文的差错；也被用于关闭连接。</span></p></li></ol><h3 id='三种路由协议对比'><span>三种路由协议对比</span></h3><ul><li><p><span>RIP是一种分布式基于距离向量的内部网关路由选择协议，通过广播UDP报文来交换路由信息。</span></p></li><li><p><span>OSPF是一个内部网关协议，要交换的信息量比较大，应该使用保温的长度尽量短，所以不要使用传输层协议（TCP、UDP），直接采用IP。</span></p></li><li><p><span>BGP是一个外部网关协议，在不同的自治系统之间交换路由信息，由于网络环境复杂，需要保证可靠传输。，所以采用TCP。</span></p></li></ul><figure class='table-figure'><table><thead><tr><th><span>协议</span></th><th><span>RIP</span></th><th><span>OSFP</span></th><th><span>BGP</span></th></tr></thead><tbody><tr><td><span>类型</span></td><td><span>内部</span></td><td><span>内部</span></td><td><span>外部</span></td></tr><tr><td><span>路由算法</span></td><td><span>距离向量</span></td><td><span>链路状态</span></td><td><span>路径向量</span></td></tr><tr><td><span>传递协议</span></td><td><span>UDP</span></td><td><span>IP</span></td><td><span>TCP</span></td></tr><tr><td><span>路径选择</span></td><td><span>跳数最少</span></td><td><span>代价最低</span></td><td><span>较好，非最佳</span></td></tr><tr><td><span>交换节点</span></td><td><span>和本节点相邻的路由器</span></td><td><span>网络中的所有路由器</span></td><td><span>和本节点相邻的路由器</span></td></tr><tr><td><span>交换内容</span></td><td><span>当钱本路由器知道的全部信息，即自己的路由表</span></td><td><span>与本路由器相邻的所有路由器的链路状态</span></td><td><span>如果是首次，则为整个路由表，否则是路由表有变化的部分</span></td></tr></tbody></table></figure><h3 id='ip组播'><span>IP组播</span></h3><h4 id='ip数据报的三种传输方式'><span>IP数据报的三种传输方式</span></h4><ol start='' ><li><p><span>单播：单播用于发送数据报到单个目的地，且每发送一份单播报文都使用一个单播IP地址作为目的地址。是一种点对点传输方式。</span></p></li></ol><p><span>	</span><span>发送者和每一个接受者之间需要单独的数据信道。</span></p><p><img src="assets/131.png" alt="131" style="zoom:50%;" /></p><ol start='2' ><li><p><span>多播：广播是指发送数据报到同一广播或子网内的所有设备的一种数据传输方式，是一种点对点传输方式。</span></p></li><li><p><span>多播/组播：当网络中的牟星用户需要特定数据时，组播数据发送者仅发送一次数据，借助组播路由协议为组播数据报建立组播分发树，被传递的数据到达距离用户端尽可能近的节点后才开始复制和分发，是一种点对点传输方式。</span></p></li></ol><p><span>	</span><span>组播提高了数据传达效率。减少了主干网络出现拥塞的可能性，组播网的主机可以是同一个王丽网络，也可以来自不同的物理网路（如果有组播路由器的支持，组播路由器也就是可以支持组播协议的路由器）。</span></p><p><img src="assets/132.png" alt="132" style="zoom:50%;" /></p><h4 id='ip组播地址'><span>IP组播地址</span></h4><p><span>	</span><span>IP组播地址让源设备能够将分组发送给一组设备。属于多播组的设备被分配一个组播IP地址（一群共同需要主机的相同标识）。</span></p><p><span>	</span><span>组播地址范围是224.0.0.0~239.255.255.255（D类地址），一个D类地址表示一个组播组，只能用作分组的目标地址。源地址总是单播地址。</span></p><p><span>	</span><span>特点：</span></p><p><span>		</span><span>1、组播数据报也是尽最大努力交付，不提供可靠交付，应用于UDP。</span></p><p><span>		</span><span>2、对组播数据报不产生ICMP差错报文。</span></p><p><span>		</span><span>3、并非所有D类地址都可以当做组播地址。</span></p><h4 id='硬件组播'><span>硬件组播</span></h4><p><span>	</span><span>同单播地址一样，组播IP地址也需要相对应的组播MAC地址在本地网络中实际传送数据帧，组播MAC地址以十六进制01-00-5E大打头，余下6个十六进制为是根据IP组播地址得分最后23位转换得到。</span></p><p><span>	</span><span>TCP/IP协议使用的是以太网多播地址的范围是从01-00-5E-00-00-00到01-00-5E-7F-FFF-FF。</span></p><p><img src="assets/133.png" alt="133" style="zoom:60%;" /></p><p><span>	</span><span>IP地址中的第五到九折无畏不一样，其他都一样的D类地址，他们映射到MAC地址时是一样的MAC地址，有可能会被误判成同一个组播组。</span></p><p><span>	</span><span>因此，收到多播谁报的主机，还要P层利用软件进行过滤，把不是本机要接受的数据报丢弃。</span></p><h3 id='ignp协议'><span>IGNP协议</span></h3><p><span>	</span><span>IGMP协议（网际组管理协议）让路由器知道本局域网上是否有主机参加或退出了某个组播组。</span></p><p><img src="assets/134.png" alt="134" style="zoom:40%;" /></p><p><span>	</span><span>该协议可以避免组播数据报发送给R4，避免R1、R2发送给未参加组播的主机。</span></p><p><span>	</span><span>使用IGMP协议的路由器并不知道参加组播的路由器个数，也不会知道这些主机具体都是谁。只知道自己的辖区内到底有没有。</span></p><p><img src="assets/135.png" alt="135" style="zoom:40%;" /></p><p><span>	</span><span>ICMP与IGMP都是网络层协议，并且都是用IP数据报传递报文。</span></p><p><strong><span>工作流程：</span></strong></p><ol start='' ><li><p><span>某主机要加入组播时，该主机项组播的组播地址发送一个IGMP报文，声明自己要称为该组的成员。</span></p></li><li><p><span>本地组播路由器收到IGMP报文后，要利用组播路由选择协议把这组成员关系发送给因特网上的其他组播路由器。</span></p></li><li><p><span>本地组播路由器周期性探寻本地局域网上的主机，以便知道这些主机是否还要组播组的成员。</span></p></li><li><p><span>只要有一个主机对某个组响应，那额组播路由器认为这个组是活跃的；如果经过几次探寻后没有一个主机响应，组播路由器就认为本网络上的没有此组播组的主机，因此不要把这组的陈冠关系发送给其他的组播路由器。</span></p></li></ol><p><span>注意：组播路由器要知道的成员关系只是所连接的局域网中有误组播组的成员，只要做足中一个主机响应了，其他主机就会通过监听得知已经有人替我们发言了，便不会继续吱声了，避免不必要的通信量。</span></p><h4 id='组播路由选择协议'><span>组播路由选择协议</span></h4><p><strong><span>概念与组播转发树</span></strong></p><p><span>	</span><span>组播路由选择协议目的是找出以源主机为根节点转发树。树可以有效避免数据报兜在路由器堆堆里边兜圈子。</span></p><p><span>	</span><span>对不同的的多播器对应不同的多播转发树；同一个多播组，对不同的源点页会有不同的多播转发树。</span></p><p><img src="assets/136.png" alt="136" style="zoom:40%;" /></p><p><strong><span>组播路由协议常用的三种算法：</span></strong></p><ul><li><p><span>链路状态路由算法。</span></p></li><li><p><span>距离向量路由算法。</span></p></li><li><p><span>协议无关的组播（稀疏/密集）：稀疏密集指的是组播组中的主机里的近还是远。</span></p></li></ul><h3 id='移动ip'><span>移动IP</span></h3><p><strong><span>移动IP基本概念：</span></strong><span>移动IP不同于DHCP协议的地址分配，使用固定的IP。</span></p><p><strong><span>相关术语：</span></strong><span>移动IP技术是移动节点以光的网络IP地址，实现跨域不同网段的漫游功能。</span></p><p><span>	</span><span>移动节点：具有永久IP地址的移动设备。</span></p><p><span>	</span><span>归属代理（本地代理）：一个移动节点拥有的就“居所”称为</span><strong><span>归属网络</span></strong><span>，在归属网络中代表移动节点执行移动管理功能的实体叫做归属代理。</span></p><p><span>	</span><span>外部代理（外地代理）：在外部网络中帮助移动节点完成移动管理功能的实体称为外部代理。</span></p><p><span>	</span><span>永久地址（归属地址/主地址）：移动站点在归属网络中的原始地址。</span></p><p><span>	</span><span>转交地址（归属地址/主地址）：移动站点在归属网络中的原始地址。</span></p><p><strong><span>移动IP通信过程：</span></strong></p><ol start='' ><li><p><strong><span>A刚进入外部网络：</span></strong></p><ol start='' ><li><p><span>在外部代理登记获得一个转交地址，离开时注销。</span></p></li><li><p><span>外地代理向本地代理登记转交地址。</span></p></li></ol></li><li><p><strong><span>B给A发送数据：</span></strong></p><ol start='' ><li><p><span>本地代理接货数据报。</span></p></li><li><p><span>本地代理再封装数据报，新的数据报目的地址是转交地址，发给外部代理（使用隧道技术，前面有教过）。</span></p></li><li><p><span>外部代理拆封数据报，发送给A。</span></p></li></ol></li><li><p><strong><span>B给A发送数据：</span></strong><span>A用自己的驻地只作为数据源地址，用B的IPp地址作为数据报的目的地址。</span></p></li><li><p><strong><span>A移动到了下一个网络：</span></strong></p><ol start='' ><li><p><span>在新外部代理登记注册一个转交地址。</span></p></li><li><p><span>新外部代理给本地代理发送新的转交地址（覆盖旧的）。</span></p></li><li><p><span>通信。</span></p></li></ol></li><li><p><strong><span>A回到了本地网络：</span></strong></p><ol start='' ><li><p><span>A向本地代理注销转交地址。</span></p></li><li><p><span>按原始方式通信。</span></p></li></ol></li></ol><h2 id='三网络层设备'><span>三、网络层设备</span></h2><h3 id='路由器'><span>路由器</span></h3><p><span>	</span><span>路由器是一种具有多个输入输出端口和多个输出端口的专用计算机，其任务就是转发分组。</span></p><p><img src="assets/137.png" alt="137" style="zoom:60%;" /></p><p><span>	</span><strong><span>路由器选择部分的路由选择处理机：</span></strong><span>根据锁选定的路由选择协议构造出路由表，同时经过定期和相邻路由器交换路由信息而不断地更新和维护路由表。</span></p><p><span>	</span><strong><span>分组转发部分的交换结构：</span></strong><span>根据转发表进行分组转发。如果收到RIP/OSPF分组等，则把分组发送路由选择处理机，而不进行输出；如果收到数据分组，则查找转发表并输出。</span></p><h3 id='输入输出端口对线路上收到的分组处理'><span>输入输出端口对线路上收到的分组处理</span></h3><p><strong><span>输入端口：</span></strong><span>输入端口重点额查找和转发功能在路由器的交换功能中是最重要的。</span></p><p><img src="assets/138.png" alt="138" style="zoom:40%;" /></p><p><strong><span>输出端口：</span></strong><span>如果路由器处理分组的速率赶不上分组进入队列的速率，则队列的存储空间最终必定减少到0，这就是后面再进入队列的分组由于没有存储空间而只能被丢弃。</span></p><p><img src="assets/139.png" alt="139" style="zoom:40%;" /></p><p><span>	</span><span>路由器的输入或输出队列产生溢出是造成分组丢失的重要原因。</span></p><h3 id='三层设备区别'><span>三层设备区别</span></h3><ul><li><p><span>路由器：可以互联两个不同网络层协议的网段。</span></p></li><li><p><span>网桥：可以互联两个网络层和链路层不同的额网桥。</span></p></li><li><p><span>集线器：来什么发什么，不能互联两个物理层不容的网段。</span></p></li></ul><figure class='table-figure'><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>能够隔离冲突域</span></th><th style='text-align:center;' ><span>能够隔离广播域</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>物理层设备（中继器，集线器）</span></td><td style='text-align:center;' ><span>×</span></td><td style='text-align:center;' ><span>×</span></td></tr><tr><td style='text-align:center;' ><span>链路层设备（网桥、交换机）</span></td><td style='text-align:center;' ><span>√</span></td><td style='text-align:center;' ><span>×</span></td></tr><tr><td style='text-align:center;' ><span>网络层设备（路由器）</span></td><td style='text-align:center;' ><span>√</span></td><td style='text-align:center;' ><span>√</span></td></tr></tbody></table></figure><h3 id='路由表与路由转发'><span>路由表与路由转发</span></h3><p><strong><span>路由表：</span></strong><span>路由表根据路由算法得出的，主要用途是路由选择，使用软件来实现。它包括：目的网络IP地址、子网掩码、下一跳IP地址、接口，以及默认路由（不知道往哪儿发时候默认就往哪儿发）。</span></p><p><strong><span>转发表：</span></strong><span>转发表由路由表得来的可以用软件实现，也可以使用特殊的硬件来实现。转发表必须包含完成转发功能所必须得信息，在转发表的每一行必须包含从要到达目的网络到输出端口和某些MAC地址信息的映射。</span></p><p>&nbsp;</p></div></div>
+
+<script>(function (){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
+</html>
