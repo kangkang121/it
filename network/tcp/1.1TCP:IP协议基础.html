@@ -1,0 +1,1673 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/*快速自定义配置*/
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * MIT License
+ *
+ * Copyright (c) 2023 劉強東 https://github.com/liangjingkanji
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #202124;
+    --blur-text-color: #c8c8c8;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(32, 33, 36, 0.5);
+    --drake-accent: #5784ec;
+    --drake-highlight: #3a474e;
+    --a-color: #1769e0;
+    --variable-color: #d01884;
+    --outline-active-color: var(#414040);
+    --code-block-bg-color: #f8f9fa;
+    --code-block-color: #3a474e;
+    --title-color: #202124;
+    --blockquote-border-color: #275796;
+    --blockquote-color: #275796;
+    --blockquote-bg-color: #e5f4fd;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--text-color);
+    --height-light-border-color: var(--text-color);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dadce0;
+    --table-header-bg-color: #f1f3f4;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 12px !important;
+    border-radius: 8px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: .1em solid #e8eaed;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 4px;
+    color: var(--drake-highlight);
+    border: .1rem solid #e8eaed;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote {
+    color: var(--blockquote-color) !important;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+.on-focus-mode #write a .md-plain:hover, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain:hover, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain:hover, .on-focus-mode .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+#write a code, a:any-link {
+    color: var(--a-color);
+}
+#write a code:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-library-node.file-tree-node.file-node-root {
+    font-size: 1.1rem;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 14px;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 400;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-atom {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-def {
+    color: #00f;
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #b80672;
+}
+.cm-s-inner span.cm-string {
+    color: #008000;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #008000;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-tag.cm-bracket {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-meta {
+    color: #c5221f;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+/* 正文标题区: #write */
+/* [TOC]目录树区: .md-toc-content */
+/* 侧边栏的目录大纲区: .sidebar-content */
+ 
+/** 
+ * 说明：
+ *     Typora的标题共有6级，从h1到h6。
+ *     我个人觉得h1级的标题太大，所以我的标题都是从h2级开始。
+ *     个人习惯每篇文章都有一个总标题，有一个目录，所以h2级的标题前两个都不会计数。
+ *     一般情况下，我虽然不使用h1级的标题，但是为了以防万一，h1级的标题前两个也都不会计数。
+ *     若想启用h1级标题，就取消包含“content: counter(h1) "."”项的注释，然后将包含“content: counter(h2) "."”的项注释掉即可。
+ */ 
+/** initialize css counter */
+#write, .sidebar-content,.md-toc-content{
+	/* 设置全局计数器的基准 */
+	/* 因为我喜欢从h2级标题用起，所以这里设置为h2 */
+    counter-reset: h2
+}
+ 
+#write h1, .outline-h1, .md-toc-item.md-toc-h1 {
+    counter-reset: h2
+}
+ 
+#write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+    counter-reset: h3
+}
+ 
+#write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+    counter-reset: h4
+}
+ 
+#write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+    counter-reset: h5
+}
+ 
+#write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+    counter-reset: h6
+}
+ 
+/** put counter result into headings */
+#write h1:before,
+.outline-h1>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1>.md-toc-inner:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+ 
+/* 使用h1标题时，去掉前两个h1标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h1元素，请根据情况自行修改。 */
+#write h1:nth-of-type(1):before,
+.outline-h1:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(1)>.md-toc-inner:before,
+#write h1:nth-of-type(2):before,
+.outline-h1:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h1;
+	content: ""
+}
+ 
+/*#write h2:before,
+.outline-h2>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2>.md-toc-inner:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}*/
+ 
+/* 使用h2标题时，去掉前两个h2标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h2元素，请根据情况自行修改。 */
+#write h2:nth-of-type(1):before,
+.outline-h2:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(1)>.md-toc-inner:before,
+#write h2:nth-of-type(2):before,
+.outline-h2:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h2;
+	content: ""
+}
+ 
+#write h3:before,
+h3.md-focus.md-heading:before, /** override the default style for focused headings */
+.outline-h3>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h3>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h3;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+     content:  counter(h3) ". "
+}
+ 
+#write h4:before,
+h4.md-focus.md-heading:before,
+.outline-h4>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h4>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h4;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+    content: counter(h3) "." counter(h4) ". "
+}
+ 
+#write h5:before,
+h5.md-focus.md-heading:before,
+.outline-h5>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h5>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h5;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+ 
+#write h6:before,
+h6.md-focus.md-heading:before,
+.outline-h6>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h6>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h6;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+ 
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						} @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>1.1TCP:IP协议基础</title>
+</head>
+<body class='typora-export typora-export-show-outline typora-export-no-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcpip协议基础">TCP/IP协议基础</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#一网络层架构介绍">一、网络层架构介绍</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#应用层">应用层</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#传输层">传输层</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络层">网络层</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络接口">网络接口</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#总结">总结</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二网址解析到显示过程">二、网址解析到显示过程</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http解析">HTTP解析</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#dns解析">DNS解析</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#域名的层级关系">域名的层级关系</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#域名解析的工作流程">域名解析的工作流程</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#协议栈">协议栈</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp协议">TCP协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp包头格式">TCP包头格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#建立连接-三次握手">建立连接-三次握手</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#查看tcp连接状态">查看TCP连接状态</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp分割线">TCP分割线</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp报文生成">TCP报文生成</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#远程定位-ip">远程定位-IP</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip包头格式">IP包头格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip报文生成">IP报文生成</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#两点传输-mac">两点传输-MAC</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#mac头部格式">MAC头部格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#mac发送方和接收方确认方式">MAC发送方和接收方确认方式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#mac报文生成">MAC报文生成</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#出口-网卡">出口-网卡</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#送别者-交换机">送别者-交换机</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#交换机的包接收操作">交换机的包接收操作</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#找不到mac地址">找不到MAC地址</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#出境大门-路由器">出境大门-路由器</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由器与交换机的区别">路由器与交换机的区别</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由器基本原理">路由器基本原理</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由器包的接收操作">路由器包的接收操作</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#查询路由表确定输出端口">查询路由表确定输出端口</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#路由器的发送操作">路由器的发送操作</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#互相扒皮-服务器与客户端">互相扒皮-服务器与客户端</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三linux系统收发网络包">三、Linux系统收发网络包</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络模型">网络模型</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#linux网络协议栈">Linux网络协议栈</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#linux接收网络包的流程">Linux接收网络包的流程</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#软中断处理">软中断处理</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#网络协议栈">网络协议栈</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#linux发送网络流程">Linux发送网络流程</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#总结-2">总结</a></div><ul class="outline-children"></ul></li></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='tcpip协议基础'><span>TCP/IP协议基础</span></h1><h2 id='一网络层架构介绍'><span>一、网络层架构介绍</span></h2><p><span>	</span><span>思考：为什么要有TCP/IP网络模型？</span></p><p><span>	</span><span>回答：对于同一个设备删的进程间通信，有很多种方式，比如有管道、消息队列、共享内存、信号等方式，而对于不同设备上的进程间通信，就需要网络通信，设备是有多样性的，所以需要兼容多种多样的设备，就协商出了一套通用的网络协议。</span></p><p><span>	</span><span>这个网络协议是分层的，每一层都有自己的作用和职责。</span></p><h3 id='应用层'><span>应用层</span></h3><p><span>	</span><span>最上层的就是我们直接接触到的应用层（Application Layer），我们电脑或手机使用的应用软件都是在应用层实现的，当两个设备需要通信的时候，应用就把应用数据传输给下一层，也就是传输层。</span></p><p><span>	</span><span>所以应用层只需要专注一位用户提供应用功能，比如HTTP、FTP、Telnet、DNS、SMTP等。</span></p><p><span>	</span><span>应用层是不用关系数据是如何传输的，就类似于我们寄快递，只需要把包裹交给快递员，由他负责运输快递i，我们不需要关系快递是如何被运输的。</span></p><p><span>	</span><span>而且应用层是工作在操作系统中的用户态，传输层及以下则工作在内核状态。</span></p><h3 id='传输层'><span>传输层</span></h3><p><span>	</span><span>应用层的数据报会传给传输层（Transport Layer）是为应用层提供网络支持的。</span></p><p><img src="assets/001.png" alt="001" style="zoom:40%;" /></p><p><span>	</span><span>在传输层会有两个拆书协议，分别是TCP和UDP。</span></p><p><span>	</span><span>TCP全称是传输控制协议（Translation Control Protocol）大部分应用使用的正是TCP传输协议，比如HTTP应用层协议。TCP相对UDP来说多了很多特性，比如流量控制，超时重试，拥塞控制等，这些都是为了保证数据包的可靠性传输。</span></p><p><span>	</span><span>UDP比较简单，只需要负责发送数据包，不保证数据是否抵达对方，但实用性比较好，传输效率更高，当然UDP也可以实现可靠传输，把TCP的特性在应用层上实现，不过实现一个可靠的UDP协议不是简单的事儿。</span></p><p><span>	</span><span>应用需要传输的数据可能非常大，如果直接传输就不好孔子，因此当传输层的数据士大小超过MSS（TCP最长报文段长度），就要将数据包分块，这样及时中途有一个分块丢失或损坏了，只需要重新发送一个分块，不用重新发送整个数据包。在TCP协议中，我们把每个分块称为一个TCP段（TCP Segment）。</span></p><p><img src="assets/002.png" alt="002" style="zoom:40%;" /></p><p><span>	</span><span>当设备作为接收方时，传输层则要负责把数据包传给应用，但是一台设备上可能会有很多应用在接收或者传输数据，因此需要一个编号将应用区分开，这个编号就是</span><strong><span>端口</span></strong><span>。</span></p><p><span>	</span><span>比如80端口通常是Web服务器用的，22端口通常是远程登录服务器用的。对于浏览器中的每个标签页都是一个独立的进程，操作系统会有这些进程分配临时的端口号。</span></p><p><span>	</span><span>由于传输层中会携带端口号，因此接收方可以识别出该报文是发送给哪个应用。</span></p><h3 id='网络层'><span>网络层</span></h3><p><span>	</span><span>传输层在刚接触的时候会认为它负责将数据从一个设备传输到另外一个设备，事实上它并不负责。</span></p><p><span>	</span><span>实际场景中的网络缓解错综复杂，中间有各种各样的线路和分叉路口，如果一个设备的数据要传输给另一个设备，就需要在各种各样的路径和节点进行选择，而传输层的设计连很简单、高效、转租，如果传输层还负责这块儿功能就有点违背设计原则。</span></p><p><span>	</span><span>也就说说我们不希望传输层协议处理太多的事儿，只需要服务好应用层即可，让其作为应用减数据传输的媒介，帮助实现供应泳道应用的通信，而实际的传输功能就交给下一层，就是网络层（Internet Layer）。</span></p><p><img src="assets/003.png" alt="003" style="zoom:30%;" /></p><p><span>	</span><span>网络层最常用的就是IP协议（Internet Protocol），IP协议会将传输层的报文作为数据部分，再加上IP报头组成IP报文，如果IP报文大小超过MTU（以太网中一般为1500字节）就会再次进行分片，得到一个即将发送网络的IP报文。</span></p><p><img src="assets/004.png" alt="004" style="zoom:40%;" /></p><p><span>	</span><span>网络层负责将数据从一个设备传输到另一个设备，世界上那么多设备，又该如何找到对方，因此网络层需要区分设备的编号。</span></p><p><span>	</span><span>一般用IP地址给设备进行编号，对于IPV4协议，IP地址共32位，分为了四段（192.168.100.1），每段是8位，只有一个淡村的IP地址虽然做到了区分设备，但是寻址起来还是特别麻烦的，因为因特网中有很多很多设备一个一个匹配很显然不科学。</span></p><p><span>	</span><span>因此需要将IP地址分成两种意义：</span></p><p><span>		</span><span>1、</span><strong><span>网络号</span></strong><span>：负责表示该IP地址属于哪个子网的。</span></p><p><span>		</span><span>2、</span><strong><span>主机号</span></strong><span>：负责标识同一子网下的不同主机。</span></p><blockquote><p><span>	</span><span>怎么分呢？需要配合子网掩码才能算出IP地址的网络号和主机号。</span></p><p><span>	</span><span>举例子：比如10.100.122.0/24，后面/24表示就是255.255.255.0子网延安，255.255.255.0二进制位11111111.11111111.11111111.00000000总共是24个1，为了简化子网掩码就用/24来表示子网掩码。</span></p><p><span>	</span><span>怎么计算出网络地址和主机地址呢？</span></p><p><span>	</span><span>比如：IP: 10.100.122.2   子网掩码:255.255.255.0</span></p><p><span>	</span><span>网络号计算方式：</span></p><p><span>		</span><span>与运算：</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="88.652ex" height="2.773ex" role="img" focusable="false" viewBox="0 -864.9 39184 1225.5" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.816ex;"><defs><path id="MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-4-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-4-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-4-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-4-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-4-TEX-N-A0" d=""></path><path id="MJX-4-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-4-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-4-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(396.8,394) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-4-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(500,0)"></use><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1778,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2278,0)"></use></g><g data-mml-node="mn" transform="translate(2778,0)"><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(278,0)"></use><use data-c="32" xlink:href="#MJX-4-TEX-N-32" transform="translate(778,0)"></use><use data-c="32" xlink:href="#MJX-4-TEX-N-32" transform="translate(1278,0)"></use></g><g data-mml-node="mn" transform="translate(4556,0)"><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E"></use><use data-c="32" xlink:href="#MJX-4-TEX-N-32" transform="translate(278,0)"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-4-TEX-N-32"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(500,0)"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(1000,0)"></use><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E" transform="translate(1500,0)"></use><use data-c="32" xlink:href="#MJX-4-TEX-N-32" transform="translate(1778,0)"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(2278,0)"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(2778,0)"></use></g><g data-mml-node="mn" transform="translate(3278,0)"><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E"></use><use data-c="32" xlink:href="#MJX-4-TEX-N-32" transform="translate(278,0)"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(778,0)"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(1278,0)"></use></g><g data-mml-node="mn" transform="translate(5056,0)"><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(278,0)"></use></g></g><rect width="4325.3" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(4843,0)"><use data-c="3D" xlink:href="#MJX-4-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(5898.8,0)"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(4000,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(4250,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(8250,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(8500,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(12500,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(12750,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-4-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(4000,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(4250,0)"><use data-c="31" xlink:href="#MJX-4-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(8250,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(8500,0)"><use data-c="31" xlink:href="#MJX-4-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(12500,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(12750,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g></g><rect width="12044" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(18460.6,0)"><use data-c="3D" xlink:href="#MJX-4-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(19516.4,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(23516.4,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(23766.4,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(27766.4,0)"><use data-c="A0" xlink:href="#MJX-4-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(28016.4,0)"><use data-c="30" xlink:href="#MJX-4-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mo" transform="translate(32294.2,0)"><use data-c="3D" xlink:href="#MJX-4-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(33350,0)"><use data-c="31" xlink:href="#MJX-4-TEX-N-31"></use><use data-c="39" xlink:href="#MJX-4-TEX-N-39" transform="translate(500,0)"></use><use data-c="32" xlink:href="#MJX-4-TEX-N-32" transform="translate(1000,0)"></use><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(1778,0)"></use><use data-c="36" xlink:href="#MJX-4-TEX-N-36" transform="translate(2278,0)"></use><use data-c="38" xlink:href="#MJX-4-TEX-N-38" transform="translate(2778,0)"></use></g><g data-mml-node="mn" transform="translate(36628,0)"><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(278,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(778,0)"></use><use data-c="30" xlink:href="#MJX-4-TEX-N-30" transform="translate(1278,0)"></use></g><g data-mml-node="mn" transform="translate(38406,0)"><use data-c="2E" xlink:href="#MJX-4-TEX-N-2E"></use><use data-c="31" xlink:href="#MJX-4-TEX-N-31" transform="translate(278,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10.100</mn><mn>.122</mn><mn>.2</mn></mrow><mrow><mn>255.255</mn><mn>.255</mn><mn>.0</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>00001010</mn><mtext>&nbsp;</mtext><mn>01100100</mn><mtext>&nbsp;</mtext><mn>01111010</mn><mtext>&nbsp;</mtext><mn>00000010</mn></mrow><mrow><mn>11111111</mn><mtext>&nbsp;</mtext><mn>11111111</mn><mtext>&nbsp;</mtext><mn>11111111</mn><mtext>&nbsp;</mtext><mn>00000000</mn></mrow></mfrac><mo>=</mo><mn>00001010</mn><mtext>&nbsp;</mtext><mn>01100100</mn><mtext>&nbsp;</mtext><mn>01111010</mn><mo>=</mo><mn>192.168</mn><mn>.100</mn><mn>.1</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{10.100.122.2}{255.255.255.0} = \frac{00001010\ 01100100\  01111010\ 00000010}{11111111\ 11111111\ 11111111\ 00000000} = 00001010\ 01100100\ 01111010 = 192.168.100.1</script><span> </span></p><p><span>	</span><span>主机号计算方式：将255.255.255.0取反与IP地址进行按位与运算，就可以得到主机号：</span></p><p><span>	</span><span>转换：</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="41.138ex" height="2.773ex" role="img" focusable="false" viewBox="0 -864.9 18182.9 1225.5" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.816ex;"><defs><path id="MJX-5-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-5-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-5-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-5-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-5-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-5-TEX-N-A0" d=""></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(396.8,394) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-5-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(500,0)"></use><use data-c="2E" xlink:href="#MJX-5-TEX-N-2E" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1278,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1778,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2278,0)"></use></g><g data-mml-node="mn" transform="translate(2778,0)"><use data-c="2E" xlink:href="#MJX-5-TEX-N-2E"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(278,0)"></use><use data-c="32" xlink:href="#MJX-5-TEX-N-32" transform="translate(778,0)"></use><use data-c="32" xlink:href="#MJX-5-TEX-N-32" transform="translate(1278,0)"></use></g><g data-mml-node="mn" transform="translate(4556,0)"><use data-c="2E" xlink:href="#MJX-5-TEX-N-2E"></use><use data-c="32" xlink:href="#MJX-5-TEX-N-32" transform="translate(278,0)"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-5-TEX-N-32"></use><use data-c="35" xlink:href="#MJX-5-TEX-N-35" transform="translate(500,0)"></use><use data-c="35" xlink:href="#MJX-5-TEX-N-35" transform="translate(1000,0)"></use><use data-c="2E" xlink:href="#MJX-5-TEX-N-2E" transform="translate(1500,0)"></use><use data-c="32" xlink:href="#MJX-5-TEX-N-32" transform="translate(1778,0)"></use><use data-c="35" xlink:href="#MJX-5-TEX-N-35" transform="translate(2278,0)"></use><use data-c="35" xlink:href="#MJX-5-TEX-N-35" transform="translate(2778,0)"></use></g><g data-mml-node="mn" transform="translate(3278,0)"><use data-c="2E" xlink:href="#MJX-5-TEX-N-2E"></use><use data-c="32" xlink:href="#MJX-5-TEX-N-32" transform="translate(278,0)"></use><use data-c="35" xlink:href="#MJX-5-TEX-N-35" transform="translate(778,0)"></use><use data-c="35" xlink:href="#MJX-5-TEX-N-35" transform="translate(1278,0)"></use></g><g data-mml-node="mn" transform="translate(5056,0)"><use data-c="2E" xlink:href="#MJX-5-TEX-N-2E"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(278,0)"></use></g></g><rect width="4325.3" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(4843,0)"><use data-c="3D" xlink:href="#MJX-5-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(5898.8,0)"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-5-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(4000,0)"><use data-c="A0" xlink:href="#MJX-5-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(4250,0)"><use data-c="30" xlink:href="#MJX-5-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(8250,0)"><use data-c="A0" xlink:href="#MJX-5-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(8500,0)"><use data-c="30" xlink:href="#MJX-5-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(12500,0)"><use data-c="A0" xlink:href="#MJX-5-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(12750,0)"><use data-c="30" xlink:href="#MJX-5-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3500,0)"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-5-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(4000,0)"><use data-c="A0" xlink:href="#MJX-5-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(4250,0)"><use data-c="31" xlink:href="#MJX-5-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(8250,0)"><use data-c="A0" xlink:href="#MJX-5-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(8500,0)"><use data-c="31" xlink:href="#MJX-5-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-5-TEX-N-31" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(12500,0)"><use data-c="A0" xlink:href="#MJX-5-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(12750,0)"><use data-c="30" xlink:href="#MJX-5-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-5-TEX-N-30" transform="translate(3500,0)"></use></g></g><rect width="12044" height="60" x="120" y="220"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10.100</mn><mn>.122</mn><mn>.2</mn></mrow><mrow><mn>255.255</mn><mn>.255</mn><mn>.0</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>00001010</mn><mtext>&nbsp;</mtext><mn>01100100</mn><mtext>&nbsp;</mtext><mn>01111010</mn><mtext>&nbsp;</mtext><mn>00000010</mn></mrow><mrow><mn>11111111</mn><mtext>&nbsp;</mtext><mn>11111111</mn><mtext>&nbsp;</mtext><mn>11111111</mn><mtext>&nbsp;</mtext><mn>00000000</mn></mrow></mfrac></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{10.100.122.2}{255.255.255.0} = \frac{00001010\ 01100100\  01111010\ 00000010}{11111111\ 11111111\ 11111111\ 00000000}</script></p><p><span>	</span><span>将子网掩码取反相与：</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="71.156ex" height="2.773ex" role="img" focusable="false" viewBox="0 -864.9 31451.1 1225.5" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.816ex;"><defs><path id="MJX-6-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-6-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-6-TEX-N-A0" d=""></path><path id="MJX-6-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(4000,0)"><use data-c="A0" xlink:href="#MJX-6-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(4250,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(8250,0)"><use data-c="A0" xlink:href="#MJX-6-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(8500,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(12500,0)"><use data-c="A0" xlink:href="#MJX-6-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(12750,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g></g><g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(4000,0)"><use data-c="A0" xlink:href="#MJX-6-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(4250,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(8250,0)"><use data-c="A0" xlink:href="#MJX-6-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(8500,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mtext" transform="translate(12500,0)"><use data-c="A0" xlink:href="#MJX-6-TEX-N-A0"></use></g><g data-mml-node="mn" transform="translate(12750,0)"><use data-c="31" xlink:href="#MJX-6-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(1000,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(1500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(2000,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(2500,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(3000,0)"></use><use data-c="31" xlink:href="#MJX-6-TEX-N-31" transform="translate(3500,0)"></use></g></g><rect width="12044" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(12561.8,0)"><use data-c="3D" xlink:href="#MJX-6-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(13617.6,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mn" transform="translate(17617.6,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mn" transform="translate(21617.6,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mn" transform="translate(25617.6,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(1500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(2500,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3000,0)"></use><use data-c="30" xlink:href="#MJX-6-TEX-N-30" transform="translate(3500,0)"></use></g><g data-mml-node="mo" transform="translate(29895.4,0)"><use data-c="3D" xlink:href="#MJX-6-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(30951.1,0)"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>00001010</mn><mtext>&nbsp;</mtext><mn>01100100</mn><mtext>&nbsp;</mtext><mn>01111010</mn><mtext>&nbsp;</mtext><mn>00000010</mn></mrow><mrow><mn>00000000</mn><mtext>&nbsp;</mtext><mn>00000000</mn><mtext>&nbsp;</mtext><mn>00000000</mn><mtext>&nbsp;</mtext><mn>11111111</mn></mrow></mfrac><mo>=</mo><mn>00000000</mn><mn>00000000</mn><mn>00000000</mn><mn>00000000</mn><mo>=</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">\frac{00001010\ 01100100\  01111010\ 00000010}{00000000\ 00000000\ 00000000\ 11111111} = 00000000 00000000 00000000 00000000 = 0</script></p><p><span>	</span><span>可以搜索下子网掩码计算器，改变下掩码位的数值，就能体会到子网掩码的作用：</span></p><p><img src="assets/006.png" alt="006" style="zoom:40%;" /></p></blockquote><p><span>	</span><span>在寻址的过程中，先匹配到的相同的网络号（表示要找到同一个子网）才会找到对应的主机。</span></p><p><span>	</span><span>除了寻址能力，IP协议还有另一个重要的作用就是</span><strong><span>路由</span></strong><span>。实际场景中，两台设备并不是用一条网线连接起来的，而是通过很多网关、路由器、交换机等众多网络设备连接起来的，就会形成很多条网络的路径，因此当数据包到达一个网络节点，就需要路由算法决定下一步哪条路径。</span></p><p><span>	</span><span>路由器寻址工作中，就是找到目标地址的子网，找到后进而把数据报转发到对应的网络内。</span></p><p><img src="assets/007.png" alt="007" style="zoom:50%;" /></p><p><span>		</span><span>所以，IP协议的寻址作用就是告诉我们去往下一个目的地朝哪个方向走，路由则是根据【下一个目的地】选择路径。寻址更像在导航，路由更像在操作方向盘。</span></p><h3 id='网络接口'><span>网络接口</span></h3><p><span>	</span><span>生成IP之后，接下来就要交给</span><strong><span>网络接口层</span></strong><span>（Link Layer）在IP头部的前面加上MAC头部，并封装成数据帧（Data Frame）发送到网络上。</span></p><p><img src="assets/008.png" alt="008" style="zoom:40%;" /></p><p><span>	</span><span>IP头部中的接收方IP地址表示网络包的目的地，通过这个地址我们就可以判断要将包发到哪里，但在以太网的世界里，这个思路是行不通的。</span></p><p><span>	</span><span>什么是以太网呢？电脑上的以太网接口，Wi-Fi接口，以太网交换机、路由器上的千兆，万兆以太网口，还有网线，都是以太网的组成部分。以太网就是一种在【局域网】内，把附近的设备连接起来，使他们之间可以进行通讯的技术。</span></p><p><span>	</span><span>以太网在判断网络包目的地时和IP的方式不同，因此必须采用相匹配的方式才能在以太网中奖包发往目的地，而MAC头部就是干这个用的，所以在以太网进行通讯要用的MAC地址。</span></p><p><span>	</span><span>MAC头部是以太网使用的头部，它包含了接收方和发送方的MAC地址等信息，我们可以通过ARP协议获取对方的MAC地址。</span></p><p><span>	</span><span>所以说网络接口层主要为网络层提供【链路级别】传输的服务，负责在以太网，WiFi这样的底层网络上发送原始数据包，工作在网卡这个层次，使用MAC地址来表示网络上的设备。</span></p><h3 id='总结'><span>总结</span></h3><p><span>	</span><span>TCP/IP网络通常从上到下分为4层，分别是应用层、传输层、网络层和网络接口层。</span></p><p><img src="assets/009.png" alt="009" style="zoom:40%;" /></p><p><span>	</span><span>每一层封装的格式：</span></p><p><img src="assets/010.png" alt="010" style="zoom:40%;" /></p><p><span>	</span><span>网络接口层的传输单位是帧（frame），IP层的传输单位是包（packet），TCP层传输单位是段（segment），HTTP传输单位则是消息或报文（message）。统称为数据包。</span></p><h2 id='二网址解析到显示过程'><span>二、网址解析到显示过程</span></h2><p><span>	</span><span>当输入网址之后，到网页显示，期间都发生了什么？</span></p><h3 id='http解析'><span>HTTP解析</span></h3><p><span>	</span><span>浏览器的第一步就是就是解析URL。从而生成发送给web服务器的请求信息。</span></p><p><span>	</span><span>一条URL都包含哪些元素？</span></p><p><img src="assets/011.png" alt="011" style="zoom:50%;" /></p><p><span>	</span><span>上图中长长的URL实际上是请求服务器里面的文件资源。</span><span>	</span></p><p><span>	</span><span>当没有路径时，就代表访问根目录实现设置的</span><strong><span>默认文件</span></strong><span>，也就是/index.html或者/default.html文件，就不会发生混乱了。</span></p><p><strong><span>生成HTTP请求信息：</span></strong></p><p><span>	</span><span>对URL进行解析之后，浏览器确定了Web服务器和文件名，接下来就是根据这些信息生成HTTP请求信息。</span></p><p><img src="assets/012.png" alt="012" style="zoom:50%;" /></p><h3 id='dns解析'><span>DNS解析</span></h3><p><span>	</span><span>通过浏览器解析URL并生成HTTP消息后，需要委托操作系统将消息发送给Web服务器。</span></p><p><span>	</span><span>在发送之前，还有一项工作要完成，就是</span><strong><span>查询服务域名对应的IP地址</span></strong><span>，因为委托操作系统发送消息时，必须提供通信对象的IP地址。</span></p><p><span>	</span><span>比如我们打电话的时候必须要知道对方的电话号码，。但是由于电话号码表难记，就通常将对方电话号码+姓名保存在通讯录中，那么拨打的时候直接使用姓名就可以拨打。</span></p><p><span>	</span><span>所以在服务器中也有专门保存了Web服务器域名与IP对应关系的，就是DNS服务器。</span></p><h4 id='域名的层级关系'><span>域名的层级关系</span></h4><p><span>	</span><span>DNS中的域名都是用</span><strong><span>句点</span></strong><span>（英文状态下的点）来分割的，比如</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>，这里的句点代表了不同层次之间的</span><strong><span>界限</span></strong><span>。</span></p><p><span>	</span><span>在域名中，越靠右的位置表示其层级越高。比如</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>.，最后一个句点代表的是根域名，也就是 . 根据在最顶层，下一层就是 .com 顶级域，在下一层就是 server.com 所以域名的层级关系类似一个树状结构：</span></p><ul><li><p><span>根DNS服务器（.）。</span></p></li><li><p><span>顶级域名DNS服务器（.com）。</span></p></li><li><p><span>权威DNS服务器（server.com）。</span></p></li></ul><p><img src="assets/013.png" alt="013" style="zoom:60%;" /></p><p><span>	</span><span>根域的DNS服务器信息保存在互联中搜友的DNS服务器中。这样一来，任何DNS服务器就可以找到并访问根域DNS服务器了。因此客户端只要能找到任意一台DNS服务器，就可以通过它找到根域DNS服务器，然后在一路顺腾蘑菇找到位于下层的某台目标DBS服务器。</span></p><h4 id='域名解析的工作流程'><span>域名解析的工作流程</span></h4><ol start='' ><li><p><span>客户端发出一个DNS请求，比如问</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>的IP是啥，并发给本地DNS服务器（就是客户端的TCP/IP设置中填写的DNS服务器地址）。</span></p></li><li><p><span>本地域名服务器收到客户端的请求后，如果缓存里的表格能找到</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>就直接返回IP地址，如果没有，本地DNS会去问它的根域名服务器：“请告诉我</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>对应的IP地址是啥？”，根域名服务器是最高层次的，不直接用于域名解析，但能指明一条道路。</span></p></li><li><p><span>根DNS收到来自本地DNS请求后，发现顶级域名是.com，就返回给本地“</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>是规.com管理的 我给你.com顶级域名服务器地址，你去找他”。</span></p></li><li><p><span>本地DNS收到根域名服务器地址后，就拿着IP地址去问顶级域名服务器的IP地址。</span></p></li><li><p><span>顶级域名服务器将</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>区域的权威DNS服务器地址返回给本地DNS。</span></p></li><li><p><span>本地DNS直接拿着IP地址去问区域的权威DNS服务器，</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>对应的域名是啥？权威直接将</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>解析的结果返回给本地DNS。</span></p></li><li><p><span>本地DNS再将IP地址返回给客户端，客户端和目标就会建立连接。</span></p></li></ol><p><span>	</span><span>就完成了DNS解析过程。</span></p><p><img src="assets/014.png" alt="014" style="zoom:50%;" /></p><p><span>	</span><span>DNS域名解析的过程就类似于平时找人纹路过程，只会指路不会带路。</span></p><p><span>	</span><span>注意的是本地DNS第一次拿到域名对应的IP之后就会将IP于域名的映射关系缓存到本地，下次直接从缓存中获取。</span></p><h3 id='协议栈'><span>协议栈</span></h3><p><span>	</span><span>通过DNS获取到IP之后，就可以把HTTP的传输工作交给操作系统中的协议栈。</span></p><p><span>	</span><span>协议栈内部分为几个部分，分别承担不同的工作，上下关系是有一定的规则的，上面的部分会向下面的部分委托工作，下面的部分收到委托工作就会执行。</span></p><p><img src="assets/015.png" alt="015" style="zoom:50%;" /></p><p><span>	</span><span>应用程序（浏览器）通过调用Socket库，来委托协议栈工作。协议栈的上半部分有两块，分别是负责TCP和UDP协议，这两个传输协议会接受应用层的委托收到数据的操作。</span></p><p><span>	</span><span>协议栈的下面一半是用IP协议控制网络包收到操作，在互联网上传数据时，数据会被切分成一块块的网络包，而将网络包发送给对方的操作就是由IP负责的。</span></p><p><span>	</span><span>此外IP中还包括了ICMP和ARP协议。</span></p><p><span>		</span><span>ICMP：用于告知网络包传送过程中产生的错误以及各种控制信息。</span></p><p><span>		</span><span>ARP：用于根据IP地址查询相对应的以太网的MAC地址。</span></p><p><span>	</span><span>IP下面的网卡驱动程序负责网卡硬件，而最下面的网卡则负责完成实际收发操作，也就是对网线中的信号执行发送和接收操作。</span></p><h3 id='tcp协议'><span>TCP协议</span></h3><p><span>	</span><span>HTTP是基于TCP协议传输的，先了解下TCP协议。</span></p><h4 id='tcp包头格式'><span>TCP包头格式</span></h4><p><img src="assets/016.png" alt="016" style="zoom:50%;" /></p><ul><li><p><span>首先源端口号和目的端口号是不可少的，如果没有找到这两个端口号，数据就不知道应该发给哪个应用。</span></p></li><li><p><span>序号：为了解决包乱序的问题。</span></p></li><li><p><span>确认序列：目的是确认发出去对方是否收到。如果没有收到就需要重新发送 ，直到送达位置，这就解决丢包的问题。</span></p></li><li><p><span>状态位：TCP是面向连接的，双方要维护连接中的各种状态，这些状态位的发送，会引起双方状态的变更。</span></p><ul><li><p><span>SYN：是否发起一个链接。</span></p></li><li><p><span>ACK：是否收到回复。</span></p></li><li><p><span>RST：是否重新连接。</span></p></li><li><p><span>FIN：是否结束连接。</span></p></li></ul></li><li><p><span>窗口大小：TCP要走流量控制，通信双方各声明一个窗口（缓存大小），表示自己当前能够的处理能力，不要发送太快也不要发送太慢。</span></p><p><span>窗口大小还可以做拥塞控制，对于真正的通路堵车不堵车，它无能为例，唯一能做的就是控制自己，也就是控制发送的速度。</span></p></li></ul><h4 id='建立连接-三次握手'><span>建立连接-三次握手</span></h4><p><span>	</span><span>在HTTP传输数据之前，首先需要TCP建立连接，TCP连接的建立，通常称为三次握手。</span></p><p><span>	</span><span>这个所谓的丽娜姐就是双发计算机里维护了一个状态机，在连接建立的过程中，双方的状态变化时序图如下图所示：</span></p><p><img src="assets/017.png" alt="017" style="zoom:40%;" /></p><ul><li><p><span>一开始，客户端和服务器处于CLOSE状态，先是服务端主动监听某个端口，处于LISTEN状态。</span></p></li><li><p><span>然后客户端主动发起连接SYN，之后处于SYN-SENT状态。</span></p></li><li><p><span>服务端收到发起的连接，返回SYN，并且ACK客户端的SYN，之后处于SYN-RCVD状态。</span></p></li><li><p><span>客户端收到服务端发送的SYN和ACK之后，发送对SYN确认的ACK，之后处于ESTABLISHED状态，因为一发一收成功了。</span></p></li><li><p><span>服务端收到ACK和ACK之后，处于ESTABLISHED状态，因为它也一发一收了。</span></p></li></ul><p><span>	</span><span>所以三次握手的目的是</span><strong><span>保证双方都有发送和接收的能力</span></strong><span>。</span></p><h4 id='查看tcp连接状态'><span>查看TCP连接状态</span></h4><p><span>	</span><span>TCP的连接状态查看，在Linux可以通过  </span><strong><code>netstat -napt</code></strong><span>命令查看。</span></p><p><img src="assets/018.png" alt="**018" style="zoom:50%;" /></p><h4 id='tcp分割线'><span>TCP分割线</span></h4><p><span>	</span><span>如果HTTP请求消息比较长，超过MSS长度，这时TCP就需要把HTTP的数据拆解成一块块的数据发送，而不是一次性发送所有数据。</span></p><p><img src="assets/019.png" alt="019" style="zoom:50%;" /></p><ul><li><p><span>MTU：一个网络包的最大长度，以太网中一般为1500字节。</span></p></li><li><p><span>MSS：除去IP和TCP头部之后，一个网络表锁能容纳的TCP数据的最大长度。</span></p></li></ul><p><span>	</span><span>数据会被以MSS的长度为单位进行拆分，拆分出来的每一块数据都会被放进单独的网络包中。也就是么个拆分的数据加上TCP头信息，然后交给IP模块来发送数据。</span></p><p><img src="assets/020.png" alt="020" style="zoom:50%;" /></p><h4 id='tcp报文生成'><span>TCP报文生成</span></h4><p><span>	</span><span>TCP协议里面有两个端口，一个是浏览器监听的端口（通常是随机生成的）一个是Web服务器监听的端口（HTTP默认端口号是80，HTTPS默认端口是443）。</span></p><p><span>	</span><span>在双方建立了连接之后，TCP报文中的数据部分就是存放HTTP头部 + 数据，组装好TCP报文之后，就需要交给下面的网络层处理。</span></p><p><span>	</span><span>至此网络包的报文如下图所示：</span></p><p><img src="assets/021.png" alt="021" style="zoom:50%;" /></p><p><img src="assets/022.png" alt="022" style="zoom:60%;" /></p><h3 id='远程定位-ip'><span>远程定位-IP</span></h3><p><span>	</span><span>TCP模块在执行连接、收发、断开等各阶段操作时，都需要委托IP模块将数据封装成网络包，发送给通信对象。</span></p><h4 id='ip包头格式'><span>IP包头格式</span></h4><p><img src="assets/023.png" alt="023" style="zoom:50%;" /></p><p><span>	</span><span>在IP协议里面有源地址IP和目标地址IP：</span></p><ul><li><p><span>源地址IP：即客户端输出的IP地址。</span></p></li><li><p><span>目标地址IP：通过DNS域名解析得到Web服务器IP。</span></p></li></ul><p><span>	</span><span>因为HTTP是经过TCP传输的，所以IP包头的协议号，要填写成06 （十六进制）表示协议为TCP。</span></p><p>&nbsp;</p><p><span>	</span><span>假设客户端有多个网卡，就会有多个IP地址，那IP头部的元地址应该选择哪个IP呢？</span></p><p><span>	</span><span>当存在多个网卡的时，在填写源地址IP时，就需要判断到底应该填写哪个地址。这个判断相当于在多个网卡中判断出应该使用哪个网卡来发送包。</span></p><p><span>	</span><span>这个时候需要根据路由表规则，来判断是哪个网卡作为源地址IP的。</span></p><p><span>	</span><span>Linux中使用 </span><strong><code>route -n</code></strong><span>查看当前系统的路由表。</span></p><p><img src="assets/024.png" alt="024" style="zoom:67%;" /></p><p>&nbsp;</p><p><span>	</span><span>假设Web服务器的目标地址是192.168.10.200：判断源地址IP是哪个？</span></p><p><img src="assets/025.png" alt="025" style="zoom:80%;" /></p><ol start='' ><li><p><span>首先先和第一条目的子网掩码（Genmask）进行 </span><strong><span>与运算</span></strong><span>， 得到结果为192.168.10.0，但是第一条目的Destination是192.168.3.0很显然不一致所以匹配失败。</span></p></li><li><p><span>在与第二条目的子网掩码进行 与运算，得到结果为192.168.10.0，与第二条目的Destination是192.168.10.9匹配成功，所以将使用eth1网卡的IP地址作为IP报头源地址。</span></p></li></ol><p><span>	</span></p><p><span>	</span><span>假设Web服务器目标地址是10.100.20.100，那么依然按照上面的路由表规则来判断，判断后的结果是第三条匹配。</span></p><p><span>	</span><span>第三条比较特殊，目标地址和子网掩码都是0.0.0.0，这表示默认网关，如果其他所有条目都无法匹配，就会自动匹配这一行，并且后续就把包发给路由器，Gateway是路由器的IP地址。</span></p><h4 id='ip报文生成'><span>IP报文生成</span></h4><p><span>	</span><span>网络包的报文如下图所示：</span></p><p><img src="assets/026.png" alt="026" style="zoom:35%;" /></p><h3 id='两点传输-mac'><span>两点传输-MAC</span></h3><p><span>	</span><span>生成了IP头部之后，接下来网络包还需要再IP头部的前面加上MAC头部。</span></p><h4 id='mac头部格式'><span>MAC头部格式</span></h4><p><span>	</span><span>MAC头部是以太网使用的头部，它包含了接收方和发送方的MAC地址等信息。</span></p><p><img src="assets/027.png" alt="027" style="zoom:60%;" /></p><p><span>	</span><span>在MAC包头部需要包含发送方MAC地址和接收方目标MAC地址，用于两点之间的传输。</span></p><p><span>	</span><span>一般在TCP/IP通信里，MAC包头的协议类型只使用：0800：IP协议、0806：ARP协议。</span></p><h4 id='mac发送方和接收方确认方式'><span>MAC发送方和接收方确认方式</span></h4><p><span>	</span><span>发送方的MAC地址获取的比较简单，MAC地址是在网卡生产时就写入到ROM中的，只需读取这个信息写入到MAC头部即可。</span></p><p><span>	</span><span>接收方的MAC地址有点复杂，只要告诉以太网对方的MAC地址，以太网就会帮我们把包发送过去，那么很显然这里应该填写对方的MAC地址。</span><span>	</span></p><p><span>	</span><span>所以先搞清楚把包发送给谁，这个只需要查下路由表就可以知道，在路由表中找到相匹配的条目，然后把包发给Gateway列中的IP地址即可。</span></p><p><span>	</span><span>此时就需要ARP协议帮忙找到路由器中的MAC地址。</span></p><p><img src="assets/028.png" alt="028" style="zoom:50%;" /></p><p><span>	</span><span>ARP协议会在以太网中以</span><strong><span>广播</span></strong><span>的形式，对以太网所有的设备喊出：”这个给IP地址是谁的？请告诉我MAC地址“。</span></p><p><span>	</span><span>然后会有人回答：”这个IP地址是我的，我的MAC地址是 xxxxx“。</span></p><p><span>	</span><span>如果对方和自己处于同一个子网中，那么通过上面的操作就可以那大对方的MAC地址，然后将MAC地址写入到MAC头部，MAC头部就完成了。（当然这里有ARP缓存，会将获取到MAC地址缓存几分钟）</span></p><p><span>	</span><span>在发送时：</span></p><p><span>		</span><span>1、先查询ARP缓存，如果缓存中存在对方的MAC地址，就不需要发送ARP查询，直接使用ARP缓存中的地址。</span></p><p><span>		</span><span>2、缓存中不存在时，需要进行ARP广播。</span></p><p><span>	</span><strong><span>查看ARP缓存命令：</span><code>arp -a</code></strong></p><p><img src="assets/029.png" alt="029" style="zoom:67%;" /></p><h4 id='mac报文生成'><span>MAC报文生成</span></h4><p><img src="assets/030.png" alt="030" style="zoom:35%;" /></p><h3 id='出口-网卡'><span>出口-网卡</span></h3><p><span>	</span><span>网络包只是存放在内存中的一串二进制数字的信息，没有办法直接发送给对方。因此我们需要将</span><strong><span>数字信号转换为电信号</span></strong><span>，才能在网线上传说，也就是说，这才是真正的数据发送过程。</span></p><p><span>	</span><span>负责执行这一步骤的就是网卡，要控制网卡海选靠网卡驱动程序。</span></p><p><span>	</span><span>网卡驱动获取网络包之后，会将其复制到网卡内的缓存区中，接着会在其头加上报头和其实帧分解符，在末尾加上用于检测错误的帧校验序列。</span></p><p><img src="assets/031.png" alt="031" style="zoom:50%;" /></p><ul><li><p><span>起始帧分解符是一个用来表示包起始位置的标记。</span></p></li><li><p><span>末尾的FCS（帧校验序列）用来检查包传输过程中是否有损坏。</span></p></li></ul><p><span>	</span><span>最后网卡将包转换为电信号通过网线发送出去。</span></p><h3 id='送别者-交换机'><span>送别者-交换机</span></h3><p><span>	</span><span>来看下数据包是如何通过交换机的，交换机的设计是将网络包原样转发到目的地。交换机工作在MAC层，也称为二层网络设备。</span></p><h4 id='交换机的包接收操作'><span>交换机的包接收操作</span></h4><p><span>	</span><span>首先，点信号到达网络接口，交换机里的模拟进行接收，接下来交换机里的模块将点信号转换为数字信号。</span></p><p><span>	</span><span>然后通过末尾的FCS校验错误，如果没有问题就放到缓冲区里面，这部分操作基本和计算机网卡相同，但交换的工作方式和网卡不同。</span></p><p><span>	</span><span>计算机的网卡本身具有MAC地址，并通过核对收到的包到接收方MAC地址判断是不是发给自己的额，如果不是发给自己就丢弃，相对，交换机的端口不核对接收方的MAC地址，而是直接接收所有的包放到缓冲区中，因此和网卡不同的是，</span><strong><span>交换机的端口不具有MAC地址</span></strong><span>。</span></p><p><span>	</span><span>将包存入缓存区之后，接下来需要查询这个包的接收方MAC地址是否已经在MAC地址表中。</span></p><p><span>	</span><span>交换机的MAC地址表中主要包含两个信息：</span></p><p><span>		</span><span>1、设备的MAC地址。</span></p><p><span>		</span><span>2、该设备连接的交换的哪个端口。</span></p><p><img src="assets/032.png" alt="032" style="zoom:40%;" /></p><blockquote><p><span>	</span><span>举个例子，如果收到的包的接收方的MAC地址为00-02-B3-1c-9C-F9则与上图中的第3行匹配，根据端口列的信息，可知这个地址位于3号端口上，然后可以通过交换电路将包发送到相应的端口了。</span></p></blockquote><p><span>	</span><span>所以，交换机根据MAC地址表查找MAC地址，然后将信息发送到相对应的端口。</span></p><h4 id='找不到mac地址'><span>找不到MAC地址</span></h4><p><span>	</span><span>无法再MAC地址表中找到MAC地址的话，可能舒i因为具有该地址的设备还没有向交换机发送过包，或者这个设备一段时间没有工作导致地址从地址表中删除了。</span></p><p><span>	</span><span>这种情况下，交换机无法判断英爱百包换到到哪个端口，只能将包转发到除了源端口之外的所有端口上，无论该设备连接在哪个端口上都能收到这个包。</span></p><p><span>	</span><span>这样子就不回产生什么问题，因为以太网的设计本来就是将包发送到整个网络的，然后只有相对应的接收者才能接收包，而其他设备则忽略这个包。</span></p><p><span>	</span><span>这样做会发送很多多余的包，会不会造成网络拥塞呢？</span></p><p><span>	</span><span>完全不用带安心，因为发送了包之后的目标设备会做出相应，只要返回了相应包，交换就可以将他的地址写入到MAC地址表，下次也就不需要把包发送到所有端口上。</span></p><p><span>	</span><span>局域网中每秒可以传输上千个包，多出一两个包问题不大。</span></p><p><span>	</span><span>此外，如果接收方MAC地址是一个广播地址，那么交换机会将包发送到除源端口之外的所有端口。</span></p><p><span>	</span><span>以下两个属于广播地址：</span></p><p><span>		</span><span>-&gt; MAC地址中的FF:FF:FF:FF:FF:FF:FF。</span></p><p><span>		</span><span>-&gt; IP地址中的：255.255.255.255。</span></p><h3 id='出境大门-路由器'><span>出境大门-路由器</span></h3><h4 id='路由器与交换机的区别'><span>路由器与交换机的区别</span></h4><p><span>	</span><span>网络包经过交换机之后，现在到达了路由器，并在此被转发到下一个路由器或目标设备。这一步转发的工作原理和交换机类似，也是通过查表判断包转发的目标。</span></p><p><span>	</span><span>不过在具体的操作过程上，路由器和交换机还是有区别的：</span></p><p><span>	</span><span>-&gt; 因为路由器是具有IP设计的，俗称</span><strong><span>三层网络设备</span></strong><span>，路由器的各个端口都具有MAC地址和IP地址。</span></p><p><span>	</span><span>-&gt; 而交换机是基于以太网设计的，俗称</span><strong><span>二层网络设备</span></strong><span>，交换机的端口不具有MAC地址。</span></p><h4 id='路由器基本原理'><span>路由器基本原理</span></h4><p><span>	</span><span>路由器的端口具有MAC地址，因此它就能够称为以太网的发送方和接收方；同时还具有IP地址，从这个意义上来说，和计算机的网卡是一样的。</span></p><p><span>	</span><span>当转发包的时候，首先路由器端口会几首发给自己的以太网包，然后路由表查询转发目标，再由相应的端口作为发送方将以太网包发送出去。</span></p><h4 id='路由器包的接收操作'><span>路由器包的接收操作</span></h4><p><span>	</span><span>首先，电信号到达网络接口部分，路由器中的模块会将电信号转换成数字信号，然后通过包末尾FCS进行错误校验。</span></p><p><span>	</span><span>如果没问题检查MAC头部中的接收方MAC地址，看看是不是发给自己的包，如果是就收到接收缓冲区中，否则就丢弃这个包。</span></p><p><span>	</span><span>总的来说，路由器的端口都具有MAC地址，只接收与自身地址匹配的包，遇到不匹配的包则直接丢弃。</span></p><h4 id='查询路由表确定输出端口'><span>查询路由表确定输出端口</span></h4><p><span>	</span><span>完成包接收操作之后，路由器就会去掉包开头的MAC头部。</span></p><p><span>	</span><span>MAC头部的作用就是将包送到路由器，其中的接收方MAC地址就是路由器端口的MAC地址，因此当包到达路由器之后，MAC头部的任务就完成了，于是MAC头部就会被丢弃。</span></p><p><span>	</span><span>接下来路由器根据MAC头部后方的IP头部重点额内容进行包的转发操作。</span></p><p><span>	</span><span>转发操作分为几个阶段，首先是查询路由表判断转发目标。</span></p><p><img src="assets/033.png" alt="033" style="zoom:50%;" /></p><p><span>	</span><span>假设地址为10.10.1.101的计算机要向地址为192.168.1.100的服务器发送一个包，这个包新到达上图中的路由器。</span></p><ol start='' ><li><p><span>判断转发目标的第一步，根据包的接收方IP地址查询路由表中的目标地址栏，找到相匹配的记录。</span></p></li><li><p><span>路由匹配与每个条目的子网掩码和192.168.1.100IP做与运算后，得到结果与对应条目的目标地址进行匹配，如果匹配就会作为候选转发目标，如果不匹配就继续与下一个目标进行路由匹配。</span></p></li><li><p><span>如果第二条目的子网掩码255.255.255.0与192.168.1.100IP 与运算后得到的结果是192.168.1.0这与第二条目的目标地址192.168.1.0匹配，那么将第二条目记录就不作为转发目标。</span></p></li><li><p><span>实在找不到匹配路由时，就会选择默认路由，路由小中子网掩码位0.0.0.0的记录表示默认路由。</span></p></li></ol><h4 id='路由器的发送操作'><span>路由器的发送操作</span></h4><p><span>	</span><span>接下来就会进入包的发送操作。</span></p><p><span>	</span><span>首先，我们需要根据路由表的网关列判断对方的地址。</span></p><p><span>		</span><span>-&gt; 如果网关是一个IP地址，则这个IP地址就是我们要转发的目标地址，还未抵达终点，还需继续需要路由器转发。</span></p><p><span>		</span><span>-&gt; 如果网关为空，则IP头部中的接收方IP地址就是要转发到目标地址，也就是终于找到IP包头里的目标地址了，说明已抵达终点。</span></p><p><span>	</span><span>知道对方的IP地址之后，接下来需要通过ARP协议根据IP地址查询MAC地址，并将查询的结果作为接收方MAC地址。</span></p><p><span>	</span><span>路由器也有ARP缓存，因此首先会在ARP缓存中查询，找不到在进行ARP查询请求。</span></p><p><span>	</span><span>接下来是发送方MAC地址字段，这里填写输出端口的MAC地址。还有一个以太类型字段，填写0800（十六进制）表示IP协议。</span></p><p><span>	</span><span>网络包完成后，接下来会将其转换为电信号并通过端口发送出去。这一步的工作过程和计算机也是相同的。</span></p><p><span>	</span><span>发送出去的网络包会通过交换机到达下一个路由器。由于接收方MAC地址就是下一个路由器的地址，所以交换机会根据这一地址将包传输到下一个路由器。</span></p><p><span>	</span><span>接下来，下一个路由器会将包转发给再下一个路由器，经过层层转发之后，网络包到达了最终的目的地。</span></p><p><span>	</span><span>注意：在网络包传输过程中，源IP和目标IP始终是不会变的，一直变化的是MAC地址，因为需要MAC地址在以太网内进行两个设备之间的包传输。</span></p><h3 id='互相扒皮-服务器与客户端'><span>互相扒皮-服务器与客户端</span></h3><p><span>	</span><span>数据报地道到服务器端，服务器于是开始扒皮数据包的皮，来获取到真正的数据。</span></p><p><img src="assets/034.png" alt="034" style="zoom:50%;" /></p><p><span>	</span><span>数据包抵达服务器后，服务器会先扒开数据报的MAC头部，查看是否和服务器自己的额MAC地址符合，符合将包收起来。</span></p><p><span>	</span><span>接着继续扒开数据包的IP头，发现IP地址符合，根据IP头中协议项，直到自己上层是TCP协议。于是开始扒开TCP的头，里面有序列号，需要看一看这个序列号是不是我想要的，如果是的话就放入到缓存中返回一个ACK，如果不是就丢弃，TCP头部里面还有端口号，HTTP的服务器正在监听这个端口号。</span></p><p><span>	</span><span>于是，服务器自然知道是HTTP进程想要的这个包，于是将包发送给HTTP进程。</span></p><p><span>	</span><span>服务器HTTP进程看到，原来这个请求是访问一个页面，于是就把这个网页封装在HTTP响应报文中，HTTP响应报文也需要穿上TCP、IP、MAC头部，不过这次是源地址是服务器IP地址，目的地址是客户端IP地址。</span></p><p><span>	</span><span>串号头部衣服之后，从网卡出去，交由交换机已转发到出城的路由器，路由器就把响应包发到下一个路由器，就这样来回跳。</span></p><p><span>	</span><span>最后跳到路由器，路由器就扒开IP头部发现是要找数据，于是就把数据报发给了交换机，在由交换机转发到客户端。</span></p><p><span>	</span><span>客户端收到服务器的响应数据包之后，也会开始扒皮，把收到的数据报的皮扒开就剩下HTTP响应报文，交给浏览器渲染页面。</span></p><p><span>	</span><span>最后客户端就要离开，向服务器发起了TCP四次挥手，至此双方的连接就断开了。</span></p><h2 id='三linux系统收发网络包'><span>三、Linux系统收发网络包</span></h2><h3 id='网络模型'><span>网络模型</span></h3><p><span>	</span><span>为了是的多种设备能通过网络相互通信，和为了解决各种不同设备在网络互联中的兼容性问题，国际标准化组织制定了开放式系统互联通信模型（Open System Interconnection Reference Model），也就是OSI网络模型，分为7层：应用层、表示层、会话层、传输层、网络层、数据链路层和物理层。</span></p><p><span>	</span><span>每一层的智能都不同：</span></p><ul><li><p><span>应用层：负责给应用程序提供统一的接口。</span></p></li><li><p><span>表示层：负责把数据转换成兼容另一个系统能识别的格式。</span></p></li><li><p><span>会话层：负责建立、管理和终止表示层实体之间的通信会话。</span></p></li><li><p><span>传输层：负责端到端的数据传输。</span></p></li><li><p><span>网络层：负责数据的路由、转发、分片。</span></p></li><li><p><span>物理层：腐恶在物理网络中传输数据帧。</span></p></li></ul><p><span>	</span><span>由于OSI模型实在太复杂，剃齿的只有概念理论上的分层，并没有提供具体的实现方案。</span></p><p><span>	</span><span>事实上，我们比较常见的，就是使用的四层模型，即TCP/IP网络模型，Linux系统就是按照这套网络模型来实现网络协议栈的。</span></p><p><span>	</span><span>TCP/IP网络模型分为4层：应用层、传输层、网络层和网络接口层，每一层的职能如下：</span></p><ul><li><p><span>应用层：负责向用户提供一组应用程序，比如HTTP、DNS、FTS。</span></p></li><li><p><span>传输层：负责端到端的通信，比图TCP、UDP。</span></p></li><li><p><span>网络层：负责网络包的封装、分片、路由、转发，比如IP、ICMP等。</span></p></li><li><p><span>网络接口层：负责网络包在物理网络中的传输，比如网络包的封帧、MAC寻址、差错检测，以及通过网卡传输网络帧等。</span></p></li></ul><p><span>	</span><span>TCP/IP网络模型比OSI网络模型简化了不少，也容易记住，关系如下图：</span></p><p><img src="assets/035.png" alt="035" style="zoom:50%;" /></p><p><span>	</span><span>不过，我们常说的七层和四层负载均衡，是用OSI网络模型来秒输的，七层对应的是应用层，四层对应的是传输层。</span></p><h3 id='linux网络协议栈'><span>Linux网络协议栈</span></h3><p><span>	</span><span>我们可以把自己的身体比作应用层中的数据，打底衣服比作传输层中的TCP头，外套比作网络层中的IP头，帽子和鞋子分别比作网络接口层的帧头和帧尾。</span></p><p><img src="assets/036.png" alt="036" style="zoom:50%;" /></p><ul><li><p><span>传输层：给应用数据前面增加了TCP头。</span></p></li><li><p><span>网络层：给TCP数据报增加了IP头。</span></p></li><li><p><span>网络接口层：给IP数据包前后分别增加了帧头和帧尾。</span></p></li></ul><p><span>	</span><span>这些新增的头部和尾部，都有各自的作用，也都按照特定的协议格式填充的，每一层都增加了各自的协议头，那子安网络包的大小就增大了，但物理链路层饼不能传输任意大小的数据包，所以在以太网中，规定了最大传输单元MTU是1500字节，也就是规定了单词传输的最大IP包大小。</span></p><p><span>	</span><span>当网络包超过MTU的大小，就会在网络层分片，以确保门片后的IP包不会超过MTU的大小，如果MTU越小，需要分包就越多，那么网络吞吐量能力就越差，如果MTU越大，需要的分包就越少，那么网络吞吐能力就越好。</span></p><p><span>	</span><span>知道了TCP/IP网络模型，以及网络包的封装原理后，那么Linux网络协议栈的样子，其实就类似于TCP/IP的四层结构：</span></p><p><img src="assets/037.png" alt="037" style="zoom:50%;" /></p><p><span>	</span><span>从上网的网络协议栈，可以看到：</span></p><ul><li><p><span>应用程序需要通过系统调用，来根Socket层进行数据交互。</span></p></li><li><p><span>Socket层的下面就是传输层、网络层和网络接口层。</span></p></li><li><p><span>最下面的一层，则是网卡驱动程序和硬件网卡设备。</span></p></li></ul><h3 id='linux接收网络包的流程'><span>Linux接收网络包的流程</span></h3><p><span>	</span><span>网卡是计算机里的一个硬件，专门负责接收和发送网络包，当网卡接收到一个网络包后，会通过DMA技术，将网络包写入到指定的内存地址，也就是写入到RingBuffer，这个是一个环型缓冲区，接着就会告诉操作系统这个网络包已经到达。</span></p><blockquote><p><span>	</span><span>那么应该如何告诉操作系统这个网络包已经到达了呢 ？</span></p></blockquote><p><span>	</span><span>最简单的一种方式就是触发中断，也就是每当网卡收到一个网络包，就触发一个中断告诉操作系统。</span></p><p><span>	</span><span>但是，这会存在一个问题，在高性能网络场景下，网络包的数量会非常多，那么就会触发非常多的中断，要知道当CPU收到了终端，就会停下手中的事情，而去处理这些网络包，处理完毕后，才会回去继续其他事情，那么频繁的触发中断，则会导致CPU一直没完没了的处理中断，而导致其他任务无法继续前进，从而影响系统化的整体效率。</span></p><p><span>	</span><span>所以为了解决频繁的中断带来的性能开销，Linux内核在2.6版本中引入了NAPI机制，它是混合中断和轮询的方式接收网络包，它的核心概念就是首先采用终端环型数据接收到服务程序，然后poll的方式来轮询数据。</span></p><p><span>	</span><span>因此，当有网络包到达时，会通过DMA技术，将网络包写入到指定的内存地址，接着网卡向CPU发起硬件中断，当CPU收到硬件中断请求号，根据中断表，调用已经注册的中断处理函数。</span></p><p><span>	</span><span>硬件中断处理函数会做如下的事情：</span></p><ul><li><p><span>需要先【暂时屏蔽中断】，表示已经知道内存中有数据了，告诉网卡下次再收到数据包直接写内存就可以了，不要再通知CPU了，这样可以提高速率，避免CPU不停地被中断。</span></p></li><li><p><span>接着，发起【软中断】，然后恢复刚才屏蔽的中断。</span></p></li></ul><p><span>	</span><span>至此，硬件中断处理函数的工作就已经完成。</span></p><p><span>	</span><span>硬件中断处理函数做的事情很少，主要耗时的工作都交给软中断处理函数了。</span></p><h4 id='软中断处理'><span>软中断处理</span></h4><p><span>	</span><span>内核中的ksoftirq线程专门负责软中断的处理，当ksoftirq内核线程收到软中断后，就会来轮询处理数据。</span></p><p><span>	</span><span>ksoftirqd洗车纳恒会从Ring Buffer中国区一个数据帧，用sk_buff表示，从而可以作为一个网络包交给网络协议栈进行逐层处理。</span></p><h4 id='网络协议栈'><span>网络协议栈</span></h4><p><span>	</span><span>首先，会进入到网络接口层，在这一层会检查报文大的合法性，如果不合法则丢弃，合法的话找出该网络包的上层协议的类型，是IPv4还是IPv6，接着再去掉帧头和帧尾，然后交给网络层。</span></p><p><span>	</span><span>到了网络层，则取出IP包，判断网络包下一步的走向，比如是交给上层处理还是转发出去。确认好这个网络包要发送给本机后，就会从IP头里看看上一层协议的是TCP还是UDP，接着去掉IP头，然后交给传输层。</span></p><p><span>	</span><span>传输层取出TCP头或UTP头，根据四元组【源IP、源端口、目的IP、目的端口】作为表示，找出对应的socket并把数据放到socket的几首缓冲区。</span></p><p><span>	</span><span>最后，应用层程序调用socket接口，将内核的socket接收缓冲区的数据【拷贝】到应用层缓冲区，然后唤醒用户进程。</span></p><p><span>	</span><span>至此，一个网络包的接收过程就已经结束了，也可以从下图左边部分看到网络包接收流程，右边部分刚好反过来，它是网络包发送的流程。</span></p><p><img src="assets/038.png" alt="038" style="zoom:40%;" /></p><h3 id='linux发送网络流程'><span>Linux发送网络流程</span></h3><p><span>	</span><span>如上图右边就是发送网络包的流程，正好和接收流程是相反的。</span></p><p><span>	</span><span>首先，应用程序会</span><strong><span>调用Socket</span></strong><span>发送数据报的接口，由于这个是系统调用，所以会从用户态陷入到内核态中的Socket层，内核会申请一个内核态的sk_buff内存，将用户发送的数据拷贝到sk_buff内存，并将其加入到发送缓冲区。</span></p><p><span>	</span><span>接下来，网络协议栈从Socket发送缓冲区中取出sk_buff，并按照TCP/IP协议从上到下逐层处理。</span></p><p><span>	</span><span>如果使用的是TCP传输协议发送数据，那么先拷贝一个新的sk_buff副本，这是因为sk_buff后续在调用网络层，最后到达网卡发送完成的时候，这个sk_buff会被释放掉。而TCP协议是支持丢失重传的，在收到对方的ACK之前，这个sk_buff不能被删除。所以内核的做法就是每次调用网卡发送的时候，实际上传输出去的是sk_buff的一个拷贝，等到ACK真正删除。</span></p><p><span>	</span><span>接着，对sk_buff填充TCP头，这里提一下，sk_buff可以表示各个层的网络包，在应用数据报交data，在TCP层称为segment，在IP层我们交packet在数据链路层称为frame。</span></p><p><span>	</span><span>可能会好奇，为什么全部是、数据包只用一个结构体来描述呢？协议栈采用的是分层结构，上层向下层传递数据时需要增加包头，下层向上层数据需要去掉包头，如果每一层都用一个结构体，那么层之间传递数据的时候，就要发生多次拷贝，将大大降低CPU效率。</span></p><p><span>	</span><span>于是，为了层与层之间传递数据时，不发生拷贝，只用sk_buff一个结构体来描述所有的网络包，那么他是如何做到的呢？ 是通过sk_buff中大data指针，比如：</span></p><ul><li><p><span>当接收数据报的时候，从网卡驱动开始，通过协议栈层层往上传送数据报，通过增加skb-&gt;data值，来逐步剥离协议首部。</span></p></li><li><p><span>当要发送报文时，创建sk_buff结构体，数据缓存区的头部预留足够的空间，用来填充各层首部，在经过各下层协议时，通过减少 skb-&gt;daya 的值来增加协议首部。</span></p></li></ul><p><span>	</span><span>当发送数据报时，data指针的移动过程：</span></p><p><img src="assets/039.png" alt="039" style="zoom:90%;" /></p><p><span>	</span><span>至此，传输层的工作也就能完成了。</span></p><p><span>	</span><span>然后交给网络层，在网络层里面会做这些工作：选取路由（确认下一跳的IP）、填充IP头、netfilter过滤、对超过MTU大小的数据报进行分片。处理完成工作后交给网络接口层处理。</span></p><p><span>	</span><span>网络接口层会通过ARP协议获得下一跳的MAC地址。然后对sk_buff填充帧头和帧尾，接着将sk_buff放到网卡的发送队列中。</span></p><p><span>	</span><span>这一些工作准备好后，会触发【软中断】告诉网卡驱动程序，这里有新的网络包需要发送，驱动程序会从发送队列中读取sk_buff，将合格sk_buff挂到RingBuffer中，接着将sk_buff数据映射到网卡可访问的内存DMA区域，最后触发真实的发送。</span></p><p><span>	</span><span>当数据发送完以后，起始工作并没有结束，因为内存还没有清理，当发送完之后，网卡设备触发一个硬中断来释放内存，主要释放sk_buff内存和清理RingBuffer内存。</span></p><p><span>	</span><span>最后，当收到这个TCP报文的ACK应答时，传输层就会释放原始的sk_buff。</span></p><blockquote><p><span>	</span><span>发送网络数据的时候，设计几次内存拷贝操作？</span></p></blockquote><p><span>	</span><span>第一次，调用发送数据的系统调用的时候，内核会申请一个内核态的sk_buff内存，将用户待发送的数据拷贝到sk_buff内存，并将其加入到发送缓冲区。</span></p><p><span>	</span><span>第二次，在使用TCP传输协议的情况下，从传输层进入网络层的时候，每一个sk_buff都会克隆一个新的副本出来。副本sk_buff会被送往网络层，等它发送完的时候会释放掉，然后原始的sk_buff还保留在传输层，目的是为了实现TCP的可靠传输，等收到这个数据报的ACK时，才会释放原始的sk_buff。</span></p><p><span>	</span><span>第三次，当IP层发现sk_buff大于MTU时才需要进行。会再申请额外的sk_buff，并将原来的sk_buff拷贝为多个小的sk_buff。</span></p><h3 id='总结-2'><span>总结</span></h3><p><span>	</span><span>电脑与电脑之间通常都是通过网卡、交换机、路由器等网络设备连接到一起，那由于网络设备异构性，国际标准化组织定义了一个七层OSI网络模型，但是这个模型由于比较复杂，实际应用中并没有采用，而是采用了更为简化的TCP/IP模型，Linux网络协议栈就是按照了该模型来实现的。</span></p><p><span>	</span><span>TCP/IP模型主要分为应用层、传输层、网络层、网络接口层四层，每一层负责的职责都不同，这是Linux网络协议主要构成部分。</span></p><p><span>	</span><span>当应用程序通过Socket接口发送数据包，数据包会被网络协议从上到下进行逐层处理后，才会被送到网卡队列中，随后由网卡将网络包发送出去。</span></p><p><span>	</span><span>而在接收网络包的时候，同样也要经过网络协议栈从下到上的逐层过处理，最后才会被送到应用程序。</span></p><p><span>	</span></p><p><span>		</span></p><p>&nbsp;</p><p><span>		</span></p><p><span>	</span></p><p>&nbsp;</p><p><span>	</span></p><p><span>	</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+
+<script>(function (){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
+</html>

@@ -1,0 +1,1609 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/*快速自定义配置*/
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * MIT License
+ *
+ * Copyright (c) 2023 劉強東 https://github.com/liangjingkanji
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #202124;
+    --blur-text-color: #c8c8c8;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(32, 33, 36, 0.5);
+    --drake-accent: #5784ec;
+    --drake-highlight: #3a474e;
+    --a-color: #1769e0;
+    --variable-color: #d01884;
+    --outline-active-color: var(#414040);
+    --code-block-bg-color: #f8f9fa;
+    --code-block-color: #3a474e;
+    --title-color: #202124;
+    --blockquote-border-color: #275796;
+    --blockquote-color: #275796;
+    --blockquote-bg-color: #e5f4fd;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--text-color);
+    --height-light-border-color: var(--text-color);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dadce0;
+    --table-header-bg-color: #f1f3f4;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 12px !important;
+    border-radius: 8px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: .1em solid #e8eaed;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 4px;
+    color: var(--drake-highlight);
+    border: .1rem solid #e8eaed;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote {
+    color: var(--blockquote-color) !important;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+.on-focus-mode #write a .md-plain:hover, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain:hover, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain:hover, .on-focus-mode .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+#write a code, a:any-link {
+    color: var(--a-color);
+}
+#write a code:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-library-node.file-tree-node.file-node-root {
+    font-size: 1.1rem;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 14px;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 400;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-atom {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-def {
+    color: #00f;
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #b80672;
+}
+.cm-s-inner span.cm-string {
+    color: #008000;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #008000;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-tag.cm-bracket {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-meta {
+    color: #c5221f;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+/* 正文标题区: #write */
+/* [TOC]目录树区: .md-toc-content */
+/* 侧边栏的目录大纲区: .sidebar-content */
+ 
+/** 
+ * 说明：
+ *     Typora的标题共有6级，从h1到h6。
+ *     我个人觉得h1级的标题太大，所以我的标题都是从h2级开始。
+ *     个人习惯每篇文章都有一个总标题，有一个目录，所以h2级的标题前两个都不会计数。
+ *     一般情况下，我虽然不使用h1级的标题，但是为了以防万一，h1级的标题前两个也都不会计数。
+ *     若想启用h1级标题，就取消包含“content: counter(h1) "."”项的注释，然后将包含“content: counter(h2) "."”的项注释掉即可。
+ */ 
+/** initialize css counter */
+#write, .sidebar-content,.md-toc-content{
+	/* 设置全局计数器的基准 */
+	/* 因为我喜欢从h2级标题用起，所以这里设置为h2 */
+    counter-reset: h2
+}
+ 
+#write h1, .outline-h1, .md-toc-item.md-toc-h1 {
+    counter-reset: h2
+}
+ 
+#write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+    counter-reset: h3
+}
+ 
+#write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+    counter-reset: h4
+}
+ 
+#write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+    counter-reset: h5
+}
+ 
+#write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+    counter-reset: h6
+}
+ 
+/** put counter result into headings */
+#write h1:before,
+.outline-h1>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1>.md-toc-inner:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+ 
+/* 使用h1标题时，去掉前两个h1标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h1元素，请根据情况自行修改。 */
+#write h1:nth-of-type(1):before,
+.outline-h1:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(1)>.md-toc-inner:before,
+#write h1:nth-of-type(2):before,
+.outline-h1:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h1;
+	content: ""
+}
+ 
+/*#write h2:before,
+.outline-h2>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2>.md-toc-inner:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}*/
+ 
+/* 使用h2标题时，去掉前两个h2标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h2元素，请根据情况自行修改。 */
+#write h2:nth-of-type(1):before,
+.outline-h2:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(1)>.md-toc-inner:before,
+#write h2:nth-of-type(2):before,
+.outline-h2:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h2;
+	content: ""
+}
+ 
+#write h3:before,
+h3.md-focus.md-heading:before, /** override the default style for focused headings */
+.outline-h3>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h3>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h3;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+     content:  counter(h3) ". "
+}
+ 
+#write h4:before,
+h4.md-focus.md-heading:before,
+.outline-h4>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h4>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h4;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+    content: counter(h3) "." counter(h4) ". "
+}
+ 
+#write h5:before,
+h5.md-focus.md-heading:before,
+.outline-h5>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h5>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h5;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+ 
+#write h6:before,
+h6.md-focus.md-heading:before,
+.outline-h6>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h6>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h6;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+ 
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>3.1TCP整体概述</title>
+</head>
+<body class='typora-export typora-export-show-outline typora-export-no-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp整体概述">TCP整体概述</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#一tcp基本认识">一、TCP基本认识</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp头格式">TCP头格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp协议属于什么层">TCP协议属于什么层</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp连接定义">TCP连接定义</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#确定唯一的tcp连接">确定唯一的TCP连接</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#udp和tcp的区别">UDP和TCP的区别</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp计算负载数据的长度">TCP计算负载数据的长度</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp和udp可以使用一个端口吗">TCP和UDP可以使用一个端口吗</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二tcp连接建立">二、TCP连接建立</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp三次握手过程">TCP三次握手过程</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp状态查看">TCP状态查看</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#为啥是三次握手">为啥是三次握手</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#避免历史连接">避免历史连接</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#同步双方初始化序列号">同步双方初始化序列号</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#避免浪费资源">避免浪费资源</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#结论">结论</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#为啥每次建立连接的初始化序列号不一样">为啥每次建立连接的初始化序列号不一样</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#初始化序列号isn是如何随机产生的">初始化序列号ISN是如何随机产生的</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip层都会分片为啥tcp还要mss分">IP层都会分片为啥TCP还要MSS分？</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第一次握手丢失会发生啥">第一次握手丢失会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第二次握手丢失会发生啥">第二次握手丢失会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第三次握手丢失会发生啥">第三次握手丢失会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#syn攻击">SYN攻击</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三tcp断开连接">三、TCP断开连接</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp四次挥手过程">TCP四次挥手过程</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#为啥挥手次数是四次">为啥挥手次数是四次</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第一次挥手丢失会发生啥">第一次挥手丢失，会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第二次挥手丢失会发生啥">第二次挥手丢失，会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第三次挥手丢失会发生啥">第三次挥手丢失，会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#第四次挥手丢失会发生啥">第四次挥手丢失，会发生啥</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#客户端第三次挥手后为啥等待时间为2msl">客户端第三次挥手后为啥等待时间为2MSL</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#为什么需要timewait状态">为什么需要TIME_WAIT状态</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#防止历史连接中的数据被后面相同的四元组的连接错误的接收">防止历史连接中的数据，被后面相同的四元组的连接错误的接收</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#包证被动关闭的一方能被正确的关闭">包证被动关闭的一方能被正确的关闭</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#timewait过多有啥危害">TIME_WAIT过多有啥危害</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#如何优化timewait">如何优化TIME_WAIT</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#打开netipv4tcptwreuse和tcptimestamps">打开net.ipv4.tcp_tw_reuse和tcp_timestamps</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#netipv4tcpmaxtwbuckets">net.ipv4.tcp_max_tw_buckets</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#程序中使用solinger">程序中使用SO_LINGER</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#服务器出现大量timewait状态的原因">服务器出现大量TIME_WAIT状态的原因</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http没有使用长连接">HTTP没有使用长连接</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http长连接超时">HTTP长连接超时</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http长连接的请求数量达到了上限">HTTP长连接的请求数量达到了上限</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#服务器出现大量的closewait状态原因">服务器出现大量的CLOSE_WAIT状态原因</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#建立连接之后客户端宕机咋办">建立连接之后，客户端宕机咋办</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#如果已经建立连接服务端进程崩溃会发生啥">如果已经建立连接，服务端进程崩溃会发生啥</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#四socket编程">四、Socket编程</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#tcp是如何进行socket编程的">TCP是如何进行Socket编程的</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#listen时候参数backlog作用">listen时候参数backlog作用</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#accept时三次握手中的哪一步">accept时三次握手中的哪一步</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#客户端调用close连接断开的流程">客户端调用close，连接断开的流程</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#没有accept能建立tcp连接么">没有accept，能建立TCP连接么</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#没有listen能建立tcp连接吗">没有listen，能建立TCP连接吗</a></div><ul class="outline-children"></ul></li></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='tcp整体概述'><span>TCP整体概述</span></h1><h2 id='一tcp基本认识'><span>一、TCP基本认识</span></h2><h3 id='tcp头格式'><span>TCP头格式</span></h3><p><span>	</span><span>TCP头的格式，如下图所示：</span></p><p><img src="assets/191.webp" alt="191" style="zoom:60%;" /></p><ul><li><p><span>序列号：在建立连接的时候，计算机会生成的随机数作为其初始值，通过SYN包传给接收端主机，每发送一次数据，就累加一次该数据字节数的大小。用来解决网络包乱序的问题。</span></p></li><li><p><span>确认应答号：指下一次期望收到的数据的序列号，发送端收到这个确认应答以后可以认为这个序号以前的数据都已经被正常接收。用来解决丢包的问题。</span></p></li><li><p><span>控制位：</span></p><ul><li><p><span>ACK：为1时，确认应答的字段变成有效，TCP规定除了最初建立连接时的SYN包之外该位必须设置为1。</span></p></li><li><p><span>RST：为1时，表示TCP连接中出现异常必须强制断开连接。</span></p></li><li><p><span>SYN：为1时，表示希望建立理解，并在其序列号的字段进行序列号初始值的设定。</span></p></li><li><p><span>FIN：为1时，表示今后不会再有数据发送，希望断开连接。当通信结束希望断开连接时，通信双方的主机之间就可以相互交换FIN为1的TCP段。</span></p></li></ul></li></ul><h3 id='tcp协议属于什么层'><span>TCP协议属于什么层</span></h3><p><span>	</span><span>IP层是不可靠的，它不保证网络包的交付、不保证网络包的按需交付、也不保证网络包的数据完整性。</span></p><p><img src="assets/192.webp" alt="192" style="zoom:57%;" /></p><p><span>	</span><span>如果需要保障网络包的可靠性，那么就需要由上层（传输层）的TCP协议来负责。</span></p><p><span>	</span><span>因为TCP是一个工作在</span><strong><span>传输层</span></strong><span>的可靠数据传输的服务，它能确保接收的网络包是无损坏、无间隔、非冗余和按序的。</span></p><p><strong><span>TCP定义</span></strong></p><p><span>	</span><span>TCP是面向连接的、可靠的、基于字节流传输的传输层通信协议。</span></p><p><img src="assets/193.webp" alt="193" style="zoom:60%;" /></p><ul><li><p><span>面向连接：一定是一对一才能连接，不想UDP协议可以找到一个主机同时相多个主机发送消息，也就是一对多是无法做到的。</span></p></li><li><p><span>可靠：无论的网络链路中出现了怎样的链路变化，TCP都可以保证一个报文一定能够到达接收端。</span></p></li><li><p><span>字节流：用户消息通过TCP协议传输时，消息可能会被操作系统分组成多个的TCP报文，如果接收方的程序如果不知道消息的边界，是无法读出一个有序的用户消息的。并且TCP报文是有序的，当前一个TCP报文没有收到时候，及时它收到之后TCP报文，那么也不能扔给应用层去处理，同时对重复的TCP报文会自动丢弃。</span></p></li></ul><h3 id='tcp连接定义'><span>TCP连接定义</span></h3><p><span>	</span><span>RFC793定义如下：</span></p><blockquote><p><span>Connections: The reliability and flow control mechanismsdescribed above require that TCPs initialize and</span>
+<span>maintain certain status information for each data stream.The combination of this information, including</span>
+<span>sockets, sequence numbers, and window sizes, is called a connection.</span></p></blockquote><p><span>	</span><span>简单来说就是用于保证可靠性和流量控制的维护的某些状态信息，这些信息的组合，包括Socket、序列号和窗口大小称为连接。</span></p><p><img src="assets/194.webp" alt="194" style="zoom:50%;" /></p><p><span>	</span><span>所以我们可以知道，建立一个TCP连接需要客户端与服务端达成上述的三个信息的共识：</span></p><ul><li><p><span>Socket：由IP地址和端口号组成。</span></p></li><li><p><span>序列号：用来解决乱序的问题。</span></p></li><li><p><span>窗口大小：用来做流量控制。</span></p></li></ul><h3 id='确定唯一的tcp连接'><span>确定唯一的TCP连接</span></h3><p><span>	</span><span>TCP四元组可以唯一的确定一个连接，四元组：</span></p><ul><li><p><span>源地址。</span></p></li><li><p><span>源端口。</span></p></li><li><p><span>目的地址。</span></p></li><li><p><span>目的端口。</span></p></li></ul><p><img src="assets/195.webp" alt="195" style="zoom:50%;" /></p><p><span>	</span><span>源地址和目的地址的的字段（32位）是在IP；头部中，作用是通过IP协议发送报文给对方主机。</span></p><p><span>	</span><span>源端口和目的端口的字段（16位）是在TCP头部中，作用是告诉、TCP协议应该把报文发给哪个进程。</span></p><blockquote><p><span>问：有一个IP的服务端口监听了一个端口，它的TCP最大连接数是多少？</span></p><p><span>答：服务端通常固定在某个本地端口上监听，等待客户端的连接请求。因此，客户端IP和端口是可变的，理论值的计算公式是：</span><strong><span>最大TCP连接数 = 客户端IP数 * 客户端的端口数。</span></strong></p><p><span>	</span><span>对IPv4客户端的IP数最多位2的32次方，客户端的端口数值最多位2的16次方，也就是服务端单机最大TCP连接数，约为2的48次方。</span></p><p><span>	</span><span>当然，服务端的最大并发TCP连接数远不能达到理论的上限，会受一下因素的影响：</span></p><ul><li><p><span>文件描述符限制：每个TCP连接的是一个文件，如果文件描述符被占满了，会发出Too many open filesLinux对可打开的文件描述符数量做了三个方面的限制：</span></p><ul><li><p><span>系统级：当前系统可打开的最大数量，通过cat /proc/sys/fs/file-mac查看。</span></p></li><li><p><span>用户级：指定用户可打开的最大数量，通过cat /etc/security/limits.conf查看。</span></p></li><li><p><span>进程级：单个进程可以打开的最大数量，通过cat /proc/sys/fs/nr_opeb查看。</span></p></li></ul></li><li><p><span>内存限制：每个TCP连接都要占用一定内存，操作系统的内存是有限的，如果内存资源被占满之后，会发生OOM。</span></p></li></ul></blockquote><h3 id='udp和tcp的区别'><span>UDP和TCP的区别</span></h3><p><strong><span>UDP</span></strong></p><p><span>	</span><span>UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。</span></p><p><span>	</span><span>UDP系诶真的非常简单，头部只有8个字节（64位），UDP头部格式如下：</span></p><p><img src="assets/196.webp" alt="196" style="zoom:50%;" /></p><ul><li><p><span>目标和源端口：主要告诉UDP协议应该把报文发给哪个进程。</span></p></li><li><p><span>包长度：该字段保存了UDP首部的长度跟数据的长度之和。</span></p></li><li><p><span>校验和：校验和为了提供可靠的UDP首部和数据而设计的，防止收到在网络传输中受损的UDP包。</span></p></li></ul><p><strong><span>TCP和UDP区别：</span></strong></p><ul><li><p><span>连接：TCP是面向连接的传输层协议，传输数据前要先建立连接；UDP不需要连接，就直接传输数据。</span></p></li><li><p><span>服务对象：TCP是一对一的两点服务，即一条连接只有两个端点；UDP支持一对一、一对多、多对多交换通信。</span></p></li><li><p><span>可靠性：TCP可靠交付数据的，数据可以无差错、不丢失、不重复、按序到达；UDP是尽量交付，不保证可靠交付数据，但是我们可以基于UDP传输协议实现一个可靠的传输协议，比如QUIC协议（HTTP/3应用层协议）。</span></p></li><li><p><span>拥塞控制、流量控制：TCP首部长度较长，会有一定的开销，首部在没有使用选项的字段是20个字节，如果使用了选项字段则会变的更长；UDP首部只有8个字节，并且固定不变，开销比较小。</span></p></li><li><p><span>传输方式：TCP是流式控制，没有边界，且保证顺序和可靠；UDP是一个包一个包发送，由边界可能会出现丢包和乱序的问题。</span></p></li><li><p><span>分片不同：</span></p><ul><li><p><span>TCP的数据大小如果大于MSS大小，则会在传输层进行分片，目标主机收到后，也同样在拆书层组装TCP数据报，如果中途丢弃了一个分片，只需要传输丢失的这个分片。</span></p></li><li><p><span>UDP的数据大小如果大于MTU大小，则会在IP层进行分片，目标主机收到后，在IP层组装完数据，接着再给传输层。</span></p></li></ul></li></ul><p><strong><span>TCP和UDP使用场景：</span></strong></p><p><span>	</span><span>由于TCP是面向练级的，能保证数据可靠性交付，因此常用于：</span></p><ul><li><p><span>FTP文件传输。</span></p></li><li><p><span>HTTP/HTTPS。</span></p></li></ul><p><span>	</span><span>由于UDP面向无连接，它可以随时发送数据，再加上UDP本身的处理即简单又高效，因此经常用于：</span></p><ul><li><p><span>包总量较少的通信，比如DNS、SNMP等。</span></p></li><li><p><span>视频、音频等多媒体通信。</span></p></li><li><p><span>广播通信。</span></p></li></ul><blockquote><p><span>	</span><span>问：为什么UDP头部没有首部长度字段，而TCP头部有呢？</span></p><p><span>	</span><span>答：因为TCP是变长的，选项字段，而UDP是固定的长度是8字节，所以就不需要这个字段。</span></p></blockquote><h3 id='tcp计算负载数据的长度'><span>TCP计算负载数据的长度</span></h3><p><span>	</span><strong><span>公式：</span></strong><code>TCP数据的长度 = IP总长度 - IP首部长度 - TCP首部长度。</code></p><p><span>	</span><span>其中IP总长度和IP首部长度，在IP首部格式是已知的，TCP首部长度则是TCP首部格式已知的，所以就可以切得TCP数据的长度。</span></p><p><span>	</span><span>UDP也是基于IP层的，那么为啥UDP数据长度也可以根据这个公式计算呀，为啥还要啥包的长度呢？</span></p><ul><li><p><span>因为为了网络设备硬件设计和处理方柏霓，首部长度需要4字节的整数倍，如果去掉UDP的包长度字段，那UDP首部长度就不是4字节的整数被了，所以我觉得UDP可能需要补全首部长度是4字节的整数被，才补充了包长度字段的。</span></p></li><li><p><span>另外说法，如今的UDP协议是基于IP协议发展的，而当年并非如此，一来的是不提供自身报文长度或首部长度的网络层协议，因此UDP报文首部需要有长度字段来供计算的。</span></p></li></ul><h3 id='tcp和udp可以使用一个端口吗'><span>TCP和UDP可以使用一个端口吗</span></h3><p><span>	</span><span>可以，在数据链路层中，通过MAC地址来寻址局域网中的主机。在网络层通过IP地址来寻址网络中互联的主机或路由器。在传输层中，需要通过端口来寻址，来识别同一个计算机中同时通信的不同应用程序。</span></p><p><span>	</span><span>所以传输层的端口号的作用就是为了区分同一个主机上不同引用程序的数据包。</span></p><p><span>	</span><span>传输层有两个协议就是UDP和TCP，在内核中两个完全独立的软件模块。</span></p><p><span>	</span><span>当主机收到数据包之后，可以在IP包头的协议号字段知道数据包是TCP还是UDP，所以可以根据这个信息确定给哪个模块（TCP/UDP）来处理，送给TCP/UDP模块的报文根据端口号确定发送给哪个应用程序处理。</span></p><p><img src="assets/197.webp" alt="197" style="zoom:50%;" /></p><p><span>	</span><span>因此，TCP/UDP各自的端口号也是相互滴露的，如TCP有一个80端口，UDP也可以是一个80号端口，二者并不重读。</span></p><p><span>	</span><span>关于端口的只是还有很多问题：</span></p><ul><li><p><span>多个TCP服务进程可以同时绑定同一个端口吗？</span></p></li><li><p><span>重启TCP服务进程时，为什么出现Address in use的报错信息，该怎么避免呢？</span></p></li><li><p><span>客户端的端口可以重复使用吗？</span></p></li><li><p><span>客户端TCP连接TIE_WAIT状态过度，会导致端口资源耗尽无法建立新的连接吗？</span></p></li></ul><h2 id='二tcp连接建立'><span>二、TCP连接建立</span></h2><h3 id='tcp三次握手过程'><span>TCP三次握手过程</span></h3><p><span>	</span><span>TCP是面向连接的协议，所以使用TCP前必须要建立，而建立连接时通过三次握手来进行的，三从握手过程如下图所示：</span></p><ol start='' ><li><p><span>一开始：客户端和服务端都是处于Close状态，显示服务端主动监听某个端口，处于LISTEN状态。</span></p></li></ol><p><img src="assets/198.webp" alt="198" style="zoom:35%;" /></p><p>&nbsp;</p><ol start='2' ><li><p><span>客户端会随机初始化序号（client_isn），将此序号至于TCP首部的</span><strong><span>序列号</span></strong><span>字段中，同时把SYN标志位置设置为1，表示SYN报文，接着把第一个SYN报文发送给服务端，表示向服务端发起连接诶，该报文不包含应用层数据，之后客户端出生于SYN-SENT状态。</span></p></li></ol><p><img src="assets/199.webp" alt="199" style="zoom:45%;" /></p><p>&nbsp;</p><ol start='3' ><li><p><span>服务端收到客户端的SYN报文后，首先服务端也会随机初始化自己的序号（server_isn），将此序号填入TCP首部的</span><strong><span>序列号</span></strong><span>字段中，其次把TCP首部的</span><strong><span>确认应答号</span></strong><span>填入client_isn+1，接着把SYN和ACK标志位置设置为1，最后把该报文发给客户端，该报文也不包含应用层数据，之后服务端处于SYN-RCVD状态。</span></p></li></ol><p><img src="assets/200.webp" alt="200" style="zoom:45%;" /></p><p>&nbsp;</p><ol start='4' ><li><p><span>客户端收到服务端报文后，还要向服务端回应一个应答报文，首先该应答报文TCP首部ACK标志位置为1，其次</span><strong><span>确认应答号</span></strong><span>字段填入</span><code>server_isn + 1</code><span>，最后把报文发给服务端，这次报文可以携带客户端到服务端的数据，之后客户端处于</span><code>ESTABLISHED</code><span>状态。</span></p></li><li><p><span>服务端收到客户端的应答报文之后，也会进入</span><code>ESTABLISHED</code><span>状态。</span></p></li></ol><p><span>	</span><span>从上面的过程可以发现，</span><strong><span>第三次握手时可以携带数据的，前两次握手时不可以携带数据的</span></strong><span>。</span></p><p><span>	</span><span>一旦完成三次握手，双方都处于ESTABLISHED状态，此时连接已经建立完成了，客户端和服务端可以相互发送数据了。</span></p><h3 id='tcp状态查看'><span>TCP状态查看</span></h3><p><span>	</span><span>TCP连接状态可以在Linux系统中通过命令：</span><code>netstat -napt</code><span>进行查看。</span></p><p><img src="assets/201.webp" alt="201" style="zoom:50%;" /></p><ul><li><p><span>状态：</span></p><ul><li><p><span>CLOSE：关闭。</span></p></li><li><p><span>SYN_SENT：正在进行握手。</span></p></li><li><p><span>ESTABLISHED：握手完成，随时可以传递数据。</span></p></li></ul></li></ul><h3 id='为啥是三次握手'><span>为啥是三次握手</span></h3><p><span>	</span><span>为啥是三次握手？而不是二次或者四次握手？</span></p><p><span>	</span><span>TCP是面向连接的，用于保证可靠性和流量控制维护的某些状态信息，这些信息的组合，包括Socket、序列号和窗口大小称为练级。</span></p><p><span>	</span><span>三次握手才能建立连接的原因：</span></p><ul><li><p><strong><span>三次握手可以阻止重复历史连接的初始化（重要）：</span></strong><span>避免历史连接，为了防止旧的重复连接初始化造成混乱。    </span></p></li><li><p><span>三次才可以同步双方的初始化序列号。</span></p></li><li><p><span>三次握手才可以避免资源浪费。</span></p></li></ul><h4 id='避免历史连接'><span>避免历史连接</span></h4><p><span>	</span><strong><span>三次握手可以阻止重复历史连接的初始化</span></strong></p><p><span>    我们可以考虑一个场景，客户端发送了SYN（seq=90）报文，然后客户端宕机了，而且这个SYN报文被网络阻塞了，服务度并没有收到，接着客户端重启了，又重新向服务端建立连接，发送了SYN（seq = 100）报文（注意不是重传SYN，重传的SYN序列号是一样的）。</span></p><p><span>	</span><span>看看三次握手时如何组织历史连接的：</span></p><p><img src="assets/202.webp" alt="202" style="zoom:50%;" /></p><p><span>客户端连续发多次SYN（都是同一个四元组）建立连接的报文，在网络拥塞的情况下：</span></p><ul><li><p><span>一个旧SYN报文比最新的SYN报文早到达了服务端，那么此时服务端就回了一个SYN+ACK报文给客户端，次报文中的确认号是91（90+1）。</span></p></li><li><p><span>客户端收到后，发现自己期望收到的确认号应该是100+1，而不是90+1，于是就回了RST报文（连接终止）。</span></p></li><li><p><span>服务端收到RST报文后，就会释放连接。</span></p></li><li><p><span>后续最新的SYN抵达了服务端后，客户端与服务端可以正常的完成三次握手。</span></p></li></ul><p><span>	</span><span>上述的旧SYN报文称为历史连接，TC{使用三次握手加你连接最主要的原因就是防止历史连接初始化了连接。</span></p><blockquote><p><span>	</span><span>会有很多人问，如果服务端在收到RST报文之前，先收到了新SYN报文，也就是服务端收到客户端的报文是旧SYN报文 -&gt; 新SYN报恩，此时会发生什么？</span></p><p><span>	</span><span>当服务端第一次收到SYN报文，也就是收到旧的SYN报文时，就会回复SYN+ACK报文给客户端，次报文中的确认号是91（90 + 1）。</span></p><p><span>	</span><span>然后收到新SYN报文时，就会回Challenge Ack报文给客户端，这个ack报文并不是确认收到新SYN报文的，而是上一次的ack确认号，也是91，所以客户端收到此ACK报文时，发现自己期望收到的确认号应该是101，而不是91，就会回复RST报文。</span></p></blockquote><p><span>	</span><span>如果是两次握手，就无法阻止历史连接，那么为什么TCP两次握手为什么无法阻止历史连接呢？</span></p><p><span>	</span><span>因为两次握手的情况下，服务端没有中间状态给客户端阻止历史连接，导致服务端建立一个历史连接，造成了资源浪费。</span></p><p><span>	</span><span>两次握手的情况下，服务端在收到SYN报文后，就进入ESTABLISHED状态，意味着这时候可以给对方发送数据，但是客户端还没有进入ESTABLISHED状态，假设是历史连接，客户端判断到此连接为历史连接，那么就回RST报文断开连接，而服务端在第一次握手的是偶就进入ESTABLISHED状态，所以它可以发送数据的，但是它并不知道这个是历史连接，它只有在收到RST报文后才会断开连接。</span></p><p><img src="assets/203.webp" alt="203" style="zoom:60%;" /></p><p><span>	</span><span>可以看到，如果采用两次握手建立TCP连接的场景下，服务端在想客户端发送数据前，并没有阻止掉历史连接，导致服务端建立了一个历史连接，又白白发送了数据，妥妥的浪费了服务端的资源。</span></p><p><span>	</span><span>因此，要解决这种现象，最好就是服务端在发送数据前，也就是建立连接之前，要组织掉历史连接，这样就不会造成资源浪费了，而实现这个功能的就是三次握手。</span></p><p><span>	</span><span>所以TCP要三次握手建立连接的最主要原因是防止历史连接初始化了连接而导致资源浪费。</span></p><blockquote><p><span>	</span><span>客户端发送了三次握手ack报文后就可以发送数据了，而被动方此时还是syn_recevived状态，如果ack丢了，那么客户端发的数据就白白浪费了？</span></p><p><span>	</span><span>不是的，及时服务端还是在syn_recevived状态，收到了客户端发送的数据还是可以建立连接的，并且还是可以正常收到这个数据包，这是因为</span><strong><span>数据报文中还是ack标志位，也是确认号</span></strong><span>，这个确认号就是确认收到了第二次握手，如下图所示：</span></p><p><img src="assets/204.webp" referrerpolicy="no-referrer" alt="204"></p><p><span>	</span><span>所以，服务端收到这个数据报文，是可以正常建立连接的，然后就可以正常收到这个数据包了。</span></p></blockquote><h4 id='同步双方初始化序列号'><span>同步双方初始化序列号</span></h4><p><span>	</span><span>TCP协议的通信双方，都必须维护一个序列号，序列号是可靠传输的一个关键因素，它的作用：</span></p><ul><li><p><span>接收方可以去除重复的数据。</span></p></li><li><p><span>接收方可以根据数据包的序列号接收。</span></p></li><li><p><span>可以标识发送出去的数据包中，哪些是已经被对方收到的（通过ACK报文中的序列号知道）。</span></p></li></ul><p><span>	</span><span>可见，序列号在TCP连接中占据着非常重要的作用，所以当发送携带 </span><strong><span>初始化序列号</span></strong><span>的SYN报文的时候需要服务端返回一个ACK应答报文，表示客户端的SYN报文已经被服务端成功接收，当服务端发送初始序列号给客户端的时候，依然也要得到客户端应答回应，</span><strong><span>这样一来一回，才能确保双方的初始序列号被可靠的同步</span></strong><span>。</span></p><p><img src="assets/205.webp" alt="205" style="zoom:50%;" /></p><p><span>	</span><span>四次握手其实也能够可靠的同步双方的初始化序列号，但是由于第二步和第三部可以优化成一步，所以就成了三次握手。</span></p><p><span>	</span><span>而两次握手只保证了一方的初始化序列号能被对方成功接收，每办法保证双方的初始序列号能被确认接收。</span></p><h4 id='避免浪费资源'><span>避免浪费资源</span></h4><p><span>	</span><span>如果只有两次i握手，当客户端发生的SYN报文在网络中拥塞的时候，客户端没有收到ACK报文，就会重新发送新的SYN，由于没有第三次握手，服务端不清楚客户端是否收到了自己的回复的ACK报文，所以服务端每收到一个SYN就只能先主动建立一个连接，这会造成什么情况呢？</span></p><p><span>	</span><span>如果客户端发送SYN报文在网络中阻塞的话，重复发送多次SYN报文，那么服务端在收到请求后就会建立多个冗余的无效连接，造成了不必要的资源浪费。</span></p><p><img src="assets/206.webp" alt="206" style="zoom:50%;" /></p><p><span>	</span><span>就是说，两次握手会造成消息滞留情况下，服务端重复接受无用的连接请求SYN报文，造成重复分配资源。</span></p><h4 id='结论'><span>结论</span></h4><p><span>	</span><span>TCP在建立连接的时候，通过三次握手能防止历史连接的建立，能减少双方不必要的资源开销，能帮助双方同步初始化序列号，序列号能够保证数据包不重复、不丢弃和按需传输。</span></p><p><span>	</span><span>不使用两次握手和四次握手的原因：</span></p><ul><li><p><span>两次握手：无法阻止历史连接的建立，会造成双方资源的浪费，也无法可靠的同步双方的序列号。</span></p></li><li><p><span>四次握手：三次握手就已经理论上最少可靠连接加你，所以不需要使用更多的通信次数。</span></p></li></ul><h3 id='为啥每次建立连接的初始化序列号不一样'><span>为啥每次建立连接的初始化序列号不一样</span></h3><ul><li><p><span>为了防止历史报文被下一个相同四元组的连接接收。</span></p></li><li><p><span>为了安全性，防止黑客伪装成相同的序列号的TCP报文被接收方接收。</span></p></li></ul><p><span>	</span><span>在每次建立会话的时候，客户端和服务端的初始化序列号都是从0开始：</span></p><p><img src="assets/207.webp" alt="207" style="zoom:50%;" /></p><p><span>执行过程：</span></p><ul><li><p><span>客户端和服务端建立一个TCP连接，在客户端发送数据包被网络阻塞，然后超时重传了这个数据包，而此时服务器设备断电重启了，之前与客户端建立的连接就消失了，于是收到客户端换的数据包的时候就会发送RST报文。</span></p></li><li><p><span>紧接着，客户端又与服务端建立了与上一个连接相同四元组的连接。</span></p></li><li><p><span>在新连接建立完成之后，上一个连接中被网络阻塞的数据报正好抵达了服务端，刚好该数据包的序列号正好是在服务端的接收窗口内，所以该数据包会被服务端正常接收，就会造成数据错乱。</span></p></li></ul><p><span>	</span><span>可以看到，如果每次建立连接，客户端和服务端初始化序列号都是一样的话，很容易出现</span><strong><span>历史报文被下一个相同四元组连接接收</span></strong><span>的问题。</span></p><p><span>	</span><span>如果每次建立连接客户端和服务端的初始化序列号都不一样，大概率是因为历史报文的序列号不在对方接收窗口，从而很大程度上避免了历史报文，如下图所示：</span></p><p><img src="assets/208.webp" alt="208" style="zoom:50%;" /></p><p><span>	</span><span>相反，如果每次建立客户端和服务端的初始化序列号都一样，就有大概率遇到历史报文的序列号刚好在对方接收窗口内，从而导致历史报文被新连接成功接收。</span></p><p><span>	</span><span>所以，每次初始化序列号不一样很大程度上都能够避免历史报文被下一个相同四元组的连接接收，注意很大程度上。（并不是完全避免，因为序列号会有回绕的问题，所以需要用时间戳的机制来判断历史报文）。</span></p><h3 id='初始化序列号isn是如何随机产生的'><span>初始化序列号ISN是如何随机产生的</span></h3><p><span>	</span><span>其实ISN是基于时钟产生的，每4微妙 + 1，转一圈是4.55小时。</span></p><p><span>	</span><span>RFC793提到初始化序列号ISN随机生成算法：ISN = M +F(localhost, localport, remotehost, remoteport)。</span></p><ul><li><p><span>M表示一个计时器，这个计时器每隔4微妙+1。</span></p></li><li><p><span>F是一个Hash算法，根据源IP、目的IP、源端口、目的端口生成一个随机数值。要保证Hash算法不能被外部轻易推算出来，用MD5算法是比较好的算法。</span></p></li></ul><p><span>	</span><span>可以看到，随机数是基于时钟计时器递增的，基本不可能会随机一样的初始化序列号。</span></p><h3 id='ip层都会分片为啥tcp还要mss分'><span>IP层都会分片为啥TCP还要MSS分？</span></h3><p><span>	</span><span>先认识下MTU和MSS：</span></p><p><img src="assets/209.webp" alt="209" style="zoom:50%;" /></p><ul><li><p><span>MTU：一个网络包的最大长度，以太网中一般为150字节。</span></p></li><li><p><span>MSS：除去IP和TCP头部之后，一个网络包所能容纳的TCP数据的最大长度。</span></p></li></ul><p><span>	</span><span>如果TCP的整个报文（头部 + 数据）交给IP层进行分片，会有什么异常呢？</span></p><p><span>	</span><span>当IP层有一个超过MTU大小的数据（TCP头部 + TCP数据）要发送，那么IP层就要进行分片，把数据分片成若干片，保证每个小片都小于MTU。把每一份IP数据报进行分片以后，由目标主机的IP层进行重新组装后，再交给上一层的TCP传输层。</span></p><p><span>	</span><span>这样看起来井然有序，但是存在隐患，如果一个IP分片丢失，整个IP报文的所有分片都要重传，因为IP层本身没有超时重传机制，那么就由TCP层来负责超时和重传。</span></p><p><span>	</span><span>当某一个IP分片丢失后，接收方的IP层就无法组装成一个完整的TCP报文（头部 + 数据），就无法将数据报文送到TCP层，所以接收方不会响应ACK给发送方，因为发送方没有收到ACK确认报文，就会触发超时重传机制，就会重发整个TCP报文（头部 + 数据）。</span></p><p><span>	</span><span>因此，可以得知由IP层进行分片传输效率非常的低。</span></p><p><span>	</span><span>所以为了达到最佳的差UN输的数效能</span><strong><span>TCP协议在建立连接的时候通常要写上双方的MSS值</span></strong><span>，当TCP层发现数据超过了MSS时，则就会进行分片，当然会形成IP包的长度也就会大于MTU，自自然也就不用IP分片了。</span></p><p><img src="assets/210.webp" alt="210" style="zoom:130%;" /></p><p><span>	</span><span>经过TCP层架构分片之后，如果一个TCP分片丢失之后，进行重传页是以MSS为单位，而不用重传所有的分片，大大增加了分片的重传效率。</span></p><h3 id='第一次握手丢失会发生啥'><span>第一次握手丢失会发生啥</span></h3><p><span>	</span><span>当客户端想要和服务端建立TCP连接的时候，首先第一个发的就是SYN报文，然后进入SYN_SENT状态。</span></p><p><span>	</span><span>在这之后，如果客户端迟迟收不到服务端的SYN-ACK报文（第二次握手），就会触发超时重传机制，重传SYN报文，而且重传的SYN报文的序列号是一样的。</span></p><p><span>	</span><span>不同版本的操作系统可能超时时间不同，有的1秒，有的3秒，这个超时时间是写死在内核中的，如果想要更改则需要重新编译内核，比较麻烦。</span></p><p><span>	</span><span>在Linux中，客户端的SYN报文最大重传次数是由tcp_syn_retires内核参数控制的，这个参数是可以定义的默认为5次。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="linux"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="linux"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 371.796875px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">cat /proc/sys/net/ipv4/tcp_syn_retires</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 50px;"></div><div class="CodeMirror-gutters" style="height: 50px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>通常，第一次超时重传时在1秒之后，第二次超时重传时2秒之后，第三次超时重传时在4秒之后，第四次超时重传时在8秒之后，第五次超时重传时在16秒之后，每次超时重传时上一次的2倍。</span></p><p><span>	</span><span>当第五次超时重传之后会继续等待32秒，如果服务度仍然没有回应ACK，客户端就不再发送SYN包，然后断开TCP连接。</span></p><p><span>	</span><span>所以总耗时是  1 + 2 + 4 + 8 + 16 + 32 = 63秒，1分钟左右。</span></p><blockquote><p><span>举例子：假设tcp_syn_retires参数为3，那么客户端发送SYN报文一直在网络丢失之后会发生如下图的过程：</span></p><p><img src="assets/211.webp" alt="211" style="zoom:50%;" /></p><ul><li><p><span>当客户端换的超时重传3次SYN报文后，由于tcp_syn_retires=3，已经达到了最大重传的此时，于是等待一段时间（上次超时重传时间的2倍）判断如果服务端还没有返回SYN-ACK报文，那么客户端就会断开连接。</span></p></li></ul></blockquote><h3 id='第二次握手丢失会发生啥'><span>第二次握手丢失会发生啥</span></h3><p><span>	</span><span>当服务端收到客户端的第一次握手之后，就会返回SYN-ACK报文给客户单，这个就是第二次握手，此时服务端就会进入SYN_RCVD状态。</span></p><p><span>	</span><span>第二次握手的SYN-ACK报文其实有两个目的：</span></p><ul><li><p><span>第二次握手的ACK，是对第一次握手的确认报文。</span></p></li><li><p><span>第二次握手的SYN，是服务端发起建立TCP连接的报文。</span></p></li></ul><p><span>	</span><span>所以第二次握手丢了，就会发生比较有意思的事情：</span></p><p><span>	</span><span>因为第二次握手报文里包含对客户端的第一次握手的ACK确认报文，所以，如果客户端迟迟没有收到第二次握手，那么客户端就觉得自己的SYN报文丢失了，于是客户端就会触发超时重传机制，重传SYN报文。</span></p><p><span>	</span><span>然后，因为第二次握手中包含的有服务端的SYN报文，所以当客户端收到后，需要给服务端发送ACK确认报文（第三次握手），服务端才会认为该SYN报文被客户端收到了。</span></p><p><span>	</span><span>那么如果第二次握手丢失了，服务端就收不到第三次握手，于是服务端这边会触发超时重传机制，重传SYN-ACK报文。</span></p><p><span>	</span><span>在Linux下，SYN-ACK报文的最大重传此时有tcp_synack_retires内核参数决定的，默认值为5。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="ssh"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="ssh"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 400.59375px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>2</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">cat /proc/sys/net/ipv4/tcp_synack_retries</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 50px;"></div><div class="CodeMirror-gutters" style="height: 50px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>因此，当第二次握手丢失了，客户端和服务端都会重传：</span></p><ul><li><p><span>客户端会重传SYN报文，也就是第一次握手，最大重传此外还有tcp_syn_retires内核参数决定的。</span></p></li><li><p><span>服务端会重传SYN-ACK报文，也就是第二次握手，最大重传次数有tcp_synack_retires由内核参数决定的。</span></p></li></ul><blockquote><p><span>举个例子：假设tcp_syn_retires参数为1，tcp_synack_retires参数为2，那么当第二次握手丢失的时候，会发生过程如下图所示：</span></p><p><img src="assets/212.webp" alt="212" style="zoom:40%;" /></p><p><span>具体过程：</span></p><ul><li><p><span>当客户端重传1次SYN报文之后，由于tcp_syn_retires已经达到了最大重传次数，于是那么等待一段时间（时间是上一次超时时间的2倍），如果没有收到服务端的第二次握手（SYN-ACK报文）那么客户端就会断开连接。</span></p></li><li><p><span>当服务端超时重传2次SYN-ACK报文后，由于tcp_synack_retires为2已经达到了最大重传次数，于是等待一段时间（时间是上一次超时时间的2倍），如果还是没有收到客户端的第三次握手（ACK报文）服务端就会断开连接。</span></p></li></ul></blockquote><h3 id='第三次握手丢失会发生啥'><span>第三次握手丢失会发生啥</span></h3><p><span>	</span><span>客户端收到服务端的SYN-ACK之后，就会返回给服务端一个ACK报文，也就是第三次握手，此时客户端状态进入到ESTABLISH状态。</span></p><p><span>	</span><span>因为这个第三次握手的ACK是对第二次握手的SYN的确认报文，所以当第三次握手丢失了如果服务端那一方迟迟收不到这个确认报文，就会触发超时重传机制，重传SYN-ACK报文，直到收到第三次握手，或者达到最大重传此时断开连接。</span></p><p><span>	</span><span>注意，ACK报文是不会有重传的，当ACK丢失了，就由对方重传对应的报文。</span></p><blockquote><p><span>举个例子：假设tcp_synack_retires参数为2，当第三次握手一直丢失，发生的过程如下：</span></p><p><img src="assets/213.webp" alt="213" style="zoom:50%;" /></p><ul><li><p><span>当服务端重传2次SYN-ACK报文后，由于tcp_synack_retires为2，已经达到了最大的重传此时，于是再等待一段时间（时间是上次超时时间的2倍），乳沟海慧寺没有收到客户端的第三次握手（ACK报文），那么服务端就会断开连接。</span></p></li></ul></blockquote><h3 id='syn攻击'><span>SYN攻击</span></h3><p><span>	</span><span>我们都知道TCP连接需要三次握手，假设攻击者伪造不同IP地址的SYN报文，服务端每次接收端奥一个SYN报文，就会进入SYN-RCVD状态，但客户端发送出去的ACK+SYN报文，无法得到未知IP的主机的ACK应答，久而久之就会占满服务端的半连接队列，是的服务单不能正常提供服务。</span></p><p><img src="assets/214.webp" alt="214" style="zoom:70%;" /></p><p><span>	</span><span>在TCP三次握手的时候，Linux会未回两个队列，TCP半连接队列和全连接队列：</span></p><ul><li><p><span>半连接队列：SYN队列。</span></p></li><li><p><span>全连接队列：accept队列。</span></p></li></ul><p><span>	</span><span>先来看下正常的SYN队列和accept队列工作流程：</span></p><p><img src="assets/215.webp" alt="215" style="zoom:60%;" /></p><p><span>正常流程：</span></p><ol start='' ><li><p><span>当服务端收到客户端的SYN报文时，会创造一个半连接的对象，然后将其加入到内核的SYN队列。</span></p></li><li><p><span>接着发送SYN+ACK给客户端，等待客户段回应ACK报文。</span></p></li><li><p><span>服务端接收到ACK报文后，从SYN队列取出一个半连接对象，然后创建一个全连接对象放入到Accept队列。</span></p></li><li><p><span>应用通过调用accept() socket接口从Accept对垒取出连接对象。</span></p></li></ol><p><span>	</span><span>不管是半连接队列还是全连接队列都是有最大长度限制的，超过限制，戒魔人情况就会丢弃报文。</span></p><p><span>	</span><span>SYN攻击方式直接的表现就是会把TCP半连接队列给打满，这样当TCP半连接队列满了，后续在收到SYN报文就会直接丢弃，导致客户端就无法和服务端建立连接。</span></p><p>&nbsp;</p><p><strong><span>避免SYN攻击方式有四种：</span></strong></p><ul><li><p><span>调大netdev_max_backlog。</span></p></li><li><p><span>增大TCP半连接队列。</span></p></li><li><p><span>开启tcp_syncookies。</span></p></li><li><p><span>减少SYN+ACK重试次数。</span></p></li></ul><ol start='' ><li><p><strong><span>调大netdev_max_backlog：</span></strong></p></li></ol><p><span>	</span><span>当网卡接收数据包的速度大于内核处理的速度时，会有一个队列保存这些数据包。控制队列的最大值如下参数，默认1000，我们可以适当的调大这个值，10000。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 352.59375px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">net.core.netdev_max_backlog  = 10000</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><ol start='2' ><li><p><strong><span>增大TCP半连接队列：</span></strong></p></li></ol><p><span>	</span><span>增大TCP半连接队列，同时需要增大下面三个参数：</span></p><ul><li><p><span>增大net.ipv4.tcp_max_syn_backlog</span></p></li><li><p><span>增大listen()函数中的backlog</span></p></li><li><p><span>增大net.core.somaxconn</span></p></li></ul><ol start='3' ><li><p><strong><span>开启net_syncookies：</span></strong></p></li></ol><p><span>	</span><span>开启synccookies功能就可以不使用SYN半连接队列，相当于绕过了SYN半连接来建立连接。</span></p><p><img src="assets/216.webp" alt="216" style="zoom:50%;" /></p><p><span>	</span><span>执行过程：</span></p><ul><li><p><span>当SYN队列满之后，后续服务端收到SYN包，不会丢弃，而是根据算法，计算出一个cookie值。</span></p></li><li><p><span>将cookie的值放在第二次握手报文的序列号中，然后服务端回第二次握手给客户端。</span></p></li><li><p><span>服务端接收到kehduan交付的应道报文时，服务端会检查这个ACK包的合法性，如果合法，将连接子对象放入到Accept队列中。</span></p></li><li><p><span>最后应用程序可以调用accept接口，从accept队里中取出连接。</span></p></li></ul><p><span>	</span><span>可以看到，当开启了tcp_syncookies了，即使收到SYN攻击而导致SYN队列满时，也能保证真诚噶好难过的连接成功建立。</span></p><p><span>	</span><span>net.ipv4.tcp_syncookies参数主要有以下三个值：</span></p><ul><li><p><span>0：表示关闭该功能。</span></p></li><li><p><span>1：表示仅当SYN半连接池满时才会启用。</span></p></li><li><p><span>2：表示任何条件下都启用。</span></p></li></ul><p><span>	</span><span>应对SYN攻击时，只需要设置为1即可。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="ssh"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="ssh"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 410.1875px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">echo 1 &gt; /proc/sys/net/ipv4/tcp_syncookies</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><ol start='4' ><li><p><strong><span>减少SYN+ACK重传次数：</span></strong></p></li></ol><p><span>	</span><span>当服务端收到SYN攻击时，就会有大量处于SYN_REVC状态的TCP练级，处于这个状态的TCP会重连SYN+ACK，当重试次数达到上限之后就会断开连接。</span></p><p><span>	</span><span>那么针对SYN攻击的场景，我们可以减少SYN-ACK的重传次数，以加快处于SYN_REVC状态的TCP连接断开。</span></p><p><span>	</span><span>SYN-ACK报文的最大重传次数是由tcp_syncak_retires内核参数决定的（默认为5次），可以将此参数修改成2次。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="ssh"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="ssh"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 448.59375px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">echo 2 &gt; /proc/sys/net/ipv4/tcp_synack_retires</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><h2 id='三tcp断开连接'><span>三、TCP断开连接</span></h2><h3 id='tcp四次挥手过程'><span>TCP四次挥手过程</span></h3><p><span>	</span><span>TCP断开连接是通过四次挥手的方式，双方都可以主动断开连接，断开连接后主机中的资源将释放，四次挥手的过程如下图所示：</span></p><p><img src="assets/217.webp" alt="217" style="zoom:50%;" /></p><ul><li><p><span>客户端打算关闭连接，此时会发送一个TCP首部</span><strong><span>FIN</span></strong><span>标志位被设置为1的报文，也即</span><strong><span>FIN报文</span></strong><span>，之后客户端进入FIN_WAIT_1状态。</span></p></li><li><p><span>服务端收到该报文后，就会向客户端发送ACK应答报文，接着</span><strong><span>服务端进入CLOSE_WAIT</span></strong><span>状态。</span></p></li><li><p><span>客户端收到服务端ACK应答报文之后，之后</span><strong><span>客户段就进入FIN_WAIT_2</span></strong><span>状态。</span></p></li><li><p><span>等待服务端处理完数据后，也向客户端发送FIN报文，之后</span><strong><span>服务端进入LAST_ACK</span></strong><span>状态。</span></p></li><li><p><span>服务端收到ACK应答报文之后，就进入了CLOSE状态，至此服务端已经完成连接的关闭。</span></p></li><li><p><span>客户端在经过2MSL一段时间之后，自动进入CLOSE状态，至此客户端也完成了连你接的关闭状态。</span></p></li></ul><p><span>	</span><span>可以看到每个方向都需要一个FIN和一个ACK因此通常称为四次挥手。</span></p><h3 id='为啥挥手次数是四次'><span>为啥挥手次数是四次</span></h3><p><span>	</span><span>在看下四次挥手的过程，双方都会发送FIN包，就能理解为啥需要四次了。</span></p><ul><li><p><span>关闭连接时，客户端向服务端发送FIN时，仅仅表示客户端不再发送数据了但是还能接收数据。</span></p></li><li><p><span>服务端收到客户端的FIN报文时，先回一个ACK应答报文，二服务端可能还需要数据处理和发送，等服务端不再发送数据时，才会发送FIN报文给客户段表示同意现在关闭连接。</span></p></li></ul><p><span>	</span><span>从上面过程看，服务端通常需要等到完成数据的发送和处理，所以服务端的ACK和FIN一般是分开发送的，因此需要四次挥手。</span></p><p><span>	</span><span>但是在特定情况下，四次挥手可以变成三次挥手。</span></p><h3 id='第一次挥手丢失会发生啥'><span>第一次挥手丢失，会发生啥</span></h3><p><span>	</span><span>当客户端主动关闭放调用close函数后，就会向服务端发送FIN报文，试图与服务端断开连接，此时客户端的连接就进入FIN_WAIT_1状态。</span></p><p><span>	</span><span>正常情况相爱，如果能及时收到服务端（被关闭放）的ACK，则会变成FIN_WAIT_2状态。</span></p><p><span>	</span><span>如果第一次挥手丢失了，那么客户端迟迟收不到服务端的ACK的话，就会触发超时重传机制，重传FIN报文，重传的此时有参数tcp_orphan_retries参数控制。</span></p><p><span>	</span><span>当客户端重传FIN报文的次数超过tcp_orphan_retires后，就不再发送FIN报文，则会等待一段时间（时间是上次超时重传的2倍），还没收到ACK确认的话，就会直接进入close状态。</span></p><blockquote><p><span>举个例子，假设tcp_orphan_retires参数值为3，当第一次挥手一直丢失，发生的过程如下图所示：</span></p><p><img src="assets/218.webp" alt="218" style="zoom:50%;" /></p><ul><li><p><span>当客户端超时重传3次FIN报文后，由于tcp_orphan_retires为3，已经达到了最大重传次数，于是等待一段时间（为上次超时重传的2倍）如果还是没有收到ACK报文的话，就直接断开连接。</span></p></li></ul></blockquote><h3 id='第二次挥手丢失会发生啥'><span>第二次挥手丢失，会发生啥</span></h3><p><span>	</span><span>当服务端收到客户端的第一次挥手后，就会先回一个ACK确认报文，此时服务端的连接进入到CLOSE_WAIT状态。</span></p><p><span>	</span><span>ACK报文时不会重传的，所以如果服务端的第二次挥手丢失了，客户端换的就会触发超时重传机制，重传FIN报文，直到收到服务端的ACK确认报文，或者达到最大重传次数。</span></p><blockquote><p><span>举个例子，假设tcp_orphan_retires参数设置为2，当第二次挥手一直丢失发生的过程如下图所示：</span></p><p><img src="assets/219.webp" alt="219" style="zoom:50%;" /></p><ul><li><p><span>当客户端超时重传2次FIN报文后，由于tcp_orphan_retires为2，已经达到了最大重传次数，于是再等待一段时间（时间为上一次超时时间的2倍），如果还是没有收到服务端的第二次挥手（ACK报文），那么客户端就会断开连接。</span></p></li></ul></blockquote><p><span>	</span><span>注意当客户端收到了第二次挥手ACK确认报文，客户端就会处于FIN_WAIT2状态，在这个状态需要等客户端发送第三次挥手，也就是服务端的FIN报文。</span></p><p><span>	</span><span>对于close函数关闭的连接。由于无法再发送和接收数据，所以FIN_WAIT2状态不可以持续太久，而tcp_fin_timeout参数控制这个状态下持续的时长默认位60秒。</span></p><p><span>	</span><span>这就意味着调用close关闭的连接，如果在60秒后还没有收到服务单的FIN报文，客户端就会直接关闭连接。</span></p><p><img src="assets/220.webp" alt="220" style="zoom:50%;" /></p><p><span>	</span><span>注意，如果主动关闭方使用shutdown函数来关闭连接，制定了只关闭发送方向，而接收方向没有关闭，那么意味着主动关闭放可以接收数据的。</span></p><p><span>	</span><span>此时，如果主动关闭方一直没有收到第三次挥手，就会主动关闭的连接就会一直处于FIN_WAIT1状态（tcp_fin_timeout页无法控制shutdown关闭的连接），</span><strong><span>就会死等。</span></strong></p><p><img src="assets/221.webp" alt="221" style="zoom:50%;" /></p><p><span>	</span><span>第二次挥手丢失的话，如果是close方法就会等待tcp_fin_timeout（默认60s）后直接关闭连接，如果是shutdown方法就会死等。</span></p><h3 id='第三次挥手丢失会发生啥'><span>第三次挥手丢失，会发生啥</span></h3><p><span>	</span><span>当服务端（被动关闭方）收到客户端（主动关闭）的FIN报文后，内核会自动回复ACK，同时连接处于CLOSE_WAIT状态，顾名思义，它表示应用进程调用close函数关闭连接。</span></p><p><span>	</span><span>此时，内核是没有权利替代进程关闭连接的，必须由进程主动调用close函数来触发服务端发送FIN报文。</span></p><p><span>	</span><span>服务端处于CLOSE_WAIT状态时，调用了close函数，内核就会发生FIN报文，同时进入了LAST_ACK状态，等待客户端返回ACK来确认连接关闭。</span></p><p><span>	</span><span>如果一直收不到客户端的ACK，服务端就会重发FIN报文，重发次数仍然由tcp_orphan_retires参数控制，这与客户端重复FIN报文的重传次数是一致的。</span></p><blockquote><p><span>举例子，假设tcp_orphan_retires为3，当第三次挥手一直丢失的话，发生的过程如下图所示：</span></p><p><img src="assets/222.webp" alt="222" style="zoom:50%;" /></p><ul><li><p><span>当服务端重传第三次挥手报文的次数达到了3次之后，由于tcp_orphan_retires为3，达到了最大重传次数，于是再等待一段时间（上次超时重传时间的2倍）如果还是没有收到客户端的第四次挥手的ACK报文，服务端就会直接断开连接。</span></p></li><li><p><span>客户端因为通过close函数关闭连接，处于FIN_WAIT_2状态，时长是受限制，的如果在tcp_fin_timeout（默认60s）还没有收到服务端的第三次挥手的FIN报文的话客户端也就会直接断开连接。</span></p></li></ul></blockquote><h3 id='第四次挥手丢失会发生啥'><span>第四次挥手丢失，会发生啥</span></h3><p><span>	</span><span>当客户端收到服务单的第三次挥手的FIN报文后，就会发送ACK报文，也就是第四次挥手，此时客户端连接就会进入TIME_WAIT状态。</span></p><p><span>	</span><span>在Linux系统，TIME_WAIT状态会持续2MSL后才会进入关闭状态。</span></p><p><span>	</span><span>然后，服务端没有收到ACK报文之前，还是处于LAST_ACK状态。</span></p><p><span>	</span><span>如果第四次挥手的ACK报文没有到达服务端，服务端就会重传FIN报文，重发此时仍然由tcp_orphan_retires控制的。</span></p><blockquote><p><span>举个例子，假设tcp_orphan_retires为2，第四次护手一直丢失发生的过程如下所示：</span></p><p><img src="assets/223.webp" alt="223" style="zoom:50%;" /></p><ul><li><p><span>当服务端重传第三次挥手的报文到达2时，由于达到了最大重试次数，于是等待一段时间（上次超时重传时间的2倍），如果还是没有收到客户端的第四次挥手（ACK报文）服务端就会直接断开连接。</span></p></li><li><p><span>客户端在收到第三次挥手后，就会进图TIME_WAIT状态，开启时长为2MSL的定时器，如果途中再次收到第三次挥手（FIN报文）后，就会充值定时器，当等待2MSL时长后，客户端就会断开连接。</span></p></li></ul></blockquote><h3 id='客户端第三次挥手后为啥等待时间为2msl'><span>客户端第三次挥手后为啥等待时间为2MSL</span></h3><p><span>	</span><span>MSL是Maximum Segment Lifetime，报文最大生存时间，它是任何报文在网络上存在的最长时间，超过这个时间报文就会被直接丢弃。因为TCP报文都是基于IP协议的，而IP头部中有一个TTL字段，是IP数据报文可以经过的最大路由数，每经过一个处理它的路由器此值就会自动减1，数值变为0就会把数据包丢弃，同时发送ICMP报文通知源主机。</span></p><p><span>	</span><span>MSL与TTL区别：MSL的单位是时间，而TTL是经过路由跳数。所以MSL应该要大于等于TLT消耗为0的时间，以确保报文已经被自然消亡。</span></p><p><span>	</span><span>TTL的值一般是64，Linux将MSL设置为30秒，意味着Linux认为数据报文经过64个路由器的时间不会超过30秒，如果超过了，就会认为报文已经消失在网络中了。</span></p><p><span>	</span><span>TIME_WAIT等待2倍的MSL，比较合理的解释是：网络中可能存在来自发送方的数据包，这些发送方的数据包被接收方处理后又会响应给发送方，所以一来一回要等待2倍的时间。</span></p><p><span>	</span><span>比如，如果被关闭方没有收到断开连接最后的ACK报文，就会触发超时重传FIN报文，另一方接收到FIN后，会重发ACk给被动关闭方，一来一区正好是2个MSL。</span></p><p><span>	</span><span>可以看到2MSL时长相当于至少允许报文丢失一次，比如，如果ACK在一个MSL内丢失了，这样被动房重发FIN报文会在第2个MSL内到达，TIME_WAIT状态的连接可以应对。</span></p><p><span>	</span><span>威慑么不是4或者8MSL的时长呢？可以想象一个丢包率达到了百分之一的糟糕网络，连续两次的丢包的概率只有万分之一，概率很小，可以忽略。</span></p><p><span>	</span><span>2MSL的时间是从客户端收到FIN后发送ACK开始计时的，如果在TIM_WAIT时间内，因为客户端的ACK没有传输到服务端，客户端又接收到了服务端重发的FIN报文，那么2MSL时间将会重新计算。</span></p><p><span>	</span><span>在Linux系统中，2MSL默认位60秒，那么一个MSL也就是30秒。Linux系统停留在TIME_WAIT的时间为固定的60秒。</span></p><p><span>	</span><span>在Linux内核代码的名称位TCP_TIMEWAIT_LEN：</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="c"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 333.390625px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">#define TCP_TIMEWAIT_LEN (60 * HZ)</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>如果需要修改TIME_WAIT的时间长度，只能修改内核代码的TCP_TIMEWAIT_LEN的值，并重新编译Linux内核。</span></p><h3 id='为什么需要timewait状态'><span>为什么需要TIME_WAIT状态</span></h3><p><span>	</span><span>主动关闭连接的一方才会有TIME_WAIT状态。</span></p><p><span>	</span><span>需要TIME_WAIT状态，主要有两个原因：</span></p><ul><li><p><span>防止历史连接中的数据，被后面的相同的四元组的连接错误的接收。</span></p></li><li><p><span>保证被动关闭的一方能被正确的关闭。</span></p></li></ul><h4 id='防止历史连接中的数据被后面相同的四元组的连接错误的接收'><span>防止历史连接中的数据，被后面相同的四元组的连接错误的接收</span></h4><p><span>	</span><span>为了更好理解这个原因，先来了解下下序列号（SEQ）和初始化序列号（ISN）。</span></p><ul><li><p><span>序列号：是TCP一个头部字段，标识了TCP发送段到TCP接收端的数据流的一个字节，因为TCP是面向字节流的可靠协议，为了保证消息的顺序和可靠性， TCP为每个传输方向上的每个字节都赋予了一个编号，以便成功后确认、丢失后重传以及在接收端保证不会乱序、乱序哈是一个32位的无符号数，因此在到达4G之后再循环到0。</span></p></li><li><p><span>初始化序列号：在TCP建立连接的时候，客户端和服务端各自生成一个初始化的序列号，它是基于时钟生成的一个随机数，来保证每个连接都有不同的初始化序列号。初始化序列号可被视为一个32位的计数器，该计数器的数值每4微妙加1，循环一次需要4.55小时。</span></p></li></ul><p><span>	</span><span>可以看下，下图中，Seq就是序列号，其中红色框柱的分别是客户端和服务端各自生成的初始化序列号：</span></p><p><img src="assets/224.webp" alt="224" style="zoom:50%;" /></p><p><span>	</span><span>通过前面我们知道，序列号和初始化徐利好并不是无限递增的，会发生回绕位初始值的情况，这就意味着无法根据序列号来判断新老数据。</span></p><p><span>	</span><span>假设TIME_WAIT没有等待时间或时间过短，被延迟的数据报地道后会发生什么呢？</span></p><p><img src="assets/225.webp" alt="225" style="zoom:50%;" /></p><ul><li><p><span>服务单在关闭连接之前发送的SEQ=3-1报文，被网络延迟了。</span></p></li><li><p><span>接着，服务端以相同的四元组重新打开了新连接，前面被延迟的SEQ=301这时候达到了客户端，而且该数据包问的序列号刚好子啊客户端接收窗口内，因此客户端正常接受到了这个数据报，但是这个数据报文是上一个连接残留的，这样就产生了数据错乱等严重的问题。</span></p></li></ul><p><span>	</span><span>为了防止历史连接中的数据，被后面相同的四元组的连接错误的接收，因此TCP设计了TIME_WAIT状态，状态会持续2MSL时长，这个时间足以两个方向上的数据报都被丢弃，使得原来连接的数据报在网络中自然消失，再出现数据包一定都是新建立连接产生的。</span></p><h4 id='包证被动关闭的一方能被正确的关闭'><span>包证被动关闭的一方能被正确的关闭</span></h4><p><span>	</span><span>在RFC793支持TIME_WAIT另一个重要的作用：</span></p><blockquote><p><span>	</span><span>TIME-WAIT - represents waiting for enough time to pass tobe sure the remote TCP received the</span>
+<span>acknowledgment of its connection termination request.</span></p></blockquote><p><span>	</span><span>就是说，TIME_WAIT作用是等待足够的时间来确保最后ACK能被主动关闭放接收，从而帮助正常关闭。</span></p><p><span>	</span><span>如果客户端最后一次ACK报文在网络中丢失， 那么按照TCP可靠传输原则，服务单会重传FIN报文。</span></p><p><span>	</span><span>假设客户端没有TIME_WAIT状态，而是在发完最后一次回ACK报文就直接进入CLOSE状态，如果该ACK报文丢失了，则服务单重传FIN报文，而这时客户端已经进入到了关闭状态了，在收到服务端重传的FIN报文后，就会回RST报文。</span><span>	</span></p><p><img src="assets/226.webp" alt="226" style="zoom:50%;" /></p><p><span>	</span><span>服务端收到RST并将其解释为一个错误（Connection reset by peer）这对于一个可靠的协议来说不是一个优雅的终止方式。</span></p><p><span>	</span><span>为了防止这种情况出现，客户端必须等待足够长的时间确保服务单能够收到ACK，如果服务端没有收到ACk，那么就会触发TCP重传机制，服务端回重新发送一个FIN，这样一来一去刚好两个MSL的时间。</span></p><p><img src="assets/227.webp" alt="227" style="zoom:50%;" /></p><p><span>	</span><span>客户端在收到服务端重传的FIN报文时，TIME_WAIT状态的等待时间，会重置2MSL。</span></p><h3 id='timewait过多有啥危害'><span>TIME_WAIT过多有啥危害</span></h3><p><span>	</span><span>过多的TIME_WAIT状态主要有两种危害：</span></p><ul><li><p><span>第一是占用系统资源，比如文件描述符、内存资源、CPU资源、线程资源等。</span></p></li><li><p><span>第二是占用端口资源，端口资源时有限的，一般开启的端口位32768~61000，也可以通过net.ipv4.ip_local_port_rang来设置范围。</span></p></li></ul><p><span>	</span><span>客户端和服务端TIME_WAIT过多，造成的影响不同：</span></p><ul><li><p><span>客户端是主动关闭方，TIME_WAIT状态过多，占满了所有端口资源，就无法对目的IP + 目的PORT都一样的服务端发起连接了，但是使用的端口，还是可以继续对另外一个服务端发起连接。</span></p><p><span>     因此客户端都是和目的IP + 目的PORT都一样的额服务端建立连接的话，当客户端TIME_WAI连接状态过多，就会受到端口资源的限制，如果占满了所有端口资源，就无法再跟目的IP+目的PORT都一样的服务端建立连接。</span></p><p><span>	</span><span> 不过针对这种场景下，只是连接的不同的服务端，端口还是可以重复使用的，所以客户端还是可以向其他服务端连接的，这是因为内核在定位一个连接的时候是通过四元组信息来定位的，并不是因为客户端的端口一样，而导致连接冲突。</span></p></li><li><p><span>如果服务端是主动关闭方，TIME_WAIT状态过多，并不会导致端口资源受限，因为服务端只会监听一个端口而且由于四元组唯一确定一个TCP连接，因此理论上服务端可以建立很多连接，但是TCP连接过多，会占用系统资源，比如文件描述符、内存资源、CPU资源、线程资源等。</span></p></li></ul><h3 id='如何优化timewait'><span>如何优化TIME_WAIT</span></h3><p><span>	</span><span>优化TIME_WIAIT的方式：</span></p><ul><li><p><span>打开net.ipv4.tcp_tw_reuse和net.ipv4.tcp_timestamps选项。</span></p></li><li><p><span>net.ipv4.tcp_max_tw_buckets。</span></p></li><li><p><span>程序中使用SO_LINGER，应用强制使用RST关闭。</span></p></li></ul><h4 id='打开netipv4tcptwreuse和tcptimestamps'><span>打开net.ipv4.tcp_tw_reuse和tcp_timestamps</span></h4><p><span>	</span><span>如下的Linux内核参数开始，则可以复用处于TIME_WAIT的socket为新的socket的连接所用。</span></p><p><span>	</span><span>有一点儿需要注意，tcp_tw_reuse功能只能用客户端（连接发起方），因为开启了该功能，在调用connect()函数的时候，内核会随机找到一个time_wait状态超过1秒的连接给新的连接复用。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="c"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 247px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">net</span>.<span class="cm-variable">ipv4</span>.<span class="cm-variable">tcp_tw_reuse</span> <span class="cm-operator">=</span> <span class="cm-number">1</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>使用这个选项，还有一个前提，需要打开TCP的时间戳的支持，即</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="c"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 256.5999755859375px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">net</span>.<span class="cm-variable">ipv4</span>.<span class="cm-variable">tcp_timestamp</span> <span class="cm-operator">=</span> <span class="cm-number">1</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>这个时间戳的字段是在TCP头部的选项里，由一共8个字节表示时间戳，其中第一个4字节字段用来保存发送该数据包的时间，第二个4字节的字段用来保存最近一次接收方对双方到达的数据的时间。</span></p><p><span>	</span><span>由于引入了时间戳，我们在前面提到了2MSL问题就不存在了，因为重复的数据包因为时间戳过期会被自认丢弃。</span></p><h4 id='netipv4tcpmaxtwbuckets'><span>net.ipv4.tcp_max_tw_buckets</span></h4><p><span>	</span><span>这个值默认位18000，但系统中处于TIME_WAIT的连接一旦超过这个值，系统就会将豁免的TIME_WAIT连接状态重置，这个方法比较暴力。</span></p><h4 id='程序中使用solinger'><span>程序中使用SO_LINGER</span></h4><p><span>	</span><span>我们可以通过设置socket选项，来设置调用close关闭连接行为。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="c"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 669.390625px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>4</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">struct</span> <span class="cm-def">linger</span> <span class="cm-def">so_linger</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">so_linger</span> <span class="cm-operator">=</span>.<span class="cm-variable">l_onoff</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">so_linger</span>.<span class="cm-variable">l_linger</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">setsockopt</span>(<span class="cm-variable">s</span>, <span class="cm-variable">SOL_SOCKEt</span>,, <span class="cm-variable">SO_LINGEr</span>, <span class="cm-operator">&amp;</span><span class="cm-variable">so_linger</span>, <span class="cm-keyword">sizeof</span>(<span class="cm-variable">so_linger</span>));</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 100px;"></div><div class="CodeMirror-gutters" style="height: 100px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>如果l_onoff位非0，且l_linger值为0，那么调用close后，会立即发送一个RST标志给对端，该TCP连接将跳过四次握手，也就跳过了TIME_WAIT状态，直接关闭。</span></p><p><span>	</span><span>前面介绍的方法都是试图越过TIME_WAIT状态的，这样其实不好，虽然TIME_WAIT状态持续时间有一点儿长，但是它可以避免很多事情的发生。</span></p><h3 id='服务器出现大量timewait状态的原因'><span>服务器出现大量TIME_WAIT状态的原因</span></h3><p><span>	</span><span>首先要知道TIME_WAIT状态是主动关闭连接方式才会出现的状态，所以如果服务端出现大量TIME_WAIT状态的TCP连接，就是说明服务端主动断开了很多TCP连接。</span></p><p><span>	</span><span>什么场景下服务端回主动断开连接呢？</span></p><ul><li><p><span>场景1：HTTP没有使用长连接。</span></p></li><li><p><span>场景2：HTTP长连接超时。</span></p></li><li><p><span>场景3：HTTP长连接的请求数量达到上限。</span></p></li></ul><h4 id='http没有使用长连接'><span>HTTP没有使用长连接</span></h4><p><span>	</span><span>我们先来看下HTTP长连接（Keep-Alive）机制是怎么开启的。</span></p><p><span>	</span><span>在HTTP/1.0默认是关闭的，如果浏览器要开启Keep-Alive修在请求的Header中添加：</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="c"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 199px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Connecti</span>: <span class="cm-variable">Keep</span><span class="cm-operator">-</span><span class="cm-variable">Alive</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>然后服务端收到请求，做出回应的时候，就会被添加到响应中的header里。</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 218.1875px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Connection: Keep-Alive</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 25px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>这样做，TCP连接就不会中断，而是保持连接，当客户端发送另一个请求时，就会使用同一个TCP连接，这样一直继续到客户端或服务端提出断开连接。</span></p><p><span>	</span><span>从HTTP/1.1开始，默认就开启了Keep-Alive，现在大多数浏览器默认都是使用HTTP/1.1所以Keep-Alive都是默认打开的，一旦客户端和服务端达成协议，那么长连接就建立好了。</span></p><p><span>	</span><span>如果要关闭HTTP Keep-Alive需要在HTTP请求或者响应的header里添加Connection:close信息，也就是说，只要客户端和服务单任意一方的HTTP Header中有Connection:close信息，那么就无法使用HTTP长连接的机制。</span></p><p><span>	</span><span>关闭iHTTP长连接机制后，每次都要经过的过程是：建立TCP -&gt; 请求资源 -&gt; 释放资源，那么此方法就是HTTP短连接，如下图所示：</span></p><p><img src="assets/228.webp" alt="228" style="zoom:50%;" /></p><p><span>	</span><span>只要任意一方的HTTP Header中有Connection:close信息，就无法使用HTTP长连接机制，这样就完成了一次HTTP请求/处理后，就会关闭连接。</span></p><p><span>	</span><span>问题来了，这时候是客户端还是服务端主动关闭连接呢？</span></p><p><span>	</span><span>在RFC文档中，并没有明确说明谁来负责关闭连接，请求和响应的双方都可以主动关闭TCP连接。</span></p><p><span>	</span><span>不过，大多数Web服务的视线，不管那一方禁用了HTTP Keep-Alive，都是有服务端主动关闭连接，那么此时服务端上就会出现TIME_WAIT状态的连接。</span></p><blockquote><p><span>问：客户端如果禁用了HTTP Keep-Alive服务端开启了 HTTP Keep-Alive，谁是主动关闭方呢？</span></p><p><span>答：当客户端禁用了HTTP Keep-Alive，这个时候HTTP请求的Header中就会有Connecion:close信息，这时候服务端在发完HTTP响应止呕，就会主动关闭连接。</span></p><p><span>	</span><span>为什么这么设计呢 ？ HTTP是请求-响应模型，发起方一直是客户端，HTTP Keep-Alive的初衷是为客户端后续的请求重用连接，如果我们在某次HTTP请求-响应模型中请求的Header中定义了Connection:close信息，那不再重用这个链接的时机就只有在服务端了，所以我们在HTTP请求-响应这个周期的末端关闭连接时合理的。</span></p></blockquote><blockquote><p><span>问：客户端开启了HTTP Keep-Alive，服务端禁用了HTTP Keep-Alive，谁是主动关闭方？</span></p><p><span>答：当客户端开启了HTTP Keep-Alive，而服务端禁用了，这时候服务端在发送完HTTP响应后，服务端也会主动关闭连接。</span></p><p><span>	</span><span>为什么这么设计呢？ 在服务端主动关闭连接的情况下，只要调用一次close()就可以释放连接，剩下的龚总交给内核的TCP栈直接进行了处理，整个过程只有一次syscall，如果要求客户端关闭，则服务端在写完最后一个response之后需要把这个socket放入到readable队列，调用selecy/poll去等待时间，然后大勇一次read()才能知道连接已经被关闭，这其中是莲池syscall，多一次状态程序会被激活执行，而且socket保持的时间也会更长。</span></p></blockquote><p><span>	</span><span>因此，当服务段出现大量的TIME_WAIT状态的时候，可以排查下客户端和服务端是否都开启了HTTP Keep-Alive，因为任意一方关闭了都会导致服务端处理完一个HTTP请求后，主动关闭连接就会出现大量的TIME_WAIT状态。</span></p><h4 id='http长连接超时'><span>HTTP长连接超时</span></h4><p><span>	</span><span>HTTP长连接的特点是，只要任意一段没有明确提出断开的连接，则保持TCP连接的状态。</span></p><p><span>	</span><span>HTTP长连接可以在同一个TCP连接上接收和发送多个HTTP请求/应答，避免了连接建立和释放的开销。</span></p><p><img src="assets/229.webp" alt="229" style="zoom:50%;" /></p><p><span>	</span><span>如果使用了HTTP长连接，如果客户端完成了一个HTTP请求后，就不会在发送新的氢气，此时这个TCP连接一直被占用不是造成了资源浪费么？</span></p><p><span>	</span><span>是的，所以为了避免资源浪费的情况，Web服务端软件一般都会提供一个参数，用来指定HTTP长连接的超时时间，比图Nginx提供的KeepAlive_timeout参数。</span></p><p><span>	</span><span>假设设置了HTTP长连接超时时间是60秒，nginx就会启动一个定时器，如果客户端在完成一个HTTP请求后，在60秒内都没有收到新的请求，定时器时间一到，就会触发nginx回调函数关闭该连接，此时服务端上就会出现TIME_WAIT状态的连接。</span></p><p><img src="assets/230.webp" alt="230" style="zoom:50%;" /></p><p><span>	</span><span>当服务端出现大量的额TIME_WAIT的状态的连接超时，如果是现象级的大量的客户端建立完TCP连接后，很长一段时间没有发送数据，那么大概率就是因为HTTP长连接超时，导致服务端主动关闭连接，产生大量处于TIME_WAIT状态的连接。</span></p><p><span>	</span><span>可以往网络问题的方向排查，比如是否因为网络问题导致客户端的数据一致没有被服务端接收到，以至于HTTP长连接超时。</span></p><h4 id='http长连接的请求数量达到了上限'><span>HTTP长连接的请求数量达到了上限</span></h4><p><span>	</span><span>Web服务度通常会有个参数，来定义一个HTTP长连接的最大处理的请求数量，当超过这个最大的限制时，就会主动关闭连接。</span></p><p><span>	</span><span>比如Nginx的Keepalice-requests这个参数，这个参数是指一个HTTP长连接建立后，nginx就会为这个链接设置一个计数器，记录这个HTTP长连接上已经接收并处理的客户端的请求数量，如果达到这个参数设置的最大值的时候，则nginx会主动关闭这个长连接，那么此时服务端端上就会出现这个TIME_WAIT状态的连接。</span></p><p><span>	</span><span>keepalice_requests参数默认值是100，意味着每个HTTP长连接最多有100次请求，这个参数往往被大多人给忽略，因为QPS每秒请求数不是很好，默认100够用了。</span></p><p><span>	</span><span>但是，对于一次QPS比较高的场景，超过10000QPS甚至达到30000，50000甚至更高，如果keepalice_requests的参数还是100的话，这时候nginx就会频繁的被关闭，那么此时服务端上就会出现大量的TIME_WAIT状态。</span></p><p><span>	</span><span>针对这个场景下，解决的方式就是调大nginx的keepalice_requests的参数。</span></p><h3 id='服务器出现大量的closewait状态原因'><span>服务器出现大量的CLOSE_WAIT状态原因</span></h3><p><span>	</span><span>CLOSE_WAIT状态是被动关闭放才会有的状态，而且如果被动关闭方没有调用close函数关闭连接，那么就无法发出FIN报文，从而没办法让CLOSE_WAIT状态的连接变成了LAST_ACK状态。</span></p><p><span>	</span><span>所以，当服务端出现大量的CLOSE_WAIT状态的连接的时候，说明服务端没有调用close函数关闭连接。</span></p><p><span>	</span><span>那么什么情况下会导致服务端程序不掉用close()函数关闭连接呢 ？ </span></p><p><span>	</span><span>我们可以分析下TCP服务端的流程：</span></p><ol start='' ><li><p><span>创建服务端socket，binf绑定端口、listen监听端口号。</span></p></li><li><p><span>将服务端socket注册到epoll。</span></p></li><li><p><span>epoll_wait等待连接的到来，调用accept方法获取已经连接的socket。</span></p></li><li><p><span>将已连接的socket注册到epoll。</span></p></li><li><p><span>epoll_wait等待事件发生。</span></p></li><li><p><span>对方连接关闭时，我方调用close。</span></p></li></ol><p><span>	</span><span>可能导致服务端没有调用close函数的原因如下：</span></p><ul><li><p><span>原因1：第2步没有做，没有将服务端socket户主测到epoll，这样有新的连接来的时候，服务端没办法感知到这个事情，也就无法获取到已连接的socket，那服务端自然没有办法对socket调用close函数了。</span></p></li></ul><p><span>	</span><span>不过这种原因是发生的概率比较小，这种属于明显的代码bug，在前期read view阶段应该就能发现。</span></p><ul><li><p><span>原因2：第3步没有做，有新的连接来的时候没有调用accept方法获取该连接socket，导致有大量的客户端主动断开了连接，而服务端没激活对这些socket调用close函数，从而导致服务端出现大量CLOSE_WAIT状态的连接。</span></p></li></ul><p><span>	</span><span>这种情况可能原因是服务端在执行accept函数之前，代码就卡在某个逻辑或者提前抛出了异常。</span></p><ul><li><p><span>原因3：第4步没有做，通过accept获取到socket后，没有将其注册到poll，导致后续收到的FIN报文的时候，服务单没办法感知到这个事情，那服务单就没办法调用close函数了。</span></p></li></ul><p><span>	</span><span>这种情况可能是因为服务端已经将已连接的socket注册到epoll之前，代码卡在某个逻辑或者提前抛出了异常。</span></p><ul><li><p><span>原因4：第6步没有做，当发现客户端关闭连接后，服务端没有执行close函数，可能因为代码漏处理，或者是在之心close函数之前，代码卡在某个逻，比如发生死锁等。</span></p></li></ul><p><span>	</span><span>可以发现，当服务端出现大量的CLOSE_WAIT状态的连接的时候，通常都是代码的问题，这时候沃恩需要针对具体的代码一步步的排查和定位，主要分析的方向就是服务端为什么没有调用close。</span></p><h3 id='建立连接之后客户端宕机咋办'><span>建立连接之后，客户端宕机咋办</span></h3><p><span>	</span><span>客户端出现故障指的是客户端的主机发生了宕机，或者断电的场景，发生这种情况的时候，如果服务端一直不发送数据给客户端，那么服务端永远无法感知客户端宕机的这件事儿，也就是说服务单的TCP连接会一直处于ESTABLISH状态，占用系统资源。</span></p><p><span>	</span><span>为了避免这种情况，TCP搞了个</span><strong><span>保活机制</span></strong><span>，这个机制原理：定义了一个时间段，在这个时间段内，如果没有任何连接相关的活动，TCP保活机制会开始作用，每隔一个时间间隔，发送一个探测报文，该探测报文包含的数据非常少，乳沟连接几个探测报文都没有得到响应，则认为当前的TCP连接已经死亡，系统内核将错误信息通知给上层应用程序。</span></p><p><span>	</span><span>在Linux内核可以有对应的参数可以设置保活时间、保活探测的次数，保活探测的时间间隔，以下都是默认值：</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="properties"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="properties"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 599.3125px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>6</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 表示保活时间是7200秒 2小时，2小时内没有任何相关的连接就会启动保活机制</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">net.ipv4.tcp_keepalive_time</span>=<span class="cm-quote">7200</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 每隔75秒检测一次</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">net.ipv4.tcp_keepalive_intvl</span>=<span class="cm-quote">75</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># 检测超过9次无响应，认为对方是不可达的，从而终端本次的连接</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">net.ipv4.tcp_keepalive_probes</span>=<span class="cm-quote">9</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 150px;"></div><div class="CodeMirror-gutters" style="height: 150px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>也就说在Linux系统中，最少需要经过2小时11分15秒才可以发现一个死亡连接。</span></p><p><img src="assets/231.webp" alt="231" style="zoom:50%;" /></p><p><span>	</span><strong><span>注意：</span></strong><span>应用程序如果想要使用TCP保活机制需要通过socket接口设置SO_KEEPALIVE选项才能生效，如果没有设置，那么久无法使用TCP保活机制。</span></p><p><span>	</span><span>如果开启了TCP保活， 需要考虑一下几种情况：</span></p><ul><li><p><span>第一种，对端程序是正常的工作的。当TCP保活探测报文发送给对端，对端会正常相应，这样TCP保活时间会被重置，等待下一个TCP保活时间的到来。</span></p></li><li><p><span>第二种，对端主机宕机并重启，当TCP保活探测报文发送给对端后，对端是可以响应的，但是由于没有该连接的有效消息，会产生一个RST报文，这样很快就会发现TCP连接已经被重置。</span></p></li><li><p><span>第三种，是对端主机宕机（注意，这个不是进程崩溃，进程崩溃后操作系统在回收进程资源的时候，发送FIN报文，而主机宕机则是无法感知的，所以需要TCP保活机制来探测对方是不是发生了主机宕机），或者对端由于其他原因而导致报文不可达。当TCP保活的探测报文发送给对端后，石沉大海，没有响应，连续几次，达到保活探测次数后，TCP或报告TCP连接已经死亡。</span></p></li></ul><p><span>	</span><span>TCP保活的机制检测的时间有点长，可以在应用层实现一个心跳机制。</span></p><p><span>	</span><span>比如，web服务软件一般都会提供keepalice_timeout参数，用来指定HTTP长连接的超时时间，如果设置了HTTP长连接的超时时间是60秒，web服务软件就会启动一个定时器，如果客户端在完成一个HTTP请求后，在60秒内都没有发起新的请求，定时器的时间一到，就会触发回调函数来释放该连接。</span></p><p><img src="assets/232.webp" alt="232" style="zoom:50%;" /></p><h3 id='如果已经建立连接服务端进程崩溃会发生啥'><span>如果已经建立连接，服务端进程崩溃会发生啥</span></h3><p><span>	</span><span>TCP的连接信息都是由内核维护的，所以当服务端的进程崩溃后，内核需要回收该进程的所有TCP连接资源，于是内核会发送第一次挥手的FIN报文，后续的挥手过程也都是在内核完成，并不需要进程的参与，所以及时服务端的进程退出了，还是能与客户端完成TCP四次挥手的过程的。</span></p><p><span>	</span><span>可以做个实验，使用kill -9命令来模拟进程崩溃的情况，发现kill掉进程后，服务端会发送FIN报文，与客户端正常进行四次挥手。</span></p><h2 id='四socket编程'><span>四、Socket编程</span></h2><h3 id='tcp是如何进行socket编程的'><span>TCP是如何进行Socket编程的</span></h3><p><img src="assets/233.webp" alt="233" style="zoom:50%;" /></p><ul><li><p><span>服务端和客户端初始化socket，得到文件描述符。</span></p></li><li><p><span>服务端调用bind，将socket绑定在指定的IP地址和端口。</span></p></li><li><p><span>服务端调用listen，进行监听。</span></p></li><li><p><span>服务端调用accept，等待客户端连接。</span></p></li><li><p><span>客户端调用connect，向服务端的地址和端口发起连接的请求。</span></p></li><li><p><span>服务端accept返回用于传输的socket的文件描述。</span></p></li><li><p><span>客户端调用write写入数据，服务端调用read读取数据。</span></p></li><li><p><span>客户端断开连接时，回调用close，那么服务端的read读取数据的时候，就会读取到EOF，待处理完数据后，服务端调用close，表示连接关闭。</span></p></li></ul><p><span>	</span><span>这里注意的是，服务端调用accept时，连接成功了会返回一个已完成连接socket，后续用来传输数据。</span></p><p><span>	</span><span>所以，监听的socket和真正用来传送数据的socket，是两个socket，一个叫做监听socket，一个叫做已完成连接的socket。</span></p><p><span>	</span><span>成功连接建立之后，双方都开始read和write函数来读写数据，就像文件流里面写东西一样。</span></p><h3 id='listen时候参数backlog作用'><span>listen时候参数backlog作用</span></h3><p><span>	</span><span>Linux内核会维护两个队列：</span></p><ul><li><p><span>半连接队列（SYN队列）：接收到一个SYN建立连接请求，处于SYN_RCVD状态。</span></p></li><li><p><span>全连接队列（Accept队列）：已经完成TCP三次握手过程，处于ESTABLISHED状态。</span></p></li></ul><p><img src="assets/234.webp" alt="234" style="zoom:50%;" /></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="c"><div class="CodeMirror cm-s-inner cm-s-null-scroll" lang="c"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.5px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 0px; min-width: 362.199951171875px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>3</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// socketfd：为socketfd文件描述符</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// bakclog：为参数在历史版本中有一定的变化</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 20px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-3">int</span> <span class="cm-def">listen</span>(<span class="cm-variable-3">int</span> <span class="cm-variable">socketfd</span>, <span class="cm-variable-3">int</span> <span class="cm-variable">backlog</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 75px;"></div><div class="CodeMirror-gutters" style="height: 75px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></pre><p><span>	</span><span>在早期Linux内核中backlog是SYN队列的大小。在Linux内核2.2之后，backlog编程了accept队列，也就是已完成连接建立的队列的长度，所以现在</span><strong><span>通常认为backlog是accept队列</span></strong><span>。</span></p><p><span>	</span><span>但是上限值是内核参数somaxconn的大小，也就是说accept队列长度 = min(backlog, somaxconn)。</span></p><h3 id='accept时三次握手中的哪一步'><span>accept时三次握手中的哪一步</span></h3><p><img src="assets/235.webp" alt="235" style="zoom:50%;" /></p><ul><li><p><span>客户端协议栈向服务端发送了SYN包，并告诉服务单当前发送序列号client_isn，客户端进入SYN_SENT状态。</span></p></li><li><p><span>服务端的协议栈收到这个包之后，和客户端进行ACK应答，应答值为client_isn + 1，表示对SYN包client_isn的确认，同时服务端页发送了一个SYN包，告诉客户端当前我发送的序列号位server_isn，服务端进入SYN_RCVD状态。</span></p></li><li><p><span>客户端协议栈收到ACK之后，使得应用程序从connect调用返回，表示客户端到服务端的单向连接建立成功，客户端的状态为ESTABLISHED，同时客户端协议栈也会对服务端的SYN包进行应答，应答数据位server_isn + 1。</span></p></li><li><p><span>ACK应答包到达服务端后，服务单的TCP连接进入ESTABLISHED状态，同时服务端协议栈使得accept阻塞调用返回，这个时候服务端到客户端的单向连接也建立成功。至此，客户端与服务端两个防线的连接都建立成功。</span></p></li></ul><p><span>	</span><span>从上面的描述过程，我们可以得知客户端connect成功返回是在第二次握手，服务端accept成功返回是在第三次握手成功之后。</span></p><h3 id='客户端调用close连接断开的流程'><span>客户端调用close，连接断开的流程</span></h3><p><img src="assets/236.webp" alt="236" style="zoom:50%;" /></p><ul><li><p><span>客户端调用close，表明客户端没有数据需要发送了，则此时向服务端发送FIN报文，进入</span><strong><span>FIN_WAIT_1</span></strong><span>状态。</span></p></li><li><p><span>服务端接收到了FIN报文，TCP协议栈会为FIN包插入一个文件结束符EOF到接收缓冲区中，应用程序可以通过read调用来感知这个FIN包，这个EOF会被放在已排队等待其他已接受的数据之后，这就意味着服务端需要处理这种情况，因为EOF表示该连接上再无额外的数据到达，此时，服务端进入CLOSE_WAIT状态。</span></p></li><li><p><span>接着，当处理完数据后，自然就会读到EOF，于是也要调用close关闭它的套接字，会使得服务端发出一个FIN包，之后处于LAST_ACK状态。</span></p></li><li><p><span>客户端收到服务端的FIN包，并发送ACK确认包给服务端，此时客户端就将进入TIME_WAIT状态。</span></p></li><li><p><span>服务端收到ACK确认包之后，就会进入最后的CLOSE状态。</span></p></li><li><p><span>客户端经过2MSL的时间之后也会进入CLOSE状态。</span></p></li></ul><h3 id='没有accept能建立tcp连接么'><span>没有accept，能建立TCP连接么</span></h3><p><span>	</span><span>可以，accept系统调用并不参与TCP三次握手过程，它只是负责从TCP全连接队列取出一个已经建立连接的socket，用户通过accept系统调用拿到了已经建立连接的socket，就可以对该socket进行读写操作了。</span></p><p><img src="assets/237.webp" alt="237" style="zoom:50%;" /></p><p><span>	</span></p><h3 id='没有listen能建立tcp连接吗'><span>没有listen，能建立TCP连接吗</span></h3><p><span>	</span><span>可以，客户端可以自己连自己形成连接（TCP自动连接），也可以两个客户端同时向对方发出请求建立连接（TCP同时打开）这两个情况都是没有服务端参与的，也就是没有listen就能建立TCP连接的。</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+
+<script>(function (){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
+</html>

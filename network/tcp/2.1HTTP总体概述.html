@@ -1,0 +1,1526 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/*快速自定义配置*/
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * MIT License
+ *
+ * Copyright (c) 2023 劉強東 https://github.com/liangjingkanji
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #202124;
+    --blur-text-color: #c8c8c8;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(32, 33, 36, 0.5);
+    --drake-accent: #5784ec;
+    --drake-highlight: #3a474e;
+    --a-color: #1769e0;
+    --variable-color: #d01884;
+    --outline-active-color: var(#414040);
+    --code-block-bg-color: #f8f9fa;
+    --code-block-color: #3a474e;
+    --title-color: #202124;
+    --blockquote-border-color: #275796;
+    --blockquote-color: #275796;
+    --blockquote-bg-color: #e5f4fd;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--text-color);
+    --height-light-border-color: var(--text-color);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dadce0;
+    --table-header-bg-color: #f1f3f4;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 12px !important;
+    border-radius: 8px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: .1em solid #e8eaed;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 4px;
+    color: var(--drake-highlight);
+    border: .1rem solid #e8eaed;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote {
+    color: var(--blockquote-color) !important;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+.on-focus-mode #write a .md-plain:hover, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain:hover, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain:hover, .on-focus-mode .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+#write a code, a:any-link {
+    color: var(--a-color);
+}
+#write a code:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-library-node.file-tree-node.file-node-root {
+    font-size: 1.1rem;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 14px;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 400;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-atom {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-def {
+    color: #00f;
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #b80672;
+}
+.cm-s-inner span.cm-string {
+    color: #008000;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #008000;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-tag.cm-bracket {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-meta {
+    color: #c5221f;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+/* 正文标题区: #write */
+/* [TOC]目录树区: .md-toc-content */
+/* 侧边栏的目录大纲区: .sidebar-content */
+ 
+/** 
+ * 说明：
+ *     Typora的标题共有6级，从h1到h6。
+ *     我个人觉得h1级的标题太大，所以我的标题都是从h2级开始。
+ *     个人习惯每篇文章都有一个总标题，有一个目录，所以h2级的标题前两个都不会计数。
+ *     一般情况下，我虽然不使用h1级的标题，但是为了以防万一，h1级的标题前两个也都不会计数。
+ *     若想启用h1级标题，就取消包含“content: counter(h1) "."”项的注释，然后将包含“content: counter(h2) "."”的项注释掉即可。
+ */ 
+/** initialize css counter */
+#write, .sidebar-content,.md-toc-content{
+	/* 设置全局计数器的基准 */
+	/* 因为我喜欢从h2级标题用起，所以这里设置为h2 */
+    counter-reset: h2
+}
+ 
+#write h1, .outline-h1, .md-toc-item.md-toc-h1 {
+    counter-reset: h2
+}
+ 
+#write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+    counter-reset: h3
+}
+ 
+#write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+    counter-reset: h4
+}
+ 
+#write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+    counter-reset: h5
+}
+ 
+#write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+    counter-reset: h6
+}
+ 
+/** put counter result into headings */
+#write h1:before,
+.outline-h1>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1>.md-toc-inner:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+ 
+/* 使用h1标题时，去掉前两个h1标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h1元素，请根据情况自行修改。 */
+#write h1:nth-of-type(1):before,
+.outline-h1:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(1)>.md-toc-inner:before,
+#write h1:nth-of-type(2):before,
+.outline-h1:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h1;
+	content: ""
+}
+ 
+/*#write h2:before,
+.outline-h2>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2>.md-toc-inner:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}*/
+ 
+/* 使用h2标题时，去掉前两个h2标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h2元素，请根据情况自行修改。 */
+#write h2:nth-of-type(1):before,
+.outline-h2:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(1)>.md-toc-inner:before,
+#write h2:nth-of-type(2):before,
+.outline-h2:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h2;
+	content: ""
+}
+ 
+#write h3:before,
+h3.md-focus.md-heading:before, /** override the default style for focused headings */
+.outline-h3>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h3>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h3;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+     content:  counter(h3) ". "
+}
+ 
+#write h4:before,
+h4.md-focus.md-heading:before,
+.outline-h4>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h4>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h4;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+    content: counter(h3) "." counter(h4) ". "
+}
+ 
+#write h5:before,
+h5.md-focus.md-heading:before,
+.outline-h5>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h5>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h5;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+ 
+#write h6:before,
+h6.md-focus.md-heading:before,
+.outline-h6>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h6>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h6;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+ 
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>2.1HTTP总体概述</title>
+</head>
+<body class='typora-export typora-export-show-outline typora-export-no-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http总体概述">HTTP总体概述</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#一http基本概念">一、HTTP基本概念</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http是什么">HTTP是什么</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http常见的状态码">HTTP常见的状态码</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http常见的字段有哪些">HTTP常见的字段有哪些</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二get与post">二、GET与POST</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#get和post都是安全和幂等">GET和POST都是安全和幂等</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三http缓存技术">三、HTTP缓存技术</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http缓存有哪些实现方式">HTTP缓存有哪些实现方式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#强制缓存">强制缓存</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#协商缓存">协商缓存</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#强制缓存和协商缓存工作流程">强制缓存和协商缓存工作流程</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三http特性">三、HTTP特性</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http11优点">HTTP/1.1优点</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http11缺点">HTTP/1.1缺点</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http性能">HTTP性能</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#四http与https">四、HTTP与HTTPS</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http与https区别">HTTP与HTTPS区别</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#https解决了http中的哪些问题">HTTPS解决了HTTP中的哪些问题</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#混合加密">混合加密</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#摘要算法数字签名">摘要算法+数字签名</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#数字证书">数字证书</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#https连接建立过程">HTTPS连接建立过程</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#rsa算法">RSA算法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#客户端校验数字证书流程">客户端校验数字证书流程</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#https应用数据的完整性">HTTPS应用数据的完整性</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#https可靠性">HTTPS可靠性</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#五http11http20http30演变">五、HTTP/1.1、HTTP/2.0、HTTP/3.0演变</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http10到http11优化">HTTP/1.0到HTTP/1.1优化</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http20优化">HTTP/2.0优化</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#头部压缩">头部压缩</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二进制格式">二进制格式</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#并发传输">并发传输</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#服务器推送">服务器推送</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http2缺点">HTTP/2缺点</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#http30优化">HTTP/3.0优化</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#无对头阻塞">无对头阻塞</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#更快的连接建立">更快的连接建立</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#链接迁移">链接迁移</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#总结">总结</a></div><ul class="outline-children"></ul></li></ul></li></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='http总体概述'><span>HTTP总体概述</span></h1><h2 id='一http基本概念'><span>一、HTTP基本概念</span></h2><h3 id='http是什么'><span>HTTP是什么</span></h3><p><span>	</span><span>HTTP是超文本传输协议，也就是</span><strong><span>H</span></strong><span>yper</span><strong><span>T</span></strong><span>ext</span><strong><span>T</span></strong><span>ransfer</span><strong><span>P</span></strong><span>rotocol。</span></p><blockquote><p><span>能否详细解释下超文本传输协议？</span></p></blockquote><p><span>	</span><span>HTTP的名字【超文本传输协议】可以拆分成三个部分：</span></p><ul><li><p><span>超文本</span></p></li><li><p><span>传输</span></p></li><li><p><span>协议</span></p></li></ul><p><img src="assets/040.png" alt="040" style="zoom:40%;" /></p><p><strong><span>协议</span></strong></p><p><span>	</span><span>生活中随时可见，比如租房协议等，生活中的协议和计算机的协议本质上是相同的，可以简单理解HTTP是一个用在计算机世界里面的协议，它使计算机能够理解语言确立了一种计算机之间交流通信规范（两个以上参与者）以及相关的各种控制和错误处理方式（行为约定和规范）。</span></p><ul><li><p><span>协：两个以上的参与者，比如三方协议参与者有三个，你、公司、学校等。</span></p></li><li><p><span>议：对参与者的一种行为约定和规范，比如三方协议中规定的试用期和毁约金等。</span></p></li></ul><p><strong><span>传输</span></strong></p><p><span>	</span><span>所谓拆书就是把一堆东西从A搬到B，或者从B搬到A。别轻视了这个简单的动作，至少包含两项重要的信息。</span></p><p><span>	</span><span>HTTP协议是一个双向协议。</span></p><p><span>	</span><span>我们在网络上冲浪的时候，浏览器是请求方A，百度网站是应答方B。双方约定用HTTP协议来通信，于是浏览器把请求数据发送给网站，网站再把一些数据返回给浏览器，最后由浏览器渲染屏幕，就可以看到图片和视频了。</span></p><p><img src="assets/041.png" alt="041" style="zoom:40%;" /></p><p><span>	</span><span>数据虽然在A和B之间传输，DNA允许中间由中转或接力。</span></p><p><span>	</span><span>就好像第一排的同学线稿传递纸条给最后一排同学，那么传递的过程中就需要经过好多同学（中间人）这样的传输方式就是从[A &lt;----&gt; B]变成了[A &lt;----&gt; N &lt;----&gt; M &lt;----&gt; B]</span></p><p><span>	</span><span>而HTTP里，需要中间人遵从HTTP协议，只要不打扰基本的数据传输，就可以添加任意额外的东西。</span></p><p><span>	</span><span>针对传输，我们可以进一步理解了HTTP。</span></p><p><span>	</span><span>HTTP是一个在计算机世界里专门用来在两点之间拆书数据的约定和规范。</span></p><p><strong><span>超文本</span></strong></p><p><span>	</span><span>HTTP传输的内容就是超文本。</span></p><p><span>	</span><span>先理解下文本，文本是在互联网早期的时候只是简单的字符和文字，但现在文本的含义已经可以扩展到图片、视频、压缩包等，在HTTP眼里这些都算是文本。</span></p><p><span>	</span><span>在理解下超文本，超文本就是超越了普通文本的文本，是文字、图片、视频等混合体，最关键的有超连接，。能从一个超文本跳转到另外一个超文本。</span></p><p><span>	</span><span>HTML就是最常见的超文本，它本身只是纯文字文件，但内部用很多表情定义了图片、视频等连接，再经过浏览器解释，程序还给我们的就是一个文字、有画面的网页。</span></p><p><strong><span>总结</span></strong></p><p><span>	</span><span>HTTP是一个在计算机是咧专门在两点之间传输文字、图片、语音、视频等超文本的数据的约定和规范。</span></p><p><span>	</span><span>HTTP是从互联网服务传输超文本到本地浏览器的协议说法对吗？不对，HTTP也可以是服务器到服务器的传输。采用两点之间的描述会更准确。</span></p><h3 id='http常见的状态码'><span>HTTP常见的状态码</span></h3><p><img src="assets/042.png" alt="042" style="zoom:50%;" /></p><ul><li><p><span>1xx：属于提示信息，是协议处理的一种中间状态，实际用的比较少。</span></p></li><li><p><span>2xx：表示成功处理了客户端的请求，也就是我们最愿意看到的状态码。</span></p><ul><li><p><span>200 OK：一切正常，非HEAD请求，服务器返回的响应头都会有body数据。</span></p></li><li><p><span>204 No Content：常见的状态码，与200 OK基本一样，但响应头中没有body数据。</span></p></li><li><p><span>206 Partial Content：应用于HTTP分块下载或断电续传，表示响应返回的波杜数据并不是资源的全部，而是其中的一部分，也是服务器处理的成功的状态。</span></p></li></ul></li><li><p><span>3xx：表示客户端请求的资源发生了变动，需要客户端用新的URL重新发送请求获取资源，也就是重定向。</span></p><ul><li><p><span>301 Moved Permanently：表示永久重定向，说明请求的资源已经不存在了，需改用新的URL再次请求。</span></p></li><li><p><span>302 Found：表示临时重定向，说明请求的资源还在，但暂时需要另一个URL来访问。</span></p></li><li><p><span>301 302都会在响应头中使用Location字段指定后续跳转的URL，浏览器会自动重定向到新的URL。</span></p></li><li><p><span>304 Not Modified：不具有跳转的含义，表示资源未修改，重定向已经存在的缓冲文件，也称缓存重定向，也就是告诉客户端可以继续使用缓存资源，用于缓存控制。</span></p></li></ul></li><li><p><span>4xx：表示客户端发送的报文有误，服务器无法处理，也就是错误码的含义。</span></p><ul><li><p><span>400 Bad Request：表示客户端请求的报文有错误，但只是个笼统的错误。</span></p></li><li><p><span>403 Forbidden：表示服务器禁止访问资源，并不是客户端的请求出错。</span></p></li><li><p><span>404 Not Found：表示请求的资源在服务器上不存在或未找到，所以无法提供给客户端。</span></p></li></ul></li><li><p><span>5xx：表示客户端请求报文正确，但是服务区处理时内部发生了错误，属于服务器端的错误。</span></p><ul><li><p><span>500 Internel Server Error：与400类型，是个笼统通用的错误码，服务器发生了什么错误，我们并不知道。</span></p></li><li><p><span>501 Not Implemented：表示客户端请求的功能还不支持，类似”即将开业 敬请期待“的意思。</span></p></li><li><p><span>502 Bad Gateway：通常是服务器作为网关或代理时返回的错误码，表示服务器自身工作正常，访问后端服务器发生了错误。</span></p></li><li><p><span>503 Service Unabaliable：表示服务器当前很忙，暂时无法相应客户端，类似”网络服务正忙，请稍后重试“的意思。</span></p></li></ul></li></ul><h3 id='http常见的字段有哪些'><span>HTTP常见的字段有哪些</span></h3><p><strong><span>Host字段</span></strong></p><p><span>	</span><span>客户端发送请求时，用来指定服务器的域名。</span></p><p><img src="assets/043-3596215.png" alt="043" style="zoom:70%;" /></p><p><span>	</span><code>Host：www.A.com</code></p><p><span>	</span><span>有了Host字段就可以即将请求发往同一台服务器上的不同网站。</span></p><p><strong><span>Content-Length字段</span></strong></p><p><span>	</span><span>服务器返回数据时，会有Content-Length字段，标明本次回应的数据长度。</span></p><p><img src="assets/044.png" alt="044" style="zoom:70%;" /></p><p><span>	</span><code>Content-Length: 1000</code></p><p><span>	</span><span>表示本次服务器返回的数据长度是1000个字节，后面的字节属于下一个回应了。</span></p><p><span>	</span><span>HTTP是基于TCP传输的，使用了TCP传输协议，就会存在一个粘包问题，HTTP协议通过设置回车符、换行符作为HTTP Header的边界，通过Content-Length字段作为HTTP Body的边界，这两个方式都是为了解决粘包的问题。</span></p><p><strong><span>Connection字段</span></strong></p><p><span>	</span><span>Connection字段是最长用于客户端要求服务器使用「HTTP长链接」机制，以便其他请求复用。</span></p><p><img src="assets/045.png" alt="045" style="zoom:70%;" /></p><p><span>	</span><span>HTTP长链接的特点是，只要任意一端没有明确提出断开连接，则保持TCP连接状态。</span></p><p><img src="assets/046.png" alt="046" style="zoom:60%;" /></p><p><span>	</span><span>HTTP1.1版本的默认连接都是长连接，但为了兼容老版本的HTTP，需要指定Connection首部字段为Keep-Alive。</span></p><p><span>	</span><code>Connection: Keep-Alive</code></p><p><span>	</span><span>开启了HTTP Keep-Alive机制后，连接就不回中断，而是保持连接，大概客户端发送另一个请求时，会使用同一个链接，一直持续到客户端或服务区端提出断开连接。</span></p><p><span>	</span><span>注意：HTTP Keep-Alive不要与 TCP Keepalive搞混，两个不是一个东西。</span></p><blockquote><p><strong><span>HTTP的Keep-Alive：</span></strong><span>叫HTTP长连接，该功能是有应用程序实现的，使用同一个TCP连接来发送和接收多个HTTP请求/应答，减少了HTTP短连接带来的多次TCP连接建立和释放的开销。</span></p><p><strong><span>TCP的Keepalive：</span></strong><span>叫做TCP保活机制，该功能是由内核实现的，当客户端与服务器端长达一定时间没有进行数据交互时，内核为了确保该链接是否还有效。就会发送探测报文，来检测对方是否还在线，然后决定是否要关闭该链接。</span></p><p><img src="assets/047.png" alt="047" style="zoom:50%;" /></p></blockquote><p><strong><span>Content-Type字段</span></strong></p><p><span>	</span><span>Content-Type字段用于服务器回应时，告诉客户端，本次数据是什么格式。</span></p><p><img src="assets/048.png" alt="048" style="zoom:70%;" /></p><p><span>	</span><code>Content-Type: text/html; Charset=utf-8</code></p><p><span>	</span><span>上面的类型表明，发送的是网页，而且编码是UTF-8。</span></p><p><span>	</span><span>客户端请求的时候，可以使用Accept字段声明自己可以接受哪些数据格式。</span></p><p><span>	</span><code>Accept: */*</code></p><p><span>	</span><span>上面代码中，客户端声明自己可以接受任何格式的数据。</span></p><p><strong><span>Content-Encoding字段</span></strong></p><p><span>	</span><span>Content-Encoding字段说明的压缩方法，表示服务器返回的数据使用了什么压缩格式。</span></p><p><img src="assets/049.png" alt="049" style="zoom:70%;" /></p><p><span>	</span><code>Content-Encoding: gzip</code></p><p><span>	</span><span>上面表示服务器返回的数据采用了gzip方式压缩，告知客户端需要此方式解压。</span></p><p><span>	</span><span>客户端在请求时，用Accept-Encoding字段说明自己可以接受哪些压缩方法。</span></p><p><span>	</span><code>Accept-Encoding: gzip, deflate</code></p><h2 id='二get与post'><span>二、GET与POST</span></h2><p><span>	</span><span>根据RFC规范，GET的语义是从服务器获取到指定的资源，这个资源可以是静态的文本、页面、图片视频等。GET请求的参数位置一般是写在URL中，URL规定智能支持ASCII，所以GET请求的参数位置一般是写在URL中，URL规定智能支持ASCII，所以GET请求的参数只允许ASCII字符，而且浏览器会对URL的长度有限制（HTTP协议本身对URL长度并没有做任何规定）。</span></p><p><span>	</span><span>比如，你打开我的文章，浏览器就会发送GET请求给服务器，服务器就会返回文章的所有文字和资源。</span></p><p><img src="assets/050.png" alt="050" style="zoom:80%;" /></p><p><span>	</span><span>根据RFC规范，POST的寓意是根据请求负荷（报文body）对指定的资源做出处理。具体的处理方式被视为资源类型而不同。POST请求携带数据的位置一般是写在报文body中，body中的数据可以是任意格式的数据，只要客户端与服务端协商好即可，而且浏览器不会对body大小做限制。</span></p><h3 id='get和post都是安全和幂等'><span>GET和POST都是安全和幂等</span></h3><p><span>说明下安全和幂等的概念：</span></p><ul><li><p><span>在HTTP协议里，所谓的安全是指请求方法不会被破坏服务器上的资源。</span></p></li><li><p><span>幂等：多次执行相同的操作，结果都是相同的。</span></p></li></ul><p><span>如果从RFC规范定义的语义来看：</span></p><ul><li><p><span>GET方法是安全且幂等的，因为它是只读操作，无论操作多少次，服务器上的数据是安全的，切每次的结果都是相同的。所以，可以多GET请求的数据做缓存，这个缓存可以在浏览器本上上（彻底避免浏览器发送请求），也可以做到代理上（nginx），而且在浏览器中GET请求可以保存为书签。</span></p></li><li><p><span>POST因为是【新增或提交数据】的操作，会修改服务器上的资源，所以是不安全的，且多次提交数据就会创建多个资源，所以不是幂等，所以浏览器一般不会缓存POST请求，也不能把POST请求保存为书签。</span></p></li><li><p><span>总结：GET的语音是请求获取指定的资源，GET方法是安全、幂等、可被缓存的。POST寓意是请求复合对指定的资源做出处理，具体的处理方式被视为资源类型而不同。POST不安全，不幂等，大部分实现不可缓存。</span></p></li><li><p><span>注意：都是从RFC语义上来分析的。实际过程中，开发者不一定会按照RFC的规范来实现GET和POST方法：</span></p><ul><li><p><span>可以用GET方法实现新增或删除数据的请求，这样实现的GET方法自然不是安全和幂等的。</span></p></li><li><p><span>POST可以实现查询数据的请求，这样实现的POST方法自然就是安全和幂等的。</span></p></li></ul></li></ul><blockquote><p><span>GET请求可以携带body么？</span></p><p><span>RFC规范并没有规定GET请求不能携带body，理论上任何请求都可以带body，只是因为RFC规范定义GET请求时获取资源，所以根据这个语义是不需要用到body的。</span></p><p><span>另外URL中的查询参数也不是GET所独有的，POST请求的URL中也可以有参数。</span></p></blockquote><h2 id='三http缓存技术'><span>三、HTTP缓存技术</span></h2><h3 id='http缓存有哪些实现方式'><span>HTTP缓存有哪些实现方式</span></h3><p><span>	</span><span>对于一些具有重复性的HTTP请求，比如每次请求得到数据都是一样的，我们可以把这对【请求-响应】的数据缓存在本地，下次直接读取本地的数据，不必子啊通过网络获取服务器的响应了，这样的话，HTTP/1.1的性能肯定肉眼可见的提升。</span></p><p><span>	</span><span>所以，避免发送HTTP请求的方法就是通过缓存技术，HTTP设计者早在之前就考虑到这点，因此HTTP协议it有不有不少是针对缓存的字段。</span></p><p><span>	</span><span>HTTP缓存有两种实现方式强制缓存和协商缓存。</span></p><h3 id='强制缓存'><span>强制缓存</span></h3><p><span>	</span><span>强制缓存时指只要浏览器判断缓存没有过期，则直接使用浏览器的本地缓存，巨鼎是否使用缓存的主动性在于浏览器这边。</span></p><p><span>	</span><span>如下图所示，返回的是状态码200，但在size项中表示的是from disk cache，就是使用了强制缓存。</span></p><p><img src="assets/051.png" alt="051" style="zoom:40%;" /></p><p><span>	</span><span>强制缓存利用下面的这两个HTTP响应头部（Response Header）字段实现的，他们都用来表示资源在客户端缓存的有效期：</span></p><ul><li><p><span>Cache-Control：是一个相对时间。</span></p></li><li><p><span>Expires：是一个绝对时间。</span></p></li></ul><p><span>	</span><span>如果HTTP响应头部同时有Cache-Control和Expires字段的话Cache-Control的优先级高于Expires。</span></p><p><span>	</span><span>Cache-Control选项更多一些，设置更加精细，建议使用此字段来控制强制缓存，具体实现流程如下：</span></p><ul><li><p><span>当浏览器第一次请求访问服务器资源时，服务器会在返回这个资源的同时，在Response头部加上Cache-Control，Cache-Control中设置了过期时间的大小。</span></p></li><li><p><span>浏览器已再次请求访问资源的时候，会通过请求资源的时间与Cache-Control中设置的过期时间大小，来计算出该资源是否过期，如果没有过期直接使用该缓存，否则重新请求服务器。</span></p></li><li><p><span>服务器收到请求后，再次更新Response头部的Cache-Control。</span></p></li></ul><h3 id='协商缓存'><span>协商缓存</span></h3><p><span>	</span><span>当我们浏览器使用开发者工具的时候，可能会看到某些请求的响应码是304，这个是告诉浏览器可以使用本地缓存的资源，通常这种通过服务器端告知客户端是否可以使用缓存的方式被称为协商缓存。</span></p><p><img src="assets/052.png" alt="052" style="zoom:50%;" /></p><p><span>	</span><span>上图就是一个协商缓存的过程，所以协商缓存就是服务器段协商之后通过协商结果来判断是否使用本地缓存。</span></p><p><span>	</span><span>协商缓存可以基于两种头部来实现：</span>
+<span>​</span><span>	</span></p><ul><li><p><span>请求头中的If-Modified-Since字段与响应头中的Last-Modified字段实现，这两个字段的意思是：</span></p><ul><li><p><span>响应头部中的Last-Modified：表示这个响应资源的最后修改时间。</span></p></li><li><p><span>请求头部中的If-Modified-Since：当资源过期了，发现响应头中具有Last-Modified声明，则再次发起请求的时候带上Last-Modified的时间，服务器收到请求后发现If-Modified-Since则被请求资源的最后修改时间进行对比（Last-Modified）如果最后修改时间比较大，说明资源又被修改，则返回最新资源，HTTP200 OK，如果最后修改的时间比较小，说明资源无新修改，响应HTTP 304走缓存。</span></p></li></ul></li><li><p><span>请求头部中的If-None-Match字段与响应头部中的ETag字段，这两个字段的意思是：</span></p><ul><li><p><span>响应头部中的Etag：唯一表示响应资源。</span></p></li><li><p><span>请求头部中的If-Node-Match：当资源过期时，浏览器发现响应头里有Etag，则再次向服务器发起请求时，会将请求头If-None-Match值设置为Etag的值。服务器收到请求后进行对比，如果资源没有变化返回304，如果资源变化了返回200。</span></p></li></ul></li></ul><p><span>	</span><span>第一种实现方式是基于时间实现的，第二种实现方式是基于唯一标识实现的，相对于第二种来说，key更加精确的判断文件内容是否被修改，避免由于时间篡改导致的不可靠问题。</span></p><p><span>	</span><span>如果在第一次请资源的时候，服务器端返回的HTTP响应头同时有Etag和Last-Modified字段，那么客户端再下一次请求的时候，如果带上了Etag和Last-Modified字段信息给服务端，这时Etag的优先级更高，也就是说服务端先回判断Etag是否发生变化，如果Etag有变化就不用判断Last-Modified了，如果Etag没有变化，在看Last-Modified。</span></p><blockquote><p><span>为什么Etag的优先级更高？</span></p><p><span>这是因为Etag主要解决Last-Modified几个比较难以解决的问题。</span></p><ol start='' ><li><p><span>在没有修改文件内容的情况下文件的最后修改时间可能也会改变，这会导致客户端认为文件被改动了，从而重新请求。</span></p></li><li><p><span>可能有些文件是秒级以内修改的，If-Modified-Since能检查的粒度是秒级，使用Stag就能够保证这种需求在1秒内能刷新很多次。</span></p></li><li><p><span>有些服务器不能精确获取文件的最后修改时间。</span></p></li></ol></blockquote><p><span>	</span><strong><span>注意：</span></strong><span>协商缓存这来那个该字段都需要配合强制缓存中Cache-Control字段来使用，只有在未能命中强制缓存的时候，才能带有协商缓存字段的请求。</span></p><h3 id='强制缓存和协商缓存工作流程'><span>强制缓存和协商缓存工作流程</span></h3><p><img src="assets/053.png" alt="053" style="zoom:40%;" /></p><p><span>当使用Etag字段实现的协商缓存过程：</span></p><ol start='' ><li><p><span>当浏览器第一次请求访问服务器资源时，服务器会在返回这个资源同时，在Response头部加上Etag唯一标识，这个唯一标识的值是根据当前请求的资源生成的。</span></p></li><li><p><span>当浏览器再次请求访问服务器中的该资源时，首先会检查强制缓存是否过期：</span></p><ol start='' ><li><p><span>没有过期，直接使用本地缓存。</span></p></li><li><p><span>过期的话，会在Reques头部加上If-None-Match字段，该字段的值就是Etag唯一标识。</span></p></li></ol></li><li><p><span>服务器再次收到请求后，会根据请求中的If-None-Match值与当前请求的资源生成唯一的表示进行比较：</span></p><ol start='' ><li><p><span>如果值相等，则返回304Not Modified不会返回资源。</span></p></li><li><p><span>如果不相等，则直接返回200状态码和返回资源，并在Response头部加上新的ETag唯一标识。</span></p></li></ol></li><li><p><span>如果浏览器收到304的请求响应状态码，则会从本地缓存中加载资源，否则更新资源。</span></p></li></ol><h2 id='三http特性'><span>三、HTTP特性</span></h2><p><span>	</span><span>到目前为止，HTTP常见的版本有HTTP/1.1、HTTP/2.0、HTTP/3.0，不同版本的HTTP特性不一样。</span></p><h3 id='http11优点'><span>HTTP/1.1优点</span></h3><p><span>	</span><span>HTTP最突出的优点是简单、灵活和易于扩展、应用广泛和跨平台。</span></p><ul><li><p><span>简单：HTTP基本的报文格式就是header + body头部信息也是key-value简单文本形式，易于理解。降低了学习和使用门槛。</span></p></li><li><p><span>灵活和易于扩展：HTTP协议里的各类请求方法、URI/URL、状态码、头子墩等每个自称要求都没有被固定死，都被允许库房人员自定义和扩充。</span></p></li><li><p><span>同时HTTP由于是工作在应用层，它的下层可以随意变化，比如：</span></p><ul><li><p><span>HTTPS就是在HTTP和TCP层之间增加了SSL/TLS安全传输层。</span></p></li><li><p><span>HTTP/1.1和HTTP/2.0传输协议使用的是TCP协议，到了HTTP3.0传输协议改成了UDP协议。</span></p></li></ul></li><li><p><span>应用广泛和跨平台：互联网发展至今，HTTP的应用非常的广泛，从台式机到浏览器到手机上的各种APP，从看新闻到刷贴吧到购物、理财、吃鸡，HTTP的应用遍地开花，同时天人具有跨平台的优越性。</span></p></li></ul><h3 id='http11缺点'><span>HTTP/1.1缺点</span></h3><p><span>	</span><span>HTTP协议的优缺点是一个双刃剑，分别是无状态、明文传输，不安全。</span></p><ul><li><p><span>无状态双刃剑：</span></p><ul><li><p><span>无状态好处是：因为服务区不会记忆HTTP状态，所以不需要额外的资源记录装填信息，减轻了服务器的负担，能够把更多的CPU和内存来对外提供服务。</span></p></li><li><p><span>无状态坏处：既然服务器没有记忆功能，它在完成有关联性的操作时会非常麻烦。比如登录、下单、结算、支付这些操作都要知道用户的身份才行，但服务器不知道这些请求时有关联的，每次都要问一遍身份信息。</span></p></li><li><p><span>无状态解决方案：比较简单的就是实用Cookie技术。Cookie通过请求和响应报文中写入Cookie信息来控制客户端的状态。</span></p><p><span>相当于客户端第一次请求后，服务器后发一个装有客户信息的小贴纸，后续客户端请求服务器的时候，带上小贴纸，服务器就能认得了。</span></p></li></ul></li></ul><p><img src="assets/054.png" alt="054" style="zoom:70%;" /></p><ul><li><p><span>明文传输：明文传输是在传输过程中的信息，是可方便阅读的，比如珠宝都可以直接看到请求参数，给调试带来了极大的遍历性。但是HTTP的所有信息都暴露在外边相当于信息在裸奔，在拆书的漫长过程中，信息的内容毫无隐私科研，很容易被窃取。</span></p></li><li><p><span>不安全：HTTP比较严重的缺点就是不安全。</span></p><ul><li><p><span>通信使用明文传输，内容可能被窃听，比如账号信息很容易泄露。</span></p></li><li><p><span>不验证通信方的身份，因此有可能遭遇伪装。比如造假的网站。</span></p></li><li><p><span>无法证明报文的完整性，所以有可能已经篡改，比如网页上植入的垃圾广告。</span></p></li></ul><p><span>HTTP的安全问题，。可以用HTTPS的方式解决，也就是通过引入SSL/TLS层，使得在安全上达到了一个极致。</span></p></li></ul><h3 id='http性能'><span>HTTP性能</span></h3><p><span>	</span><span>HTTP协议基于TCP/IP传输的，并且使用了【请求-应答】的通信模式。所以性能的关键在于：</span></p><ul><li><p><span>长链接：早期HTTP/1.0性能上有一个很大的问题，就是每次发起一个请求，都要建立一个TCP连接（三次握手），而且是串行请求，做了很多无谓的TCP连接建立和断开，增加了通信开销。</span></p><p><span>为了解决TCP连接问题，HTTP/1.1提出了长连接的通信方式，也就是持久连接。这种方式的好处在于TCP连接的重复建立和断开所造成的额外的开销减轻了服务器端的负载。</span></p></li></ul><p><span>	</span><span>长连接的特点是，只要任意一段没有明确提出断开连接，则保持TCP连接状态。</span></p><p><img src="assets/055.png" alt="055" style="zoom:80%;" /></p><p><span>	</span><span>当然，如果某个HTTP长链接超过一定时间没有任何数据交互，服务端就会主动断开这个连接。</span></p><ul><li><p><span>管道网络传输：HTTP/1.1采用了长连接的方式，这使得管道（peipline）网络传输称为了可能。即同时在同一个TCP连接里面，客户端可以发起多个请求，只是第一个请求发出去了不必等其回来，就可以发第二个请求出去，可以减少整体的响应时间。</span></p><p><span>举例来说明，客户端要请求两个资源，以前的做法是在同一个TCP连接里面，先发送请求A，然后等待服务器做出回应在发送请求B那么管道机制就是浏览器同时发出请求A和请求B如下图所示：</span></p></li></ul><p><img src="assets/056.png" alt="056" style="zoom:80%;" /></p><p><span>	</span><span>但是服务器必须按照请求的顺序发送对这些管道化请求的响应。</span></p><p><span>	</span><span>如果服务器端在处理A请求耗时比较长，那么后续的请求的处理都会被阻塞住，称为对头阻塞。</span></p><p><span>	</span><span>所以，HTTP1.1管道解决了请求的对头阻塞，但是没有解决响应的对头阻塞。</span></p><p><span>	</span><span>注意：实际上HTTP/1.1管道化默认是关闭的，而且浏览器基本上都不支持。</span></p><ul><li><p><span>对头阻塞：请求-应答的模式会造成HTTP的性能问题，为什么呢？ 因为当顺序发送的请求序列中的一个请求头会因为某种原因被阻塞的时候，在后面排队的所有请求也一同被阻塞了，会导致客户端一直请求不到数据，这就是对头阻塞，好比上班路上的塞车。</span></p></li></ul><p><img src="assets/057.png" alt="057" style="zoom:80%;" /></p><p><span>总结：HTTP/1.1性能一般，后续的HTTP/2.0和HTTP/3.0就是在优化这个性能问题。</span></p><h2 id='四http与https'><span>四、HTTP与HTTPS</span></h2><h3 id='http与https区别'><span>HTTP与HTTPS区别</span></h3><ul><li><p><span>HTTP是超文本传输协议，信息是明文传输，存在安全风险的问题；HTTPS解决了HTTP不安全的缺陷，在TCP和HTTP网络层之间加入了SSL/TLS安全协议，是的报文能够加密传输。</span></p></li><li><p><span>HTTP连接建立相对简单，TCP三次握手之后便可以进行HTTP的报文传输。而HTTPS在TCP三次握手之后，需要进行SSL/TLS的握手过程，才可以进入加密报文传输。</span></p></li><li><p><span>两者默认端口不一样，HTTP默认端口是80；HTTPS默认端口是443。</span></p></li><li><p><span>HTTPS协议需要项CA（证书权威机构）申请数字证书，来保证服务器的身份是可信的。</span></p></li></ul><h3 id='https解决了http中的哪些问题'><span>HTTPS解决了HTTP中的哪些问题</span></h3><p><span>	</span><span>由于HTTP是明文传输，存在的问题：</span></p><ul><li><p><span>窃听风险：比如通信链路上可以获取通信内容，用户号容易获取。</span></p></li><li><p><span>篡改风险：比如强制植入垃圾广告，视觉污染。</span></p></li><li><p><span>冒充风险：比如冒充淘宝网站。</span></p></li></ul><p><img src="assets/058.png" alt="058" style="zoom:70%;" /></p><p><span>	</span><span>HTTPS在HTTP与TCP之间加入了SSL/TLS协议。，可以很好的解决以上问题：</span></p><ul><li><p><span>信息加密：交互信息是无法被窃取的。</span></p></li><li><p><span>校验机制：无法篡改通信内容，篡改了就不能正常显示。</span></p></li><li><p><span>身份证书：证明网站是真网站。</span></p></li></ul><p><span>	</span><span>HTTPS是如何解决的呢 ？</span></p><ul><li><p><span>混合加密的方式实现信息的机密性，解决了窃听的风险。</span></p></li><li><p><span>摘要算法的方式来实现完整性，能够为数据生成独一无二的指纹，指纹用于校验数据的完整性，解决了篡改的风险。</span></p></li><li><p><span>将服务器公钥放入到数字证书中，解决了冒充的风险。</span></p></li></ul><h4 id='混合加密'><span>混合加密</span></h4><p><span>	</span><span>通过混合加密的方式实现信息的机密性，解决了窃听的风险。</span></p><p><img src="assets/059.png" alt="059" style="zoom:80%;" /></p><p><span>	</span><span>HTTPS采用的是对称加密和非对称加密结合的方式：</span></p><ul><li><p><span>在通信建立前采用非对称加密的方式【会话秘钥】，后续就不在使用非对称加密。</span></p></li><li><p><span>在通信过程中使用对称加密，【会话秘钥】的方式加密明文数据。</span></p></li></ul><p><span>	</span><span>采用混合加密的方式原因：</span></p><ul><li><p><span>对称加密：只使用一个秘钥，运算速度快，秘钥必须保密，无法做到安全的秘钥交换。</span></p></li><li><p><span>非对称加密：使用两个秘钥，公钥和私钥，公钥可以任意分布而私钥保密，解决了秘钥交换问题但速度慢。</span></p></li></ul><h4 id='摘要算法数字签名'><span>摘要算法+数字签名</span></h4><p><span>	</span><span>为了保证传输的内容不被篡改，我们需要对内容计算出一个指纹，然后同内容一起传输给对方。</span></p><p><span>	</span><span>对方收到后，先是对内容计算出一个指纹，然后跟发送方发送的指纹做一个比较，如果指纹相同，说明内容没有被篡改，否则就可以判断出内容被篡改了。</span></p><p><span>	</span><span>那么在计算机里会用摘要算法（hash函数）来计算出内容的hash值，也就是内容的指纹，这个hash值是唯一的，且无法通过hash值推导新的内容。</span></p><p><img src="assets/060.png" alt="060" style="zoom:50%;" /></p><p><span>	</span><span>通过hash算法可以确保内容不会被窜改，但并不能报这个内容+hash值不会被中间人替换，因为这里缺少了对客户端消息是否来源于服务端的证明。</span></p><p><span>	</span><span>举个例子，你要请假，一般来说家长写一份请假条给老师就可以了，但是你找人模仿家长写了份请假条还是可以请假的。</span></p><p><span>	</span><span>为了避免这种情况，计算机使用非对称加密算法来解决，共有两个秘钥：</span></p><ul><li><p><span>公钥：这是可以公开给所有人的。</span></p></li><li><p><span>私钥：这个必须由本人管理，不可泄露的。</span></p></li></ul><p><span>	</span><span>这两个秘钥是可以双向加解密的，比如可以用公钥加密内容用私钥解密，使用私钥加密公钥解密。</span></p><p><span>	</span><span>流程的不同，意味着目的也不同：</span></p><ul><li><p><span>公钥加密，私钥解密：这个目的是为了内容传输的安全，因为被公钥加密的内容，其他人是无法解密的，只有持有私钥的人才能解密出实际内容。</span></p></li><li><p><span>私有加密，公钥解密：这个目的是为了保证消息不会被冒充，因为私钥是不可泄露的，如果公钥呢个正常解密出私钥加密的内容，就能证明这个消息是来源于持有私钥身份的人发送的。</span></p><p><span>一般我们不会用非对称加密来机密实际的传输内容，因为非堆成加密的计算比较耗费性能的。</span></p><p><span>所以非对称加密的用途主要用于通过【私钥加密，公钥解密】的方式来确认消息的身份，我们常说的数字签名算法就是用的这种方式，不过私钥加密内容不是内容本身，而是对内容的hash值进行加密。</span></p></li></ul><p><img src="assets/061.png" alt="061" style="zoom:50%;" /></p><p><span>	</span></p><p><span>	</span><span>私有是由服务器段保管的，然后服务端项客户端发送对应的公钥。如果客户端收到信息，能被公钥解密，就说明该消息是由服务器发送的。</span></p><h4 id='数字证书'><span>数字证书</span></h4><ul><li><p><span>可以通过hash算法来保证消息的完整性。</span></p></li><li><p><span>可以通过数字签名来保证消息的来源可靠性（能确认消息是由持有私钥的一方发送的）。</span></p></li></ul><p><span>	</span><span>但是还是远远不够，还缺少身份验证的环节，万一公钥是否被伪造的呢？</span></p><blockquote><p><span>	</span><span>还是拿请假的例子来说，虽然你爸爸持有私钥，老师通过是否能用公钥解密来确认这个请假条是不是来源于你的父亲的，但是我们还是可以伪造出一对公私钥的。</span></p><p><span>	</span><span>在某个夜晚，偷偷把老师桌面上的和你爸爸配对的公钥换成了你的公钥，那么下次在轻机枪的时候，就继续模型爸爸的字迹写了请假条，然后用你的私钥做了数字签名。</span></p><p><span>	</span><span>但是老师并不知道自己的公钥被你替换了，所以他还是按照往常一样用公钥解密，由于这个公钥和你的私钥是配对的，老师当然能用这个公钥解密成功，并确定了内容的完整性，于是来时就允许你请假。</span></p><p><span>	</span><span>既然伪造公私钥那么随意，所以你把吧他的公钥注册警察局，警察局用他们自己的私钥对你的父亲的公钥做了数字IQ鲜明，然后把你爸爸的个人信息 + 公钥 + 数字签名 打包成一个数字证书，也就说这个数字证书包含你爸爸的公钥。</span></p><p><span>	</span><span>这样你爸爸给你写假条的时候会用自己的私钥进行签名，并且把数字证书给到老师。</span></p><p><span>	</span><span>老师拿到证书之后，首先会警察局验证这个数字证书是否合法，因为数字证书里面有警察局的数字前景，警察局要验证这个证书的合法性的时候用自己的公钥进行解密，如果能解密成功，就说明这个数字证书是在警察局注册过，就认为数字证书是合法的，然后就会把数字证书里头的公钥给到老师。</span></p><p><span>	</span><span>由于通过警察局验证了数字证书是合法的，那么就能证明这个公钥就是你的父亲，于是老师就可以安心用这个公钥解密出请假条，如果能解密出，就证明这个请假条确实你爸爸写的。</span></p><p><span>	</span><span>正是通过这个权威的机构来证明你爸爸的身份，所以你的伪造公私要这伎俩就没用了。</span></p></blockquote><p><span>	</span><span>在计算机里这个权威机构叫做CA（数字证书认证结构），将服务器公钥放在数字证书（由数字证书认证结构办法）中，只要证书是可信的，公钥就是可信的。</span></p><p><span>	</span><span>数字证书的工作流程如下图所示：</span></p><p><img src="assets/062.png" alt="062" style="zoom:70%;" /></p><p><span>	</span><span>通过数字证书的方式保证服务器公钥的身份，解决了冒充的风险。</span></p><h3 id='https连接建立过程'><span>HTTPS连接建立过程</span></h3><p><span>SSL/TLS协议基本流程：</span></p><ul><li><p><span>客户端向服务器端索要并验证服务器的公钥。</span></p></li><li><p><span>双方协商生成【会话秘钥】。</span></p></li><li><p><span>双方采用【会话秘钥】进行加密通信。</span></p></li></ul><p><span>	</span><span>前两步也就是SSL/TLS的建立过程，也就是TLS握手阶段。</span></p><p><span>	</span><span>TLS的握手阶段涉及四次通信，使用不同的秘钥交换算法，TLS握手流程是不一样的，现在常用的秘钥交换算法由两种：RSA算法 和 ECDHE算法。</span></p><h4 id='rsa算法'><span>RSA算法</span></h4><p><span>	</span><span>基于RSA算法的TLS握手过程比较容易理解，TLS握手过程如下图所示：</span></p><p><img src="assets/063.png" alt="063" style="zoom:70%;" /></p><ol start='' ><li><p><strong><span>ClientHello：</span></strong><span>首先，客户端向服务器发起加密通信请求，也就是ClientHello请求。在</span></p><p><span>在这一步，客户端主要想服务器发送一下信息：</span></p><ul><li><p><span>客户端支持的TLS协议版本，比如TLS1.2版本。</span></p></li><li><p><span>客户端生产的随机数（Client Random），后面用于生成</span><strong><span>会话秘钥</span></strong><span>条件。</span></p></li><li><p><span>客户端支持的密码套件列表。</span></p></li></ul></li></ol><p><span>								</span><img src="assets/064.png" alt="064" style="zoom:60%;" /></p><ol start='2' ><li><p><strong><span>ServerHello：</span></strong><span>服务器收到客户端请求后，向客户端发出响应，也就是ServerHello。服务器李慧颖的内容如下：</span></p><ul><li><p><span>确认TLS协议版本，如果浏览器不支持，则关闭加密通信。</span></p></li><li><p><span>服务器生成随机数（Server Random），后面用于生成</span><strong><span>会话秘钥</span></strong><span>条件。</span></p></li><li><p><span>确认的秘钥套件列表，如RSA加密算法。</span></p></li><li><p><span>服务器的数字证书。</span></p></li></ul></li></ol><p><span>								</span><img src="assets/065.png" alt="065" style="zoom:60%;" /></p><ol start='3' ><li><p><strong><span>客户端回应：</span></strong><span>客户端收到服务器回应之后，首先通过浏览器或者操作系统中的CA公钥，确认服务器的数字证书的真实性。</span></p><p><span>如果证书没有问题，</span><strong><span>客户端</span></strong><span>会从数字证书</span><strong><span>取出</span></strong><span>服务器的</span><strong><span>公钥</span></strong><span>，然后使用它加密报文，向服务器发送信息：</span></p><ul><li><p><span>一个随机数（pre-master key）。该随机数会使用公钥加密。</span></p></li><li><p><span>加密通信算法改变通知，表示随后的信息都将使用用</span><strong><span>会话秘钥</span></strong><span>加密通信。</span></p></li><li><p><span>客户端握手结束通知，表示客户端的握手阶段已经结束。这一项同时把之前的所有内容的发出的数据做个摘要，用来提供服务端校验。</span></p><p>&nbsp;</p><p><span>注意：上面第一项的随机数是整个握手阶段的第三个随机数，会发给服务端，所以这个随机数客户端和服务端都是一样的。</span></p><p><strong><span>会话秘钥生成：</span></strong><span>服务器和客户端有了这三个随机数（Client Random、Server Random、pre-master key），接着就用双方协商的加密算法，各自生成本次通信的会话秘钥。</span></p></li></ul></li></ol><p><span>		</span><img src="assets/066.png" alt="066" style="zoom:50%;" /></p><ol start='4' ><li><p><strong><span>服务端的最后回应：</span></strong></p><ul><li><p><span>加密通信算法改变通知，表示随后的信息都将使用</span><strong><span>会话秘钥</span></strong><span>加密通信。</span></p></li><li><p><span>服务器握手结束通知，表示服务器的握手阶段已经结束。这一项同时把之前所有内容的发出的数据做个摘要，用来供客户端校验。</span></p></li></ul><p><img src="assets/067.png" alt="067" style="zoom:60%;" /></p></li></ol><p><span>到此，整个TLS的握手阶段全部结束，接下来客户端与服务器端进入加密通信，就完全是使用的HTTP协议，只不过用会话秘钥加密内容。</span></p><h4 id='客户端校验数字证书流程'><span>客户端校验数字证书流程</span></h4><p><span>	</span><span>如下图所示，为数字证书签发和验证流程：</span></p><p><img src="assets/068.png" alt="068" style="zoom:47%;" /></p><p><span>CA签发证书的过程，如上图左边部分：</span></p><ul><li><p><span>首先CA会把持有者的版本、序列号、公钥、用途、颁发者、有效时间等西悉尼达成一个包，然后对这些信息进行Hash计算，得到一个Hash值。</span></p></li><li><p><span>然后CA会使用自己的私钥对该Hash值进行加密，生成Certificate Signature（数字签名）。</span></p></li><li><p><span>最后将Certificate Signature添加到文件证书上，形成数字证书。</span></p></li></ul><p><span>客户端校验服务端的数字证书的过程，上图左边部分：</span></p><ul><li><p><span>首先客户端会使用同样的Hash算法获取该证书的Hash值H1。</span></p></li><li><p><span>通常浏览器和操作系统集成了CA的公钥信息，浏览器收到证书后可以使用CA的公钥解密Certificate Signature内容得到一个Hash值H2。</span></p></li><li><p><span>比较H1和H2是否相同，相同就是可信赖的证书。</span></p></li></ul><p><strong><span>注意：</span></strong><span>证书的验证过程中还存在一个证书信任链的问题，因此我们想CA申请的证书一般不是根签证书签发的，而是由中间证书签发的，比如百度的证书，从下可以看到，证书的层级有三层：</span></p><p><img src="assets/069.png" referrerpolicy="no-referrer" alt="069"></p><p><span>针对三级层级的证书验证过程如下：</span></p><ul><li><p><span>客户端收到baidu.com的证书后，发现这个证书的签发这不是根证书，就无法根据本地已有的根证书中的公钥验证baidu.com证书是否可信。于是，客户端根据baidu.com证书中的签发者，找到该证书的颁发机构是“GlobaSign Ornanization Validation CA - SHA256 - G2”，然后向CA请求该中间证书。</span></p></li><li><p><span>请求到证书发现“GlobaSign Ornanization Validation CA - SHA256 - G2”证书是由“GlobaSign Root CA”签发的，由于“GlobaSign Root CA”没有在上级的签发机构，说明他就是根证书，也就是自签证书、应用软件会检查此证书是否已经预加载根证书清单上，如果有，则可以利用根证书中的公钥验证“GlobaSign Ornanization Validation CA - SHA256 - G2”证书，发现验证通过，就认为中间证书是可信的。</span></p></li><li><p><span>“GlobaSign Ornanization Validation CA - SHA256 - G2”证书被信任后，可以使用此证书中的公钥验证baidu.com证书的可信性，如果验证通过，就可以信任baidu.com的证书。</span></p></li></ul><p><span>	</span><span>以上步骤中，最开始客户端只信任根证书GlobalSign Root CA证书的，然后“GlobalSign Root CA”证书信任“GlobaSign Ornanization Validation CA - SHA256 - G2”证书，而“GlobaSign Ornanization Validation CA - SHA256 - G2”证书信任baidu.com证书，于是客户端页信任baidu.com证书。</span></p><p><span>	</span><span>总结，由于用户信任GlobalSign，所以由GlobalSIng所担保的baidu.com证书是可以被信任的，另外由于用户信任操作系统或浏览器的软件商，所以由软件商预加载了根证书的GlobalSign都可以被信任。</span></p><p><img src="assets/070.png" alt="070" style="zoom:50%;" /></p><p><span>	</span><span>操作系统里一般会内置一些根证书，比如MAC电脑中内置的根证书有这么多：</span></p><p><img src="assets/071.png" alt="071" style="zoom:80%;" /></p><p><span>	</span><span>这样的一层层验证就构成了一条信任链路，整个证书信任链路的验证流程如下图所示：</span></p><p><img src="assets/072.png" alt="072" style="zoom:67%;" /></p><p><span>	</span><span>思考：为什么需要证书链这么麻烦的流程？RootCA为什么不直接发证书，而是高这么中间层级呢？</span></p><p><span>	</span><span>这是为了确保根证书的绝对安全性，将根证书隔离的越严格越好，不然根证书如果失守了，那么整个信任链就会有问题。</span></p><h3 id='https应用数据的完整性'><span>HTTPS应用数据的完整性</span></h3><p><span>	</span><span>TLS在实现分为握手协议和记录协议两层：</span></p><ul><li><p><span>TLS握手协议就是上面说的四次握手过程，负责协商加密算法和生成堆成秘钥，后续用词秘钥来保护应用数据（HTTP数据）。</span></p></li><li><p><span>TLS记录协议负责保护应用数据并验证器完整性和来源，所以对HTTP数据加密是使用记录协议。</span></p></li></ul><p><span>	</span><span>TLS记录协议主要负责消息（HTTP数据）的压缩，加密以及数据的认证，过程如下图所示：</span></p><p><img src="assets/073.png" alt="073" style="zoom:40%;" /></p><p><span>具体过程如下：</span></p><ol start='' ><li><p><span>详细被分割成多个较短的片段，然后分别对每个片段进行压缩。</span></p></li><li><p><span>经过压缩的片段会被加上消息认证码（MAC值，这个是通过HASH算法生成的），这是为了保证完整性，并进行数据的认证。通过附加消息认证码的MAC值，可以识别出篡改。与此同时，为了防止重放攻击，在计算消息认证码时，还加了片段的编码。</span></p></li><li><p><span>经过压缩的片段再加上消息认证码会一起通过堆成密码进行加密。</span></p></li><li><p><span>上述经过加密的数据再加上由数据类型、版本号、压缩后的长度组成的报头就是最终的报文数据。</span></p></li></ol><p><span>	</span><span>记录协议完成后，最终的报文数据将传递到传输控制协议（TCP）层进行传输。</span></p><h3 id='https可靠性'><span>HTTPS可靠性</span></h3><p><span>	</span><span>HTTPS一定就安全可靠吗？ </span></p><p><span>	</span><span>问题的场景：客户端通过浏览器向服务端发起HTTPS请求时，被假基站转发到了一个中间人服务器，于是客户端和中间人服务器完成了TLS握手，然后这个中间人服务器在与真正的服务器端完成TLS握手。</span></p><p><img src="assets/074.png" alt="074" style="zoom:50%;" /></p><ul><li><p><span>客户端向服务端发情HTTPS建立连接请求时，然后被假基站转发到一个中间人服务器，接着中间人服务器发起HTTPS建立连接请求，此时客户端与中间进行TLS握手，中间人与服务器段进行TLS握手。</span></p></li><li><p><span>在客户端与中间人进行TLS握手过程中，中间人会发送自己的公钥证书给客户端，客户端验证证书的真伪，然后从证书拿到公钥，并生成一个随机数，用公钥加密随机数给中间人，中间人使用私钥解密，得到随机数，此时双反都有随机数，然后通过算法生成对称加密秘钥A，后续客户端与中间通信就用这个对称加密秘钥来加密数据。</span></p></li><li><p><span>在中间人与服务端进行TLS握手过程中，服务端会发送从CA机构签发的公钥证书给中间人，从证书拿到公钥，并生成一个随机数，用公钥加密随机数发送给服务端，服务端使用私钥解密，得到随机数，此时双方都有随机数，然后通过算法生成对称加密秘钥B，后续中间人与服务端通信就用这个对称加密秘钥进行加密数据。</span></p></li><li><p><span>后续的通信过程中，中间人用对称加密秘钥A解密客户端的HTTPS请求的数据，然后用对称秘钥B加密HTTPS后，转发给服务端，接着服务端发送HTTPS响应数据给中间人，中间人用对称秘钥B解密HTTPS响应的数据，然后用对称加密秘钥A加密后转发给客户端。</span></p></li></ul><p><span>	</span><span>站在客户端的视角，并不知道网络中存在中间人服务器的角色，那么中间人就可以解开浏览器发起的HTTPS请求里的数据，也可以解开服务端响应给客户端的HTTPS响应数据。相当于，中间人能够拿到请求和响应的明文数据。</span></p><p><span>	</span><span>但是发生这个前提是用户接受了中间人服务器的证书。</span></p><p><span>	</span><span>中间人服务器与客户端TLS握手过程中，实际上发送了自己伪造的证书给浏览器，而这个伪造的证书是被浏览器是被出来的是非法的，于是就会提醒用户该证书存在问题。</span></p><p><img src="assets/075.png" alt="075" style="zoom:70%;" /></p><p><span>	</span><span>所如果用户执意点击继续访问，起始通信时被中间人给监听的，所以并不能说HTTPS不够安全，毕竟浏览器已经提示证书有问题了，如果用户坚决访问，不能怪HTTPS。</span></p><p><span>	</span><span>另外如果电脑中毒了，被恶意导入了中间人的根证书，那么在验证中间人的证书的时候由于操作系统信任了中间人的根证书，那么等同于中间人证书是合法的，这种情况下就不回弹出证书风险问题。</span></p><p><span>	</span><span>所以，HTTPS协议本身是没有漏洞的，及时进行中间人攻击本质上利用了客户端的漏洞（用户点击继续访问或被恶意导入伪造的根证书），并不是HTTPS不够安全。</span></p><p><strong><span>为什么抓包工具能截取HTTPS数据？</span></strong></p><p><span>	</span><span>很多抓包工具，之所以可以明文看到HTTPS数据，工作原理与中间人一致的。对于HTTPS链接来说，中间人用满足以下两点，才能实现真正的明文代理：</span></p><ol start='' ><li><p><span>中间人，作为客户端与真实服务端建立连接这一步不会有问题，因为服务端不会校验客户端的身份。</span></p></li><li><p><span>中间人，作为服务端与真实客户端建立连接，这里会有客户端新人服务端的问题，也就是服务端必须由对应域名的私钥。</span></p></li></ol><p><span>	</span><span>中间人要拿到私钥智能通过如下的方式：</span></p><ol start='' ><li><p><span>去网站服务端拿到私钥。</span></p></li><li><p><span>去CA处拿到域名签发私钥。</span></p></li><li><p><span>自己签发证书，且要浏览器信任。</span></p></li></ol><p><span>	</span><span>使用抓包工具进行HTTPS抓包的时候，需要再客户端安装Fiddler根证书，这里实际上起认证中心（CA）的作用。</span></p><p><span>	</span><span>抓包工具能够抓包的关键是客户端会忘系统受新人的根证书列表中导入抓包工具生成的证书，而这个证书会被浏览器信任，也就是抓包工具给自己创建了一个认证中心CA，客户端拿着中间人签发的证书去中间人自己的CA去认证，当然认为这个证书是有效的。</span></p><p><strong><span>如何避免中间人抓取数据？</span></strong></p><p><span>	</span><span>要保证电脑的安全，不要被病毒恶意安装证书，而且不要惦记任何证书非法的网站，这样HTTPS数据就不回被中间人给截取到了。</span></p><p><span>	</span><span>当然，还可以通过</span><strong><span>HTTPS双向认证</span></strong><span>来避免这个问题。</span></p><p><span>	</span><span>一般我们的HTTPS是单向认证的，客户端值验证了服务器端的身份，但是服务端不会验证客户端的身份。</span></p><p><img src="assets/076.png" alt="076" style="zoom:47%;" /></p><p><span>	</span><span>如果使用了双向认证方式，不仅客户端验证服务端的身份，而且服务端要验证客户端的身份。如果服务端验证到客户端的身份是不可信任的，服务端就拒绝继续通信。</span></p><h2 id='五http11http20http30演变'><span>五、HTTP/1.1、HTTP/2.0、HTTP/3.0演变</span></h2><h3 id='http10到http11优化'><span>HTTP/1.0到HTTP/1.1优化</span></h3><p><span>HTTP/1.0到HTTP1.1性能改进点：</span></p><ul><li><p><span>使用长连接的方式改善了HTTP/1.0端连接造成的性能开销。</span></p></li><li><p><span>支持管道（piepline）网路传输，只要第一个请求发出去，不必等回来就可以发出第二个请求，可以整体减少响应时间。</span></p></li></ul><p><span>HTTP/1.1性能瓶颈：</span></p><ul><li><p><span>请求/响应头部（Header）位经过压缩就发送，首部信息越多延迟越大，只能压缩Body的部分。</span></p></li><li><p><span>发送冗长的首部。每次互相发送相同的首部造成的浪费较多。</span></p></li><li><p><span>服务器是按请求的顺序响应的，如果服务器响应比较慢，会招致客户端一直请求不到数据，也就是队头阻塞。</span></p></li><li><p><span>没有请求优先级控制。</span></p></li><li><p><span>请求只能从客户端开始，服务器端被动响应。</span></p></li></ul><h3 id='http20优化'><span>HTTP/2.0优化</span></h3><p><span>HTTP/2.0是基于HTTPS所以HTTP/2.0是安全性有保障性的。</span></p><p><img src="assets/077.png" alt="077" style="zoom:70%;" /></p><p><span>HTTP/2星币HTTP/1.1性能上的改进：</span></p><ul><li><p><span>头部压缩。</span></p></li><li><p><span>二进制格式。</span></p></li><li><p><span>并发传输。</span></p></li><li><p><span>服务器主动推送资源。</span></p></li></ul><h4 id='头部压缩'><span>头部压缩</span></h4><p><span>	</span><span>HTTP/2.0会压缩头（Header）如果你同事发出多个请求，他们的头是一样的或相似的，那么，协议会帮你消除重复的部分。</span></p><p><span>	</span><span>这就是所谓的HPACK算法：在客户端和服务端同事维护一张头信息表，所有字段会存入这个表，生成一个索引号，以后就不发生同样字段了，只发送索引号，这样就提高速度了。</span></p><h4 id='二进制格式'><span>二进制格式</span></h4><p><span>	</span><span>HTTP/2.0不再像HTTP/1.1里的纯文本形式的报文，而是前面采用了二进制格式，头信息和数据体都是二进制，并且统称为帧（frame）：头信息帧（Headers Frame）和数据帧（Data Frame）。</span></p><p><img src="assets/078.png" alt="078" style="zoom:50%;" /></p><p><span>	</span><span>虽然对人不太友好，但是对计算机非常友好，因为计算机只懂二进制，收到报文后，无需再将明文的报文转成二进制，直接解析二进制报文，增加了数据传输的效率。</span></p><p><span>	</span><span>比如状态码200，在HTTP/1.1时用200字符表示共用三个字节：</span></p><p><img src="assets/079.png" alt="079" style="zoom:30%;" /></p><p><span>	</span><span>在HTTP/2.0中对应状态码200的二进制编码是10001000只用了1个字节就能表示，相比HTTP1.1节省了2个字节：</span></p><p><img src="assets/080.png" alt="080" style="zoom:27%;" /></p><p><span>	</span><span>Header: status: 200OK的编码内容是：10001000表达的含义是什么呢？</span></p><p><img src="assets/081.png" alt="081" style="zoom:70%;" /></p><p><span>	</span><span>1、最前面的1标识该Header是静态表中已经存在的KV。</span></p><p><span>	</span><span>2、在静态表中：“status 200 ok”静态表编码是8，二进制就是1000。</span></p><h4 id='并发传输'><span>并发传输</span></h4><p><span>	</span><span>我们都知道HTTP/1.1的实现是基于请求-响应模型的。同一个连接中，HTTP完成一个事务（请求与响应）才能处理下一个事务，也就是说在发出等待响应的过程中，是没有办法做其他事情的，如果响应迟迟不来，那么后续的请求是无法发送的，也会造成队头阻塞的问题。</span></p><p><span>	</span><span>而HTTP/2.0引出了Stream的概念，多个Stream复用一条TCP连接。</span></p><p><img src="assets/082.png" alt="082" style="zoom:70%;" /></p><p><span>	</span><span>从上图可以看到，1个TCP连接包含多个Stream，Stream里可以包含1个或多个Message，Message对应HTTP/1中的请求或响应，由HTTP头部和包体构成。Message里包含一条或者多个Frame，Frame是HTTP/2最小的单位，以二进制压缩格式放在HTTP/1中的内容（Header和Body）。</span></p><p><span>	</span><span>针对不同的HTTP请求用独一无二的Stream ID来区分，接收端可以通过Stream ID 有序组装chengHTTP消息，不同Stream的帧是可以乱序发送的，因此可以并发不同的Stream，也就是HTTP/2可以并行交错的发送请求和响应。</span></p><p><span>	</span><span>如下图，服务端冰西瓜交付的发送了两个响应：Stream1和Stream3这两个Stream都是跑在一个TCP连接上，客户端收到后，会根据相同的StreamID有序组装成HTTP消息。</span></p><p><img src="assets/083.png" alt="083" style="zoom:67%;" /></p><h4 id='服务器推送'><span>服务器推送</span></h4><p><span>	</span><span>HTTP/2还在一定程度上改善了传统的【请求-应答】工作模式，服务端不再被动的响应，可以主动向客户端发送消息。</span></p><p><span>	</span><span>客户端和服务端双发殴斗可以建立Stream，StreamID也是有区别的，客户端建立的Stream必须是奇数，而服务端建立的Stream必须是偶数号。</span></p><p><span>	</span><span>比如下图，Stream1是客户端向服务端请求的资源，属于客户端建立的Stream，所以该Stream的ID是奇数（数字1）；Stream2 和 4都是服务端主动向客户端推送的资源，属于服务端建立的Stream，所以这两个Stream的ID都是偶数。</span></p><p><img src="assets/084.png" alt="084" style="zoom:37%;" /></p><p><span>	</span><span>再比如，客户端通过HTTP/1.1请求从服务器获取到的HTML文件。而HTML可能还需要依赖CSS来渲染文件，这时客户端还要再发送获取CSS文件的请求，需要两次消息往返，如下图左边所示：</span></p><p><img src="assets/085.png" alt="085" style="zoom:70%;" /></p><p><span>	</span><span>上图右边，在HTTP/2.0中，客户端在访问HTML的时候，服务器可以直接主动推送CSS文件，减少消息传递的次数。</span></p><h3 id='http2缺点'><span>HTTP/2缺点</span></h3><p><span>	</span><span>HTTP/2.0是基于TCP协议来传输数据的，TCP是字节流协议，TCP层必须保证收到的字节数据是完整切连续的，这样内核才会将缓冲区里的数据返回给HTTP应用，那么当【前1个字节数据】没有到达的时候后边的字节数只能存放在内核缓冲区里，只有等到前1个字节到达，HTTP/2才能从内核中拿到数据，这就是HTTP/2队头阻塞问题。</span></p><p><img src="assets/086.png" alt="086" style="zoom:50%;" /></p><p><span>	</span><span>举个例子，如下图所示：</span></p><p><img src="assets/087.png" alt="087" style="zoom:80%;" /></p><p><span>	</span><span>上图中发送方发送了很多packet，每个packet都有自己的序号，可以认为是TCP的序列号，其中packet3在网络中丢失了，即使packet4-6被接收方接收，由于内核的TCP数据是不连续的，于是接收方的应用层就无法从内核中读取到数据，只能等到packet3重传后，接收方的应用层才能读取到数据这就是HTTP/2队头阻塞问题，是在TCP层里面发生的。</span></p><p><span>	</span><span>所以一旦发生了丢包问题，就会触发TCP的重传机制，这样在一个TCP连接中所有的HTTP请求都必须等到被丢的包被重传回来。</span></p><h3 id='http30优化'><span>HTTP/3.0优化</span></h3><ul><li><p><span>HTTP/1.1中的管道（pipeline）虽然解决请求的对头这色，但是没有解决响应的对头阻塞，因为服务端需要按顺序响应回收的请求，如果服务端处理某个请求消耗的时间比较长，那么智能等响应完这个请求后，才能处理下一个请求，这属于HTTP层对头阻塞。</span></p></li><li><p><span>HTTP/2.0：虽然通过多个请求复用一个TCP解决了HTTP的对头阻塞问题，但是一旦发生丢包，就会阻塞所有的HTTP请求，属于TCP对头阻塞。</span></p></li><li><p><span>HTTP/2.0对头阻塞的问题是TCP，所以HTTP/3把HTTp下层的TCP协议改成了UDP。</span></p></li></ul><p><img src="assets/088.png" alt="088" style="zoom:70%;" /></p><p><span>	</span><span>UDP发送时不管顺序的 ，也不管丢包，所以不会出现HTTP/2中的对头阻塞的问题，但是大家都知道UDP是不可靠的，基于UDP的QUIC协议可以实现类似TCP可靠性传输。</span></p><p><strong><span>QUIC协议特点：</span></strong></p><ul><li><p><span>无对头阻塞。</span></p></li><li><p><span>更快的连接建立。</span></p></li><li><p><span>连接迁移。</span></p></li></ul><h4 id='无对头阻塞'><span>无对头阻塞</span></h4><p><span>	</span><span>QUIC协议也类似于HTTP/2.0中的Stream与多路复用的概念，也是可以在同一个连接傻瓜并发传输多个Stream，Stream可以认为就是一条HTTP请求。</span></p><p><span>	</span><span>QUIC有自己的一套机制可以保证传输的可靠性，当某个流量发生丢包时，只会这色这个Stream，其他Stream不会受到影响，因此不存在对头阻塞的问题。这与HTTP/2不同，HTTP/2只要某个六中的数据包丢失，其他流也会受到影响。</span></p><p><span>	</span><span>所以，QUIC协议连接上的多个Stream之间并没有依赖，都是独立的，某个Stream发生丢包了，只会影响该Stream不会影响其他的。</span></p><p><img src="assets/089.png" alt="089" style="zoom:50%;" /></p><h4 id='更快的连接建立'><span>更快的连接建立</span></h4><p><span>	</span><span>对于HTTP/1和HTTP/2协议，TCP和TLS是分层的，分别属于实现的传输层，openssl库实现的表示层，因此他们难以合并在一起，需要分批次来握手，先TCp握手，再TLS握手。</span></p><p><span>	</span><span>HTTP/3在传输数据前虽然需要QUIC协议握手，但是这个握手过程只需要1RTT，握手的目的是为了确认双方的连接ID，连接迁移就是基于连接ID实现的。</span></p><p><span>	</span><span>但是HTTP/3的QUIC协议并不是与TLS分层，而是QUIC内部包含了TLS，它在自己的帧会携带TLS里的记录，再加上QUIC使用的是TLS/1.3，因此仅需要携带一个1个RTT就可以同事完成建立连接的秘钥协议，如下图所示：</span></p><p><img src="assets/090.png" alt="090" style="zoom:80%;" /></p><p><span>	</span><span>甚至，第二次连接的时候，应用数据包可以和QUIC握手西悉尼（连接信息 + TLS信息）一起发送，达到0—RTT的效果。</span></p><p><span>	</span><span>如下图右边，HTTP/3当会话回复的时候，有效负载数据域第一个数据报一起发送，可以做到0-RTT（右下角）：</span></p><p><img src="assets/091.png" alt="091" style="zoom:60%;" /></p><h4 id='链接迁移'><span>链接迁移</span></h4><p><span>	</span><span>基于TCP传输协议的HTTP协议，由于是通过四元组（源IP、源端口、目的IP、目的端口）确定一条TCP连接。</span></p><p><img src="assets/092.png" alt="092" style="zoom:50%;" /></p><p><span>	</span><span>那么当移动设备的网络从4G切换到WIFI时，意味着IP地址变化了那么久必须要断开连接，然后重新连接。而建立连接的过程包含TCP三次握手和TLS四次握手的时延，以及TCP慢启动的减速过程，给用户的感受就是网络突然卡顿一下，因此连接的迁移成本很高。</span></p><p><span>	</span><span>而QUIC协议没有用四元组的方式来绑定连接，而是通过连接ID来标记通信的两个端点，客户端和服务器可以各自选择一组ID来标记自己，因此及时移动设备网络发生变化后，导致IP地址变化了，只要扔保持上下文信息（比如连接ID、TLS秘钥等）就可以无缝的复用原链接，消除重连的成本，没有四号卡顿等，达到了连接迁移的功能。</span></p><h4 id='总结'><span>总结</span></h4><p><span>	</span><span>QUIC是一个在UDP之上的伪TCP+ TLS + HTTP/2的多路复用协议。</span></p><p><span>	</span><span>QUIC是新协议，对于很多网络设备，根本不知道什么是QUIC，只会当做UDP，这样会出现新的问题，因为有网络设备时会丢掉UDP包的，而QUIC是基于UDP实现的，那么如果网络设备无法设备这个是QUIC包，那么就可能被丢弃。</span></p><p><span>	</span><span>HTTP/3现在普及进度非常的缓慢，不知道未来UDP是否能够逆袭TCP。</span></p><p>&nbsp;</p><p><span>	</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span>	</span></p><p><span>	</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span>	</span></p></div></div>
+
+<script>(function (){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
+</html>
