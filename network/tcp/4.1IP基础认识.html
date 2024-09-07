@@ -1,0 +1,1673 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/*快速自定义配置*/
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * MIT License
+ *
+ * Copyright (c) 2023 劉強東 https://github.com/liangjingkanji
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #202124;
+    --blur-text-color: #c8c8c8;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(32, 33, 36, 0.5);
+    --drake-accent: #5784ec;
+    --drake-highlight: #3a474e;
+    --a-color: #1769e0;
+    --variable-color: #d01884;
+    --outline-active-color: var(#414040);
+    --code-block-bg-color: #f8f9fa;
+    --code-block-color: #3a474e;
+    --title-color: #202124;
+    --blockquote-border-color: #275796;
+    --blockquote-color: #275796;
+    --blockquote-bg-color: #e5f4fd;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--text-color);
+    --height-light-border-color: var(--text-color);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dadce0;
+    --table-header-bg-color: #f1f3f4;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 12px !important;
+    border-radius: 8px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: .1em solid #e8eaed;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 4px;
+    color: var(--drake-highlight);
+    border: .1rem solid #e8eaed;
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote {
+    color: var(--blockquote-color) !important;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+.on-focus-mode #write a .md-plain:hover, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain:hover, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain:hover, .on-focus-mode .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+#write a code, a:any-link {
+    color: var(--a-color);
+}
+#write a code:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 0.1em;
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-library-node.file-tree-node.file-node-root {
+    font-size: 1.1rem;
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 14px;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 400;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-atom {
+    color: #c5221f;
+}
+.cm-s-inner span.cm-def {
+    color: #00f;
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #b80672;
+}
+.cm-s-inner span.cm-string {
+    color: #008000;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #008000;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #9334e6;
+}
+.cm-s-inner span.cm-tag.cm-bracket {
+    color: #1967d2;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-meta {
+    color: #c5221f;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+/* 正文标题区: #write */
+/* [TOC]目录树区: .md-toc-content */
+/* 侧边栏的目录大纲区: .sidebar-content */
+ 
+/** 
+ * 说明：
+ *     Typora的标题共有6级，从h1到h6。
+ *     我个人觉得h1级的标题太大，所以我的标题都是从h2级开始。
+ *     个人习惯每篇文章都有一个总标题，有一个目录，所以h2级的标题前两个都不会计数。
+ *     一般情况下，我虽然不使用h1级的标题，但是为了以防万一，h1级的标题前两个也都不会计数。
+ *     若想启用h1级标题，就取消包含“content: counter(h1) "."”项的注释，然后将包含“content: counter(h2) "."”的项注释掉即可。
+ */ 
+/** initialize css counter */
+#write, .sidebar-content,.md-toc-content{
+	/* 设置全局计数器的基准 */
+	/* 因为我喜欢从h2级标题用起，所以这里设置为h2 */
+    counter-reset: h2
+}
+ 
+#write h1, .outline-h1, .md-toc-item.md-toc-h1 {
+    counter-reset: h2
+}
+ 
+#write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+    counter-reset: h3
+}
+ 
+#write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+    counter-reset: h4
+}
+ 
+#write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+    counter-reset: h5
+}
+ 
+#write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+    counter-reset: h6
+}
+ 
+/** put counter result into headings */
+#write h1:before,
+.outline-h1>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1>.md-toc-inner:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+ 
+/* 使用h1标题时，去掉前两个h1标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h1元素，请根据情况自行修改。 */
+#write h1:nth-of-type(1):before,
+.outline-h1:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(1)>.md-toc-inner:before,
+#write h1:nth-of-type(2):before,
+.outline-h1:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h1:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h1;
+	content: ""
+}
+ 
+/*#write h2:before,
+.outline-h2>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2>.md-toc-inner:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}*/
+ 
+/* 使用h2标题时，去掉前两个h2标题的序号，包括正文标题、目录树和大纲 */
+/* nth-of-type中的数字表示获取第几个h2元素，请根据情况自行修改。 */
+#write h2:nth-of-type(1):before,
+.outline-h2:nth-of-type(1)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(1)>.md-toc-inner:before,
+#write h2:nth-of-type(2):before,
+.outline-h2:nth-of-type(2)>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h2:nth-of-type(2)>.md-toc-inner:before{
+	counter-reset: h2;
+	content: ""
+}
+ 
+#write h3:before,
+h3.md-focus.md-heading:before, /** override the default style for focused headings */
+.outline-h3>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h3>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h3;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+     content:  counter(h3) ". "
+}
+ 
+#write h4:before,
+h4.md-focus.md-heading:before,
+.outline-h4>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h4>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h4;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+    content: counter(h3) "." counter(h4) ". "
+}
+ 
+#write h5:before,
+h5.md-focus.md-heading:before,
+.outline-h5>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h5>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h5;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+ 
+#write h6:before,
+h6.md-focus.md-heading:before,
+.outline-h6>.outline-item>.outline-label:before,
+.md-toc-item.md-toc-h6>.md-toc-inner:before {
+/*	text-decoration: none;*/
+    counter-increment: h6;
+    /* content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " */
+    content: counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+ 
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						} @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>4.1IP基础认识</title>
+</head>
+<body class='typora-export typora-export-show-outline typora-export-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1 outline-item-open"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip基础认识">IP基础认识</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#一ip基础认识">一、IP基础认识</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#认识ip">认识IP</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip地址基础知识">IP地址基础知识</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip地址的分类">IP地址的分类</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h5 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#abc类">A、B、C类</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#广播">广播</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#de类">D、E类</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#多播">多播</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h5 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip分类优缺点">IP分类优缺点</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#五分类地址cidr">五分类地址CIDR</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h5 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#划分网络号和主机号">划分网络号和主机号</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h4 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#公有ip和私有ip">公有IP和私有IP</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip地址与路由控制">IP地址与路由控制</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ip分片与重组">IP分片与重组</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#二ipv6基本认识">二、IPv6基本认识</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv6新特性"><strong>IPv6新特性</strong></a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv6地址的标识方法">IPv6地址的标识方法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv6地址的结构">IPv6地址的结构</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv6单播地址类型">IPv6单播地址类型</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ipv4首部和ipv6首部">IPv4首部和IPv6首部</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#三ip协议">三、IP协议</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#dns域名解析">DNS域名解析</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#域名层级关系">域名层级关系</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#域名解析流程">域名解析流程</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#arp">ARP</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#arp协议">ARP协议</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#rarp协议">RARP协议</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#dhcp">DHCP</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#nat">NAT</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#icmp">ICMP</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#igmp">IGMP</a></div><ul class="outline-children"></ul></li></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='ip基础认识'><span>IP基础认识</span></h1><h2 id='一ip基础认识'><span>一、IP基础认识</span></h2><h3 id='认识ip'><span>认识IP</span></h3><p><span>	</span><span>IP在TCP/IP参考模型处于第三层，也叫网络层。</span></p><p><span>	</span><span>网络层的主要作用是：</span><strong><span>实现主机与主机之间的通信，也叫点对点（end to end）通信。</span></strong></p><p><img src="assets/568.webp" alt="568" style="zoom:80%;" /></p><blockquote><p><span>网络层与数据链路层有什么关系呢？</span></p><p><span>	</span><span>IP属于网络层和MAC属于数据链路层之间的区别和关系。</span></p><p><span>	</span><span>很容易区分，IP的主要作用就是本机之间的通信用的，而MAC的作用就是实现直连的两个设备之间的通信传输。</span></p><p><span>	</span><span>举个例子说明，小明要去一个很远的地方旅游，指定了一个形成表，中间需要先做飞机、地铁、公交车才能地道目的地，为此小明需要买飞机，地铁票等。</span></p><p><span>	</span><span>飞机票和地铁票都是去特定的地点的，每张票只能够在某一个限定区间内移动，此处的区间内就是网络中的数据链路。</span></p><p><span>	</span><span>在区间内移动就相当于数据链路层，充当区间内的两个节点传输的功能，区间内的出发点好比源MAC地址，目标地点好比目的MAC地址。</span></p><p><span>	</span><span>整个旅游行程表就相当于网络层，充当远程定位的功能，形成的开始好比源IP，形成的重点好比目的IP。</span></p><p><img src="assets/569.webp" alt="569" style="zoom:80%;" /></p><p><span>	</span><span>如果小明只有行程表没有车票，就无法达成工具到达目的地，相反，如果除了车票而没有行程表，恐怕也无法到达目的。因为小明不知道该做什么车，也不知道该在哪里换乘。</span></p><p><span>	</span><span>因此，只有两者兼备，即有某个区间的车票又有整个旅行的行程表，才能保证到达目的地。于此类似，计算机网络中也需要</span><strong><span>数据链路层和网络层这个分层才能实现向最终目的地的通信。</span></strong></p><p><span>	</span><span>还有一个重点，履行途中虽然不断变化交通工具，到那时履行形成的其实地址和目的地址是没有变化的。</span></p><p><span>	</span><span>其实，在网络中数据包传输中也是如此，源IP地址和目标IP地址在传输过程中是不会变化的（前提：没有使用NAT网络），只有源MAC地址和目标MAC一直变化。</span></p></blockquote><h3 id='ip地址基础知识'><span>IP地址基础知识</span></h3><p><span>	</span><span>在TCP/IP网络通信时，为了保证能正常通信，每个设备都需要配置正确的IP地址，否则无法实现正常的通信。</span></p><p><span>	</span><span>IP地址（IPv4地址）由32位正整数来表示，IP地址在计算机时以二进制的方式来处理的。为了方便记忆，采用十进制标记的方式，也就是将32位IP地址以每8位为一组，分为4组每组使用</span><strong><span>.</span></strong><span>隔开，在将每组转换成十进制。</span></p><p><img src="assets/570.webp" alt="570" style="zoom:50%;" /></p><p><span>	</span><span>那么IP地址最大值就是</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="17.248ex" height="2.072ex" role="img" focusable="false" viewBox="0 -833.9 7623.7 915.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-3-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-3-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-3-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-3-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-3-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-3-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-3-TEX-N-32"></use></g><g data-mml-node="TeXAtom" transform="translate(533,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-3-TEX-N-33"></use><use data-c="32" xlink:href="#MJX-3-TEX-N-32" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mo" transform="translate(1567.9,0)"><use data-c="3D" xlink:href="#MJX-3-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2623.7,0)"><use data-c="34" xlink:href="#MJX-3-TEX-N-34"></use><use data-c="32" xlink:href="#MJX-3-TEX-N-32" transform="translate(500,0)"></use><use data-c="39" xlink:href="#MJX-3-TEX-N-39" transform="translate(1000,0)"></use><use data-c="34" xlink:href="#MJX-3-TEX-N-34" transform="translate(1500,0)"></use><use data-c="39" xlink:href="#MJX-3-TEX-N-39" transform="translate(2000,0)"></use><use data-c="36" xlink:href="#MJX-3-TEX-N-36" transform="translate(2500,0)"></use><use data-c="37" xlink:href="#MJX-3-TEX-N-37" transform="translate(3000,0)"></use><use data-c="32" xlink:href="#MJX-3-TEX-N-32" transform="translate(3500,0)"></use><use data-c="39" xlink:href="#MJX-3-TEX-N-39" transform="translate(4000,0)"></use><use data-c="36" xlink:href="#MJX-3-TEX-N-36" transform="translate(4500,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mrow data-mjx-texclass="ORD"><mn>32</mn></mrow></msup><mo>=</mo><mn>4294967296</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">2^{32} = 4294967296</script><span>。也就是说 最大云心43亿台计算机连接到网络中。</span></p><p><span>	</span><span>实际上。IP地址并不是根据主机台数来配置的，而是以网卡。向服务器、路由器灯设备都是2个以上的网卡，也就是其他门会以2个以上的IP地址。</span></p><p><img src="assets/571.webp" alt="571" style="zoom:60%;" /></p><p><span>	</span><span>因此，让43亿台计算机全部联网是不可能的，更何况IP地址是由网络标记和主机标记着两部分组成的，所以实际能够连接到网络的计算机个数更少了很多。</span></p><blockquote><p><span>现在不仅电脑配置了IP地址，手机、IPad等电子设备也都配置了IP呀，赵艳丽来说肯定会超过43亿，那怎么能支持这么多的IP呢？</span></p><p><span>	</span><span>因为会根据一种更换IP的地址技术NAT，是的计算数量超过43亿台。</span></p></blockquote><h4 id='ip地址的分类'><span>IP地址的分类</span></h4><p><span>	</span><span>互联网诞生起，IP地址显得非常充裕，将IP设计了分类地址：</span></p><p><span>	</span><span>IP地址分类成了5种类型，分别是A类、B类、C类、D类、E类。</span></p><p><img src="assets/572.webp" alt="572" style="zoom:50%;" /></p><h5 id='abc类'><span>A、B、C类</span></h5><blockquote><p><span>A类、B类、C类地址？</span></p><p><span>	</span><span>其中对于A、B、C类主要分为两个部分，分别是网络号和主机号。很好理解，比如A小区1栋101号、B小区1栋101号。</span></p><p><span>	</span><span>我们可以用下面这个表格来清除的知道A、B、C类对应的地址范围、最大主机个数。</span></p><p><img src="assets/573.webp" alt="573" style="zoom:50%;" /></p><p><span>A、B、C分类最大的主机个数是如何计算的呢？</span><span>	</span></p><p><span>	</span><span>最大主机个数就是卡主机号的位数，比如C类地址的主机号站8位，那么C类最大主机个数就是</span></p><p><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="12.427ex" height="2.072ex" role="img" focusable="false" viewBox="0 -833.9 5492.6 915.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-4-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-4-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-4-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-4-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-4-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-4-TEX-N-32"></use></g><g data-mml-node="mn" transform="translate(533,363) scale(0.707)"><use data-c="38" xlink:href="#MJX-4-TEX-N-38"></use></g></g><g data-mml-node="mo" transform="translate(1158.8,0)"><use data-c="2212" xlink:href="#MJX-4-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(2159,0)"><use data-c="32" xlink:href="#MJX-4-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(2936.8,0)"><use data-c="3D" xlink:href="#MJX-4-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(3992.6,0)"><use data-c="32" xlink:href="#MJX-4-TEX-N-32"></use><use data-c="35" xlink:href="#MJX-4-TEX-N-35" transform="translate(500,0)"></use><use data-c="34" xlink:href="#MJX-4-TEX-N-34" transform="translate(1000,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>8</mn></msup><mo>−</mo><mn>2</mn><mo>=</mo><mn>254</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">2^8 - 2 = 254</script><span>。为啥要减2呢？  因为IP地址中有2个IP是特殊的，分别是主机号全1和全0的地址。</span></p><p><img src="assets/574.webp" alt="574" style="zoom:50%;" /></p><ul><li><p><span>主机号全1：指定某个网络下的所有的主机，用于广播。</span></p></li><li><p><span>主机号全0：指定某个网络。</span></p></li></ul></blockquote><h5 id='广播'><span>广播</span></h5><blockquote><p><span>广播地址用来干啥？</span></p><p><span>	</span><span>广播地址用来在同一个链路中相互连接的主机之间发送数据包。比如，学校通过广播来上课、下课铃声。</span></p><p><span>	</span><span>当主机号全1时，就表示该网络的广播地址。比如把172.20.0.0/16（用二进制表示如下）：</span></p><p><code>10101100.00010100.00000000.00000000</code><span> 将这个地址的主机部分全部都改成1，则形成了广播地址： 10101100.00010100.</span><code>11111111.11111111</code><span>，在将这个地址用十进制表示就是</span><code>172.20.255.255</code><span>。</span></p><p>&nbsp;</p><p><span>	</span><span>广播地址可以分为本地广播和直接广播两种：</span></p><ul><li><p><span>在本网络内广播叫做本地广播：比如网络地址为192.168.0.0/24的情况下，广播地址是192.168.0.255。因为这个广播地址的Ip包会被路由器给屏蔽掉，所以不会到达192.168.0.0/24以外的其他链路上。</span></p></li><li><p><span>在不同网络之间的广播叫做直接广播：比如网络地址192.168l.0.0/24的主机向192.168.1.255/24的目标地址发送IP包。收到这个包的路由器将数据转发给192.168.1.0/24，从而是的所有192.168.1.1~192.168.1.254的主机都能收到这个包（由于直接广播有一定的安全问题，多数情况下会在路由器上设置为不转发）。</span></p></li></ul><p><img src="assets/575.webp" alt="575" style="zoom:50%;" /></p></blockquote><h5 id='de类'><span>D、E类</span></h5><blockquote><p><span>D类、E类地址：D类和E类地址没有主机号，所以不可用于主机IP，D类常用于多播，E类是预留的分类在那时未使用。</span></p><p><img src="assets/576.webp" alt="576" style="zoom:80%;" /></p></blockquote><h5 id='多播'><span>多播</span></h5><blockquote><p><strong><span>多播：</span></strong><span>  多播就似乎将包发送给特定组内的所有主机。</span></p><p><span>	</span><span>举例子说明，老师说：“最后一排的同学，上来做到数学题。”老师指定的最后一排的同学也就是多播的含义了。</span></p><p><span>	</span><span>由于广播无法穿透路由，如果线稿给其他的网段发送同样的额包，就可以使用穿透路由的多播。</span></p><p><img src="assets/577.webp" alt="577" style="zoom:50%;" /></p><p><span>	</span><span>多播使用的是D类地址，前4为就是</span><code>1110</code><span>表示就是多播的地址，剩下的28位是多播的组播号。</span></p><p><span>	</span><span>从244.0.0.0 ~ 239.255.255.255都是多播的可用范围，划分为一下三类：</span></p><ul><li><p><span>244.0.0.0 ~ 244.0.0.255：为预留的组播地址，只能在局域网中，路由器是不会进行转发的。</span></p></li><li><p><span>244.0.1.0 ~ 238.255.255.255：为用户可用的组播地址。可以用于Internet上。</span></p></li><li><p><span>239.0.0.0 ~ 239.255.255.255为本地管理组播地址，可供内核网络使用，近在特定的本地范围内有效。</span></p></li></ul></blockquote><h5 id='ip分类优缺点'><span>IP分类优缺点</span></h5><ul><li><p><strong><span>优点</span></strong></p></li></ul><p><span>	</span><span>不管是路由器还是主机解析到的一个IP地址的时候，我们判断IP地址首位是否为0，0表示A类地址，那么就很快找到网络地址和主机地址。</span></p><p><span>	</span><span>区域分类判断方式如下图所示：</span></p><p><img src="assets/578.webp" alt="578" style="zoom:50%;" /></p><p><span>	</span><span>所以，这种分类比较简单、选路（基于网络地址）简单。</span></p><ul><li><p><strong><span>IP分类的缺点</span></strong></p><ul><li><p><span>同一网络下没有地址层次，比如一个公司里用了B类地址，但是可能需要根据生产环境、测试环境、开发环境来划分地址层次，而这种IP分类没有地址层次划分的功能，所以这就缺少地址的灵活性。</span></p></li><li><p><span>A、B、C类不能很好的与现实网络匹配。</span></p><ul><li><p><span>C类地址包含的最大主机数量实在太少，只有254个，估计一个网吧都不够用。</span></p></li><li><p><span>B类地址可能包含最大主机数又太多了，6w多台放在一个网络下，一般企业都打不到这个规模，闲置的地址等于浪费。</span></p></li></ul></li><li><p><span>基于以上两个缺点都可以在CIDR五分类地址中解决。</span></p></li></ul></li></ul><h4 id='五分类地址cidr'><span>五分类地址CIDR</span></h4><p><span>	</span><span>正因为IP分类存在很多缺点，所以后面使用了五分类地址的方案，即CIDR。</span></p><p><span>	</span><span>这种方式不再有分类地址的概念，32bit的IP地址被划分成2个部分，前面是</span><strong><span>网络号</span></strong><span>，后面是</span><strong><span>主机号</span></strong><span>。</span></p><h5 id='划分网络号和主机号'><span>划分网络号和主机号</span></h5><p><span>	</span><span>表示形式a.b.c.d/x其中/x不鸟是x位属于网络号，x的范围是0</span><span>~</span><span>32，这就是的IP地址更加具有灵活性。</span></p><p><span>	</span><span>比如10.100.122.2/24这种地址表示的就是CIDR，/24表示前24位是网络号，剩余8位是主机号。</span></p><p><img src="assets/579.webp" alt="579" style="zoom:50%;" /></p><p><span>	</span><span>还有另一种划分网络号与主机号形式，那就是</span><strong><span>子网掩码</span></strong><span>，掩码的意思就是掩盖掉主机号，剩余的就是网络号。</span></p><p><span>	</span><span>将子网掩码和IP地址按位计算 与，就可以得到网络号。</span></p><p><img src="assets/580.webp" alt="580" style="zoom:80%;" /></p><blockquote><p><span>为什么要分离网络号和主机号？</span></p><p><span>	</span><span>因为两台计算机要通讯，首先要判断是会否处于</span><strong><span>同一个广播域内</span></strong><span>，即网络地址是否相同，表明接收方在本网络上，那么可以把数据包直接发送到目标主机。</span></p><p><span>	</span><span>路由器寻址工作中，也就是通过这样的方式来找到对应的网络号，进而数据包转发给对应的网络内。</span></p><p><img src="assets/581.webp" alt="581" style="zoom:50%;" /></p></blockquote><p>&nbsp;</p><blockquote><p><strong><span>怎么进行子网划分？</span></strong></p><p><span>	</span><span>我们可以通过子网掩码划分出网络号和主机号，那实际上子网掩码还有一个作用就是划分子网。</span></p><p><span>	</span><span>子网划分实际上是将主机地址划分为两个部分：</span><strong><span>子网网络</span></strong><span>地址和</span><strong><span>子网主机</span></strong><span>地址。形式如下：</span></p><p><img src="assets/582.webp" alt="582" style="zoom:80%;" /></p><ul><li><p><span>未做子网划分的ip地址：网络地址 + 主机地址。</span></p></li><li><p><span>做子网划分后的ip地址：网络地址 + （子网网络地址 + 子网主机地址）。</span></p></li></ul><p><span>    假设对C类地址进行子网划分，网络地址192.168.1.0，使用子网掩码255.255.255.192对其进行子网划分。</span></p><p><span>	</span><span>C类地址中前24位是网络号，最后8为是主机号，根据子网掩码可知</span><strong><span>从8位主机号中借用2位作为子网号</span></strong><span>。</span></p><p><img src="assets/583.webp" alt="583" style="zoom:80%;" /></p><p><span>	</span><span>由于子网网络地址被划分成2位，那么子网地址就有4个，分别是00、01、10、11具体划分如下图所示：</span></p><p><img src="assets/584.webp" alt="584" style="zoom:50%;" /></p><p><span>	</span><span>划分后的4个子网如下表格：</span></p><p><img src="assets/585.webp" alt="585" style="zoom:50%;" /></p></blockquote><h4 id='公有ip和私有ip'><span>公有IP和私有IP</span></h4><p><span>	</span><span>在A、B、C分类地址，实际上有分够用IP地址和私有IP地址。</span></p><p><img src="assets/586.webp" alt="586" style="zoom:50%;" /></p><p><span>	</span><span>平时我们在办公室、家里、学校用的IP地址都是私有IP地址，因为这些地址允许组织内部的IT人员自己管理、自己分配，而且可以重复。因此，某个私有IP地址和学校的可以是一样的。</span></p><p><span>	</span><span>就像我们每个小区都有自己的楼编号和门牌号，你家小区可以交1栋101号，我家也可以叫1栋101号，没有任何问题，但是一旦出了小区，就需要带上小区的地址黄河路0号（公网IP地址），是国家统一分配的，不能两个小区都叫一样的地址。</span></p><p><span>	</span><span>所以公有IP地址是一个由组织统一分配的，假设要开一个博客网站，就需要去申请买一个公有IP，这样别人才能进行访问，并且公有IP地址基本上再整个互联网范围保持唯一的。</span></p><p><img src="assets/587.webp" alt="587" style="zoom:50%;" /></p><blockquote><p><span>公有IP是由谁管理呢？</span></p><p><span>	</span><span>公有IP一般由ICANN组织管理，中文叫互联网明层与数字地址分配机构。IANA是ICANN的其中一个机构，它负责分配互联IP地址，是按州的方式层层分配。</span></p><p><img src="assets/588.webp" alt="588" style="zoom:50%;" /></p><ul><li><p><span>ARIN：北美地区。</span></p></li><li><p><span>LACNIC：拉丁美洲和一些加勒比群岛。</span></p></li><li><p><span>RIPE NCC：欧洲、中东和中亚。</span></p></li><li><p><span>AfriNIC：非洲地区。</span></p></li><li><p><span>APNIC：亚太地区。</span></p></li></ul><p><span>    其中，在中国式由CNNIC的机构进行管理的，它是中国国内唯一指定的全局IP地址管理的组织。</span></p></blockquote><h3 id='ip地址与路由控制'><span>IP地址与路由控制</span></h3><p><span>	</span><span>IP地址的</span><strong><span>网络地址</span></strong><span>这一部分是用于进行路由控制的。</span></p><p><span>	</span><span>路由控制表中记录者网络地址与下一步应该发送至路由器的地址。在主机和路由器上都会有各自的路由控制表。</span></p><p><span>	</span><span>在发送IP包时，</span><strong><span>首先要确定包首部中的目标地址</span></strong><span>，再从路由</span><strong><span>控制表</span></strong><span>中找到与该地址具有相同网络地址的</span><strong><span>记录</span></strong><span>，根据该记录将IP包转发给相应的下一个路由器。如果路由控制表中存在多条相同网络地址的记录，就选择相同位数最多的网络地址，也就是最长匹配。</span></p><blockquote><p><span>举个例子说明:</span></p><p><img src="assets/589.webp" alt="589" style="zoom:50%;" /></p><ol start='' ><li><p><span>主机A要发送一个IP包，源地址为10.1.1.0/24和目标地址是10.1.2.10，由于主机A的路由表没有找到与目标地址相同的网络地址于是包就被转发到默认路由（路由器1）。</span></p></li><li><p><span>路由器1收到IP包后，也在路由器1的路由表中进行匹配目标地址，发现匹配到了，于是就把IP数据报转发哦给了10.1.0.2这台路由器2。</span></p></li><li><p><span>路由器2收到后，同样对比自身的路由表，发现匹配到了，于是把IP包仓路由器2 10.1.2.1这个接口发出去，最终经过交换机把IP数据报转发给了目标主机。</span></p></li></ol></blockquote><p>&nbsp;</p><blockquote><p><span>环回地址是不会流向网络的。</span></p><p><span>	</span><span>环回地址就是</span><strong><span>同一台计算机上</span></strong><span>的程序之间进行网络通信时所使用的一个默认地址。</span></p><p><span>	</span><span>计算机使用伊特特殊的IP地址127.0.0.1作为环回地址，与该地址具有相同意义的一个叫做localhost的主机名，使用这个IP或主机名的时候数据包是不会流向网络的。</span></p></blockquote><h3 id='ip分片与重组'><span>IP分片与重组</span></h3><p><span>	</span><span>每种数据链路的最大传输单元MTU都是不同的，如FDDI数据李娜路MTU 4352、以太网的MTU是15000字节等。</span></p><p><span>	</span><span>每种数据链路的MTU之所以不同，是因为每个不同类型的数据链路的使用目的不同。最常见的数据链路是以太网，它的MTU是</span><strong><span>1500字节</span></strong><span>。那么当IP数据包大于MTU时IP数据报就会被分片。</span></p><p><span>	</span><span>经过分片之后的IP数据报在被重组的时候，只能由</span><strong><span>目标主机进行</span></strong><span>，路由器是不会进行重组的。</span></p><blockquote><p><span>举例子来说明，假设发送方要发送一个4000字节的大数据包，如果要传输在以太网的链路中，则需要把数据包分成3个小的数据包进行传输，再次交给双方重组成大的数据包。</span></p><p><img src="assets/590.webp" alt="590" style="zoom:50%;" /></p><p><span>	</span><span>在分片传输中，一旦某个分片丢失了，则会造成整个IP数据包作废，所以</span><strong><span>TCP引入了MSS</span></strong><span>也就是TCP层进行分片不由IP层分片，那么对于UDP来说我们尽量不要发送一个大于MTU的数据报文。</span></p></blockquote><h2 id='二ipv6基本认识'><span>二、IPv6基本认识</span></h2><p><span>	</span><span>IPv4的地址是32位，大约可以提供42亿个地址，但是在2011年Ipv4地址已经被分配完了。所以出现了IPv6地址。</span></p><p><span>	</span><span>IPv6地址是128位，这可分配的地址数量就大的惊人，一个段子说的是IPv6可以保证低矮额上每粒沙子都能被分配到一个IP地址。</span></p><p><span>	</span><span>IPv6不仅有更多的地址外，还有更好的安全性和扩展性，说简单点儿就是说IPv6相比IPv4能带来更高的网络体验。</span></p><p><span>	</span><span>但是因为IPv4和IPv6不能相互兼容，所以不但哟啊我们电脑、手机之类的设备支持，还需要网络运营商队现有的设备进行升级，所以可能是IPv6普及率更慢的一个原因。</span></p><h3 id='ipv6新特性'><strong><span>IPv6新特性</span></strong></h3><ul><li><p><span>IPv6可自动配置，即使没有DHCP服务器也可以实现自动分配IP地址，真实便捷到即插即用。</span></p></li><li><p><span>IPv6包头 首部采用固定值40字节，去掉了包头校验和，简化了首部结构，减轻了路由器的负担，大大提升高了传输的性能。</span></p></li><li><p><span>IPv6有应对伪造IP地址的网络安全功能以及防止线路窃听的功能，大大提升了安全性。</span></p></li></ul><h3 id='ipv6地址的标识方法'><span>IPv6地址的标识方法</span></h3><p><span>	</span><span>IPv4地址总长度为32位，每8为作为一组，并用电分十进制的标识方法。</span></p><p><span>	</span><span>IPv6地址总长度为128位，是以16位作为一组，每组用冒号【:】隔开。</span></p><p><img src="assets/591.webp" alt="591" style="zoom:50%;" /></p><p><span>	</span><span>如果出现连续的0时还可以将这些0进行省略，并用两个冒号【::】隔开，但是，一个IP地址只允许</span><strong><span>出现一次</span></strong><span>两个连续的冒号。</span></p><p><img src="assets/592.webp" alt="592" style="zoom:50%;" /></p><h3 id='ipv6地址的结构'><span>IPv6地址的结构</span></h3><p><span>	</span><span>IPv6类似于IPv4也是通过IP地址的前几位表示IP地址的种类。</span></p><p><span>	</span><span>IPv6的地址主要有以下类型的地址：</span></p><ul><li><p><span>单播地址：用于一对一的通信。</span></p></li><li><p><span>组播地址：用于一对多的通信。</span></p></li><li><p><span>任播地址：用于通信最近的节点，最近的节点有路由协议决定。</span></p></li><li><p><span>没有广播。</span></p></li></ul><p><img src="assets/593.webp" alt="593" style="zoom:50%;" /></p><h4 id='ipv6单播地址类型'><span>IPv6单播地址类型</span></h4><p><span>	</span><span>对于一对一通信的IPv6地址，主要划分了三类单播地址，每类地址的有效范围都是不同的。</span></p><ul><li><p><span>在同一链路单播通信，不经过路由器，可以使用链路本地单播地址。IPv4没有此类型。</span></p></li><li><p><span>在内网单播通信，可以使用唯一本地地址，相当于IPv4的私有IP。</span></p></li><li><p><span>在互联网通信，可以使用全局单播地址，相当于IPv4的公有IP。</span></p></li></ul><p><img src="assets/594.webp" alt="594" style="zoom:50%;" /></p><h3 id='ipv4首部和ipv6首部'><span>IPv4首部和IPv6首部</span></h3><p><span>	</span><span>IPv4首部和IPv6首部差异如下图所示：</span></p><p><img src="assets/595.webp" referrerpolicy="no-referrer" alt="595"></p><p><span>	</span><span>IPv6相比IPv4的首部改进：</span></p><ul><li><p><span>取消了首部校验和字段：因为在数据链路层和传输层都会校验，因此IPv6直接取消了IP的校验。</span></p></li><li><p><span>取消了分片/重新组装相关字段：分片与充足时耗时的过程，IPv6不允许在中间路由器进行分片与重组，这将大大提高了路由器转发速度。</span></p></li><li><p><span>取消选项字段：选项字段不在是IP首部的一部分了，但它并没有消失，而是可能出现在IPv6首部的下一个首部指出的位置上，删除该选项的字段使得IPv6的首部称为固定长度的40字节。</span></p></li></ul><h2 id='三ip协议'><span>三、IP协议</span></h2><p><span>	</span><span>跟IP协议相关的技术也不少，说下IP协议相关的重要切常见的技术。</span></p><ul><li><p><span>DNS域名解析。</span></p></li><li><p><span>ARP与RARP协议。</span></p></li><li><p><span>DHCP动态获取IP地址。</span></p></li><li><p><span>NAT网络转换。</span></p></li><li><p><span>ICMP互联网控制报文协议。</span></p></li><li><p><span>IGMP因特网组管理协议。</span></p></li></ul><h3 id='dns域名解析'><span>DNS域名解析</span></h3><p><span>	</span><span>在上网的时候，通常使用的方式就是域名，而不是IP地址，因为域名方便记忆。那么实现这一技术的就是DNS解析，DNS可以将域名网址自动转换为具体的IP地址。</span></p><h4 id='域名层级关系'><span>域名层级关系</span></h4><p><span>	</span><span>DNS中的域名是用逗号分割的，比如 </span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span> 这里的句点代表的就死不同层次之间的界限。</span></p><p><span>	</span><span>在域名中，</span><strong><span>越靠右</span></strong><span>层级就</span><strong><span>越高</span></strong><span>。</span></p><p><span>	</span><span>根域是最顶层的，它的西一层就是com顶级渔民个，在下面是server.com。</span></p><p><span>	</span><span>所以域名的层级关系类似于一个树状结构：</span></p><ul><li><p><span>根DNS服务器。</span></p></li><li><p><span>顶级域DNS服务（com）。</span></p></li><li><p><span>权威DNS服务器（server.com）。</span></p></li></ul><p><img src="assets/596.webp" alt="596" style="zoom:50%;" /></p><p><span>	</span><span>根域的DNS服务器信息保存在互联网中所有的DNS服务器中。这样以来，任何DNS服务器都可以找到并访问根域DNS服务器了。</span></p><p><span>	</span><span>因此，客户端只要能够找到任意一台DNS服务器，就可以通过它找到根域DNS服务器，然后再一路顺藤摸瓜找到下层的某台目标DNS服务器。</span></p><h4 id='域名解析流程'><span>域名解析流程</span></h4><p><span>	</span><span>浏览器首先看一下自己的缓存里有没有，没有的话向操作系统的缓存要，还没有就得检查本机域名解析文件hosts，如果还没有，就会DNS服务器进行查询，查询的过程如下：</span></p><ol start='' ><li><p><span>客户端首先发出一个DNS请求，问w</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>的IP是啥嘞，并发给本地DNS服务器（也就是客户端ICP/IP设置中填写的DNS服务器地址）。</span></p></li><li><p><span>本地域名服务器收到客户端的请求后，如果缓存表格里边有</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>，则直接返回IP地址，如果没有，本地DNS会去访问它的根域名服务器：”老大，能高速我 w</span><a href='http://www.server.comIP' target='_blank' class='url'>www.server.comIP</a><span>地址吗？“根域名服务器是最高层次的，不能直接用于域名解析，但是可以指条明路。</span></p></li><li><p><span>根域名DNS服务器收到来自本地DNS的请求后，发现后置是.com，他就说：”w</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>这个域名贵.com区域管理，我给你.com顶级域名服务器的地址，你去问他把“。</span></p></li><li><p><span>本地DNS收到顶级域名服务器的地址后，发起请求问：”老二，告诉我</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>的IP地址是啥嘞？“。</span></p></li><li><p><span>顶级域名服务器就说：”我给你负责</span><a href='http://www.server.com' target='_blank' class='url'>www.server.com</a><span>区域的权威DNS服务器的地址，你去问他应该能闻到“。</span></p></li><li><p><span>本地DNS于是就问了权威DNS服务器：”老三，告诉我</span><a href='http://www.server.con' target='_blank' class='url'>www.server.con</a><span>的IP是啥嘞？“server.com的权威DNS服务器就会进行域名解析。</span></p></li><li><p><span>查询出来对应的IP地址就会告诉本地DNS。</span></p></li><li><p><span>本地DNS拿到IP地址后返回给客户端，客户端和目标就会建立连接了。</span></p></li></ol><p><img src="assets/597.webp" alt="597" style="zoom:50%;" /></p><p><span>	</span><span>DNS域名解析的过程还是很有意思的，整个过程就和我们日常找人问路的过程类似，只指路不带路。</span></p><h3 id='arp'><span>ARP</span></h3><h4 id='arp协议'><span>ARP协议</span></h4><p><span>	</span><span>在传输一个IP数据报的时候，确定了源IP地址和目标IP地址后，就会通过主机</span><strong><span>路由表</span></strong><span>确定IP数据包下一跳。然而，网络层的下一层是数据链路层，所以我们还要知道下一跳的MAC地址。</span></p><p><span>	</span><span>由于主机的路由表中可以找到下一跳的IP地址，所以可以通过</span><strong><span>ARP协议</span></strong><span>，求得下一跳的MAC地址。</span></p><p>&nbsp;</p><p><strong><span>ARP又是如何知道对方MAC地址的呢？</span></strong></p><p><span>	</span><span>简单的说，ARP解除ARP请求与ARP响应两种类型的包确定MAC地址的。</span></p><p><img src="assets/598.webp" alt="598" style="zoom:50%;" /></p><ul><li><p><span>主机会通过</span><strong><span>广播发送ARP请求</span></strong><span>，这个包中包含了想要知道的MAC地址的主机IP地址。</span></p></li><li><p><span>当同个链路中的所有设备收到ARP请求后，会去拆开ARP请求包中的内容，如果ARP请求包中的</span><strong><span>目标IP地址与自己的IP地址一致</span></strong><span>，那么这个设备将</span><strong><span>自己的MAC地址塞入到ARP响应包</span></strong><span>返回给主机。</span></p></li></ul><p><span>	</span><span>操作系统通常会把第一次通过ARP获取的MAC地址缓存起来，以便下次直接从缓存中找到对应的MAC地址。</span></p><p><span>	</span><span>不过，MAC地址的缓存是由一定期限的，超过这个期限，缓存的内容就会被清除掉。</span></p><h4 id='rarp协议'><span>RARP协议</span></h4><p><span>	</span><span>ARP协议是已经知道了IP地址来求MAC地址，</span><strong><span>RARP协议</span></strong><span>是已经</span><strong><span>知道了MAC地址来求IP地址</span></strong><span>。</span></p><p><span>	</span><span>通常需要架设一台RARP服务器，在这个服务器上注册设备的MAC地址机器IP地址。然后再将这个设备接入到网络，接着：</span></p><ul><li><p><span>该设备发送一条【我的MAC地址是xxx，请告诉我我的IP地址是啥？】的请求信息。</span></p></li><li><p><span>RARP服务器收到这个消息之后返回【MAC地址为xxx的设备，IP地址为xxxx】的信息给这个设备。</span></p></li></ul><p><span>	</span><span>最后，设备就根据RARP服务器所收到的应答信息设置自己的IP地址。</span></p><p><img src="assets/599.webp" alt="599" style="zoom:50%;" /></p><h3 id='dhcp'><span>DHCP</span></h3><p><span>	</span><span>DHCP在生活中我们是常见的，通过通过DHCP来动态获取daoIP地址，大大省去了配IP信息繁琐的过程。</span></p><p><span>	</span><span>接下来，我们来看看电脑是如何通过DHCP来获取到IP的：</span></p><p><img src="assets/600.webp" alt="600" style="zoom:50%;" /></p><p><span>	</span><span>先说明一点儿，DHCP客户端进程监听是68端口号，DHCP服务端进=进程监听是67端口号。</span></p><ul><li><p><span>客户端首先发起DHCP发现报文（DHCP DISCOVER）的IP数据报，由于客户端没有IP地址，也不知道DHCP服务器的地址，所以使用的是</span><strong><span>UDP广播通信</span></strong><span>，其使用的广播目的地址是255.255.255.255端口是67，并且使用0.0.0.0（端口68）作为源IP地址。DHCP客户端将该IP数据报传递给数据链路层，链路层将该帧广播到所有网络中的设备。</span></p></li><li><p><span>DHCP服务器收到DHCP发现报文时，用</span><strong><span>DHCP提供报文</span></strong><span>（DHCP OFFER）向客户端做出响应，该报文仍然使用IP广播地址255.255.255.255报文信息携带服务器提供可租约的IP地址、子网掩码、默认外网管、DNS服务器以及</span><strong><span>IP地址租用期</span></strong><span>。</span></p></li><li><p><span>客户端收到一个或多个服务器的DHCP提供报文后，从中选择一个服务器，并向选中的服务器发送DHCP请求报文（DHCP REQUEST进行相应，回显配置的参数）。</span></p></li><li><p><span>最后，服务端用DHCP ACK报文对DHCP请求报文进行相应，应答所要求的参数。</span></p></li></ul><blockquote><p><span>用的是广播，那如果DHCP服务器和客户端不是在同一个局域网内，路由器又不会转发广播包，那不是每个网络都要配置一个DHCP服务器了？</span></p><p><span>	</span><span>所以，为了解决这个问题，就出现了</span><strong><span>DHCP中继代理</span></strong><span>。有了DHCP中继代理以后，对不同网段的IP地址分配也可以由一个DHCP服务器统一进行管理。</span></p><p><img src="assets/601.webp" alt="601" style="zoom:50%;" /></p><ul><li><p><span>DHCP客户端会向DHCP中继代理发送DHCP请求包，而DHCP中继代理在收到这个广播包以后，再以</span><strong><span>单播</span></strong><span>的形式发给DHCP服务器。</span></p></li><li><p><span>服务器段收到该包以后再向DHCP中继代理返回应答，并由DHCP中继代理将此包广播给DHCP客户端。</span></p></li></ul><p><span>因此，DHCP服务器及时不在同一个链路上也可以实现统一分配和管理IP地址。</span></p></blockquote><h3 id='nat'><span>NAT</span></h3><p><span>	</span><span>IPv4的地址非常的紧缺，在前面我们也提到了可以通过无分类的地址来减缓IPv4地址耗尽的速度，但是互联网的用户增速是非常惊人的，所以IPv4地址依然有被耗尽的危险。</span></p><p><span>	</span><span>于是，提出了一种</span><strong><span>网络地址转换NAT</span></strong><span>的方法，再次环节了IPv4地址耗尽的问题。</span></p><p><span>	</span><span>简单来说，NAT就如同一个公司内的主机队外通信时，把所有的IP地址转换成公有IP地址。</span></p><p><img src="assets/602.webp" alt="602" style="zoom:50%;" /></p><blockquote><p><span>那不是N个私有IP地址，你就要有N个公有IP地址吗？没有缓解呀？</span></p><p><span>	</span><span>确实，普通的NAT转换没什么意思，绝对多数的网络应用都是使用的传输层TCP或UDP来传输数据的。因此可以把IP地址 + 端口号一起进行转换。这样，就用一个全球IP地址就可以了，这种转换技术叫</span><strong><span>网络地址与端口转换NAPT</span></strong><span>。</span></p></blockquote><p><span>	</span><span>网络地址与端口转换NATP就是将IP+端口一起进行转换。</span></p><p><img src="assets/603.webp" alt="603" style="zoom:50%;" /></p><p><span>	</span><span>如上图中，有两个客户端192.168.1.10和192.168.1.11同时与服务器183.232.231.172进行通信，并且这链各个客户端的本地端口都是1025。</span></p><p><span>	</span><span>此时，两个私有IP地址都转换IP地址为公有地址</span><strong><span>120.229.175.121</span></strong><span>，但是</span><strong><span>以不同的额端口号进行区分</span></strong><span>。</span></p><p><span>	</span><span>于是，生成一个NAPT路由器的转换表，就可以正确的转换地址跟端口的组合，令客户端A、B能同时与服务器之间进行通信。</span></p><p><span>	</span><span>这种转换表在NAT路由器上自动生成。比如，在TCP情况下，建立TCP连接首次握手时的SYN包一经发出，就会生成这个表。而后又随着收到的关闭连接时发出FIN包的确认应答从表中被删除。</span></p><p>&nbsp;</p><p><strong><span>NAT缺点：</span></strong></p><ul><li><p><span>外部无法主动与NAT内部服务器建立连接，因为NAPT转换表中没有转换记录。</span></p></li><li><p><span>转换表的生成与转换操作都会产生性能开销。</span></p></li><li><p><span>通信过程中，如果NAT路由器重启了，所有TCP链接都会被重置（单点问题）。</span></p></li></ul><p><strong><span>解决NAT潜在问题：</span></strong></p><ul><li><p><span>使用IPv6：IPv6可用范围非常大，以至于每台设备都可以配置一个公有IP地址。</span></p></li><li><p><span>NAT穿透技术：NAT穿透技术拥有这样的功能，它能够让网络应用程序主动发现自己位于NAT设备之后并且会主动获得NAT设备的公有IP，并为自己建立端口映射条目，注意这些都是NAT设备的应用程序自动完成的。</span></p></li></ul><p><span>    也就是说，在NAT穿透技术中，</span><strong><span>NAT设备的应用程序处于主动地位</span></strong><span>，它已经明确的知道NAT设备要修改它外发的数据包，于是就主动配合NAT设备的操作，主动建立映射，这样就不像以前由NAT设备来建立映射了。</span></p><h3 id='icmp'><span>ICMP</span></h3><p><span>	</span><span>ICMP 全称 Inernet Control Message Protocol互联网控制报文协议。</span></p><p><span>	</span><span>控制指的是在网络包在复杂的网络传输环境中，会遇到各种问题，因此需要传出消息来报告遇到什么问题，来控制整个局面。</span></p><p><strong><span>ICM功能：</span></strong></p><ul><li><p><span>确认IP包是否成功送达目标地址。</span></p></li><li><p><span>报告发送过程中IP包被废弃的原因和改善网络设置等。</span></p></li></ul><p><strong><span>介绍</span></strong></p><p><span>	</span><span>在IP通信中如果某个IP包因为某种原因未能达到目标地址，那么这个</span><strong><span>具体的原因将由ICMP负责通知</span></strong><span>。</span></p><p><img src="assets/604.webp" alt="604" style="zoom:80%;" /></p><p><span>	</span><span>如上图所示，主机A向主机B发送了数据包，由于某种原因，图中的额路由器2未能发现主机B的存在，这时，路由器2就会向主机A发送一个IMCP目标不可达的数据包，说明发往主机B的包未能成功。</span></p><p><span>	</span><span>ICMP的这种通知消息会使用IP进行发送。</span></p><p><span>	</span><span>因此，从路由器2返回的ICMP包会按照往常的留有控制先经过路由器1再转发给主机A。收到该ICMP包的主机A则分解ICMP的首部和数据域以后得知具体的发生问题的原因。</span></p><p><strong><span>ICMP类型</span></strong><span>（一般分为两大类）</span></p><ul><li><p><span>一类是用语诊断的查询消息，也就是查询报文类型。</span></p></li><li><p><span>另一类是通过出错原因的错误消息，也就是差错报文类型。</span></p></li></ul><p><img src="assets/605.webp" alt="605" style="zoom:50%;" /></p><h3 id='igmp'><span>IGMP</span></h3><p><span>	</span><span>ICMP跟IGMP是一点儿关系都没有，就好像雷锋和雷峰塔是完全不一样的 。</span></p><p><span>	</span><span>在前面我们知道了组播地址，也就是D类地址，既然是组播，那就说明是只有一组的主机能收到数据包，不在一组的主机不能收到数据包，那么管理是否在一组呢？就需要IGMP协议了。</span></p><p><img src="assets/606.webp" alt="606" style="zoom:60%;" /></p><p><span>	</span></p><p><span>	</span><strong><span>IGMP是因特网组管理协议</span></strong><span>，工作在主机（组播成员）和最后一跳路由之间，如上图中的蓝色部分。</span></p><ul><li><p><span>IGMP报文向路由器申请加入和退出组播组，默认情况下路由器是不会转发组播包到连接中的主机，除非主机通过IGMP加入到组播组，主机申请加入到组播组时，路由器就会记录IGMP路由器表，路由器后续就会转发组播包到对应的主机了。</span></p></li><li><p><span>IGMP报文采用IP封装，IP头部的协议号为2，而且TTL字段通常为1，因为IGMP是工作在主机与连接的路由器之间。</span></p></li></ul><p><strong><span>IGMP工作机制：</span></strong><span>IGMP分为三个版本，IGMPv1、IGMPv2、IGMPv3。以IGMPv2为例，说下查询与响应离开组播组这两个工作机制。</span></p><p><strong><span>常规查询与响应工作机制</span></strong></p><p><img src="assets/607.webp" alt="607" style="zoom:50%;" /></p><ol start='' ><li><p><span>路由器会周期性的发送目的地址为224.0.0.1表示同一网段内所有主机和路由器IGMP常规查询报文。</span></p></li><li><p><span>主机1和主机3收到这个查询，随后会启动报文延迟计时器，计时器的时间是随机的，通常是0~10秒，即使器超时后主机就会发送IGMP成员关系报文（源IP地址为自己主机的IP地址，目的IP地址为组播地址）。</span></p></li></ol><p><span>	</span><span>如果在定时器超时之前，收到同一个组内的其他主机发送的成员关系报文报文，则自己不在发送，这样可以减少网络中多余的IGMP报文数量。</span></p><ol start='3' ><li><p><span>路由器收到主机的成员关系报文后，就会在IGMP路由表中加入该组播组，后续网络中一旦该组播地址数据到达路由器后，它会把数据包转发出去。</span></p></li></ol><p><strong><span>离开组播组工作机制</span></strong></p><ul><li><p><strong><span>离开组播组的情况1：</span></strong><span>网络断仍有该组播组：</span></p></li></ul><p><img src="assets/608.webp" alt="608" style="zoom:80%;" /></p><ol start='' ><li><p><span>主机1要离开组224.1.1.1，发送IGMPv2路组报文，报文的目的地址是224.0.0.2（表示发向网段内的所有路由器）。</span></p></li><li><p><span>路由器收到该报文后，以1秒为间隔连续发送IGMP特定组查询报文（共计发送2个），以便确认该网络是否还有224.1.1.1组的其他成员。</span></p></li><li><p><span>主机3仍然是由224.1.1.1的成员，因此它立即响应这个特定组查询。路由器知道该网络中任然存在该组播组的成员，于是继续向该网络转发224.1.1.1的组播数据包。</span></p></li></ol><ul><li><p><strong><span>离开组播组的情况2：</span></strong><span>网段中没有该组播组。</span></p></li></ul><p><img src="assets/609.webp" alt="609" style="zoom:50%;" /></p><ol start='' ><li><p><span>主机1要离开组播组224.1.1.1，发送IGMP离组报文。</span></p></li><li><p><span>路由器收到该报文后，以1秒为间隔连续发送IGMP特定组查询报文（共计发送2个）。此时在该网段内，组播224.1.1.1已经没有其他成员了，因此没有主机响应这个查询。</span></p></li><li><p><span>一定时间后，路由器认为该网段中已经没有224.1.1.1组播组成员了，将不会在向这个哇果断转发该组播地址的数据包。</span></p></li></ol><p><span>	</span></p><p><span>	</span></p><p><span>	</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+
+<script>(function (){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
+</html>
