@@ -1,89 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8d2dbc4-7b6f-4969-a1ec-2b2a5bbe20ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/02SpringCloud整体介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/02SpringCloud整体介绍.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/03Eureka使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/03Eureka使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/05Hystrix使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/05Hystrix使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/07Zuul使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/07Zuul使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/08Config配置中心使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/08Config配置中心使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/09Bus消息总线使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/09Bus消息总线使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/10Sleuth请求链路跟踪使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/10Sleuth请求链路跟踪使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/11Consul使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/11Consul使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/13Nacos使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/13Nacos使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/14Sentinel使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/14Sentinel使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/15Seata使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/15Seata使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/16Oauth2基础使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/16Oauth2基础使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/17Oauth2结合JWT使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/17Oauth2结合JWT使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/18Oauth2实现单点登录.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/18Oauth2实现单点登录.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/19微服务监控.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/19微服务监控.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/20Gateway+Oauth2使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/20Gateway+Oauth2使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/21JWT介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/21JWT介绍.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/22微服务聚合Swagger.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/22微服务聚合Swagger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/23Oauth2自定义处理结果.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/23Oauth2自定义处理结果.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/24Sa-Token实现登录鉴权.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/24Sa-Token实现登录鉴权.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_framework/springcloud/use/25Retrofit使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_framework/springcloud/use/25Retrofit使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/01Linux最常使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/01Linux最常使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/1.内核引导和初始化.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/1.内核引导和初始化.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/2.1进程介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/2.1进程介绍.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/2.2进程启动.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/2.2进程启动.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/2.3进程退出.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/2.3进程退出.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/2.4进程状态.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/2.4进程状态.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/2.5进程调度.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/2.5进程调度.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/2.6SMP调度.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/2.6SMP调度.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.10巨型页.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.10巨型页.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.11页错误异常处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.11页错误异常处理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.12反碎片技术.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.12反碎片技术.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.13页回收.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.13页回收.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.14内存耗尽杀手和资源控制器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.14内存耗尽杀手和资源控制器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.15处理器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.15处理器缓存.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.16连续内存分配器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.16连续内存分配器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.1虚拟地址.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.1虚拟地址.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.2物理地址空间和内存映射.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.2物理地址空间和内存映射.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.3物理内存组织.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.3物理内存组织.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.5伙伴分配器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.5伙伴分配器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.6块分配器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.6块分配器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.7不连续页分配器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.7不连续页分配器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.8每处理器内存分配器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.8每处理器内存分配器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/3.9页表与页表缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/3.9页表与页表缓存.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/4.1ARM64异常处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/4.1ARM64异常处理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/4.2中断.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/4.2中断.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/4.3中断下半部.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/4.3中断下半部.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/5.5RCU.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/5.5RCU.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/5.6可睡眠的RCU.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/5.6可睡眠的RCU.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/6.1文件系统概述.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/6.1文件系统概述.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/6.2虚拟文件系统的数据结构.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/6.2虚拟文件系统的数据结构.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/6.3文件类型与挂载文件系统.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/6.3文件类型与挂载文件系统.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/6.4打开关闭文件.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/6.4打开关闭文件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/6.5创建删除文件.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/6.5创建删除文件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/kernel/6.6页缓存读文件写文件.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/kernel/6.6页缓存读文件写文件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/02Linux介绍.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/02Linux介绍.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/03Linux常用命令.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/03Linux常用命令.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/04vim文本编辑器.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/04vim文本编辑器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/05Linux软件包管理yum_rpm.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/05Linux软件包管理yum_rpm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/06Linux用户和用户组管理.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/06Linux用户和用户组管理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/07Linux权限管理命令.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/07Linux权限管理命令.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/08Linux文件系统管理.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/08Linux文件系统管理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/09Linux的Shell.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/09Linux的Shell.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/10LinuxBash.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/10LinuxBash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/use/11Linux系统管理.html" beforeDir="false" afterPath="$PROJECT_DIR$/linux/use/11Linux系统管理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/001.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/002.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/002.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/003.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/003.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/004.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/005.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/006.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/006.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/007.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/007.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/008.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/009-4891517.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/009-4891517.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/009.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/009.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/010.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/010.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/.assets/011.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/assets/011.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/Lucene原理分析.html" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/Lucene原理分析.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lucene_solr/Solr原理分析.html" beforeDir="false" afterPath="$PROJECT_DIR$/lucene_solr/Solr原理分析.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md转html/方法" beforeDir="false" />
-    </list>
+    <list default="true" id="f8d2dbc4-7b6f-4969-a1ec-2b2a5bbe20ff" name="Changes" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,16 +13,64 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kangkang121&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kangkang121/it.git&quot;,
+    &quot;accountId&quot;: &quot;efe3c1f7-77d2-4ae7-95c9-8f721b8c630a&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jVIrVlIjcOMjj112LnYD17HidD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindow.Commit.ShowToolbar": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kang/IdeaProjects/github/it/network/tcp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/network/tcp" />
+      <recent name="$PROJECT_DIR$/network/tcp/assets" />
+      <recent name="$PROJECT_DIR$/network" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,10 +81,65 @@
       <option name="presentableId" value="Default" />
       <updated>1721466017924</updated>
       <workItem from="1721466019664" duration="573000" />
+      <workItem from="1725713256029" duration="448000" />
+      <workItem from="1725714122402" duration="1012000" />
+      <workItem from="1725715797401" duration="130000" />
+      <workItem from="1725715945681" duration="50000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1725713368194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725713368194</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <option name="closed" value="true" />
+      <created>1725714796330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725714796330</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <option name="closed" value="true" />
+      <created>1725714813726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725714813726</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1">
+      <option name="closed" value="true" />
+      <created>1725714817646</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725714817646</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1">
+      <option name="closed" value="true" />
+      <created>1725715831513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725715831513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="add" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
